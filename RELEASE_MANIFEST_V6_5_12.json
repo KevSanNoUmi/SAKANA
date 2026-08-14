@@ -1,0 +1,77 @@
+{
+  "version": "6.5.12",
+  "base_version": "6.5.11",
+  "release_type": "UX + cleanup",
+  "date": "2026-08-14",
+  "data_integrity": {
+    "data.json": {
+      "sha256": "bdb69e51785ce19c26b108cc69649b691cfc35025ef2c416472b72985a149025",
+      "unchanged_from_6.5.11": true
+    },
+    "app_core.json": {
+      "sha256": "19f760b3fb0687c4b0993b96575043efcf00cbfe82ca2f86421e81fa043b62b8",
+      "unchanged_from_6.5.11": true
+    },
+    "decision_cache.json": {
+      "sha256": "944109c3271a8547f15039a796ac0177d0fd4f8f50e9508e879bd0cbd64784a5",
+      "unchanged_from_6.5.11": true
+    },
+    "tides_2026.json": {
+      "sha256": "2ba31690b88b859c8e4e9e30c1179fd2e4b281258231557fcba80c9704edcf1f",
+      "unchanged_from_6.5.11": true
+    },
+    "synthesis.json": {
+      "sha256": "6b8eba9ee3b5a82384ea615fe7758bc1d20e0344728fcb44ffe3dd4fad833322",
+      "unchanged_from_6.5.11": true
+    },
+    "lure_typology.json": {
+      "sha256": "59fac69a13e0568a2ec0599b5743568db86e658241106be5d31a7732973f2981",
+      "unchanged_from_6.5.11": true
+    },
+    "peche_jp.db": {
+      "sha256": "b331064fb4aaa4c5d3e1f4a2e3a7d05c437298568a33909a48448e41688f383a",
+      "unchanged_from_6.5.11": true
+    }
+  },
+  "changed_files": {
+    "index.html": {
+      "sha256": "dc65d3f7bf975e59d5f8ed8bde7fbb4e1b2c6336adab1f19d65aaa0d47a3a57f"
+    },
+    "sw.js": {
+      "sha256": "b2fb881c03698a55ec22488fc8bba6a3e39cd654875d9c3e550e723832f54982"
+    },
+    "pipeline.py": {
+      "sha256": "751ccb48cd6d555a5a0c54b3491d22a339094fc69853886faddd4b53260a9a76"
+    },
+    "README.md": {
+      "sha256": "dcb1b13c39134cbf2282783bcc795ad29db0c3b9e4209ff7e865f1583a005d36"
+    },
+    "PROJECT_STATE.md": {
+      "sha256": "670c0fc51d96fa9f88d7634a466f1260a867c1a1894d26a0f88ad566ca624b96"
+    },
+    "CHANGELOG_V6_5_12_UX_CARTE.md": {
+      "sha256": "bb3884ac90b4d7682b68db4f3f2ddf01f209d9d34a0821713eef76c4aaf1edb1"
+    },
+    "QA_V6_5_12_UX_CARTE.md": {
+      "sha256": "7ff19904cf4daee8629b1fa1e22a9d688c1e085aaf2bbcedc81410d45b8c24aa"
+    }
+  },
+  "features": [
+    "offline_geographic_trip_map",
+    "8_touchable_trip_stops",
+    "overlap_offsets_for_nearby_ports",
+    "larger_mobile_touch_targets",
+    "bottom_sheet_focus_restore_and_trap",
+    "non_destructive_local_storage_failure",
+    "scoped_pwa_cache_cleanup",
+    "legacy_release_file_cleanup"
+  ],
+  "source_policy": {
+    "manufacturer_content": "trusted_weighted_decision_aid",
+    "certainty": "not_100_percent_truth_or_capture_probability"
+  },
+  "cleanup": {
+    "removed": "legacy CHANGELOG/QA/GITHUB_RELEASE/RELEASE_MANIFEST files, V6.4 audit artifacts, macOS metadata",
+    "retained": "research provenance, curation/staging, raw transcripts, SQLite source of truth"
+  }
+}

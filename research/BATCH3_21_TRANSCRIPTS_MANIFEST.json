@@ -1,0 +1,49 @@
+{
+  "release_base": "V6.5.4",
+  "batch": "batch3_21_transcripts",
+  "policy": "Only detailed-curated priority claims enter DB; lower-value/unresolved material remains archived and does not vote.",
+  "raw_partA_files": [
+    "Export-Subtitles-AppForLanguage (14).txt",
+    "Export-Subtitles-AppForLanguage (15).txt",
+    "Export-Subtitles-AppForLanguage (16).txt",
+    "Export-Subtitles-AppForLanguage (17).txt",
+    "Export-Subtitles-AppForLanguage (18).txt",
+    "Export-Subtitles-AppForLanguage (19).txt",
+    "Export-Subtitles-AppForLanguage (20).txt",
+    "Export-Subtitles-AppForLanguage (21).txt",
+    "Export-Subtitles-AppForLanguage (22).txt",
+    "Export-Subtitles-AppForLanguage (23).txt",
+    "Export-Subtitles-AppForLanguage (24).txt",
+    "Export-Subtitles-AppForLanguage (25).txt"
+  ],
+  "raw_partB_files": [
+    "Export-Subtitles-AppForLanguage (1).txt",
+    "Export-Subtitles-AppForLanguage (2).txt",
+    "Export-Subtitles-AppForLanguage (3).txt",
+    "Export-Subtitles-AppForLanguage (4).txt",
+    "Export-Subtitles-AppForLanguage (5).txt",
+    "Export-Subtitles-AppForLanguage (6).txt",
+    "Export-Subtitles-AppForLanguage (7).txt",
+    "Export-Subtitles-AppForLanguage (8).txt",
+    "Export-Subtitles-AppForLanguage (9).txt"
+  ],
+  "curated_sources": [
+    "B3_SUZUKI_MIYAGI_19",
+    "B3_HIRAME_TIMING_25",
+    "B3_HIRAME_FIELD_5",
+    "B3_HIRAME_FIELD_6",
+    "B3_AOMONO_LSJ_9",
+    "B3_HIRAME_SINKING_PENCIL_3",
+    "B3_SUZUKI_AIR_OGLE_16",
+    "B3_SUZUKI_AFTER_CATCH_22"
+  ],
+  "approved_import_entries": 48,
+  "approved_observations": 30,
+  "approved_inferences": 18,
+  "positive_capture_events": 5,
+  "notes": [
+    "No new positive Hamachi event.",
+    "Hirame expert timing source cannot vote in recurrence/windows.",
+    "Same creator/group is preserved in source_identity.corporate_group."
+  ]
+}

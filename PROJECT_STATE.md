@@ -1,9 +1,9 @@
 # PROJECT_STATE — Carnet Pêche JP
 
-Dernière version de référence : **V6.5.9 Navigation & lecture / UX focus / Kashima pad / performance architecture / enrichissement comportemental / lisibilité mobile / intégrité / fenêtres**
+Dernière version de référence : **V6.5.12 UX carte / contrôles mobiles / navigation augmentée / Evidence / performance / intégrité**
 
 Ce fichier sert de **handoff** pour reprendre le projet dans un nouveau chat sans perdre les décisions structurantes.  
-Avant toute modification, lire ce fichier, puis `README.md`, `QA_V6_5_9_NAVIGATION_LECTURE.md`, `QA_V6_5_8_UX_FOCUS.md`, `QA_V6_5_7_KASHIMA_PAD.md`, `QA_V6_5_6_PERFORMANCE_ARCHITECTURE.md`, `QA_V6_5_5_BEHAVIORAL_ENRICHMENT.md`, `QA_V6_5_4_MOBILE_READABILITY.md`, `QA_V6_5_INTEGRITY.md` et `QA_V6_5_1_PERFORMANCE.md`.
+Avant toute modification, lire ce fichier, puis `README.md`, `QA_V6_5_12_UX_CARTE.md` et `RELEASE_MANIFEST_V6_5_12.json`.
 
 ---
 
@@ -38,9 +38,9 @@ Utiliser uniquement ces dates pour les pads destination et la navigation marée 
 
 Ne pas réintroduire les anciens contextes Kobe 20–23 ou Numazu jusqu'au 2 décembre.
 
-Affichage destination V6.5.7 :
+Affichage destination V6.5.12 :
 - **Kashima est un pad de voyage actif** le 4 décembre, avec station JMA Kashima et cibles Hirame / Suzuki / Hamachi ; ne plus le masquer comme simple contexte de recherche ;
-- Shizuoka reste en base avec ses données du 7–8 novembre ; son retour comme pad visible doit être traité séparément quand le périmètre exact 7/8 novembre est figé ;
+- **Shizuoka est de nouveau visible** comme étape du trajet avec ses données du 7–8 novembre ;
 - Fukuoka peut rester scindé en deux pads secteur (Hakata urbain et Shikanoshima/Itoshima), tous deux strictement verrouillés sur **15–18 novembre** ;
 - la navigation marée d’un pad ne doit jamais sortir de ses `stay_dates`.
 
@@ -645,23 +645,15 @@ Ne pas enrichir uniquement pour augmenter le nombre total d'observations. Cherch
 
 ### Documentation critique
 - `README.md`
-- `QA_V6_5_INTEGRITY.md`
-- `QA_V6_5_1_PERFORMANCE.md`
-- `CHANGELOG_V6_5_2_INTEGRITY.md`
-- `CHANGELOG_V6_5_6_PERFORMANCE_ARCHITECTURE.md`
-- `QA_V6_5_6_PERFORMANCE_ARCHITECTURE.md`
-- `GITHUB_RELEASE_V6_5_6.md`
+- `PROJECT_STATE.md`
+- `CHANGELOG_V6_5_12_UX_CARTE.md`
+- `QA_V6_5_12_UX_CARTE.md`
+- `RELEASE_MANIFEST_V6_5_12.json`
+
+### Caches runtime versionnés
 - `app_core.json`
 - `decision_cache.json`
 - `build_runtime_cache.js`
-- `CHANGELOG_V6_5_5_BEHAVIORAL_ENRICHMENT.md`
-- `CHANGELOG_V6_5_4_MOBILE_READABILITY.md`
-- `CHANGELOG_V6_5_3_P0_ENRICHMENT.md`
-- `QA_V6_5_5_BEHAVIORAL_ENRICHMENT.md`
-- `QA_V6_5_4_MOBILE_READABILITY.md`
-- `QA_V6_5_3_P0_ENRICHMENT.md`
-- `AUDIT_V6_4_COMPLET.md`
-- `audit_v64_flags.csv`
 
 ---
 
@@ -707,12 +699,27 @@ Avant de rendre une nouvelle archive :
 
 Copier/coller ce texte avec le ZIP :
 
-> Voici la dernière version complète de **Carnet Pêche JP V6.5.9**.  
-> Commence par lire `PROJECT_STATE.md`, puis `README.md`, `QA_V6_5_9_NAVIGATION_LECTURE.md`, `QA_V6_5_8_UX_FOCUS.md`, `QA_V6_5_7_KASHIMA_PAD.md`, `QA_V6_5_6_PERFORMANCE_ARCHITECTURE.md`, `QA_V6_5_5_BEHAVIORAL_ENRICHMENT.md`, `QA_V6_5_4_MOBILE_READABILITY.md`, `QA_V6_5_3_P0_ENRICHMENT.md`, `QA_V6_5_INTEGRITY.md` et `QA_V6_5_1_PERFORMANCE.md`.  
+> Voici la dernière version complète de **Carnet Pêche JP V6.5.12**.  
+> Commence par lire `PROJECT_STATE.md`, puis `README.md`, `QA_V6_5_12_UX_CARTE.md` et `RELEASE_MANIFEST_V6_5_12.json`.  
 > Fais un audit rapide de cohérence avant toute modification.  
 > `PROJECT_STATE.md` contient les décisions structurantes à ne pas régresser : dates du voyage, deux combos, plafond 50 g, séparation Suzuki/Hirasuzuki, récurrence positive volontaire, moteur Evidence, fenêtres idéales et contraintes de performance.  
 > Ne modifie ensuite le projet qu'à partir de cette base.
 
+
+## 14 nonies. UX carte — V6.5.12
+
+Release UX uniquement. Aucun changement des 501 observations, des 35 inférences, des scores, des fenêtres ou des règles matériel.
+
+- carte de trajet réellement géographique et autonome hors-ligne, avec silhouette du Japon embarquée ;
+- 8 étapes cliquables, y compris séparation visuelle Fukuoka / Itoshima ;
+- boutons principaux renforcés pour le tactile (44 px lorsque la mise en page le permet) ;
+- Quick Peek 40 px, fermeture de sheet 44 px, FAB 52–54 px, rail latéral élargi ;
+- restauration du focus après fermeture d'une sheet ;
+- échec `localStorage` visible et non destructif pour le journal terrain ;
+- caches de la PWA supprimés uniquement sous le préfixe `carnet-peche-jp-` ;
+- sources fabricants conservées comme aides de confiance pondérées, jamais comme certitudes de capture.
+
+Cache PWA : `carnet-peche-jp-v6-5-12-ux-carte-20260814`.
 
 ## 14 sexies. UX focus — V6.5.8
 

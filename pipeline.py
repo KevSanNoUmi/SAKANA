@@ -1,5 +1,5 @@
 """
-Pipeline base de connaissance pêche Japon — v6.5.8.
+Pipeline base de connaissance pêche Japon — v6.5.12.
 Usage :
     export ANTHROPIC_API_KEY=sk-ant-...
     python pipeline.py init                                # crée/migre la base (schema.sql)

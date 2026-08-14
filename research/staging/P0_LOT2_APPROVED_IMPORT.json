@@ -1,0 +1,1224 @@
+[
+  {
+    "species": "madai",
+    "source_type": "video",
+    "source_label": "Video transcript / Amakusa shore Madai",
+    "source_url": null,
+    "raw_text": "Le pêcheur dit commencer régulièrement le Madai du bord vers le début de l'hiver; il considère la période hiver-printemps comme favorable au rapprochement côtier, en lien notamment avec les sardines.",
+    "tags": {
+      "saison": "hiver",
+      "comportement": "présence shore décrite du début hiver vers le printemps"
+    },
+    "metadata": {
+      "event_id": "P0_MADAI_AMAKUSA:MA01",
+      "curation_id": "MA01",
+      "claim_type": "local_presence",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (9).txt",
+      "source_locator": {
+        "timestamp_start": "00:02:02",
+        "timestamp_end": "00:03:07"
+      },
+      "source_identity": {
+        "author": "Video transcript / Amakusa shore Madai",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Kumamoto · Amakusa",
+      "zone": "Amakusa",
+      "location_precision": "regional",
+      "evidence_type": "DECLARED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "madai",
+    "source_type": "video",
+    "source_label": "Video transcript / Amakusa shore Madai",
+    "source_url": null,
+    "raw_text": "Sans bait visible, il commence avec un sinking pencil haut dans la couche puis ajoute du countdown pour descendre; il insère parfois un stop-and-go s'il imagine un poisson suiveur.",
+    "tags": {
+      "profondeur": "surface puis descente progressive par countdown",
+      "comportement": "changer de couche si le bait est absent"
+    },
+    "metadata": {
+      "event_id": "P0_MADAI_AMAKUSA:MA04",
+      "curation_id": "MA04",
+      "claim_type": "technique_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (9).txt",
+      "source_locator": {
+        "timestamp_start": "00:06:19",
+        "timestamp_end": "00:07:20"
+      },
+      "source_identity": {
+        "author": "Video transcript / Amakusa shore Madai",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Kumamoto · Amakusa",
+      "zone": "Amakusa",
+      "location_precision": "regional",
+      "evidence_type": "DECLARED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3,
+    "recommended_lure": "sinking pencil générique ~95 mm",
+    "recommended_animation": "commencer haut puis ajouter du countdown; stop-and-go ponctuel si poisson suiveur"
+  },
+  {
+    "species": "madai",
+    "source_type": "video",
+    "source_label": "Video transcript / Amakusa shore Madai",
+    "source_url": null,
+    "raw_text": "La taille de leurre est choisie selon le bait: environ 8-10 cm sur petites sardines, plus grand si le fourrage est plus volumineux; si le bait est inconnu il reste autour de 10 cm.",
+    "tags": {
+      "leurre": "taille adaptée au bait",
+      "comportement": "match the hatch sur la taille"
+    },
+    "metadata": {
+      "event_id": "P0_MADAI_AMAKUSA:MA05",
+      "curation_id": "MA05",
+      "claim_type": "technique_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (9).txt",
+      "source_locator": {
+        "timestamp_start": "00:07:32",
+        "timestamp_end": "00:08:13"
+      },
+      "source_identity": {
+        "author": "Video transcript / Amakusa shore Madai",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Kumamoto · Amakusa",
+      "zone": "Amakusa",
+      "location_precision": "regional",
+      "evidence_type": "DECLARED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "madai",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Amakusa shore Madai",
+    "source_url": null,
+    "raw_text": "Capture confirmée d'un Madai du bord à Amakusa; le poisson prend loin du bord dans le courant principal et est estimé ensuite autour du milieu des 40 cm à environ 50 cm.",
+    "tags": {
+      "spot_type": "courant principal au large",
+      "comportement": "capture shore dans le courant principal"
+    },
+    "metadata": {
+      "event_id": "E001",
+      "curation_id": "MA07",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (9).txt",
+      "source_locator": {
+        "timestamp_start": "00:19:01",
+        "timestamp_end": "00:20:51"
+      },
+      "source_identity": {
+        "author": "Video transcript / Amakusa shore Madai",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Kumamoto · Amakusa",
+      "zone": "Amakusa",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4
+  },
+  {
+    "species": "madai",
+    "source_type": "video",
+    "source_label": "Video transcript / Amakusa shore Madai",
+    "source_url": null,
+    "raw_text": "La session est conduite en run-and-gun très mobile afin de trouver bait et poissons de passage; le pêcheur décrit parfois un lancer puis déplacement.",
+    "tags": {
+      "comportement": "run-and-gun pour trouver bait et poissons de passage"
+    },
+    "metadata": {
+      "event_id": "E002",
+      "curation_id": "MA08",
+      "claim_type": "technique_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (9).txt",
+      "source_locator": {
+        "timestamp_start": "00:21:14",
+        "timestamp_end": "00:23:45"
+      },
+      "source_identity": {
+        "author": "Video transcript / Amakusa shore Madai",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Kumamoto · Amakusa",
+      "zone": "Amakusa",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "saba",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Shizuoka surf Madai",
+    "source_url": null,
+    "raw_text": "Une petite Saba est capturée depuis le surf de Shizuoka pendant la session; elle constitue à la fois une présence Saba et un signal de petit bait disponible.",
+    "tags": {
+      "saison": "juin",
+      "comportement": "petite Saba présente sur le surf"
+    },
+    "metadata": {
+      "event_id": "E003",
+      "curation_id": "MS01",
+      "claim_type": "ecosystem_signal",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (8).txt",
+      "source_locator": {
+        "timestamp_start": "00:03:03",
+        "timestamp_end": "00:03:19"
+      },
+      "source_identity": {
+        "author": "Video transcript / Shizuoka surf Madai",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Shizuoka surf",
+      "zone": "surf de Shizuoka",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4
+  },
+  {
+    "species": "madai",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Shizuoka surf Madai",
+    "source_url": null,
+    "raw_text": "Un Madai est capturé depuis le surf de Shizuoka sur Bone Bait monté sur Finesse Head; le pêcheur précise ensuite que la tête utilisée était de 18 g.",
+    "tags": {
+      "saison": "juin",
+      "spot_type": "surf",
+      "leurre": "Bone Bait + tête plombée 18 g",
+      "profondeur": "près du fond"
+    },
+    "metadata": {
+      "event_id": "E004",
+      "curation_id": "MS02",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (8).txt",
+      "source_locator": {
+        "timestamp_start": "00:05:09",
+        "timestamp_end": "00:07:18"
+      },
+      "source_identity": {
+        "author": "Video transcript / Shizuoka surf Madai",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Shizuoka surf",
+      "zone": "surf de Shizuoka",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2",
+      "jighead_weight_g": 18,
+      "total_cast_weight_g": null
+    },
+    "evidence_level": 4,
+    "recommended_lure": "Bone Bait sur tête plombée"
+  },
+  {
+    "species": "madai",
+    "source_type": "video",
+    "source_label": "Video transcript / Shizuoka surf Madai",
+    "source_url": null,
+    "raw_text": "La tête de 18 g a été choisie pour mieux contrôler le montage sous vent fort et limiter la dérive provoquée par la bannière de ligne.",
+    "tags": {
+      "saison": "juin",
+      "comportement": "18 g choisi pour le contrôle sous vent fort"
+    },
+    "metadata": {
+      "event_id": "E004",
+      "curation_id": "MS03",
+      "claim_type": "technique_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (8).txt",
+      "source_locator": {
+        "timestamp_start": "00:07:27",
+        "timestamp_end": "00:08:01"
+      },
+      "source_identity": {
+        "author": "Video transcript / Shizuoka surf Madai",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Shizuoka surf",
+      "zone": "surf de Shizuoka",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED/DECLARED",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "madai",
+    "source_type": "video",
+    "source_label": "Video transcript / Shizuoka surf Madai",
+    "source_url": null,
+    "raw_text": "Méthode décrite: contact fond, récupération, petite remontée, arrêt/retombée, reprise, nouveau stop; l'auteur cherche volontairement une animation irrégulière plutôt qu'un linéaire constant.",
+    "tags": {
+      "profondeur": "fond",
+      "comportement": "animation irrégulière fond → remontée → retombée → reprise"
+    },
+    "metadata": {
+      "event_id": "E005",
+      "curation_id": "MS04",
+      "claim_type": "technique_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (8).txt",
+      "source_locator": {
+        "timestamp_start": "00:08:16",
+        "timestamp_end": "00:09:56"
+      },
+      "source_identity": {
+        "author": "Video transcript / Shizuoka surf Madai",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Shizuoka surf",
+      "zone": "surf de Shizuoka",
+      "location_precision": "regional",
+      "evidence_type": "DECLARED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3,
+    "recommended_lure": "souple sur tête plombée",
+    "recommended_animation": "contact fond → récupération → petite remontée → arrêt/retombée → reprise; cadence irrégulière"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Tokyo Bay cold Suzuki",
+    "source_url": null,
+    "raw_text": "Sur une cassure associée à un clair-obscur, après avoir testé plusieurs profondeurs, un Suzuki est pris avec un countdown d'environ 8 temps puis une récupération rapide le long de la cassure; l'attaque survient lorsque le leurre remonte vers le shallow.",
+    "tags": {
+      "saison": "hiver",
+      "spot_type": "cassure + clair-obscur",
+      "profondeur": "couche basse recherchée par countdown",
+      "comportement": "attaque lors de la remontée vers le shallow"
+    },
+    "metadata": {
+      "event_id": "E006",
+      "curation_id": "SC02",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt",
+      "source_locator": {
+        "timestamp_start": "00:11:07",
+        "timestamp_end": "00:14:59"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Bay cold Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo Bay inner rivers / Yoro River",
+      "zone": "baie de Tokyo / rivière Yoro",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "leurre compact à countdown",
+    "recommended_animation": "countdown profond puis récupération rapide le long de la cassure; attaque à la remontée"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Tokyo Bay cold Suzuki",
+    "source_url": null,
+    "raw_text": "La couche est recherchée progressivement par countdown (environ 3, puis 5, puis 8 temps); après la capture et la baisse du niveau, le pêcheur constate que 8 devient trop profond et réajuste.",
+    "tags": {
+      "saison": "hiver",
+      "profondeur": "bracketing 3 → 5 → 8 counts puis réajustement"
+    },
+    "metadata": {
+      "event_id": "E007",
+      "curation_id": "SC03",
+      "claim_type": "technique_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt",
+      "source_locator": {
+        "timestamp_start": "00:12:15",
+        "timestamp_end": "00:16:21"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Bay cold Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo Bay inner rivers / Yoro River",
+      "zone": "baie de Tokyo / rivière Yoro",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3,
+    "recommended_animation": "chercher la couche par countdown progressif puis réduire si le niveau baisse"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Tokyo Bay cold Suzuki",
+    "source_url": null,
+    "raw_text": "Au moment de cette séquence, le pêcheur indique une température d'eau à un chiffre en degrés Celsius.",
+    "tags": {
+      "saison": "hiver",
+      "temperature_eau": "moins de 10 °C"
+    },
+    "metadata": {
+      "event_id": "E006",
+      "curation_id": "SC04",
+      "claim_type": "field_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt",
+      "source_locator": {
+        "timestamp_start": "00:14:52",
+        "timestamp_end": "00:15:23"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Bay cold Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo Bay inner rivers / Yoro River",
+      "zone": "baie de Tokyo / rivière Yoro",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Tokyo Bay cold Suzuki",
+    "source_url": null,
+    "raw_text": "Une autre réaction est obtenue sur la cassure mais le poisson se décroche/échoue à se piquer correctement.",
+    "tags": {
+      "saison": "hiver",
+      "spot_type": "cassure"
+    },
+    "metadata": {
+      "event_id": "E008",
+      "curation_id": "SC05",
+      "claim_type": "behavior_observation",
+      "outcome": "missed_strike",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt",
+      "source_locator": {
+        "timestamp_start": "00:17:54",
+        "timestamp_end": "00:18:56"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Bay cold Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo Bay inner rivers / Yoro River",
+      "zone": "baie de Tokyo / rivière Yoro",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Tokyo Bay cold Suzuki",
+    "source_url": null,
+    "raw_text": "Dans la rivière Yoro en eau très froide, un Suzuki de 90 cm est pris de jour sur Schneider 18 travaillé dans la couche basse; le poisson recrache un mulet de plus de 30 cm.",
+    "tags": {
+      "saison": "hiver",
+      "moment_jour": "jour",
+      "profondeur": "couche basse",
+      "leurre": "Schneider 18 (modèle transcrit; poids à vérifier)",
+      "comportement": "Suzuki 90 cm pris bas; gros mulet dans la bouche"
+    },
+    "metadata": {
+      "event_id": "E009",
+      "curation_id": "SC06",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt",
+      "source_locator": {
+        "timestamp_start": "00:20:57",
+        "timestamp_end": "00:27:15"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Bay cold Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo Bay inner rivers / Yoro River",
+      "zone": "baie de Tokyo / rivière Yoro",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "vibration compacte",
+    "recommended_animation": "travailler lentement dans la couche basse"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Tokyo Bay cold Suzuki",
+    "source_url": null,
+    "raw_text": "Avant la capture, le bait est observé principalement près du fond; l'auteur estime que les Suzuki restent eux aussi bas et privilégie un leurre pouvant rester lentement dans cette couche.",
+    "tags": {
+      "saison": "hiver",
+      "profondeur": "bait près du fond",
+      "comportement": "prédateur et bait maintenus bas"
+    },
+    "metadata": {
+      "event_id": "E009",
+      "curation_id": "SC07",
+      "claim_type": "behavior_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt",
+      "source_locator": {
+        "timestamp_start": "00:20:57",
+        "timestamp_end": "00:22:20"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Bay cold Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo Bay inner rivers / Yoro River",
+      "zone": "baie de Tokyo / rivière Yoro",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Tokyo Bay cold Suzuki",
+    "source_url": null,
+    "raw_text": "Un second gros Suzuki distinct est capturé dans la même session froide; lui aussi contient du mulet dans la bouche.",
+    "tags": {
+      "saison": "hiver",
+      "moment_jour": "jour",
+      "comportement": "second gros Suzuki distinct avec mulet dans la bouche"
+    },
+    "metadata": {
+      "event_id": "E010",
+      "curation_id": "SC08",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt",
+      "source_locator": {
+        "timestamp_start": "00:27:44",
+        "timestamp_end": "00:29:29"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Bay cold Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo Bay inner rivers / Yoro River",
+      "zone": "baie de Tokyo / rivière Yoro",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Tokyo Bay cold Suzuki",
+    "source_url": null,
+    "raw_text": "Lorsque le courant faiblit, le pêcheur allonge les lancers vers la partie où le flux reste plus fort; il relie cette zone au passage de bait et des poissons entrant depuis l'aval.",
+    "tags": {
+      "saison": "hiver",
+      "comportement": "quand le courant faiblit, viser la zone où le flux reste plus fort"
+    },
+    "metadata": {
+      "event_id": "E011",
+      "curation_id": "SC09",
+      "claim_type": "technique_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt",
+      "source_locator": {
+        "timestamp_start": "00:29:35",
+        "timestamp_end": "00:30:03"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Bay cold Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo Bay inner rivers / Yoro River",
+      "zone": "baie de Tokyo / rivière Yoro",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED/DECLARED",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "Dans l'Arakawa au début de la descendante, des inakko sont visibles mais aucun boil n'apparaît; les Suzuki sont observés collés au fond dans environ 1 m d'eau et un poisson prend un shad travaillé lentement sur le fond.",
+    "tags": {
+      "maree": "descendante",
+      "spot_type": "rivière peu profonde",
+      "profondeur": "fond dans ~1 m",
+      "comportement": "bait visible en haut mais Suzuki collé au fond"
+    },
+    "metadata": {
+      "event_id": "E012",
+      "curation_id": "SL01",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:00:57",
+        "timestamp_end": "00:02:59"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "shad compact lent près du fond",
+    "recommended_animation": "rouler lentement le leurre au fond"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "Dans seulement ~1 m d'eau, le pêcheur évite une vibration qui plongerait trop agressivement et préfère le shad parce qu'il peut rouler lentement au fond.",
+    "tags": {
+      "profondeur": "fond dans ~1 m",
+      "comportement": "préférer un shad contrôlable lentement plutôt qu’une vibration trop plongeante"
+    },
+    "metadata": {
+      "event_id": "E012",
+      "curation_id": "SL02",
+      "claim_type": "technique_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:03:29",
+        "timestamp_end": "00:05:53"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "DECLARED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "Après l'apparition d'un premier boil, le pêcheur passe immédiatement au Galva 87S et fait dériver le leurre juste sous la surface dans la veine précise où le poisson est monté; un Suzuki est capturé.",
+    "tags": {
+      "maree": "descendante",
+      "profondeur": "juste sous la surface",
+      "comportement": "passage immédiat du fond à la surface après un boil"
+    },
+    "metadata": {
+      "event_id": "E013",
+      "curation_id": "SL03",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:06:04",
+        "timestamp_end": "00:08:25"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "sinking pencil / minnow sub-surface",
+    "recommended_animation": "dérive juste sous la surface dans la veine où le poisson a boilé"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "Dans la Sumida, un Suzuki est capturé sur MiniEnt 57S en fall contrôlé au ras d'une structure/pile, avec assez de tension pour détecter la touche et conserver la trajectoire.",
+    "tags": {
+      "spot_type": "pile / structure",
+      "profondeur": "fall au ras de structure",
+      "comportement": "prise en chute contrôlée"
+    },
+    "metadata": {
+      "event_id": "E014",
+      "curation_id": "SL05",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:10:35",
+        "timestamp_end": "00:12:02"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "vibration compacte",
+    "recommended_animation": "petite traction puis tension fall au ras de la structure"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "Le pêcheur précise qu'un free fall lui ferait perdre la détection des touches; il conserve donc une tension légère pendant la descente.",
+    "tags": {
+      "spot_type": "pile / structure",
+      "comportement": "tension légère pour garder trajectoire et détection de touche"
+    },
+    "metadata": {
+      "event_id": "E014",
+      "curation_id": "SL06",
+      "claim_type": "technique_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:11:30",
+        "timestamp_end": "00:12:11"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED/DECLARED",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3,
+    "recommended_animation": "tension fall; éviter le free fall pour conserver le contact"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "Deuxième capture distincte de la séquence Sumida sur la même logique de fall près de la structure.",
+    "tags": {
+      "spot_type": "pile / structure",
+      "profondeur": "fall au ras de structure"
+    },
+    "metadata": {
+      "event_id": "E015",
+      "curation_id": "SL07",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:12:40",
+        "timestamp_end": "00:13:03"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "vibration compacte",
+    "recommended_animation": "tension fall au ras de la structure"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "Troisième capture distincte de la séquence Sumida; le pattern de tirer légèrement puis laisser retomber continue à produire.",
+    "tags": {
+      "spot_type": "pile / structure",
+      "profondeur": "fall au ras de structure"
+    },
+    "metadata": {
+      "event_id": "E016",
+      "curation_id": "SL08",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:14:45",
+        "timestamp_end": "00:15:46"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "vibration compacte",
+    "recommended_animation": "tirer légèrement puis laisser retomber au ras de la structure"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "Quatrième capture distincte de la séquence Sumida, poisson annoncé autour de 62-63 cm et en bonne condition automnale.",
+    "tags": {
+      "spot_type": "pile / structure",
+      "profondeur": "fall au ras de structure"
+    },
+    "metadata": {
+      "event_id": "E017",
+      "curation_id": "SL09",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:16:52",
+        "timestamp_end": "00:18:12"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "vibration compacte",
+    "recommended_animation": "tension fall au ras de la structure"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "Cinquième capture distincte de la séquence Sumida alors que le courant faiblit; le pêcheur s'est déplacé vers une structure plus éloignée où le flux reste exploitable.",
+    "tags": {
+      "spot_type": "structure plus éloignée avec courant résiduel",
+      "comportement": "nouvelle prise après déplacement vers le courant restant"
+    },
+    "metadata": {
+      "event_id": "E018",
+      "curation_id": "SL10",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:19:02",
+        "timestamp_end": "00:20:40"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "vibration compacte",
+    "recommended_animation": "fall contrôlé près de la structure"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "Le pêcheur constate que les touches disparaissent quand le leurre s'écarte de la bordure de structure; la précision de placement et le maintien du fall au ras de l'obstacle sont essentiels dans cette session.",
+    "tags": {
+      "spot_type": "bordure de structure",
+      "comportement": "les touches disparaissent lorsque la trajectoire s’éloigne de la structure"
+    },
+    "metadata": {
+      "event_id": "E019",
+      "curation_id": "SL11",
+      "claim_type": "behavior_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:11:37",
+        "timestamp_end": "00:16:33"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "source_url": null,
+    "raw_text": "À l'approche de l'étale, le courant faiblit; il change de position pour viser une structure plus éloignée où le flux fonctionne encore, ce qui produit un nouveau poisson.",
+    "tags": {
+      "comportement": "à l’approche de l’étale, déplacement vers une structure où le courant reste actif"
+    },
+    "metadata": {
+      "event_id": "E018",
+      "curation_id": "SL12",
+      "claim_type": "technique_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "source_locator": {
+        "timestamp_start": "00:18:26",
+        "timestamp_end": "00:20:40"
+      },
+      "source_identity": {
+        "author": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "Tokyo · Arakawa / Sumida",
+      "zone": "Arakawa / Sumida",
+      "location_precision": "regional",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "video",
+    "source_label": "根もち / surf wando Hirame",
+    "source_url": null,
+    "raw_text": "Dans un même wando, un Hirame d'automne est décrit comme pris autour du courant de retour à l'extrémité du sandbar, en travaillant de la surface vers la couche intermédiaire.",
+    "tags": {
+      "saison": "automne",
+      "spot_type": "extrémité de sandbar + courant de retour",
+      "profondeur": "surface vers couche intermédiaire"
+    },
+    "metadata": {
+      "event_id": "E020",
+      "curation_id": "HW07",
+      "claim_type": "behavior_observation",
+      "outcome": "observation",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (10).txt",
+      "source_locator": {
+        "timestamp_start": "00:05:56",
+        "timestamp_end": "00:06:43"
+      },
+      "source_identity": {
+        "author": "根もち",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "surf japonais · lieu exact inconnu",
+      "zone": "surf",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED/DECLARED",
+      "exclude_presence_evidence": true,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "video_catch",
+    "source_label": "根もち / surf wando Hirame",
+    "source_url": null,
+    "raw_text": "Capture confirmée d'un Hirame; le leurre est nommé « Off Bait 30 » dans la transcription.",
+    "tags": {
+      "spot_type": "wando / courant de retour",
+      "leurre": "Off Bait 30 (transcription; poids à vérifier)"
+    },
+    "metadata": {
+      "event_id": "E020",
+      "curation_id": "HW08",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (10).txt",
+      "source_locator": {
+        "timestamp_start": "00:10:37",
+        "timestamp_end": "00:12:07"
+      },
+      "source_identity": {
+        "author": "根もち",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "surf japonais · lieu exact inconnu",
+      "zone": "surf",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4
+  },
+  {
+    "species": "hirame",
+    "source_type": "video_catch",
+    "source_label": "根もち / surf wando Hirame",
+    "source_url": null,
+    "raw_text": "Deuxième Hirame distinct, de petite taille, capturé dans un secteur où la plage forme une bosse puis un wando; le sandbar est annoncé vers 60-70 m.",
+    "tags": {
+      "spot_type": "bosse de plage + wando; sandbar ~60–70 m"
+    },
+    "metadata": {
+      "event_id": "E021",
+      "curation_id": "HW09",
+      "claim_type": "capture_event",
+      "outcome": "catch",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (10).txt",
+      "source_locator": {
+        "timestamp_start": "00:12:31",
+        "timestamp_end": "00:14:17"
+      },
+      "source_identity": {
+        "author": "根もち",
+        "channel_or_account": null,
+        "platform_or_publisher": "video transcript",
+        "corporate_group": null
+      },
+      "location": "surf japonais · lieu exact inconnu",
+      "zone": "surf",
+      "location_precision": "area",
+      "evidence_type": "OBSERVED_VIDEO",
+      "exclude_presence_evidence": false,
+      "curation_base": "CURATION_P0_LOT2_V6_5_2"
+    },
+    "evidence_level": 4
+  },
+  {
+    "species": "madai",
+    "source_type": "decision_engine",
+    "source_label": "Curated interpretation / Video transcript / Amakusa shore Madai",
+    "raw_text": "Pour choisir un secteur Madai du bord, le pêcheur donne la priorité au bait puis recherche courant actif, eau profonde proche et cassure/pente accessible.",
+    "tags": {
+      "curation_id": "MA02",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (9).txt",
+      "status": "hypothesis"
+    }
+  },
+  {
+    "species": "madai",
+    "source_type": "decision_engine",
+    "source_label": "Curated interpretation / Video transcript / Amakusa shore Madai",
+    "raw_text": "Le pêcheur estime que les moments juste avant l'arrêt de marée ou au redémarrage du mouvement peuvent déclencher des poissons présents mais jusque-là non mordants.",
+    "tags": {
+      "curation_id": "MA03",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (9).txt",
+      "status": "hypothesis"
+    }
+  },
+  {
+    "species": "suzuki",
+    "source_type": "decision_engine",
+    "source_label": "Curated interpretation / Video transcript / Tokyo Bay cold Suzuki",
+    "raw_text": "En période froide, l'auteur décrit des Suzuki peu actifs qui s'éloignent peu de leur couche de confort; il recommande de faire passer le leurre devant eux plutôt que d'attendre une montée franche.",
+    "tags": {
+      "curation_id": "SC01",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt",
+      "status": "hypothesis"
+    }
+  },
+  {
+    "species": "suzuki",
+    "source_type": "decision_engine",
+    "source_label": "Curated interpretation / Video transcript / Tokyo Bay cold Suzuki",
+    "raw_text": "L'auteur considère qu'une zone légèrement réchauffée par un rejet peut concentrer bait et Suzuki lorsque l'eau générale est très froide.",
+    "tags": {
+      "curation_id": "SC10",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt",
+      "status": "hypothesis"
+    }
+  },
+  {
+    "species": "suzuki",
+    "source_type": "decision_engine",
+    "source_label": "Curated interpretation / Video transcript / Tokyo Arakawa-Sumida Suzuki",
+    "raw_text": "La séquence montre que la présence de bait en surface ne suffit pas à déduire la couche du Suzuki: les poissons restent d'abord au fond puis une activité de surface ponctuelle justifie le changement immédiat de couche.",
+    "tags": {
+      "curation_id": "SL04",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt",
+      "status": "hypothesis"
+    }
+  },
+  {
+    "species": "hirame",
+    "source_type": "decision_engine",
+    "source_label": "Curated interpretation / 根もち / surf wando Hirame",
+    "raw_text": "L'auteur déconseille de privilégier la face exacte de la bosse sableuse lorsque la mousse y reste uniforme et que la variation de relief est faible.",
+    "tags": {
+      "curation_id": "HW03",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (10).txt",
+      "status": "hypothesis"
+    }
+  },
+  {
+    "species": "hirame",
+    "source_type": "decision_engine",
+    "source_label": "Curated interpretation / 根もち / surf wando Hirame",
+    "raw_text": "Dans un très grand wando, le centre peut être moins intéressant lorsque le sandbar est hors de portée ou que les variations de profondeur accessibles sont faibles.",
+    "tags": {
+      "curation_id": "HW04",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (10).txt",
+      "status": "hypothesis"
+    }
+  },
+  {
+    "species": "hirame",
+    "source_type": "decision_engine",
+    "source_label": "Curated interpretation / 根もち / surf wando Hirame",
+    "raw_text": "Quelques mètres à côté de la bosse sableuse, là où la profondeur augmente progressivement et où l'extrémité d'un sandbar rencontre le courant de retour, sont présentés comme une micro-position prioritaire.",
+    "tags": {
+      "curation_id": "HW05",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (10).txt",
+      "status": "hypothesis"
+    }
+  },
+  {
+    "species": "hirame",
+    "source_type": "decision_engine",
+    "source_label": "Curated interpretation / 根もち / surf wando Hirame",
+    "raw_text": "Dans ce type de wando, l'auteur associe davantage le Hirame à la zone où le courant agit franchement, tandis que le Magochi est décrit plus proche de la mousse.",
+    "tags": {
+      "curation_id": "HW06",
+      "source_file": "research/raw_transcripts/Export-Subtitles-AppForLanguage (10).txt",
+      "status": "hypothesis"
+    }
+  }
+]

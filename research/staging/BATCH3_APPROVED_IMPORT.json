@@ -1,0 +1,1859 @@
+[
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Session de deux jours à Miyagi; environ 3 m d'eau sur le premier secteur, bait visible, pêche d'abord autour de la couche basse.",
+    "tags": {
+      "zone": "Miyagi",
+      "profondeur": "environ 3 m; prospection couche basse",
+      "comportement": "bait visible; exploration de la couche basse"
+    },
+    "metadata": {
+      "curation_id": "SM19_01",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:00:00",
+        "timestamp_end": "00:01:42"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Avec un courant rapide, le pêcheur choisit une vibration suffisamment lourde pour conserver le contact du fond et travaille près du substrat par déplacements latéraux/lift-and-fall.",
+    "tags": {
+      "zone": "Miyagi",
+      "spot_type": "fond en courant rapide",
+      "profondeur": "près du fond",
+      "comportement": "poids suffisant pour garder le contact; lift-and-fall"
+    },
+    "metadata": {
+      "curation_id": "SM19_02",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:03:16",
+        "timestamp_end": "00:04:19"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3,
+    "recommended_lure": "vibration générique adaptée au courant",
+    "recommended_animation": "tenir le fond puis lift-and-fall contrôlé"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Première attaque de Suzuki probable sur la zone basse; le poisson se décroche immédiatement après la touche.",
+    "tags": {
+      "zone": "Miyagi",
+      "profondeur": "couche basse",
+      "comportement": "poisson décroché après attaque basse"
+    },
+    "metadata": {
+      "curation_id": "SM19_03",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": false,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:04:38",
+        "timestamp_end": "00:05:05"
+      },
+      "curation_event_key": "SM19_EVT_LOST_1",
+      "event_id": "B3_SM19_LOST_1",
+      "outcome": "lost",
+      "claim_type": "field_event",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Le fond étant très encombré, le pêcheur augmente la cadence du lift-and-fall afin de rester juste au-dessus du substrat au lieu de le labourer.",
+    "tags": {
+      "zone": "Miyagi",
+      "spot_type": "fond encombré",
+      "profondeur": "juste au-dessus du fond",
+      "comportement": "cadence lift-and-fall augmentée pour éviter de labourer"
+    },
+    "metadata": {
+      "curation_id": "SM19_04",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:05:19",
+        "timestamp_end": "00:05:38"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3,
+    "recommended_animation": "lift-and-fall plus cadencé pour rester juste au-dessus d’un fond encombré"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Deuxième poisson touché sur la cassure/slope; il se décroche. Le pêcheur relie les réactions au bord de la rupture de pente.",
+    "tags": {
+      "zone": "Miyagi",
+      "spot_type": "bord de cassure",
+      "comportement": "poisson décroché sur rupture de pente"
+    },
+    "metadata": {
+      "curation_id": "SM19_05",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": false,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:05:51",
+        "timestamp_end": "00:06:13"
+      },
+      "curation_event_key": "SM19_EVT_LOST_2",
+      "event_id": "B3_SM19_LOST_2",
+      "outcome": "lost",
+      "claim_type": "field_event",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Au matin du deuxième jour, après alternance fond → mi-eau → retour au fond, une touche courte est détectée dans la partie basse.",
+    "tags": {
+      "zone": "Miyagi",
+      "profondeur": "couche basse",
+      "comportement": "touche après retour au fond"
+    },
+    "metadata": {
+      "curation_id": "SM19_06",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": false,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:09:15",
+        "timestamp_end": "00:09:47"
+      },
+      "curation_event_key": "SM19_EVT_BITE_1",
+      "event_id": "B3_SM19_BITE_1",
+      "outcome": "bite",
+      "claim_type": "field_event",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Un poisson est piqué très près du fond sur Uprising 70 Heavy Weight puis se décroche à proximité des tétrapodes.",
+    "tags": {
+      "zone": "Miyagi",
+      "profondeur": "près du fond",
+      "comportement": "poisson piqué puis décroché près des tétrapodes"
+    },
+    "metadata": {
+      "curation_id": "SM19_07",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": false,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:10:01",
+        "timestamp_end": "00:10:54"
+      },
+      "curation_event_key": "SM19_EVT_LOST_3",
+      "event_id": "B3_SM19_LOST_3",
+      "outcome": "lost",
+      "claim_type": "field_event",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Première capture Suzuki confirmée de la sortie : Uprising 70 Heavy Weight posé au fond, 2 à 3 lifts, puis attaque au moment du fall.",
+    "tags": {
+      "zone": "Miyagi",
+      "profondeur": "fond puis fall",
+      "comportement": "capture après 2–3 lifts; attaque pendant le fall"
+    },
+    "metadata": {
+      "curation_id": "SM19_08",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": false,
+      "exclude_presence_evidence": false,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:11:51",
+        "timestamp_end": "00:12:30"
+      },
+      "curation_event_key": "SM19_EVT_CATCH_1",
+      "event_id": "B3_SM19_CATCH_1",
+      "outcome": "catch",
+      "claim_type": "capture_event",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "vibration générique adaptée au courant",
+    "recommended_animation": "contact fond → 2–3 lifts → fall contrôlé"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Grammaire de la première capture : geste = 2–3 lifts; comportement leurre = redescente près du fond portée par la descendante; déclencheur = attaque pendant le fall.",
+    "tags": {
+      "zone": "Miyagi",
+      "profondeur": "près du fond",
+      "comportement": "2–3 lifts puis fall; attaque pendant la descente"
+    },
+    "metadata": {
+      "curation_id": "SM19_09",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:12:14",
+        "timestamp_end": "00:12:59"
+      },
+      "curation_event_key": "SM19_EVT_CATCH_1",
+      "event_id": "B3_SM19_CATCH_1",
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3,
+    "recommended_animation": "2–3 lifts puis laisser redescendre près du fond; déclencheur observé pendant le fall"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video_catch",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Deuxième capture Suzuki confirmée : lorsque le courant ralentit, le pêcheur allège vers une Uprising annoncée à 14 g, touche le fond puis récupère lentement en laissant le leurre dériver juste au-dessus.",
+    "tags": {
+      "zone": "Miyagi",
+      "profondeur": "juste au-dessus du fond",
+      "comportement": "courant plus faible; vibration 14 g; récupération lente dérivée"
+    },
+    "metadata": {
+      "curation_id": "SM19_10",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": false,
+      "exclude_presence_evidence": false,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:13:42",
+        "timestamp_end": "00:15:27"
+      },
+      "curation_event_key": "SM19_EVT_CATCH_2",
+      "event_id": "B3_SM19_CATCH_2",
+      "outcome": "catch",
+      "claim_type": "capture_event",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 4,
+    "recommended_lure": "vibration générique 14 g",
+    "recommended_animation": "contact fond puis récupération lente en laissant dériver juste au-dessus"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Video transcript / Miyagi Suzuki field report",
+    "source_url": null,
+    "raw_text": "Dans cette session, courant fort → poids/contrôle du fond + lift/fall; courant qui mollit → leurre plus léger + récupération lente pour augmenter le temps dans la couche basse.",
+    "tags": {
+      "zone": "Miyagi",
+      "comportement": "courant fort = contrôle/lift-fall; courant faible = alléger et ralentir"
+    },
+    "metadata": {
+      "curation_id": "SM19_11",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (19).txt",
+      "source_identity": {
+        "author": "Miyagi Suzuki field report · auteur non résolu",
+        "channel_or_account": "Miyagi Suzuki field report · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "independent_video_source_miyagi"
+      },
+      "location": "Miyagi · rivière / aval",
+      "zone": "Miyagi",
+      "source_group": "independent_video_source_miyagi",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:14:35",
+        "timestamp_end": "00:15:41"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3,
+    "recommended_animation": "courant fort : lift/fall contrôlé; courant faible : alléger et ralentir"
+  },
+  {
+    "species": "hirame",
+    "source_type": "research_method",
+    "source_label": "Marunaka / Hirame timing-current expert lesson",
+    "source_url": null,
+    "raw_text": "Selon l'expérience de l'auteur, le timing du Hirame suit davantage la luminosité relative au lever/coucher que l'heure civile fixe; un créneau peut donc se décaler entre été et hiver avec le lever du soleil.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HT25_01",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (25).txt",
+      "source_identity": {
+        "author": "Marunaka",
+        "channel_or_account": "Marunaka",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "marunaka_hirame"
+      },
+      "location": "Shizuoka · expérience Suruga Bay + général Hirame",
+      "zone": "Shizuoka / Suruga Bay",
+      "source_group": "marunaka_hirame",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:02:54",
+        "timestamp_end": "00:04:29"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "research_method",
+    "source_label": "Marunaka / Hirame timing-current expert lesson",
+    "source_url": null,
+    "raw_text": "L'auteur considère l'aube comme son créneau le plus régulièrement productif, avec un pic souvent lorsque la lumière permet déjà de travailler sans lampe tout en restant faible.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HT25_02",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (25).txt",
+      "source_identity": {
+        "author": "Marunaka",
+        "channel_or_account": "Marunaka",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "marunaka_hirame"
+      },
+      "location": "Shizuoka · expérience Suruga Bay + général Hirame",
+      "zone": "Shizuoka / Suruga Bay",
+      "source_group": "marunaka_hirame",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:04:33",
+        "timestamp_end": "00:06:28"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "research_method",
+    "source_label": "Marunaka / Hirame timing-current expert lesson",
+    "source_url": null,
+    "raw_text": "Après une aube clairement active, l'auteur observe souvent une baisse d'activité en matinée pleine; il décrit ce créneau comme plus adapté à une prospection patiente qu'à une fenêtre brève.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HT25_03",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (25).txt",
+      "source_identity": {
+        "author": "Marunaka",
+        "channel_or_account": "Marunaka",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "marunaka_hirame"
+      },
+      "location": "Shizuoka · expérience Suruga Bay + général Hirame",
+      "zone": "Shizuoka / Suruga Bay",
+      "source_group": "marunaka_hirame",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:06:35",
+        "timestamp_end": "00:07:17"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "research_method",
+    "source_label": "Marunaka / Hirame timing-current expert lesson",
+    "source_url": null,
+    "raw_text": "L'auteur rapporte qu'un petit regain peut parfois apparaître en début/milieu d'après-midi, mais de manière moins nette et moins reproductible que l'aube.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HT25_04",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (25).txt",
+      "source_identity": {
+        "author": "Marunaka",
+        "channel_or_account": "Marunaka",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "marunaka_hirame"
+      },
+      "location": "Shizuoka · expérience Suruga Bay + général Hirame",
+      "zone": "Shizuoka / Suruga Bay",
+      "source_group": "marunaka_hirame",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:07:21",
+        "timestamp_end": "00:08:25"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "research_method",
+    "source_label": "Marunaka / Hirame timing-current expert lesson",
+    "source_url": null,
+    "raw_text": "Le crépuscule est décrit comme plus irrégulier que l'aube; en période froide, l'auteur insiste pour pêcher jusqu'à l'obscurité complète car certaines prises arrivent très tard dans la transition lumineuse.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HT25_05",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (25).txt",
+      "source_identity": {
+        "author": "Marunaka",
+        "channel_or_account": "Marunaka",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "marunaka_hirame"
+      },
+      "location": "Shizuoka · expérience Suruga Bay + général Hirame",
+      "zone": "Shizuoka / Suruga Bay",
+      "source_group": "marunaka_hirame",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:08:25",
+        "timestamp_end": "00:09:37"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "research_method",
+    "source_label": "Marunaka / Hirame timing-current expert lesson",
+    "source_url": null,
+    "raw_text": "De nuit, l'auteur décrit une activité moins liée à une fenêtre nette et recommande une présentation moins agressive; il rapporte aussi une proportion plus élevée de gros Hirame en saison froide.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HT25_06",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (25).txt",
+      "source_identity": {
+        "author": "Marunaka",
+        "channel_or_account": "Marunaka",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "marunaka_hirame"
+      },
+      "location": "Shizuoka · expérience Suruga Bay + général Hirame",
+      "zone": "Shizuoka / Suruga Bay",
+      "source_group": "marunaka_hirame",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:09:43",
+        "timestamp_end": "00:10:41"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "video",
+    "source_label": "Marunaka / Hirame timing-current expert lesson",
+    "source_url": null,
+    "raw_text": "La surface et le fond peuvent montrer des courants différents; pour le Hirame, l'auteur recommande d'évaluer prioritairement le courant ressenti par le leurre près du substrat.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HT25_07",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_method",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (25).txt",
+      "source_identity": {
+        "author": "Marunaka",
+        "channel_or_account": "Marunaka",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "marunaka_hirame"
+      },
+      "location": "Shizuoka · expérience Suruga Bay + général Hirame",
+      "zone": "Shizuoka / Suruga Bay",
+      "source_group": "marunaka_hirame",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:11:17",
+        "timestamp_end": "00:12:07"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "EXPERT_METHOD"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "research_method",
+    "source_label": "Marunaka / Hirame timing-current expert lesson",
+    "source_url": null,
+    "raw_text": "L'auteur juge favorable une résistance perceptible avec légère dérive du leurre; si le courant de fond est trop fort, le problème principal devient la perte de contrôle, la remontée excessive ou la dégradation de l'action.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HT25_08",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (25).txt",
+      "source_identity": {
+        "author": "Marunaka",
+        "channel_or_account": "Marunaka",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "marunaka_hirame"
+      },
+      "location": "Shizuoka · expérience Suruga Bay + général Hirame",
+      "zone": "Shizuoka / Suruga Bay",
+      "source_group": "marunaka_hirame",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:12:07",
+        "timestamp_end": "00:12:38"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "research_method",
+    "source_label": "Marunaka / Hirame timing-current expert lesson",
+    "source_url": null,
+    "raw_text": "Sur un surf peu profond, l'auteur préfère souvent exploiter un courant qui s'éloigne du pêcheur afin de faire travailler le leurre avec peu d'action et de ralentir la présentation.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HT25_09",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (25).txt",
+      "source_identity": {
+        "author": "Marunaka",
+        "channel_or_account": "Marunaka",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "marunaka_hirame"
+      },
+      "location": "Shizuoka · expérience Suruga Bay + général Hirame",
+      "zone": "Shizuoka / Suruga Bay",
+      "source_group": "marunaka_hirame",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:12:46",
+        "timestamp_end": "00:13:34"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "video",
+    "source_label": "Marunaka / Hirame timing-current expert lesson",
+    "source_url": null,
+    "raw_text": "Quand courant/profondeur rendent le contrôle difficile, l'auteur ajuste progressivement l'angle de lancer jusqu'à retrouver une présentation maîtrisable.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HT25_10",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_method",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (25).txt",
+      "source_identity": {
+        "author": "Marunaka",
+        "channel_or_account": "Marunaka",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "marunaka_hirame"
+      },
+      "location": "Shizuoka · expérience Suruga Bay + général Hirame",
+      "zone": "Shizuoka / Suruga Bay",
+      "source_group": "marunaka_hirame",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:13:39",
+        "timestamp_end": "00:13:51"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "EXPERT_METHOD"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "video",
+    "source_label": "Hirame surf field report / batch3 creator",
+    "source_url": null,
+    "raw_text": "Des oiseaux actifs sont visibles hors de portée; le pêcheur choisit malgré tout de travailler le secteur situé en face de cette activité.",
+    "tags": {
+      "zone": "surf japonais",
+      "spot_type": "secteur en face d’oiseaux actifs",
+      "comportement": "activité d’oiseaux utilisée comme signal de prospection"
+    },
+    "metadata": {
+      "curation_id": "HF5_01",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (5).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:00:40",
+        "timestamp_end": "00:00:57"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "video_catch",
+    "source_label": "Hirame surf field report / batch3 creator",
+    "source_url": null,
+    "raw_text": "Première capture Hirame confirmée de la session, sous vent latéral et courant annoncé légèrement rapide.",
+    "tags": {
+      "zone": "surf japonais",
+      "comportement": "capture sous vent latéral et courant légèrement rapide"
+    },
+    "metadata": {
+      "curation_id": "HF5_02",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (5).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": false,
+      "exclude_presence_evidence": false,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:01:22",
+        "timestamp_end": "00:01:47"
+      },
+      "curation_event_key": "HF5_EVT_CATCH_1",
+      "event_id": "B3_HF5_CATCH_1",
+      "outcome": "catch",
+      "claim_type": "capture_event",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 4
+  },
+  {
+    "species": "hirame",
+    "source_type": "video",
+    "source_label": "Hirame surf field report / batch3 creator",
+    "source_url": null,
+    "raw_text": "Malgré le vent latéral et le courant, le pêcheur dit sentir que le leurre nage correctement; il utilise cette sensation de contrôle comme critère pour juger la présentation exploitable.",
+    "tags": {
+      "zone": "surf japonais",
+      "comportement": "présentation retenue si la nage reste contrôlable malgré vent/courant"
+    },
+    "metadata": {
+      "curation_id": "HF5_03",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (5).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:01:47",
+        "timestamp_end": "00:02:19"
+      },
+      "curation_event_key": "HF5_EVT_CATCH_1",
+      "event_id": "B3_HF5_CATCH_1",
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3,
+    "recommended_animation": "conserver uniquement une présentation dont la nage reste lisible et contrôlable dans vent/courant"
+  },
+  {
+    "species": "hirame",
+    "source_type": "video_catch",
+    "source_label": "Hirame surf field report / batch3 creator",
+    "source_url": null,
+    "raw_text": "Deuxième capture Hirame distincte; poisson annoncé à 67 cm.",
+    "tags": {
+      "zone": "surf japonais",
+      "comportement": "deuxième capture distincte; 67 cm annoncé"
+    },
+    "metadata": {
+      "curation_id": "HF5_05",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (5).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": false,
+      "exclude_presence_evidence": false,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:05:26",
+        "timestamp_end": "00:07:36"
+      },
+      "curation_event_key": "HF5_EVT_CATCH_2",
+      "event_id": "B3_HF5_CATCH_2",
+      "outcome": "catch",
+      "claim_type": "capture_event",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 4
+  },
+  {
+    "species": "hirame",
+    "source_type": "research_method",
+    "source_label": "Hirame surf field report / batch3 creator",
+    "source_url": null,
+    "raw_text": "Résumé opérationnel de l'auteur : oiseaux même lointains → prospecter le secteur; rechercher une structure offshore; choisir le leurre qui conserve réellement son action dans les conditions présentes.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "HF5_06",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "author_interpretation",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (5).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:07:42",
+        "timestamp_end": "00:08:39"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "video",
+    "source_label": "Hirame surf field report / batch3 creator",
+    "source_url": null,
+    "raw_text": "Session annoncée début juillet sur un surf peu profond avec une bosse/haut-fond offshore accessible; prospection prévue de sa pente descendante jusqu'à la cassure proche du bord.",
+    "tags": {
+      "zone": "surf japonais",
+      "saison": "juillet",
+      "spot_type": "haut-fond/bosse offshore + pente descendante + cassure proche",
+      "profondeur": "surf peu profond"
+    },
+    "metadata": {
+      "curation_id": "HF6_01",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (6).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:00:04",
+        "timestamp_end": "00:01:04"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "video_catch",
+    "source_label": "Hirame surf field report / batch3 creator",
+    "source_url": null,
+    "raw_text": "Capture Hirame confirmée près du bord; l'attaque intervient sur la pente descendante de la bosse/structure située juste devant le pêcheur.",
+    "tags": {
+      "zone": "surf japonais",
+      "saison": "juillet",
+      "spot_type": "pente descendante de structure proche du bord",
+      "comportement": "capture Hirame sur micro-position proche"
+    },
+    "metadata": {
+      "curation_id": "HF6_02",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (6).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": false,
+      "exclude_presence_evidence": false,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:04:43",
+        "timestamp_end": "00:05:35"
+      },
+      "curation_event_key": "HF6_EVT_CATCH_1",
+      "event_id": "B3_HF6_CATCH_1",
+      "outcome": "catch",
+      "claim_type": "capture_event",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 4
+  },
+  {
+    "species": "hirame",
+    "source_type": "video",
+    "source_label": "Hirame surf field report / batch3 creator",
+    "source_url": null,
+    "raw_text": "Après avoir constaté des réactions près du bord, le pêcheur concentre la prospection sur la structure proche plutôt que sur le seul large; la capture Hirame valide cette micro-position pendant la session.",
+    "tags": {
+      "zone": "surf japonais",
+      "saison": "juillet",
+      "spot_type": "structure proche du bord",
+      "comportement": "réactions proches puis concentration de la prospection sur cette structure"
+    },
+    "metadata": {
+      "curation_id": "HF6_03",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "direct_observation",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (6).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:03:40",
+        "timestamp_end": "00:05:35"
+      },
+      "curation_event_key": "HF6_EVT_CATCH_1",
+      "event_id": "B3_HF6_CATCH_1",
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "OBSERVED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hamachi",
+    "source_type": "video",
+    "source_label": "Light shore jigging tutorial / Seriola methods",
+    "source_url": null,
+    "raw_text": "La vidéo cite explicitement la lignée Wakashi → Inada → Warasa → Buri parmi les cibles du light shore jigging, ce qui autorise l'usage technique pour Hamachi/Seriola quinqueradiata.",
+    "tags": {
+      "zone": "surf japonais",
+      "comportement": "Wakashi/Inada/Warasa/Buri explicitement dans les cibles de la méthode"
+    },
+    "metadata": {
+      "curation_id": "AJ9_01",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "reported_context",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (9).txt",
+      "source_identity": {
+        "author": "Light shore jigging tutorial · auteur non résolu",
+        "channel_or_account": "Light shore jigging tutorial · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "light_shore_jigging_tutorial_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "light_shore_jigging_tutorial_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:14:38",
+        "timestamp_end": "00:14:56"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hamachi",
+    "source_type": "video",
+    "source_label": "Light shore jigging tutorial / Seriola methods",
+    "source_url": null,
+    "raw_text": "Méthode de recherche de couche : mesurer d'abord le countdown jusqu'au fond, puis prospecter progressivement plusieurs niveaux (exemple 8 → 5 → 3 → 1) et rester dans la couche qui produit.",
+    "tags": {
+      "zone": "surf japonais",
+      "profondeur": "fond puis couches successives",
+      "comportement": "countdown fond puis 8 → 5 → 3 → 1 pour trouver la couche"
+    },
+    "metadata": {
+      "curation_id": "AJ9_02",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_method",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (9).txt",
+      "source_identity": {
+        "author": "Light shore jigging tutorial · auteur non résolu",
+        "channel_or_account": "Light shore jigging tutorial · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "light_shore_jigging_tutorial_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "light_shore_jigging_tutorial_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:01:07",
+        "timestamp_end": "00:01:59"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "EXPERT_METHOD",
+      "source_weight_range_g": [
+        20,
+        50
+      ],
+      "weight_policy_note": "46–50 g = MH haute charge; >50 g interdit; choisir le poids selon courant/distance."
+    },
+    "evidence_level": 3,
+    "recommended_lure": "metal jig générique",
+    "recommended_animation": "mesurer le fond puis prospecter plusieurs countdowns jusqu’à trouver la couche"
+  },
+  {
+    "species": "hamachi",
+    "source_type": "video",
+    "source_label": "Light shore jigging tutorial / Seriola methods",
+    "source_url": null,
+    "raw_text": "La cadence n'est pas fixe : nombre de jerks, vitesse et pauses sont modifiés selon les réactions du jour; une récupération rapide avec arrêt est aussi proposée pour des poissons actifs.",
+    "tags": {
+      "zone": "surf japonais",
+      "comportement": "cadence, nombre de jerks et pauses variables selon les réactions"
+    },
+    "metadata": {
+      "curation_id": "AJ9_03",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_method",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (9).txt",
+      "source_identity": {
+        "author": "Light shore jigging tutorial · auteur non résolu",
+        "channel_or_account": "Light shore jigging tutorial · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "light_shore_jigging_tutorial_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "light_shore_jigging_tutorial_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:04:28",
+        "timestamp_end": "00:05:28"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "EXPERT_METHOD",
+      "source_weight_range_g": [
+        20,
+        50
+      ],
+      "weight_policy_note": "46–50 g = MH haute charge; >50 g interdit; choisir le poids selon courant/distance."
+    },
+    "evidence_level": 3,
+    "recommended_lure": "metal jig générique",
+    "recommended_animation": "faire varier cadence de jerks, vitesse et pauses selon les réactions"
+  },
+  {
+    "species": "hamachi",
+    "source_type": "research_method",
+    "source_label": "Light shore jigging tutorial / Seriola methods",
+    "source_url": null,
+    "raw_text": "En absence de chasse visible, l'auteur recommande de rechercher une ligne de courant/tide line susceptible de concentrer bait et prédateurs, plutôt que de rester uniquement sur une zone uniforme.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "AJ9_04",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (9).txt",
+      "source_identity": {
+        "author": "Light shore jigging tutorial · auteur non résolu",
+        "channel_or_account": "Light shore jigging tutorial · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "light_shore_jigging_tutorial_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "light_shore_jigging_tutorial_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:06:30",
+        "timestamp_end": "00:07:10"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hamachi",
+    "source_type": "research_method",
+    "source_label": "Light shore jigging tutorial / Seriola methods",
+    "source_url": null,
+    "raw_text": "Pour les poissons bleus, l'auteur privilégie visuellement les secteurs plus profonds, souvent là où les vagues cassent moins; cette règle est distincte de sa lecture des flatfish.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "AJ9_05",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (9).txt",
+      "source_identity": {
+        "author": "Light shore jigging tutorial · auteur non résolu",
+        "channel_or_account": "Light shore jigging tutorial · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "light_shore_jigging_tutorial_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "light_shore_jigging_tutorial_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:07:36",
+        "timestamp_end": "00:08:14"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hamachi",
+    "source_type": "video",
+    "source_label": "Light shore jigging tutorial / Seriola methods",
+    "source_url": null,
+    "raw_text": "Le choix d'un jig dépend du rôle recherché : vitesse de chute, silhouette et flash; l'auteur distingue notamment une présentation lente au fall d'une silhouette plus compacte adaptée à petit bait.",
+    "tags": {
+      "zone": "surf japonais",
+      "comportement": "choix du jig selon vitesse de chute, silhouette et flash"
+    },
+    "metadata": {
+      "curation_id": "AJ9_06",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_method",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (9).txt",
+      "source_identity": {
+        "author": "Light shore jigging tutorial · auteur non résolu",
+        "channel_or_account": "Light shore jigging tutorial · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "light_shore_jigging_tutorial_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "light_shore_jigging_tutorial_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:08:42",
+        "timestamp_end": "00:09:35"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "EXPERT_METHOD",
+      "source_weight_range_g": [
+        20,
+        50
+      ],
+      "weight_policy_note": "46–50 g = MH haute charge; >50 g interdit; choisir le poids selon courant/distance."
+    },
+    "evidence_level": 3,
+    "recommended_lure": "metal jig générique"
+  },
+  {
+    "species": "hamachi",
+    "source_type": "video",
+    "source_label": "Light shore jigging tutorial / Seriola methods",
+    "source_url": null,
+    "raw_text": "Sous vent, l'auteur réduit la bannière en gardant la canne plus basse et adapte le poids/couche; un jig trop léger est davantage déplacé par la ligne et peut remonter hors de la couche visée.",
+    "tags": {
+      "zone": "surf japonais",
+      "comportement": "vent = réduire bannière et adapter poids/couche"
+    },
+    "metadata": {
+      "curation_id": "AJ9_07",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_method",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (9).txt",
+      "source_identity": {
+        "author": "Light shore jigging tutorial · auteur non résolu",
+        "channel_or_account": "Light shore jigging tutorial · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "light_shore_jigging_tutorial_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "light_shore_jigging_tutorial_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:22:14",
+        "timestamp_end": "00:23:11"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "EXPERT_METHOD",
+      "source_weight_range_g": [
+        20,
+        50
+      ],
+      "weight_policy_note": "46–50 g = MH haute charge; >50 g interdit; choisir le poids selon courant/distance."
+    },
+    "evidence_level": 3,
+    "recommended_lure": "metal jig générique",
+    "recommended_animation": "sous vent, canne plus basse et contrôle de bannière; ajuster poids et couche"
+  },
+  {
+    "species": "hamachi",
+    "source_type": "research_method",
+    "source_label": "Light shore jigging tutorial / Seriola methods",
+    "source_url": null,
+    "raw_text": "Lors d'une chasse, l'auteur conseille de viser la trajectoire de fuite et les bords/alentours du boil plutôt que de traverser systématiquement son centre.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "AJ9_08",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_experience",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (9).txt",
+      "source_identity": {
+        "author": "Light shore jigging tutorial · auteur non résolu",
+        "channel_or_account": "Light shore jigging tutorial · auteur non résolu",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "light_shore_jigging_tutorial_batch3"
+      },
+      "location": "Japan surf · lieu exact non résolu",
+      "zone": "surf japonais",
+      "source_group": "light_shore_jigging_tutorial_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:26:48",
+        "timestamp_end": "00:27:05"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "hirame",
+    "source_type": "video",
+    "source_label": "Hirame surf creator / sinking pencil methods",
+    "source_url": null,
+    "raw_text": "Le sinking pencil est présenté comme compromis entre distance supérieure au minnow et présentation plus lente qu'un metal jig.",
+    "tags": {
+      "zone": "surf japonais",
+      "comportement": "sinking pencil = plus de portée qu’un minnow et plus lent qu’un metal jig"
+    },
+    "metadata": {
+      "curation_id": "HP3_01",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_method",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (3).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · général",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:00:09",
+        "timestamp_end": "00:00:35"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "EXPERT_METHOD"
+    },
+    "evidence_level": 3,
+    "recommended_lure": "sinking pencil générique"
+  },
+  {
+    "species": "hirame",
+    "source_type": "video",
+    "source_label": "Hirame surf creator / sinking pencil methods",
+    "source_url": null,
+    "raw_text": "Un sinking pencil à nage perceptible est utilisé pour travailler lentement les zones shallow et la couche médiane-basse, avec contrôle tactile de la nage et de la profondeur.",
+    "tags": {
+      "zone": "surf japonais",
+      "profondeur": "shallow à médiane-basse",
+      "comportement": "présentation lente avec contrôle tactile de nage et profondeur"
+    },
+    "metadata": {
+      "curation_id": "HP3_02",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_method",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (3).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · général",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:01:35",
+        "timestamp_end": "00:02:02"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "EXPERT_METHOD"
+    },
+    "evidence_level": 3,
+    "recommended_lure": "sinking pencil générique",
+    "recommended_animation": "récupération lente en shallow ou couche médiane-basse"
+  },
+  {
+    "species": "hirame",
+    "source_type": "video",
+    "source_label": "Hirame surf creator / sinking pencil methods",
+    "source_url": null,
+    "raw_text": "En drift, le leurre est porté par le courant tandis que le pêcheur exploite la bannière; un sinking pencil suffisamment dense peut rester contrôlable tout en dérivant.",
+    "tags": {
+      "zone": "surf japonais",
+      "comportement": "drift avec bannière contrôlée; densité suffisante pour rester maîtrisable"
+    },
+    "metadata": {
+      "curation_id": "HP3_04",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_method",
+      "source_file": "research/raw_transcripts/batch3_partB_1_9/Export-Subtitles-AppForLanguage (3).txt",
+      "source_identity": {
+        "author": "Hirame surf creator · batch3",
+        "channel_or_account": "Hirame surf creator · batch3",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "hirame_surf_creator_batch3"
+      },
+      "location": "Japan surf · général",
+      "zone": "surf japonais",
+      "source_group": "hirame_surf_creator_batch3",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:03:34",
+        "timestamp_end": "00:03:49"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "EXPERT_METHOD"
+    },
+    "evidence_level": 3,
+    "recommended_lure": "sinking pencil générique",
+    "recommended_animation": "drift avec bannière contrôlée sans perdre la couche"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Seabass Lure Labo / Air Ogre 85 SLM",
+    "source_url": null,
+    "raw_text": "Air Ogre 85 SLM est décrit comme descendant rapidement jusqu'au fond, y compris dans du courant, puis nageant en slalom en récupération; le mouvement se resserre quand la vitesse augmente.",
+    "tags": {
+      "zone": "Japan",
+      "profondeur": "fond",
+      "comportement": "descente rapide puis slalom; mouvement se resserre quand la vitesse augmente"
+    },
+    "metadata": {
+      "curation_id": "AO16_01",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "manufacturer_commentary",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (16).txt",
+      "source_identity": {
+        "author": "Seabass Lure Labo",
+        "channel_or_account": "Seabass Lure Labo",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "seabass_lure_labo"
+      },
+      "location": "Japan · général Suzuki",
+      "zone": "Japan",
+      "source_group": "seabass_lure_labo",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:04:22",
+        "timestamp_end": "00:04:59"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3,
+    "recommended_lure": "sinking vibration / lipless dense générique",
+    "recommended_animation": "descendre au fond puis récupération en slalom; accélérer resserre le mouvement"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "research_method",
+    "source_label": "Seabass Lure Labo / Air Ogre 85 SLM",
+    "source_url": null,
+    "raw_text": "Lorsque les Suzuki semblent tournés vers des proies de fond/crustacés, les auteurs proposent l'Air Ogre en lift-and-fall comme variation moins rectiligne qu'une vibration classique.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "AO16_02",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_opinion",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (16).txt",
+      "source_identity": {
+        "author": "Seabass Lure Labo",
+        "channel_or_account": "Seabass Lure Labo",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "seabass_lure_labo"
+      },
+      "location": "Japan · général Suzuki",
+      "zone": "Japan",
+      "source_group": "seabass_lure_labo",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:05:03",
+        "timestamp_end": "00:06:27"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "research_method",
+    "source_label": "Seabass Lure Labo / Air Ogre 85 SLM",
+    "source_url": null,
+    "raw_text": "En eau froide, les auteurs décrivent des poissons et du bait pouvant se concentrer dans des creux/structures de fond et recommandent alors des présentations basses.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "AO16_03",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_opinion",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (16).txt",
+      "source_identity": {
+        "author": "Seabass Lure Labo",
+        "channel_or_account": "Seabass Lure Labo",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "seabass_lure_labo"
+      },
+      "location": "Japan · général Suzuki",
+      "zone": "Japan",
+      "source_group": "seabass_lure_labo",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:06:46",
+        "timestamp_end": "00:07:13"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "video",
+    "source_label": "Seabass Lure Labo / Air Ogre 85 SLM",
+    "source_url": null,
+    "raw_text": "Le leurre est aussi présenté comme option pour dériver près du fond dans de grands espaces grâce à sa portée et à sa capacité à rester bas.",
+    "tags": {
+      "zone": "Japan",
+      "profondeur": "près du fond",
+      "comportement": "dérive basse dans de grands espaces"
+    },
+    "metadata": {
+      "curation_id": "AO16_04",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_method",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (16).txt",
+      "source_identity": {
+        "author": "Seabass Lure Labo",
+        "channel_or_account": "Seabass Lure Labo",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "seabass_lure_labo"
+      },
+      "location": "Japan · général Suzuki",
+      "zone": "Japan",
+      "source_group": "seabass_lure_labo",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:11:54",
+        "timestamp_end": "00:12:03"
+      },
+      "outcome": "observation",
+      "claim_type": "technique_observation",
+      "evidence_type": "EXPERT_METHOD"
+    },
+    "evidence_level": 3,
+    "recommended_lure": "sinking vibration / lipless dense générique",
+    "recommended_animation": "dérive contrôlée près du fond"
+  },
+  {
+    "species": "suzuki",
+    "source_type": "research_method",
+    "source_label": "Seabass Lure Labo / after-catch discussion",
+    "source_url": null,
+    "raw_text": "Hypothèse : lumière de landing, agitation du pêcheur et combat peuvent perturber temporairement un pin et expliquer un silence après la première capture.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "AC22_01",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "explicit_speculation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (22).txt",
+      "source_identity": {
+        "author": "Seabass Lure Labo",
+        "channel_or_account": "Seabass Lure Labo",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "seabass_lure_labo"
+      },
+      "location": "Japan · général Suzuki",
+      "zone": "Japan",
+      "source_group": "seabass_lure_labo",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:02:39",
+        "timestamp_end": "00:03:10"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "research_method",
+    "source_label": "Seabass Lure Labo / after-catch discussion",
+    "source_url": null,
+    "raw_text": "Hypothèse : le trajet du poisson pendant le combat peut 'balayer' une ligne de pêche et modifier momentanément le comportement des poissons restants.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "AC22_02",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "explicit_speculation",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (22).txt",
+      "source_identity": {
+        "author": "Seabass Lure Labo",
+        "channel_or_account": "Seabass Lure Labo",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "seabass_lure_labo"
+      },
+      "location": "Japan · général Suzuki",
+      "zone": "Japan",
+      "source_group": "seabass_lure_labo",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:03:03",
+        "timestamp_end": "00:03:14"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "research_method",
+    "source_label": "Seabass Lure Labo / after-catch discussion",
+    "source_url": null,
+    "raw_text": "Les auteurs rapportent avoir déjà repris des poissons après avoir laissé reposer un secteur puis y être revenus, tout en reconnaissant que le poisson a aussi pu être remplacé.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "AC22_03",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "reported_experience",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (22).txt",
+      "source_identity": {
+        "author": "Seabass Lure Labo",
+        "channel_or_account": "Seabass Lure Labo",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "seabass_lure_labo"
+      },
+      "location": "Japan · général Suzuki",
+      "zone": "Japan",
+      "source_group": "seabass_lure_labo",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:08:13",
+        "timestamp_end": "00:08:31"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  },
+  {
+    "species": "suzuki",
+    "source_type": "research_method",
+    "source_label": "Seabass Lure Labo / after-catch discussion",
+    "source_url": null,
+    "raw_text": "Après une première capture, répéter exactement le même pin, angle et présentation peut être moins pertinent; les auteurs suggèrent de modifier légèrement le passage plutôt que de reproduire mécaniquement le lancer.",
+    "tags": {},
+    "metadata": {
+      "curation_id": "AC22_04",
+      "curation_base": "CURATION_BATCH3_PRIORITY_V6_5_4",
+      "directness": "expert_opinion",
+      "source_file": "research/raw_transcripts/batch3_partA_14_25/Export-Subtitles-AppForLanguage (22).txt",
+      "source_identity": {
+        "author": "Seabass Lure Labo",
+        "channel_or_account": "Seabass Lure Labo",
+        "platform_or_publisher": "video transcript",
+        "corporate_group": "seabass_lure_labo"
+      },
+      "location": "Japan · général Suzuki",
+      "zone": "Japan",
+      "source_group": "seabass_lure_labo",
+      "exclude_window_evidence": true,
+      "exclude_positive_recurrence": true,
+      "exclude_presence_evidence": true,
+      "exact_model_actionable": false,
+      "source_locator": {
+        "timestamp_start": "00:10:13",
+        "timestamp_end": "00:10:36"
+      },
+      "outcome": "observation",
+      "claim_type": "derived_interpretation",
+      "evidence_type": "DECLARED_VIDEO"
+    },
+    "evidence_level": 3
+  }
+]

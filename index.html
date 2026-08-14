@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Carnet Pêche JP · V6.5.10 Navigation contextuelle</title>
+<title>Carnet Pêche JP · V6.5.12 UX carte</title>
 <meta name="theme-color" content="#0F1720">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -551,13 +551,165 @@
   .pad-detail.perf-refreshing{opacity:.72;transition:opacity .12s ease;}
   @keyframes perfSpin{to{transform:rotate(360deg)}}
 
+
+  /* V6.5.11 — navigation augmentée : peek, carte, focus, densité, glossaire, rail, gestes, accès rapide */
+  .home-title-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;}
+  .home-title-row .home-section-title{margin:0;}
+  .trip-view-toggle{display:flex;gap:4px;background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:3px;}
+  .trip-view-toggle button{appearance:none;border:0;background:transparent;color:var(--text-muted);border-radius:999px;padding:5px 8px;font-family:'IBM Plex Mono',monospace;font-size:8.5px;cursor:pointer;}
+  .trip-view-toggle button.on{background:rgba(232,163,61,.13);color:var(--accent);}
+  .focus-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 10px;padding:9px 10px;border:1px solid rgba(232,163,61,.38);background:rgba(232,163,61,.075);border-radius:11px;}
+  .focus-banner .copy{font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:var(--text-muted);min-width:0;}
+  .focus-banner strong{color:var(--accent);}
+  .focus-banner button,.focus-toggle{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--accent);border-radius:999px;padding:6px 9px;font-family:'IBM Plex Mono',monospace;font-size:8.5px;cursor:pointer;white-space:nowrap;}
+  .focus-toggle.on{background:rgba(232,163,61,.15);border-color:var(--accent);}
+  .pad,.species-card{position:relative;transition:opacity .15s,border-color .15s,transform .15s;}
+  .focus-miss{opacity:.42;}
+  .focus-hit{border-color:rgba(232,163,61,.48)!important;}
+  .peek-btn{position:absolute;right:8px;top:8px;width:26px;height:26px;border-radius:50%;border:1px solid var(--border);background:rgba(15,23,32,.78);color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:11px;cursor:pointer;display:grid;place-items:center;z-index:2;}
+  .peek-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  .trip-map-wrap{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:12px;overflow:hidden;}
+  .trip-map-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px;}
+  .trip-map-title{font-family:'Fraunces',serif;font-size:16px;font-weight:600;color:var(--text);}
+  .trip-map-note{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-muted);margin-top:3px;line-height:1.45;max-width:560px;}
+  .trip-map-canvas{position:relative;width:100%;aspect-ratio:3 / 2;min-height:220px;background:linear-gradient(180deg,rgba(111,177,214,.08),rgba(111,177,214,.025));border:1px solid rgba(111,177,214,.18);border-radius:12px;overflow:hidden;touch-action:manipulation;}
+  .trip-map{position:absolute;inset:0;width:100%;height:100%;display:block;}
+  .trip-map-sea-grid{stroke:rgba(139,151,168,.075);stroke-width:1;}
+  .trip-map-land{fill:rgba(139,151,168,.16);stroke:rgba(139,151,168,.38);stroke-width:1.2;vector-effect:non-scaling-stroke;}
+  .trip-map-path{fill:none;stroke:rgba(232,163,61,.78);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:7 6;vector-effect:non-scaling-stroke;}
+  .trip-map-path-halo{fill:none;stroke:rgba(15,23,32,.78);stroke-width:7;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke;}
+  .trip-map-pin{position:absolute;transform:translate(-50%,-50%) translate(var(--pin-dx,0),var(--pin-dy,0));width:44px;height:44px;border-radius:50%;border:2px solid var(--accent);background:var(--surface-2);color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;display:grid;place-items:center;cursor:pointer;box-shadow:0 3px 12px rgba(0,0,0,.38);z-index:3;}
+  .trip-map-pin::after{content:'';position:absolute;inset:4px;border-radius:50%;border:1px solid rgba(232,163,61,.2);}
+  .trip-map-pin.start{background:var(--accent);color:#0F1720;}
+  .trip-map-pin.end{box-shadow:0 0 0 3px rgba(232,163,61,.16),0 3px 12px rgba(0,0,0,.38);}
+  .trip-map-pin.focus-miss{opacity:.30;}
+  .trip-map-pin.focus-hit{box-shadow:0 0 0 4px rgba(232,163,61,.20),0 4px 14px rgba(0,0,0,.42);}
+  .trip-map-pin:focus-visible{outline:3px solid #fff;outline-offset:3px;}
+  .trip-map-compass{position:absolute;right:9px;top:8px;font-family:'IBM Plex Mono',monospace;font-size:8px;color:var(--text-muted);letter-spacing:.08em;z-index:2;pointer-events:none;}
+  .trip-map-list{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;}
+  .trip-map-link{appearance:none;border:1px solid var(--border);background:var(--surface-2);color:var(--text);border-radius:11px;padding:10px 11px;min-height:52px;text-align:left;cursor:pointer;font-size:11px;line-height:1.35;}
+  .trip-map-link strong{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(232,163,61,.12);color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:9px;margin-right:6px;vertical-align:middle;}
+  .trip-map-link span{color:var(--text-muted);font-family:'IBM Plex Mono',monospace;font-size:9px;display:block;margin-top:3px;padding-left:30px;}
+  .trip-map-link:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+
+  .ux-backdrop{position:fixed;inset:0;z-index:70;background:rgba(4,8,14,.58);backdrop-filter:blur(3px);display:none;align-items:flex-end;justify-content:center;}
+  .ux-backdrop.open{display:flex;}
+  .ux-sheet{width:min(720px,100%);max-height:min(78vh,720px);overflow:auto;background:var(--surface-2);border:1px solid var(--border);border-radius:18px 18px 0 0;padding:12px 16px calc(18px + var(--safe-bottom));box-shadow:0 -16px 50px rgba(0,0,0,.38);}
+  .ux-sheet-handle{width:42px;height:4px;border-radius:99px;background:rgba(139,151,168,.35);margin:1px auto 12px;}
+  .ux-sheet-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px;}
+  .ux-sheet-title{font-family:'Fraunces',serif;font-size:18px;font-weight:600;line-height:1.2;}
+  .ux-sheet-sub{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-muted);margin-top:4px;line-height:1.45;}
+  .ux-sheet-close{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:16px;}
+  .ux-sheet-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .ux-action{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:11px;padding:11px;text-align:left;font-size:12px;line-height:1.35;cursor:pointer;}
+  .ux-action strong{display:block;color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:3px;}
+  .ux-action.primary{border-color:var(--accent);background:rgba(232,163,61,.09);}
+  .ux-sheet-section{margin-top:14px;padding-top:12px;border-top:1px solid var(--border);}
+  .ux-sheet-label{font-family:'IBM Plex Mono',monospace;font-size:8.5px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:7px;}
+  .density-switch{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;}
+  .density-switch button{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);border-radius:9px;padding:8px 5px;font-size:10px;cursor:pointer;}
+  .density-switch button.on{border-color:var(--accent);color:var(--accent);background:rgba(232,163,61,.08);}
+  .peek-score{display:flex;align-items:flex-end;gap:10px;margin:8px 0 12px;}
+  .peek-score .big{font-family:'Fraunces',serif;font-size:32px;color:var(--accent);line-height:1;}
+  .peek-score .meta{font-size:11px;color:var(--text-muted);line-height:1.45;}
+  .peek-pills{display:flex;flex-wrap:wrap;gap:6px;margin:7px 0;}
+  .peek-pill{border:1px solid var(--border);border-radius:999px;padding:5px 8px;font-size:10px;color:var(--text-muted);background:var(--surface);}
+
+  .quick-fab{position:fixed;right:16px;bottom:calc(16px + var(--safe-bottom));z-index:35;width:46px;height:46px;border-radius:50%;border:1px solid var(--accent);background:var(--accent);color:#0F1720;font-size:24px;line-height:1;display:none;place-items:center;box-shadow:0 9px 24px rgba(0,0,0,.34);cursor:pointer;}
+  .quick-fab.ready{display:grid;}
+  body.reading-mode .quick-fab{display:none!important;}
+  body.reading-mode .reading-exit{z-index:72;}
+
+  .species-rail{position:fixed;right:4px;top:50%;transform:translateY(-50%);z-index:18;display:none;width:18px;height:190px;pointer-events:none;}
+  body.species-view:not(.reading-mode) .species-rail{display:block;}
+  .species-rail-track{position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:rgba(139,151,168,.18);border-radius:99px;overflow:hidden;}
+  .species-rail-fill{display:block;width:100%;height:var(--rail-progress,0%);background:var(--accent);border-radius:99px;transition:height .08s linear;}
+  .species-rail-dots{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;}
+  .species-rail-dot{pointer-events:auto;appearance:none;width:10px;height:10px;border:2px solid var(--bg);border-radius:50%;background:#586477;padding:0;cursor:pointer;box-shadow:0 0 0 1px rgba(139,151,168,.22);}
+  .species-rail-dot.on{background:var(--accent);box-shadow:0 0 0 1px var(--accent);}
+
+  .glossary-term{appearance:none;border:0;border-bottom:1px dotted var(--accent);background:transparent;color:inherit;padding:0;font:inherit;cursor:help;}
+  .glossary-term::after{content:'·';color:var(--accent);font-size:.75em;vertical-align:super;margin-left:1px;}
+  .glossary-definition{font-size:14px;line-height:1.65;color:var(--text);}
+  .glossary-warning{font-size:10.5px;line-height:1.5;color:var(--text-muted);margin-top:9px;}
+
+  body.density-compact main{padding-top:10px;}
+  body.density-compact .home-section{margin-top:18px;}
+  body.density-compact .pad{padding:10px 11px;border-radius:11px;}
+  body.density-compact .species-grid{gap:7px;}
+  body.density-compact .species-card{padding:12px 10px;border-radius:12px;}
+  body.density-compact .species-icon{width:38px;height:38px;margin-bottom:7px;}
+  body.density-compact .dest-row,body.density-compact .intel-item,body.density-compact .field-card,body.density-compact .tech-card{padding:8px 9px;}
+  body.density-compact .section{margin-top:18px;}
+  body.density-compact .progressive-block>summary{padding:9px 10px;}
+  body.density-compact .relation-block{padding:10px;margin-top:12px;}
+
+  body.density-reading main{max-width:880px;margin-left:auto;margin-right:auto;}
+  body.density-reading .dest-row,body.density-reading .brief-box,body.density-reading .intel-item,body.density-reading .field-value,body.density-reading .tech-v,body.density-reading .behav-txt,body.density-reading .fact-card,body.density-reading .synth-box{font-size:14.2px;line-height:1.72;}
+  body.density-reading .section{margin-top:30px;}
+  body.density-reading .progressive-summary-text{font-size:13.5px;line-height:1.55;}
+  body.density-reading .pad-detail{font-size:13.8px;}
+
+  .species-context-actions{display:flex;gap:6px;align-items:center;flex:0 0 auto;}
+  .focus-inline{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--accent);border:1px solid rgba(232,163,61,.3);background:rgba(232,163,61,.06);border-radius:9px;padding:7px 8px;margin-bottom:9px;}
+  .swipe-flash{position:fixed;left:50%;bottom:calc(76px + var(--safe-bottom));transform:translateX(-50%);z-index:60;background:rgba(15,23,32,.94);border:1px solid var(--border);border-radius:999px;padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:8.5px;color:var(--text-muted);pointer-events:none;animation:swipeFlash .8s ease both;}
+  @keyframes swipeFlash{0%{opacity:0;transform:translate(-50%,6px)}20%,70%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,-4px)}}
+
+  @media(max-width:430px){
+    .ux-sheet-grid{grid-template-columns:1fr;}
+    .quick-fab{right:12px;bottom:calc(12px + var(--safe-bottom));width:44px;height:44px;}
+    .trip-map-list{grid-template-columns:1fr;}
+    .home-title-row{align-items:flex-start;}
+    .trip-view-toggle button{padding:5px 7px;font-size:8px;}
+    .species-context-line{align-items:flex-start;}
+    .species-context-actions{gap:4px;}
+    .focus-toggle,.reading-start{padding:5px 7px;font-size:8px;}
+  }
+  @media(min-width:900px){
+    .species-rail{right:16px;width:24px;}
+    .species-rail-track{left:11px;}
+    .species-rail-dot{width:12px;height:12px;}
+  }
+
+  /* V6.5.12 — UX mobile : cibles tactiles lisibles et contrôles cohérents */
+  .back-btn{min-width:44px;min-height:44px;display:inline-grid;place-items:center;padding:0;}
+  .tide-nav button,.tide-day,.species-tab,.relation-pill,.reading-start,.collapse-all-btn,.window-plan-btn,.field-cta button,.density-switch button{min-height:44px;}
+  .trip-view-toggle button{min-height:40px;padding:8px 12px;font-size:9px;}
+  .focus-banner button,.focus-toggle{min-height:40px;padding:8px 12px;font-size:9px;}
+  .peek-btn{width:40px;height:40px;right:7px;top:7px;font-size:14px;}
+  .pad .pad-title{padding-right:36px;}
+  .species-card{padding-top:22px;}
+  .ux-sheet-close{width:44px;height:44px;flex:0 0 44px;font-size:20px;}
+  .ux-action{min-height:56px;padding:13px 12px;}
+  .quick-fab{width:54px;height:54px;font-size:28px;}
+  .species-rail{right:2px;width:40px;height:250px;}
+  .species-rail-track{left:19px;top:18px;bottom:18px;}
+  .species-rail-dot{width:32px;height:32px;border-width:7px;background-clip:padding-box;}
+  .qcm-opt,.qcm-cta,.obs-chip,.log-save,.log-form .row3 button{min-height:46px;}
+  .log-export{min-height:44px;display:flex;align-items:center;justify-content:center;}
+  @media(max-width:430px){
+    .trip-map-wrap{padding:10px;}
+    .trip-map-canvas{min-height:240px;}
+    .trip-map-list{grid-template-columns:1fr;}
+    .trip-view-toggle button{min-height:42px;padding:8px 10px;font-size:8.5px;}
+    .focus-toggle,.reading-start{min-height:42px;padding:8px 10px;font-size:8.5px;}
+    .quick-fab{right:12px;bottom:calc(12px + var(--safe-bottom));width:52px;height:52px;}
+    .species-rail{right:0;width:38px;}
+    .species-rail-track{left:18px;}
+    .species-rail-dot{width:30px;height:30px;}
+  }
+
 </style>
 </head>
 <body>
 
 <header id="headerZone"></header>
 <main id="mainZone"></main>
+<nav id="speciesRail" class="species-rail" aria-label="Progression fiche espèce"></nav>
+<button id="quickFab" class="quick-fab" onclick="openQuickAccess()" aria-label="Accès rapide">+</button>
 <button id="readingExit" class="reading-exit" onclick="toggleReadingMode()">Quitter Lecture</button>
+<div id="uxBackdrop" class="ux-backdrop" onclick="if(event.target===this)closeUXSheet()"><section id="uxSheet" class="ux-sheet" role="dialog" aria-modal="true" aria-labelledby="uxSheetTitle"></section></div>
 
 <script>
 /* ============ MARÉES OFFICIELLES EMBARQUÉES (JMA) ============
@@ -1237,6 +1389,10 @@ let openComboName = null;
 let logResult = null;
 let readingMode = false;
 let pendingScrollStopId = null;
+let focusSpeciesName = null;
+let homeTripView = 'list';
+let densityMode = 'comfort';
+let swipeStart = null;
 
 function tripPadStops(){ return (DATA.trip_stops||[]).filter(s=>s.trip_pad!==false); }
 function tripPadById(id){ return tripPadStops().find(x=>x.id===id)||null; }
@@ -1293,6 +1449,9 @@ function schedulePerfWarmup(){ /* volontairement vide : zéro rafale CPU après 
 
 const LS_PORT = 'peche_active_port';
 const LS_SESSIONS = 'peche_sessions';
+const LS_FOCUS_SPECIES = 'peche_focus_species';
+const LS_DENSITY = 'peche_ux_density';
+const LS_TRIP_VIEW = 'peche_trip_view';
 
 const DIM_LABELS = {
   saison:"Saison", maree:"Marée", moment_jour:"Lumière", spot_type:"Type de spot",
@@ -1505,96 +1664,284 @@ function mdLite(s){
 
 async function route(){
   const hash = location.hash.replace('#','');
+  closeUXSheet();
   if(hash.startsWith('species/')){
     currentSpeciesId = parseInt(hash.split('/')[1]);
     speciesTab = 0; qcmState = null; logResult = null; readingMode = false;
     document.body.classList.remove('reading-mode');
+    document.body.classList.add('species-view');
     if(!FULL_DATA_READY){
       const mz=document.getElementById('mainZone');
       if(mz) mz.innerHTML='<div class="perf-loading-row" style="margin:18px"><span class="perf-spinner"></span><span>Chargement des preuves détaillées…</span></div>';
       try{await ensureFullData();}catch(e){showFatal(e.message);return;}
     }
     renderSpeciesPage();
-  } else { readingMode=false; document.body.classList.remove('reading-mode'); renderHome(); }
+  } else {
+    currentSpeciesId=null; readingMode=false; document.body.classList.remove('reading-mode','species-view'); renderHome(); updateSpeciesRail();
+  }
+  updateQuickFab();
 }
 window.addEventListener('hashchange', route);
 
 function getActivePort(){ try{ const p=localStorage.getItem(LS_PORT); if(!p)return null; if(tripPadStops().some(s=>s.port===p))return p; localStorage.removeItem(LS_PORT); return null; }catch(e){ return null; } }
 function setActivePort(p){ try{ p ? localStorage.setItem(LS_PORT,p) : localStorage.removeItem(LS_PORT); }catch(e){} }
 function getSessions(){ try{ return JSON.parse(localStorage.getItem(LS_SESSIONS)||'[]'); }catch(e){ return []; } }
-function saveSessions(s){ try{ localStorage.setItem(LS_SESSIONS, JSON.stringify(s)); }catch(e){} }
+function saveSessions(s){ try{ localStorage.setItem(LS_SESSIONS, JSON.stringify(s)); return true; }catch(e){ console.error('Sauvegarde locale impossible',e); return false; } }
+
+function restoreUXState(){
+  try{
+    const f=localStorage.getItem(LS_FOCUS_SPECIES); if(f) focusSpeciesName=f;
+    const d=localStorage.getItem(LS_DENSITY); if(['compact','comfort','reading'].includes(d)) densityMode=d;
+    const v=localStorage.getItem(LS_TRIP_VIEW); if(['list','map'].includes(v)) homeTripView=v;
+  }catch(e){}
+  applyDensity();
+}
+function applyDensity(){
+  document.body.classList.remove('density-compact','density-comfort','density-reading');
+  document.body.classList.add(`density-${densityMode}`);
+}
+function setDensity(mode){
+  if(!['compact','comfort','reading'].includes(mode))return;
+  densityMode=mode; try{localStorage.setItem(LS_DENSITY,mode);}catch(e){}
+  applyDensity();
+  document.querySelectorAll('[data-density]').forEach(b=>b.classList.toggle('on',b.dataset.density===mode));
+  requestAnimationFrame(()=>{syncStickyHeaderOffset();updateSpeciesRailProgress();});
+}
+function setTripView(view){
+  if(!['list','map'].includes(view))return;
+  homeTripView=view; try{localStorage.setItem(LS_TRIP_VIEW,view);}catch(e){}
+  if(!location.hash)renderHome();
+}
+function toggleSpeciesFocus(name){
+  const next=focusSpeciesName===name?null:name;
+  focusSpeciesName=next;
+  try{ next?localStorage.setItem(LS_FOCUS_SPECIES,next):localStorage.removeItem(LS_FOCUS_SPECIES); }catch(e){}
+  closeUXSheet();
+  if(location.hash.startsWith('#species/'))renderSpeciesPage(); else renderHome();
+}
+function clearSpeciesFocus(){ if(focusSpeciesName)toggleSpeciesFocus(focusSpeciesName); }
+function stopMatchesFocus(s){ return !focusSpeciesName || (s.target_species||[]).some(n=>String(n).toLowerCase()===String(focusSpeciesName).toLowerCase()); }
+function speciesMatchesFocus(sp){ return !focusSpeciesName || String(sp.name_fr).toLowerCase()===String(focusSpeciesName).toLowerCase(); }
+function focusedTargetsForStop(s){
+  const targets=(s.target_species||[]);
+  if(!focusSpeciesName)return targets;
+  const hit=targets.find(n=>String(n).toLowerCase()===String(focusSpeciesName).toLowerCase());
+  return hit?[hit]:targets;
+}
+
+let uxSheetReturnFocus=null;
+function openUXSheet(title,sub,body){
+  const back=document.getElementById('uxBackdrop'), sheet=document.getElementById('uxSheet'); if(!back||!sheet)return;
+  uxSheetReturnFocus=document.activeElement instanceof HTMLElement?document.activeElement:null;
+  sheet.innerHTML=`<div class="ux-sheet-handle"></div><div class="ux-sheet-head"><div><div id="uxSheetTitle" class="ux-sheet-title">${escHTML(title)}</div>${sub?`<div class="ux-sheet-sub">${escHTML(sub)}</div>`:''}</div><button class="ux-sheet-close" onclick="closeUXSheet()" aria-label="Fermer">×</button></div>${body}`;
+  back.classList.add('open'); document.body.style.overflow='hidden';
+  requestAnimationFrame(()=>sheet.querySelector('button')?.focus({preventScroll:true}));
+}
+function closeUXSheet(){
+  const back=document.getElementById('uxBackdrop'); if(back)back.classList.remove('open');
+  document.body.style.overflow='';
+  const target=uxSheetReturnFocus; uxSheetReturnFocus=null;
+  if(target&&document.contains(target)) requestAnimationFrame(()=>target.focus({preventScroll:true}));
+}
+function densityControlHTML(){
+  const rows=[['compact','Compact'],['comfort','Confort'],['reading','Lecture']];
+  return `<div class="ux-sheet-section"><div class="ux-sheet-label">Densité d’affichage</div><div class="density-switch">${rows.map(([k,l])=>`<button data-density="${k}" class="${densityMode===k?'on':''}" onclick="setDensity('${k}')">${l}</button>`).join('')}</div></div>`;
+}
+function focusPickerHTML(){
+  const names=[...new Set(tripPadStops().flatMap(s=>s.target_species||[]))].sort((a,b)=>a.localeCompare(b,'fr'));
+  return `<div class="ux-sheet-section"><div class="ux-sheet-label">Focus espèce</div><div class="relation-pills">${names.map(n=>`<button class="relation-pill ${focusSpeciesName===n?'focus-hit':''}" onclick="toggleSpeciesFocus('${escAttr(n)}')">${focusSpeciesName===n?'✓ ':''}${escHTML(n)}</button>`).join('')}</div></div>`;
+}
+function openFocusPicker(){ openUXSheet('Focus espèce','Filtre le voyage autour d’une cible sans modifier les données.',focusPickerHTML()+densityControlHTML()); }
+
+function openQuickPeek(type,id){
+  if(type==='species'){
+    const sp=DATA.species.find(x=>x.id===Number(id)); if(!sp)return;
+    const n=FULL_DATA_READY?speciesObservations(sp.id).length:Number((DATA.observation_counts||{})[String(sp.id)]||0);
+    const stops=tripPadStops().filter(s=>(s.target_species||[]).some(x=>String(x).toLowerCase()===String(sp.name_fr).toLowerCase()));
+    const body=`<div class="peek-score"><div class="big">${n}</div><div class="meta">observation${n>1?'s':''} dans la base<br>${stops.length} destination${stops.length>1?'s':''} du voyage</div></div><div class="peek-pills">${stops.map(s=>`<span class="peek-pill">${escHTML(s.city)}</span>`).join('')||'<span class="peek-pill">Aucune destination ciblée</span>'}</div><div class="ux-sheet-grid"><button class="ux-action primary" onclick="closeUXSheet();location.hash='species/${sp.id}'"><strong>Ouvrir</strong>Fiche complète ${escHTML(sp.name_fr)}</button><button class="ux-action" onclick="toggleSpeciesFocus('${escAttr(sp.name_fr)}')"><strong>Focus voyage</strong>${focusSpeciesName===sp.name_fr?'Désactiver':'Suivre'} ${escHTML(sp.name_fr)}</button></div>`;
+    openUXSheet(sp.name_fr,`${sp.name_jp||''}${sp.name_latin?' · '+sp.name_latin:''}`,body+densityControlHTML());
+    return;
+  }
+  if(type==='stop'){
+    const stop=tripPadById(Number(id)); if(!stop)return;
+    const days=stayDatesForStop(stop), idx=Math.max(0,Math.min(Math.max(0,days.length-1),Number(tideDayByStop[stop.id]||0))), key=days[idx]||stop.arrival_date;
+    const targets=focusedTargetsForStop(stop);
+    let bw=null; if(key&&stop.port) bw=peekBestWindowDaySummary(stop.port,key,targets,stop)||bestWindowDaySummary(stop.port,key,targets,stop);
+    const score=bw&&bw.score!=null?String(bw.score):'—';
+    const body=`${bw?`<div class="peek-score"><div class="big">${score}</div><div class="meta">${bw.sp?escHTML(bw.sp):'Opportunité du jour'}${bw.window?'<br>'+escHTML(fmtWindowRange(bw.window)):''}</div></div>`:''}<div class="peek-pills">${(stop.target_species||[]).map(n=>`<span class="peek-pill">${escHTML(n)}</span>`).join('')}</div><div class="ux-sheet-grid"><button class="ux-action primary" onclick="closeUXSheet();openTripStop(${stop.id})"><strong>Ouvrir</strong>${escHTML(stop.city)}</button>${stop.port?`<button class="ux-action" onclick="setActivePort('${escAttr(stop.port)}');closeUXSheet();renderHome()"><strong>Terrain</strong>Activer ce port</button>`:''}</div>`;
+    openUXSheet(stop.city,stop.dates||'',body+densityControlHTML());
+  }
+}
+
+const GLOSSARY={
+  'étale':{label:'Étale',def:'Période autour d’un haut ou d’un bas de marée pendant laquelle le niveau d’eau varie peu. Le courant réel d’un spot peut ralentir ou se décaler par rapport à l’étale de hauteur.'},
+  'pe':{label:'PE',def:'Notation japonaise de taille de ligne, très utilisée pour les tresses. Elle désigne une classe normalisée de section ; le diamètre réel annoncé peut varier selon la construction et le fabricant.'},
+  'twitch':{label:'Twitch',def:'Petite impulsion brève du scion destinée à faire dévier ou accélérer ponctuellement le leurre.'},
+  'jerk':{label:'Jerk',def:'Impulsion de canne plus ample qu’un twitch, utilisée pour provoquer un écart, une accélération ou un changement marqué d’attitude du leurre.'},
+  'one-pitch':{label:'One-pitch',def:'Cadence de jigging où les animations de canne et la récupération au moulinet sont synchronisées de façon régulière.'},
+  'lift-and-fall':{label:'Lift-and-fall',def:'Animation qui alterne une remontée du leurre puis une phase de retombée, libre ou contrôlée.'},
+  'free fall':{label:'Free fall',def:'Descente du leurre avec très peu de tension de ligne afin de laisser la gravité et l’hydrodynamique produire la chute.'},
+  'dead slow':{label:'Dead slow',def:'Récupération continue volontairement très lente, sans accélérations marquées.'},
+  'dog-walk':{label:'Dog-walk',def:'Animation en zigzag latéral obtenue par une succession d’impulsions et de reprises de mou, souvent utilisée en surface.'},
+  'slack':{label:'Slack',def:'Mou dans la ligne. Il peut être volontaire pour libérer une animation ou une chute, mais réduit momentanément le contact direct avec le leurre.'}
+};
+function openGlossary(key){
+  const g=GLOSSARY[key]; if(!g)return;
+  openUXSheet(g.label,'Glossaire terrain',`<div class="glossary-definition">${escHTML(g.def)}</div><div class="glossary-warning">Définition de lecture rapide : elle n’altère ni les preuves ni les calculs du carnet.</div>`+densityControlHTML());
+}
+function decorateGlossary(root=document.getElementById('mainZone')){
+  if(!root)return;
+  const aliases=Object.keys(GLOSSARY).sort((a,b)=>b.length-a.length), esc=x=>x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
+  const rx=new RegExp(`(^|[^\\p{L}\\p{N}])(${aliases.map(esc).join('|')})(?![\\p{L}\\p{N}])`,'giu');
+  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT); const nodes=[];
+  while(walker.nextNode()){
+    const n=walker.currentNode,p=n.parentElement; if(!p||!n.nodeValue.trim())continue;
+    if(p.closest('button,a,input,textarea,select,option,code,pre,script,style,.raw-source,.glossary-term'))continue;
+    rx.lastIndex=0; if(rx.test(n.nodeValue))nodes.push(n);
+  }
+  for(const n of nodes){
+    const txt=n.nodeValue, frag=document.createDocumentFragment(); let last=0; rx.lastIndex=0; let m;
+    while((m=rx.exec(txt))){
+      const start=m.index, lead=m[1]||'', term=m[2];
+      if(start>last)frag.appendChild(document.createTextNode(txt.slice(last,start)));
+      if(lead)frag.appendChild(document.createTextNode(lead));
+      const key=term.toLowerCase(), b=document.createElement('button'); b.type='button'; b.className='glossary-term'; b.textContent=term; b.setAttribute('aria-label',`${term} — définition`); b.addEventListener('click',e=>{e.stopPropagation();openGlossary(key);}); frag.appendChild(b);
+      last=start+m[0].length;
+    }
+    if(last<txt.length)frag.appendChild(document.createTextNode(txt.slice(last)));
+    n.replaceWith(frag);
+  }
+}
+
+// Silhouette simplifiée dérivée de Natural Earth 1:110m, embarquée pour rester hors-ligne.
+const JAPAN_MAP_POLYGONS=[
+  [[141.884601,39.180865],[140.959489,38.174001],[140.976388,37.142074],[140.59977,36.343983],[140.774074,35.842877],[140.253279,35.138114],[138.975528,34.6676],[137.217599,34.606286],[135.792983,33.464805],[135.120983,33.849071],[135.079435,34.596545],[133.340316,34.375938],[132.156771,33.904933],[130.986145,33.885761],[132.000036,33.149992],[131.33279,31.450355],[130.686318,31.029579],[130.20242,31.418238],[130.447676,32.319475],[129.814692,32.61031],[129.408463,33.296056],[130.353935,33.604151],[130.878451,34.232743],[131.884229,34.749714],[132.617673,35.433393],[134.608301,35.731618],[135.677538,35.527134],[136.723831,37.304984],[137.390612,36.827391],[138.857602,37.827485],[139.426405,38.215962],[140.05479,39.438807],[139.883379,40.563312],[140.305783,41.195005],[141.368973,41.37856],[141.914263,39.991616],[141.884601,39.180865]],
+  [[132.371176,33.463642],[132.924373,34.060299],[133.492968,33.944621],[133.904106,34.364931],[134.638428,34.149234],[134.766379,33.806335],[134.203416,33.201178],[133.79295,33.521985],[133.280268,33.28957],[133.014858,32.704567],[132.363115,32.989382],[132.371176,33.463642]]
+];
+function mapStopLabel(city){ return String(city||'').replace(/\s*\(.+?\)\s*/g,'').split('/')[0].trim(); }
+function tripGeoMapHTML(stops){
+  const pts=stops.map(s=>({s,p:PORTS[s.port]})).filter(x=>x.p&&Number.isFinite(x.p.lat)&&Number.isFinite(x.p.lng));
+  if(!pts.length)return '<div class="empty">Aucune coordonnée de port disponible.</div>';
+  // Vue centrée sur l'itinéraire Kyushu → Kanto, avec silhouette du Japon embarquée.
+  // Aucun fond réseau : la carte reste utile hors-ligne.
+  const W=720,H=480,minLng=128.6,maxLng=142.3,minLat=30.3,maxLat=40.8,pad=18;
+  const X=lng=>pad+(lng-minLng)/(maxLng-minLng)*(W-2*pad),Y=lat=>H-pad-(lat-minLat)/(maxLat-minLat)*(H-2*pad);
+  const project=([lng,lat])=>[X(lng),Y(lat)];
+  const land=JAPAN_MAP_POLYGONS.map(poly=>{
+    const d=poly.map((pt,i)=>{const [x,y]=project(pt);return `${i?'L':'M'}${x.toFixed(1)} ${y.toFixed(1)}`;}).join(' ')+' Z';
+    return `<path class="trip-map-land" d="${d}"/>`;
+  }).join('');
+  const grid=[.25,.5,.75].map(f=>`<line class="trip-map-sea-grid" x1="${pad}" y1="${(pad+f*(H-2*pad)).toFixed(1)}" x2="${W-pad}" y2="${(pad+f*(H-2*pad)).toFixed(1)}"/><line class="trip-map-sea-grid" x1="${(pad+f*(W-2*pad)).toFixed(1)}" y1="${pad}" x2="${(pad+f*(W-2*pad)).toFixed(1)}" y2="${H-pad}"/>`).join('');
+  const mapped=pts.map((x,i)=>({...x,i,x:X(x.p.lng),y:Y(x.p.lat),dx:0,dy:0}));
+  // Décale uniquement les boutons quand deux ports sont trop proches pour rester tactiles.
+  for(let i=1;i<mapped.length;i++){
+    for(let j=0;j<i;j++){
+      if(Math.hypot(mapped[i].x-mapped[j].x,mapped[i].y-mapped[j].y)<30){
+        if(!mapped[j].dy)mapped[j].dy=-26; mapped[i].dy=26; break;
+      }
+    }
+  }
+  const route=mapped.map(x=>`${x.x.toFixed(1)},${x.y.toFixed(1)}`).join(' ');
+  const pins=mapped.map((x,i)=>{
+    const match=stopMatchesFocus(x.s),classes=[i===0?'start':'',i===mapped.length-1?'end':'',focusSpeciesName?(match?'focus-hit':'focus-miss'):''].filter(Boolean).join(' ');
+    return `<button type="button" class="trip-map-pin ${classes}" style="left:${(100*x.x/W).toFixed(2)}%;top:${(100*x.y/H).toFixed(2)}%;--pin-dx:${x.dx}px;--pin-dy:${x.dy}px" onclick="openQuickPeek('stop',${x.s.id})" aria-label="Étape ${i+1} — ${escAttr(mapStopLabel(x.s.city))}, ${escAttr(x.s.dates||'')}">${i+1}</button>`;
+  }).join('');
+  const list=mapped.map((x,i)=>`<button type="button" class="trip-map-link ${focusSpeciesName?(stopMatchesFocus(x.s)?'focus-hit':'focus-miss'):''}" onclick="openQuickPeek('stop',${x.s.id})"><strong>${i+1}</strong>${escHTML(mapStopLabel(x.s.city))}<span>${escHTML(x.s.dates||'')}</span></button>`).join('');
+  return `<div class="trip-map-wrap"><div class="trip-map-head"><div><div class="trip-map-title">Trajet au Japon</div><div class="trip-map-note">Silhouette géographique simplifiée embarquée ; étapes projetées depuis les coordonnées des ports JMA. Touchez un numéro pour ouvrir l’étape. Ce n’est pas une carte nautique.</div></div></div><div class="trip-map-canvas"><svg class="trip-map" viewBox="0 0 ${W} ${H}" aria-hidden="true" preserveAspectRatio="none">${grid}${land}<polyline class="trip-map-path-halo" points="${route}"/><polyline class="trip-map-path" points="${route}"/></svg><div class="trip-map-compass">N ↑</div>${pins}</div><div class="trip-map-list">${list}</div></div>`;
+}
+function updateQuickFab(){ const b=document.getElementById('quickFab'); if(b)b.classList.toggle('ready',!!(DATA&&DATA.species&&DATA.species.length)); }
+function openQuickAccess(){
+  const hash=location.hash.replace('#',''); let body='';
+  if(hash.startsWith('species/')){
+    const sp=DATA.species.find(x=>x.id===currentSpeciesId); if(!sp)return;
+    const ctx=speciesContextStop();
+    body=`<div class="ux-sheet-grid"><button class="ux-action" onclick="closeUXSheet();setSpeciesTab(0)"><strong>Section</strong>Terrain</button><button class="ux-action" onclick="closeUXSheet();setSpeciesTab(4)"><strong>Section</strong>Comprendre</button><button class="ux-action" onclick="closeUXSheet();jumpToLogger()"><strong>Terrain</strong>Logger une session</button><button class="ux-action ${focusSpeciesName===sp.name_fr?'primary':''}" onclick="toggleSpeciesFocus('${escAttr(sp.name_fr)}')"><strong>Focus</strong>${focusSpeciesName===sp.name_fr?'Désactiver':'Suivre'} ${escHTML(sp.name_fr)}</button>${ctx?`<button class="ux-action primary" onclick="closeUXSheet();openTripStop(${ctx.id})"><strong>Contexte</strong>Retour à ${escHTML(ctx.city)}</button>`:''}<button class="ux-action" onclick="openQuickPeek('species',${sp.id})"><strong>Aperçu</strong>Relations voyage</button></div>`;
+    openUXSheet('Accès rapide',sp.name_fr,body+focusPickerHTML()+densityControlHTML()); return;
+  }
+  if(openStopId!=null){
+    const stop=tripPadById(openStopId),days=stop?stayDatesForStop(stop):[],idx=stop?Math.max(0,Math.min(days.length-1,Number(tideDayByStop[stop.id]||0))):0;
+    body=`<div class="ux-sheet-grid"><button class="ux-action primary" onclick="openQuickPeek('stop',${stop.id})"><strong>Aperçu</strong>${escHTML(stop.city)}</button>${idx>0?`<button class="ux-action" onclick="closeUXSheet();setTideDay(${stop.id},${idx-1})"><strong>Jour</strong>Précédent</button>`:''}${idx<days.length-1?`<button class="ux-action" onclick="closeUXSheet();setTideDay(${stop.id},${idx+1})"><strong>Jour</strong>Suivant</button>`:''}<button class="ux-action" onclick="closeUXSheet();toggleStopDetails(${stop.id})"><strong>Lecture</strong>Tout ouvrir / réduire</button>${stop.port?`<button class="ux-action" onclick="setActivePort('${escAttr(stop.port)}');closeUXSheet();renderHome()"><strong>Terrain</strong>Activer ce port</button>`:''}<button class="ux-action" onclick="setTripView('map');closeUXSheet()"><strong>Voyage</strong>Voir la carte</button></div>`;
+    openUXSheet('Accès rapide',stop.city,body+focusPickerHTML()+densityControlHTML()); return;
+  }
+  body=`<div class="ux-sheet-grid"><button class="ux-action ${homeTripView==='map'?'primary':''}" onclick="closeUXSheet();setTripView('${homeTripView==='map'?'list':'map'}')"><strong>Voyage</strong>${homeTripView==='map'?'Voir la chronologie':'Voir la carte'}</button><button class="ux-action" onclick="openFocusPicker()"><strong>Focus</strong>Choisir une espèce</button></div>`;
+  openUXSheet('Accès rapide','Voyage',body+focusPickerHTML()+densityControlHTML());
+}
+function jumpToLogger(){
+  if(speciesTab!==0)setSpeciesTab(0);
+  setTimeout(()=>document.getElementById('logZone')?.scrollIntoView({behavior:'smooth',block:'center'}),60);
+}
+
+function updateSpeciesRail(){
+  const rail=document.getElementById('speciesRail'); if(!rail)return;
+  if(!currentSpeciesId||!location.hash.startsWith('#species/')){rail.innerHTML='';return;}
+  rail.innerHTML=`<div class="species-rail-track"><span class="species-rail-fill"></span></div><div class="species-rail-dots">${SPECIES_TABS.map((t,i)=>`<button class="species-rail-dot ${i===speciesTab?'on':''}" title="${escAttr(t)}" aria-label="${escAttr(t)}" onclick="setSpeciesTab(${i})"></button>`).join('')}</div>`;
+  updateSpeciesRailProgress();
+}
+function updateSpeciesRailProgress(){
+  const rail=document.getElementById('speciesRail'); if(!rail||!currentSpeciesId)return;
+  const panel=document.getElementById('tabPanel'); if(!panel)return;
+  const top=panel.getBoundingClientRect().top+window.scrollY, span=Math.max(1,panel.scrollHeight-window.innerHeight*.68), p=Math.max(0,Math.min(1,(window.scrollY-top+window.innerHeight*.22)/span));
+  rail.style.setProperty('--rail-progress',`${Math.round(p*100)}%`);
+}
+function flashSwipe(txt){ const e=document.createElement('div'); e.className='swipe-flash'; e.textContent=txt; document.body.appendChild(e); setTimeout(()=>e.remove(),850); }
+function isSwipeBlocked(target){ return !!target.closest('button,a,input,textarea,select,summary,.tide-days,.species-tabs,.relation-pills,.ux-sheet,.trip-map-node'); }
+function installSwipeNavigation(){
+  const root=document.getElementById('mainZone'); if(!root||root.dataset.swipeInstalled)return; root.dataset.swipeInstalled='1';
+  root.addEventListener('touchstart',e=>{if(e.touches.length!==1||isSwipeBlocked(e.target))return; const t=e.touches[0];swipeStart={x:t.clientX,y:t.clientY,target:e.target};},{passive:true});
+  root.addEventListener('touchend',e=>{if(!swipeStart||!e.changedTouches.length)return; const st=swipeStart;swipeStart=null;const t=e.changedTouches[0],dx=t.clientX-st.x,dy=t.clientY-st.y;if(Math.abs(dx)<72||Math.abs(dx)<Math.abs(dy)*1.25||Math.abs(dy)>90)return;
+    if(location.hash.startsWith('#species/')&&st.target.closest('#tabPanel')){const next=dx<0?speciesTab+1:speciesTab-1;if(next>=0&&next<SPECIES_TABS.length){setSpeciesTab(next);flashSwipe(SPECIES_TABS[next]);}return;}
+    if(!location.hash&&openStopId!=null&&st.target.closest(`#stopDetail-${openStopId}`)){const stop=tripPadById(openStopId),days=stop?stayDatesForStop(stop):[];let idx=Math.max(0,Math.min(days.length-1,Number(tideDayByStop[openStopId]||0)));const next=dx<0?idx+1:idx-1;if(next>=0&&next<days.length){setTideDay(openStopId,next);flashSwipe(shortDayLabel(days[next]));}}
+  },{passive:true});
+}
+window.addEventListener('scroll',updateSpeciesRailProgress,{passive:true});
 
 /* ============ ACCUEIL ============ */
 function renderHome(){
   const ap = getActivePort();
+  const focusTxt=focusSpeciesName?` · Focus : ${focusSpeciesName}`:'';
   document.getElementById('headerZone').innerHTML = `
     <p class="eyebrow">Base de connaissance</p>
     <h1>Carnet Pêche JP</h1>
-    <p class="sub">${ap && PORTS[ap] ? 'Port actif : '+PORTS[ap].label+' — '+(tideState(ap,new Date()) ? 'marée '+tideState(ap,new Date()) : 'table officielle hors période embarquée') : 'Marées · loadout · leurres ≤50 g · terrain'}</p>
+    <p class="sub">${ap && PORTS[ap] ? 'Port actif : '+PORTS[ap].label+' — '+(tideState(ap,new Date()) ? 'marée '+tideState(ap,new Date()) : 'table officielle hors période embarquée') : 'Marées · loadout · leurres ≤50 g · terrain'}${escHTML(focusTxt)}</p>
   `;
   syncStickyHeaderOffset();
 
   const tripStops = tripPadStops();
-  const stopsGrid = tripStops.map(s => `
-    <div id="stopPad-${s.id}" class="pad ${openStopId===s.id?'open':''} ${s.port===ap?'active-port':''}" onclick="toggleStop(${s.id})">
+  const stopsGrid = tripStops.map(s => {
+    const match=stopMatchesFocus(s);
+    return `<div id="stopPad-${s.id}" class="pad ${openStopId===s.id?'open':''} ${s.port===ap?'active-port':''} ${focusSpeciesName?(match?'focus-hit':'focus-miss'):''}" onclick="toggleStop(${s.id})">
+      <button class="peek-btn" onclick="event.stopPropagation();openQuickPeek('stop',${s.id})" aria-label="Aperçu ${escAttr(s.city)}">⊙</button>
       <div class="pad-title">${escHTML(s.city)}</div>
       <div class="pad-sub">${escHTML(s.dates)}${s.port&&PORTS[s.port]&&s.arrival_date ? ' · marée JMA à l\'arrivée' : ''}</div>
-    </div>
-    ${openStopId === s.id ? stopDetail(s) : ''}
-  `).join('');
+    </div>${openStopId === s.id ? stopDetail(s) : ''}`;
+  }).join('');
 
   const obsCount = id => FULL_DATA_READY ? (DATA.observations||[]).filter(o=>o.species_id===id).length : Number((DATA.observation_counts||{})[String(id)]||0);
   const speciesGrid = DATA.species.map(sp => {
-    const n = obsCount(sp.id);
-    const doc = n > 0 || (DATA.lures||[]).some(l=>l.species_id===sp.id);
-    return `
-    <div class="species-card ${doc?'':'undoc'}" onclick="location.hash='species/${sp.id}'">
-      <div class="species-icon"></div>
-      <div class="name">${sp.name_fr}</div>
-      <div class="jp">${sp.name_jp}</div>
-      <div class="count">${n ? n+' obs' : 'non documentée'}</div>
+    const n = obsCount(sp.id), doc = n > 0 || (DATA.lures||[]).some(l=>l.species_id===sp.id), match=speciesMatchesFocus(sp);
+    return `<div class="species-card ${doc?'':'undoc'} ${focusSpeciesName?(match?'focus-hit':'focus-miss'):''}" onclick="location.hash='species/${sp.id}'">
+      <button class="peek-btn" onclick="event.stopPropagation();openQuickPeek('species',${sp.id})" aria-label="Aperçu ${escAttr(sp.name_fr)}">⊙</button>
+      <div class="species-icon"></div><div class="name">${sp.name_fr}</div><div class="jp">${sp.name_jp}</div><div class="count">${n ? n+' obs' : 'non documentée'}</div>
     </div>`;
   }).join('');
 
-  const combosGrid = DATA.combos.map(c => comboHomeCard(c)).join('');
-
-  const nSessions = getSessions().length;
+  const combosGrid = DATA.combos.map(c => comboHomeCard(c)).join(''), nSessions = getSessions().length;
+  const tripContent=homeTripView==='map'?tripGeoMapHTML(tripStops):`<div class="pad-grid">${stopsGrid}</div>`;
 
   document.getElementById('mainZone').innerHTML = `
     <div class="home-section">
-      <p class="home-section-title">Où je pêche</p>
-      ${tripStops.length ? `<div class="pad-grid">${stopsGrid}</div>` : `<div class="empty">Aucune étape.</div>`}
+      <div class="home-title-row"><p class="home-section-title">Où je pêche</p><div class="trip-view-toggle" aria-label="Vue voyage"><button type="button" aria-pressed="${homeTripView==='list'?'true':'false'}" class="${homeTripView==='list'?'on':''}" onclick="setTripView('list')">Chronologie</button><button type="button" aria-pressed="${homeTripView==='map'?'true':'false'}" class="${homeTripView==='map'?'on':''}" onclick="setTripView('map')">Carte</button></div></div>
+      ${focusSpeciesName?`<div class="focus-banner"><div class="copy">Focus actif · <strong>${escHTML(focusSpeciesName)}</strong><br>Les étapes pertinentes sont mises en avant.</div><button onclick="clearSpeciesFocus()">Retirer</button></div>`:''}
+      ${tripStops.length ? tripContent : `<div class="empty">Aucune étape.</div>`}
     </div>
-    <div class="home-section">
-      <div class="loadout-head"><p class="home-section-title" style="margin:0">Ma valise — 2 combos</p><div class="loadout-rule">PLAFOND PROJET · 50 G MAX</div></div>
-      ${DATA.combos.length ? `<div class="loadout-grid">${combosGrid}</div>` : `<div class="empty">Aucun combo.</div>`}
-    </div>
-    <div class="home-section">
-      <p class="home-section-title">Espèces documentées</p>
-      ${speciesGrid ? `<div class="species-grid">${speciesGrid}</div>` : `<div class="empty">Aucune espèce documentée pour l'instant.</div>`}
-    </div>
-    ${SYNTH.transversals ? `<div class="home-section">
-      <p class="home-section-title">Grandes lignes</p>
-      <div class="pad-grid">
-        <div class="pad ${openSynthHome?'open':''}" style="grid-column:1 / -1;" onclick="openSynthHome=!openSynthHome;renderHome()">
-          <div class="pad-title">Les 5 transversales — toutes espèces</div>
-          <div class="pad-sub">${SYNTH.based_on||''}</div>
-        </div>
-        ${openSynthHome ? `<div class="pad-detail" onclick="event.stopPropagation()"><div class="synth-box" style="border:none;padding:0;background:transparent;">${mdLite(SYNTH.transversals)}</div></div>` : ''}
-      </div>
-    </div>` : ''}
-    ${nSessions ? `<div class="home-section">
-      <p class="home-section-title">Terrain</p>
-      <div class="log-count">${nSessions} session(s) loggée(s) sur ce téléphone</div>
-      <button class="log-export" onclick="exportSessions()">⇩ Exporter le log (à passer dans pipeline.py import-log)</button>
-    </div>` : ''}
+    <div class="home-section"><div class="loadout-head"><p class="home-section-title" style="margin:0">Ma valise — 2 combos</p><div class="loadout-rule">PLAFOND PROJET · 50 G MAX</div></div>${DATA.combos.length ? `<div class="loadout-grid">${combosGrid}</div>` : `<div class="empty">Aucun combo.</div>`}</div>
+    <div class="home-section"><p class="home-section-title">Espèces documentées</p>${speciesGrid ? `<div class="species-grid">${speciesGrid}</div>` : `<div class="empty">Aucune espèce documentée pour l'instant.</div>`}</div>
+    ${SYNTH.transversals ? `<div class="home-section"><p class="home-section-title">Grandes lignes</p><div class="pad-grid"><div class="pad ${openSynthHome?'open':''}" style="grid-column:1 / -1;" onclick="openSynthHome=!openSynthHome;renderHome()"><div class="pad-title">Les 5 transversales — toutes espèces</div><div class="pad-sub">${SYNTH.based_on||''}</div></div>${openSynthHome ? `<div class="pad-detail" onclick="event.stopPropagation()"><div class="synth-box" style="border:none;padding:0;background:transparent;">${mdLite(SYNTH.transversals)}</div></div>` : ''}</div></div>` : ''}
+    ${nSessions ? `<div class="home-section"><p class="home-section-title">Terrain</p><div class="log-count">${nSessions} session(s) loggée(s) sur ce téléphone</div><button class="log-export" onclick="exportSessions()">⇩ Exporter le log (à passer dans pipeline.py import-log)</button></div>` : ''}
   `;
-  if(pendingScrollStopId!=null){
-    const id=pendingScrollStopId; pendingScrollStopId=null;
-    requestAnimationFrame(()=>document.getElementById(`stopPad-${id}`)?.scrollIntoView({behavior:'smooth',block:'start'}));
-  }
+  decorateGlossary(); updateQuickFab();
+  if(pendingScrollStopId!=null){const id=pendingScrollStopId; pendingScrollStopId=null; requestAnimationFrame(()=>document.getElementById(`stopPad-${id}`)?.scrollIntoView({behavior:'smooth',block:'start'}));}
 }
-
 function briefMd(s){
   // Échappe d'abord le contenu, puis applique un sous-ensemble markdown maîtrisé.
   const safe=escHTML(s||'').replace(/\[#(\d+)\]/g,'<span class="obs-ref">[#$1]</span>');
@@ -1690,7 +2037,8 @@ function stopDetail(s){
     const key=days[idx]||s.arrival_date||dateKeyJST(new Date());
     const refDate=dateFromJST(key,'12:00'), ext=dayExtremes(s.port,refDate), wins=idealWindows(s.port,refDate);
     const documented=Object.keys(bestMomentsBySpecies());
-    const effectiveSpecies=(s.target_species&&s.target_species.length)?s.target_species:documented;
+    const baseSpecies=(s.target_species&&s.target_species.length)?s.target_species:documented;
+    const effectiveSpecies=focusSpeciesName&&baseSpecies.some(n=>String(n).toLowerCase()===String(focusSpeciesName).toLowerCase())?[baseSpecies.find(n=>String(n).toLowerCase()===String(focusSpeciesName).toLowerCase())]:baseSpecies;
     const sun=sunTimes(PORTS[s.port].lat,PORTS[s.port].lng,refDate), src=tideSourceInfo(s.port,refDate);
     const score=tideDayScore(s.port,key,effectiveSpecies,days.length?days:[key]);
     const dayButtons=days.map((k,i)=>{const bw=i===idx?bestWindowDaySummary(s.port,k,effectiveSpecies,s):peekBestWindowDaySummary(s.port,k,effectiveSpecies,s);return `<button class="tide-day ${i===idx?'on':''}" onclick="event.stopPropagation();setTideDay(${s.id},${i})"><div class="d">${escHTML(shortDayLabel(k))}</div><div class="score">${bw?bw.score??'—':'…'}</div><div class="bestfish">${bw?(bw.sp?escHTML(speciesWindowShort(bw.sp)):'—')+(bw.window?' · '+escHTML(fmtWindowRange(bw.window)):''):'calcul en fond'}</div></button>`;}).join('');
@@ -1714,7 +2062,7 @@ function stopDetail(s){
   const summaryBlock=`<div class="dest-section"><div class="k">Destination — aperçu</div><div class="dest-targets"><div class="lab">Espèces ciblées</div><div class="chips">${chips||'—'}</div></div>${destinationSummaryHTML(s)}${destinationGearHTML(s)}</div>`;
   const intelCount=Number(s.intel_count!=null?s.intel_count:(s.intel&&s.intel.length||0));
   const details=intelCount?`<details class="progressive-block"><summary><div><div class="progressive-summary-title">Preuves & contraintes</div><div class="progressive-summary-text">${intelCount} élément${intelCount>1?'s':''} disponible${intelCount>1?'s':''} dans la base</div><div class="progressive-summary-meta">${Math.min(5,intelCount)} signal${Math.min(5,intelCount)>1?'aux':''} prioritaire${Math.min(5,intelCount)>1?'s':''} affiché${Math.min(5,intelCount)>1?'s':''}</div></div></summary><div class="progressive-body">${intelBlock(s,5)}</div></details>`:'';
-  return `<div class="pad-detail" id="stopDetail-${s.id}" onclick="event.stopPropagation()"><div class="dest-context-sticky"><div class="dest-context-copy"><strong>${escHTML(s.city)}</strong>${contextDay?' · '+escHTML(contextDay):''}</div><button id="collapseAll-${s.id}" class="collapse-all-btn" onclick="event.stopPropagation();toggleStopDetails(${s.id})">Tout ouvrir</button></div>${tideBlock}${summaryBlock}${details}${destinationRelationsHTML(s)}</div>`;
+  return `<div class="pad-detail" id="stopDetail-${s.id}" onclick="event.stopPropagation()"><div class="dest-context-sticky"><div class="dest-context-copy"><strong>${escHTML(s.city)}</strong>${contextDay?' · '+escHTML(contextDay):''}${focusSpeciesName&&stopMatchesFocus(s)?' · '+escHTML(focusSpeciesName):''}</div><button id="collapseAll-${s.id}" class="collapse-all-btn" onclick="event.stopPropagation();toggleStopDetails(${s.id})">Tout ouvrir</button></div>${focusSpeciesName?`<div class="focus-inline">Focus ${escHTML(focusSpeciesName)} ${stopMatchesFocus(s)?'— fenêtres et score recentrés sur cette cible.':'— cette espèce n’est pas ciblée sur cette étape.'}</div>`:''}${tideBlock}${summaryBlock}${details}${destinationRelationsHTML(s)}</div>`;
 }
 
 function stopLoadingHTML(s){
@@ -1734,6 +2082,7 @@ function rerenderStopDetail(stopId,defer=false,scrollPlan=false){
     if(openStopId!==stopId)return;
     const live=tripPadById(stopId)||s, html=stopDetail(live), old=document.getElementById(`stopDetail-${stopId}`), pad=document.getElementById(`stopPad-${stopId}`);
     if(old)old.outerHTML=html; else if(pad)pad.insertAdjacentHTML('afterend',html);
+    decorateGlossary(document.getElementById(`stopDetail-${stopId}`));
     warmStopDaySummaries(stopId);
     if(scrollPlan)setTimeout(()=>{const el=document.getElementById(`windowPlan-${stopId}`);if(el&&el.scrollIntoView)el.scrollIntoView({behavior:'smooth',block:'nearest'});},20);
   };
@@ -2048,8 +2397,8 @@ function speciesPanelHTML(sp,obs,i){
   return `${panels[i](sp,obs)}${speciesRelationsHTML(sp)}${speciesContextNavHTML(sp,i)}`;
 }
 function speciesStickyNavHTML(sp){
-  const ctx=speciesContextStop();
-  return `<div class="species-tabs-wrap" id="speciesNav"><div class="species-context-line"><div class="species-context-copy"><strong>${escHTML(sp.name_fr)}</strong> · <span id="speciesContextSection">${SPECIES_TABS[speciesTab]}</span>${ctx?` · ${escHTML(ctx.city)}`:''}</div><button id="readingStart" class="reading-start" ${speciesTab===4?'':'hidden'} onclick="toggleReadingMode()">Mode Lecture</button></div><div class="species-tabs" role="tablist" aria-label="Navigation fiche espèce">${SPECIES_TABS.map((t,i)=>`<button class="species-tab ${i===speciesTab?'active':''}" role="tab" aria-selected="${i===speciesTab?'true':'false'}" onclick="setSpeciesTab(${i})">${t}</button>`).join('')}</div></div>`;
+  const ctx=speciesContextStop(), focused=focusSpeciesName===sp.name_fr;
+  return `<div class="species-tabs-wrap" id="speciesNav"><div class="species-context-line"><div class="species-context-copy"><strong>${escHTML(sp.name_fr)}</strong> · <span id="speciesContextSection">${SPECIES_TABS[speciesTab]}</span>${ctx?` · ${escHTML(ctx.city)}`:''}</div><div class="species-context-actions"><button class="focus-toggle ${focused?'on':''}" onclick="toggleSpeciesFocus('${escAttr(sp.name_fr)}')">${focused?'Focus ✓':'Focus'}</button><button id="readingStart" class="reading-start" ${speciesTab===4?'':'hidden'} onclick="toggleReadingMode()">Lecture</button></div></div><div class="species-tabs" role="tablist" aria-label="Navigation fiche espèce">${SPECIES_TABS.map((t,i)=>`<button class="species-tab ${i===speciesTab?'active':''}" role="tab" aria-selected="${i===speciesTab?'true':'false'}" onclick="setSpeciesTab(${i})">${t}</button>`).join('')}</div></div>`;
 }
 function applyReadingMode(){ document.body.classList.toggle('reading-mode',readingMode); }
 function toggleReadingMode(){
@@ -2069,8 +2418,9 @@ function renderSpeciesPage(){
   syncStickyHeaderOffset(); applyReadingMode();
 
   const obs = speciesObservations(sp.id);
-  document.getElementById('mainZone').innerHTML = `${speciesLoadoutHTML(sp)}${speciesStickyNavHTML(sp)}<div id="tabPanel">${speciesPanelHTML(sp,obs,speciesTab)}</div>`;
-  requestAnimationFrame(()=>ensureActiveSpeciesTabVisible(false));
+  document.getElementById('mainZone').innerHTML = `${focusSpeciesName?`<div class="focus-inline">Focus voyage : ${escHTML(focusSpeciesName)}${focusSpeciesName===sp.name_fr?' — actif sur cette fiche.':' — vous consultez une autre espèce.'}</div>`:''}${speciesLoadoutHTML(sp)}${speciesStickyNavHTML(sp)}<div id="tabPanel">${speciesPanelHTML(sp,obs,speciesTab)}</div>`;
+  decorateGlossary(); updateSpeciesRail(); updateQuickFab();
+  requestAnimationFrame(()=>{ensureActiveSpeciesTabVisible(false);updateSpeciesRailProgress();});
 }
 function ensureActiveSpeciesTabVisible(smooth=true){
   const active=document.querySelector('.species-tab.active');
@@ -2082,7 +2432,9 @@ function setSpeciesTab(i){
   const sp = DATA.species.find(s=>s.id===currentSpeciesId);
   const obs = speciesObservations(sp.id);
   document.getElementById('tabPanel').innerHTML = speciesPanelHTML(sp,obs,i);
+  decorateGlossary(document.getElementById('tabPanel'));
   document.querySelectorAll('.species-tab').forEach((el,idx)=>{const on=idx===i;el.classList.toggle('active',on);el.setAttribute('aria-selected',on?'true':'false');});
+  updateSpeciesRail();
   const section=document.getElementById('speciesContextSection'); if(section)section.textContent=SPECIES_TABS[i];
   const read=document.getElementById('readingStart'); if(read)read.hidden=i!==4;
   requestAnimationFrame(()=>{
@@ -2578,7 +2930,7 @@ function saveLog(speciesName){
     lure, combo, cast_weight_g: castWeight, result: logResult,
     notes: document.getElementById('logNotes').value.trim(),
   });
-  saveSessions(sessions);
+  if(!saveSessions(sessions)){ alert('Impossible d’enregistrer la session sur cet appareil. Vérifie que le stockage local est autorisé ou libère de l’espace. Le formulaire est conservé.'); return; }
   logResult = null;
   const sp = DATA.species.find(s=>s.id===currentSpeciesId);
   document.getElementById('logZone').innerHTML = logFormHTML(sp);
@@ -2608,8 +2960,8 @@ function showFatal(msg){
     + '</div>';
 }
 function resetApp(){
-  if('serviceWorker' in navigator){ navigator.serviceWorker.getRegistrations().then(rs=>rs.forEach(r=>r.unregister())); }
-  if(window.caches){ caches.keys().then(ks=>ks.forEach(k=>caches.delete(k))).then(()=>location.reload(true)); }
+  if('serviceWorker' in navigator){ navigator.serviceWorker.getRegistration().then(r=>r&&r.unregister()); }
+  if(window.caches){ caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('carnet-peche-jp-')).map(k=>caches.delete(k)))).then(()=>location.reload(true)); }
   else location.reload(true);
 }
 window.addEventListener('error', (e)=>{
@@ -2618,6 +2970,23 @@ window.addEventListener('error', (e)=>{
 const _bootTimer = setTimeout(()=>{
   if(!document.getElementById('mainZone').innerHTML.trim()) showFatal('Délai dépassé au chargement des données.');
 }, 6000);
+
+restoreUXState();
+installSwipeNavigation();
+function trapUXSheetFocus(e){
+  const back=document.getElementById('uxBackdrop'),sheet=document.getElementById('uxSheet');
+  if(e.key!=='Tab'||!back?.classList.contains('open')||!sheet)return;
+  const focusable=[...sheet.querySelectorAll('button,[href],input,select,textarea,[tabindex]:not([tabindex="-1"])')].filter(el=>!el.disabled&&el.getClientRects().length);
+  if(!focusable.length)return;
+  const first=focusable[0],last=focusable[focusable.length-1];
+  if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+  else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+}
+document.addEventListener('keydown',e=>{
+  const back=document.getElementById('uxBackdrop');
+  if(e.key==='Escape'&&back?.classList.contains('open')){e.preventDefault();closeUXSheet();return;}
+  trapUXSheetFocus(e);
+});
 
 (async ()=>{
   try{ await loadData(); }

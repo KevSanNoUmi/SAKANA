@@ -1,0 +1,2248 @@
+{
+  "format": "carnet_peche_jp_research_staging",
+  "version": "1.0",
+  "generated_at": "2026-08-12",
+  "research_scope": {
+    "title": "Lot 2 P0 curaté — Madai / Suzuki / Hirame",
+    "region": "Japan",
+    "target_period": "comportement transférable + voyage nov.-déc. 2026",
+    "input_type": "video_transcript",
+    "language_original": "ja",
+    "notes": "Hors saison conservé pour valeur comportementale; curation validée avant import."
+  },
+  "sources": [
+    {
+      "source_id": "S001",
+      "label": "Video transcript / Amakusa shore Madai",
+      "url": null,
+      "source_type": "video_transcript",
+      "publication_date": null,
+      "source_identity": {
+        "author": null,
+        "channel_or_account": null,
+        "platform_or_publisher": null,
+        "corporate_group": null
+      },
+      "language": "ja",
+      "geographic_scope": "Kumamoto · Amakusa",
+      "quality_notes": "Transcription automatique; noms de modèles et poids non confirmés restent non actionnables. Fichier brut conservé dans research/raw_transcripts/Export-Subtitles-AppForLanguage (9).txt"
+    },
+    {
+      "source_id": "S002",
+      "label": "Video transcript / Shizuoka surf Madai",
+      "url": null,
+      "source_type": "video_transcript",
+      "publication_date": null,
+      "source_identity": {
+        "author": null,
+        "channel_or_account": null,
+        "platform_or_publisher": null,
+        "corporate_group": null
+      },
+      "language": "ja",
+      "geographic_scope": "Shizuoka surf",
+      "quality_notes": "Transcription automatique; noms de modèles et poids non confirmés restent non actionnables. Fichier brut conservé dans research/raw_transcripts/Export-Subtitles-AppForLanguage (8).txt"
+    },
+    {
+      "source_id": "S003",
+      "label": "Video transcript / Tokyo Bay cold Suzuki",
+      "url": null,
+      "source_type": "video_transcript",
+      "publication_date": null,
+      "source_identity": {
+        "author": null,
+        "channel_or_account": null,
+        "platform_or_publisher": null,
+        "corporate_group": null
+      },
+      "language": "ja",
+      "geographic_scope": "Tokyo Bay inner rivers / Yoro River",
+      "quality_notes": "Transcription automatique; noms de modèles et poids non confirmés restent non actionnables. Fichier brut conservé dans research/raw_transcripts/Export-Subtitles-AppForLanguage (5).txt"
+    },
+    {
+      "source_id": "S004",
+      "label": "Video transcript / Tokyo Arakawa-Sumida Suzuki",
+      "url": null,
+      "source_type": "video_transcript",
+      "publication_date": null,
+      "source_identity": {
+        "author": null,
+        "channel_or_account": null,
+        "platform_or_publisher": null,
+        "corporate_group": null
+      },
+      "language": "ja",
+      "geographic_scope": "Tokyo · Arakawa / Sumida",
+      "quality_notes": "Transcription automatique; noms de modèles et poids non confirmés restent non actionnables. Fichier brut conservé dans research/raw_transcripts/Export-Subtitles-AppForLanguage (2).txt"
+    },
+    {
+      "source_id": "S005",
+      "label": "根もち / surf wando Hirame",
+      "url": null,
+      "source_type": "video_transcript",
+      "publication_date": null,
+      "source_identity": {
+        "author": "根もち",
+        "channel_or_account": null,
+        "platform_or_publisher": null,
+        "corporate_group": null
+      },
+      "language": "ja",
+      "geographic_scope": "surf japonais · lieu exact inconnu",
+      "quality_notes": "Transcription automatique; noms de modèles et poids non confirmés restent non actionnables. Fichier brut conservé dans research/raw_transcripts/Export-Subtitles-AppForLanguage (10).txt"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E001",
+      "source_id": "S001",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Kumamoto",
+        "city_or_region": "Amakusa",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E002",
+      "source_id": "S001",
+      "event_type": "observation",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Kumamoto",
+        "city_or_region": "Amakusa",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "outcome": "observation",
+      "fish": {
+        "count": null,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E003",
+      "source_id": "S002",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Shizuoka",
+        "city_or_region": "surf de Shizuoka",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "saba",
+      "observed_species": [
+        "saba"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E004",
+      "source_id": "S002",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Shizuoka",
+        "city_or_region": "surf de Shizuoka",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E005",
+      "source_id": "S002",
+      "event_type": "observation",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Shizuoka",
+        "city_or_region": "surf de Shizuoka",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "outcome": "observation",
+      "fish": {
+        "count": null,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E006",
+      "source_id": "S003",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": null,
+        "city_or_region": "baie de Tokyo / rivière Yoro",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "area"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E007",
+      "source_id": "S003",
+      "event_type": "observation",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": null,
+        "city_or_region": "baie de Tokyo / rivière Yoro",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "area"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "observation",
+      "fish": {
+        "count": null,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E008",
+      "source_id": "S003",
+      "event_type": "observation",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": null,
+        "city_or_region": "baie de Tokyo / rivière Yoro",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "area"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "missed_strike",
+      "fish": {
+        "count": null,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E009",
+      "source_id": "S003",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": null,
+        "city_or_region": "baie de Tokyo / rivière Yoro",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "area"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": 90,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": "jour",
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E010",
+      "source_id": "S003",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": null,
+        "city_or_region": "baie de Tokyo / rivière Yoro",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "area"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": "jour",
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E011",
+      "source_id": "S003",
+      "event_type": "observation",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": null,
+        "city_or_region": "baie de Tokyo / rivière Yoro",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "area"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "observation",
+      "fish": {
+        "count": null,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E012",
+      "source_id": "S004",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Tokyo",
+        "city_or_region": "Arakawa / Sumida",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": "descendante",
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E013",
+      "source_id": "S004",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Tokyo",
+        "city_or_region": "Arakawa / Sumida",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": "descendante",
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E014",
+      "source_id": "S004",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Tokyo",
+        "city_or_region": "Arakawa / Sumida",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E015",
+      "source_id": "S004",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Tokyo",
+        "city_or_region": "Arakawa / Sumida",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E016",
+      "source_id": "S004",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Tokyo",
+        "city_or_region": "Arakawa / Sumida",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E017",
+      "source_id": "S004",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Tokyo",
+        "city_or_region": "Arakawa / Sumida",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E018",
+      "source_id": "S004",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Tokyo",
+        "city_or_region": "Arakawa / Sumida",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E019",
+      "source_id": "S004",
+      "event_type": "observation",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": "Tokyo",
+        "city_or_region": "Arakawa / Sumida",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "regional"
+      },
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "outcome": "observation",
+      "fish": {
+        "count": null,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E020",
+      "source_id": "S005",
+      "event_type": "observation",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": null,
+        "city_or_region": "surf",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "area"
+      },
+      "target_species": "hirame",
+      "observed_species": [
+        "hirame"
+      ],
+      "outcome": "observation",
+      "fish": {
+        "count": null,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    },
+    {
+      "event_id": "E021",
+      "source_id": "S005",
+      "event_type": "capture",
+      "event_date": null,
+      "event_time": null,
+      "location": {
+        "country": "Japan",
+        "prefecture": null,
+        "city_or_region": "surf",
+        "spot": null,
+        "micro_spot": null,
+        "location_precision": "area"
+      },
+      "target_species": "hirame",
+      "observed_species": [
+        "hirame"
+      ],
+      "outcome": "catch",
+      "fish": {
+        "count": 1,
+        "size_cm": null,
+        "weight_g": null
+      },
+      "conditions": {
+        "moment_jour": null,
+        "tide_phase": null,
+        "tide_detail": null,
+        "current_observation": null,
+        "water_clarity": null,
+        "water_detail": null,
+        "wind": null,
+        "waves_or_swell": null,
+        "bait": [],
+        "birds_or_surface_activity": null
+      },
+      "shore_relevance": "direct_shore"
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "F001",
+      "event_id": null,
+      "source_id": "S001",
+      "claim_type": "local_presence",
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "fact_text_fr": "Le pêcheur dit commencer régulièrement le Madai du bord vers le début de l'hiver; il considère la période hiver-printemps comme favorable au rapprochement côtier, en lien notamment avec les sardines.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Kumamoto · Amakusa",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:02:02",
+        "timestamp_end": "00:03:07",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F002",
+      "event_id": null,
+      "source_id": "S001",
+      "claim_type": "technique_observation",
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "fact_text_fr": "Sans bait visible, il commence avec un sinking pencil haut dans la couche puis ajoute du countdown pour descendre; il insère parfois un stop-and-go s'il imagine un poisson suiveur.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Kumamoto · Amakusa",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:06:19",
+        "timestamp_end": "00:07:20",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F003",
+      "event_id": null,
+      "source_id": "S001",
+      "claim_type": "technique_observation",
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "fact_text_fr": "La taille de leurre est choisie selon le bait: environ 8-10 cm sur petites sardines, plus grand si le fourrage est plus volumineux; si le bait est inconnu il reste autour de 10 cm.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Kumamoto · Amakusa",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:07:32",
+        "timestamp_end": "00:08:13",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F004",
+      "event_id": "E001",
+      "source_id": "S001",
+      "claim_type": "capture_event",
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "fact_text_fr": "Capture confirmée d'un Madai du bord à Amakusa; le poisson prend loin du bord dans le courant principal et est estimé ensuite autour du milieu des 40 cm à environ 50 cm.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Kumamoto · Amakusa",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:19:01",
+        "timestamp_end": "00:20:51",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F005",
+      "event_id": "E002",
+      "source_id": "S001",
+      "claim_type": "technique_observation",
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "fact_text_fr": "La session est conduite en run-and-gun très mobile afin de trouver bait et poissons de passage; le pêcheur décrit parfois un lancer puis déplacement.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Kumamoto · Amakusa",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:21:14",
+        "timestamp_end": "00:23:45",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F006",
+      "event_id": "E003",
+      "source_id": "S002",
+      "claim_type": "ecosystem_signal",
+      "target_species": "saba",
+      "observed_species": [
+        "saba"
+      ],
+      "fact_text_fr": "Une petite Saba est capturée depuis le surf de Shizuoka pendant la session; elle constitue à la fois une présence Saba et un signal de petit bait disponible.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Shizuoka surf",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:03:03",
+        "timestamp_end": "00:03:19",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_ECOSYSTEM"
+    },
+    {
+      "fact_id": "F007",
+      "event_id": "E004",
+      "source_id": "S002",
+      "claim_type": "capture_event",
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "fact_text_fr": "Un Madai est capturé depuis le surf de Shizuoka sur Bone Bait monté sur Finesse Head; le pêcheur précise ensuite que la tête utilisée était de 18 g.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Shizuoka surf",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:05:09",
+        "timestamp_end": "00:07:18",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "unknown",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F008",
+      "event_id": "E004",
+      "source_id": "S002",
+      "claim_type": "technique_observation",
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "fact_text_fr": "La tête de 18 g a été choisie pour mieux contrôler le montage sous vent fort et limiter la dérive provoquée par la bannière de ligne.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Shizuoka surf",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:07:27",
+        "timestamp_end": "00:08:01",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F009",
+      "event_id": "E005",
+      "source_id": "S002",
+      "claim_type": "technique_observation",
+      "target_species": "madai",
+      "observed_species": [
+        "madai"
+      ],
+      "fact_text_fr": "Méthode décrite: contact fond, récupération, petite remontée, arrêt/retombée, reprise, nouveau stop; l'auteur cherche volontairement une animation irrégulière plutôt qu'un linéaire constant.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Shizuoka surf",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:08:16",
+        "timestamp_end": "00:09:56",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F010",
+      "event_id": "E006",
+      "source_id": "S003",
+      "claim_type": "capture_event",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Sur une cassure associée à un clair-obscur, après avoir testé plusieurs profondeurs, un Suzuki est pris avec un countdown d'environ 8 temps puis une récupération rapide le long de la cassure; l'attaque survient lorsque le leurre remonte vers le shallow.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo Bay inner rivers / Yoro River",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:11:07",
+        "timestamp_end": "00:14:59",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F011",
+      "event_id": "E007",
+      "source_id": "S003",
+      "claim_type": "technique_observation",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "La couche est recherchée progressivement par countdown (environ 3, puis 5, puis 8 temps); après la capture et la baisse du niveau, le pêcheur constate que 8 devient trop profond et réajuste.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo Bay inner rivers / Yoro River",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:12:15",
+        "timestamp_end": "00:16:21",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F012",
+      "event_id": "E006",
+      "source_id": "S003",
+      "claim_type": "field_observation",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Au moment de cette séquence, le pêcheur indique une température d'eau à un chiffre en degrés Celsius.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo Bay inner rivers / Yoro River",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:14:52",
+        "timestamp_end": "00:15:23",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F013",
+      "event_id": "E008",
+      "source_id": "S003",
+      "claim_type": "behavior_observation",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Une autre réaction est obtenue sur la cassure mais le poisson se décroche/échoue à se piquer correctement.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo Bay inner rivers / Yoro River",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:17:54",
+        "timestamp_end": "00:18:56",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F014",
+      "event_id": "E009",
+      "source_id": "S003",
+      "claim_type": "capture_event",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Dans la rivière Yoro en eau très froide, un Suzuki de 90 cm est pris de jour sur Schneider 18 travaillé dans la couche basse; le poisson recrache un mulet de plus de 30 cm.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo Bay inner rivers / Yoro River",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:20:57",
+        "timestamp_end": "00:27:15",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F015",
+      "event_id": "E009",
+      "source_id": "S003",
+      "claim_type": "behavior_observation",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Avant la capture, le bait est observé principalement près du fond; l'auteur estime que les Suzuki restent eux aussi bas et privilégie un leurre pouvant rester lentement dans cette couche.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo Bay inner rivers / Yoro River",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:20:57",
+        "timestamp_end": "00:22:20",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F016",
+      "event_id": "E010",
+      "source_id": "S003",
+      "claim_type": "capture_event",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Un second gros Suzuki distinct est capturé dans la même session froide; lui aussi contient du mulet dans la bouche.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo Bay inner rivers / Yoro River",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:27:44",
+        "timestamp_end": "00:29:29",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F017",
+      "event_id": "E011",
+      "source_id": "S003",
+      "claim_type": "technique_observation",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Lorsque le courant faiblit, le pêcheur allonge les lancers vers la partie où le flux reste plus fort; il relie cette zone au passage de bait et des poissons entrant depuis l'aval.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo Bay inner rivers / Yoro River",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:29:35",
+        "timestamp_end": "00:30:03",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F018",
+      "event_id": "E012",
+      "source_id": "S004",
+      "claim_type": "capture_event",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Dans l'Arakawa au début de la descendante, des inakko sont visibles mais aucun boil n'apparaît; les Suzuki sont observés collés au fond dans environ 1 m d'eau et un poisson prend un shad travaillé lentement sur le fond.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:00:57",
+        "timestamp_end": "00:02:59",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F019",
+      "event_id": "E012",
+      "source_id": "S004",
+      "claim_type": "technique_observation",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Dans seulement ~1 m d'eau, le pêcheur évite une vibration qui plongerait trop agressivement et préfère le shad parce qu'il peut rouler lentement au fond.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:03:29",
+        "timestamp_end": "00:05:53",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F020",
+      "event_id": "E013",
+      "source_id": "S004",
+      "claim_type": "capture_event",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Après l'apparition d'un premier boil, le pêcheur passe immédiatement au Galva 87S et fait dériver le leurre juste sous la surface dans la veine précise où le poisson est monté; un Suzuki est capturé.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:06:04",
+        "timestamp_end": "00:08:25",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F021",
+      "event_id": "E014",
+      "source_id": "S004",
+      "claim_type": "capture_event",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Dans la Sumida, un Suzuki est capturé sur MiniEnt 57S en fall contrôlé au ras d'une structure/pile, avec assez de tension pour détecter la touche et conserver la trajectoire.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:10:35",
+        "timestamp_end": "00:12:02",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F022",
+      "event_id": "E014",
+      "source_id": "S004",
+      "claim_type": "technique_observation",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Le pêcheur précise qu'un free fall lui ferait perdre la détection des touches; il conserve donc une tension légère pendant la descente.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:11:30",
+        "timestamp_end": "00:12:11",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F023",
+      "event_id": "E015",
+      "source_id": "S004",
+      "claim_type": "capture_event",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Deuxième capture distincte de la séquence Sumida sur la même logique de fall près de la structure.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:12:40",
+        "timestamp_end": "00:13:03",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F024",
+      "event_id": "E016",
+      "source_id": "S004",
+      "claim_type": "capture_event",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Troisième capture distincte de la séquence Sumida; le pattern de tirer légèrement puis laisser retomber continue à produire.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:14:45",
+        "timestamp_end": "00:15:46",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F025",
+      "event_id": "E017",
+      "source_id": "S004",
+      "claim_type": "capture_event",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Quatrième capture distincte de la séquence Sumida, poisson annoncé autour de 62-63 cm et en bonne condition automnale.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:16:52",
+        "timestamp_end": "00:18:12",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F026",
+      "event_id": "E018",
+      "source_id": "S004",
+      "claim_type": "capture_event",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Cinquième capture distincte de la séquence Sumida alors que le courant faiblit; le pêcheur s'est déplacé vers une structure plus éloignée où le flux reste exploitable.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:19:02",
+        "timestamp_end": "00:20:40",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F027",
+      "event_id": "E019",
+      "source_id": "S004",
+      "claim_type": "behavior_observation",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "Le pêcheur constate que les touches disparaissent quand le leurre s'écarte de la bordure de structure; la précision de placement et le maintien du fall au ras de l'obstacle sont essentiels dans cette session.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:11:37",
+        "timestamp_end": "00:16:33",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F028",
+      "event_id": "E018",
+      "source_id": "S004",
+      "claim_type": "technique_observation",
+      "target_species": "suzuki",
+      "observed_species": [
+        "suzuki"
+      ],
+      "fact_text_fr": "À l'approche de l'étale, le courant faiblit; il change de position pour viser une structure plus éloignée où le flux fonctionne encore, ce qui produit un nouveau poisson.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "Tokyo · Arakawa / Sumida",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:18:26",
+        "timestamp_end": "00:20:40",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F029",
+      "event_id": "E020",
+      "source_id": "S005",
+      "claim_type": "behavior_observation",
+      "target_species": "hirame",
+      "observed_species": [
+        "hirame"
+      ],
+      "fact_text_fr": "Dans un même wando, un Hirame d'automne est décrit comme pris autour du courant de retour à l'extrémité du sandbar, en travaillant de la surface vers la couche intermédiaire.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "surf japonais · lieu exact inconnu",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:05:56",
+        "timestamp_end": "00:06:43",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_FACT"
+    },
+    {
+      "fact_id": "F030",
+      "event_id": "E020",
+      "source_id": "S005",
+      "claim_type": "capture_event",
+      "target_species": "hirame",
+      "observed_species": [
+        "hirame"
+      ],
+      "fact_text_fr": "Capture confirmée d'un Hirame; le leurre est nommé « Off Bait 30 » dans la transcription.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "surf japonais · lieu exact inconnu",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:10:37",
+        "timestamp_end": "00:12:07",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    },
+    {
+      "fact_id": "F031",
+      "event_id": "E021",
+      "source_id": "S005",
+      "claim_type": "capture_event",
+      "target_species": "hirame",
+      "observed_species": [
+        "hirame"
+      ],
+      "fact_text_fr": "Deuxième Hirame distinct, de petite taille, capturé dans un secteur où la plage forme une bosse puis un wando; le sandbar est annoncé vers 60-70 m.",
+      "original_term_or_excerpt": null,
+      "location_relevance": "surf japonais · lieu exact inconnu",
+      "technique": {
+        "lure": {
+          "brand": null,
+          "model": null,
+          "family": null,
+          "length_mm": null,
+          "lure_weight_g": null,
+          "total_cast_weight_g": null,
+          "density": null
+        },
+        "angler_action": {
+          "reel": null,
+          "rod": null,
+          "line_tension": null
+        },
+        "lure_behavior": null,
+        "strike_trigger": null
+      },
+      "source_locator": {
+        "timestamp_start": "00:12:31",
+        "timestamp_end": "00:14:17",
+        "page": null,
+        "paragraph": null
+      },
+      "setup_compatibility": "compatible_or_generic",
+      "curation_status": "STAGE_EVENT"
+    }
+  ],
+  "possible_interpretations": [
+    {
+      "interpretation_id": "I001",
+      "text": "Pour choisir un secteur Madai du bord, le pêcheur donne la priorité au bait puis recherche courant actif, eau profonde proche et cassure/pente accessible.",
+      "supported_by": [],
+      "status": "hypothesis",
+      "source_id": "S001",
+      "curation_id": "MA02"
+    },
+    {
+      "interpretation_id": "I002",
+      "text": "Le pêcheur estime que les moments juste avant l'arrêt de marée ou au redémarrage du mouvement peuvent déclencher des poissons présents mais jusque-là non mordants.",
+      "supported_by": [],
+      "status": "hypothesis",
+      "source_id": "S001",
+      "curation_id": "MA03"
+    },
+    {
+      "interpretation_id": "I003",
+      "text": "En période froide, l'auteur décrit des Suzuki peu actifs qui s'éloignent peu de leur couche de confort; il recommande de faire passer le leurre devant eux plutôt que d'attendre une montée franche.",
+      "supported_by": [],
+      "status": "hypothesis",
+      "source_id": "S003",
+      "curation_id": "SC01"
+    },
+    {
+      "interpretation_id": "I004",
+      "text": "L'auteur considère qu'une zone légèrement réchauffée par un rejet peut concentrer bait et Suzuki lorsque l'eau générale est très froide.",
+      "supported_by": [],
+      "status": "hypothesis",
+      "source_id": "S003",
+      "curation_id": "SC10"
+    },
+    {
+      "interpretation_id": "I005",
+      "text": "La séquence montre que la présence de bait en surface ne suffit pas à déduire la couche du Suzuki: les poissons restent d'abord au fond puis une activité de surface ponctuelle justifie le changement immédiat de couche.",
+      "supported_by": [],
+      "status": "hypothesis",
+      "source_id": "S004",
+      "curation_id": "SL04"
+    },
+    {
+      "interpretation_id": "I006",
+      "text": "L'auteur déconseille de privilégier la face exacte de la bosse sableuse lorsque la mousse y reste uniforme et que la variation de relief est faible.",
+      "supported_by": [],
+      "status": "hypothesis",
+      "source_id": "S005",
+      "curation_id": "HW03"
+    },
+    {
+      "interpretation_id": "I007",
+      "text": "Dans un très grand wando, le centre peut être moins intéressant lorsque le sandbar est hors de portée ou que les variations de profondeur accessibles sont faibles.",
+      "supported_by": [],
+      "status": "hypothesis",
+      "source_id": "S005",
+      "curation_id": "HW04"
+    },
+    {
+      "interpretation_id": "I008",
+      "text": "Quelques mètres à côté de la bosse sableuse, là où la profondeur augmente progressivement et où l'extrémité d'un sandbar rencontre le courant de retour, sont présentés comme une micro-position prioritaire.",
+      "supported_by": [],
+      "status": "hypothesis",
+      "source_id": "S005",
+      "curation_id": "HW05"
+    },
+    {
+      "interpretation_id": "I009",
+      "text": "Dans ce type de wando, l'auteur associe davantage le Hirame à la zone où le courant agit franchement, tandis que le Magochi est décrit plus proche de la mousse.",
+      "supported_by": [],
+      "status": "hypothesis",
+      "source_id": "S005",
+      "curation_id": "HW06"
+    }
+  ],
+  "unresolved_items": [
+    {
+      "curation_id": "MA06",
+      "source_id": "S001",
+      "text": "Un très gros poisson frappe dès l'entrée dans le courant principal; le pêcheur pense à un Madai nourri sur le bait dérivant mais l'espèce n'est pas confirmée.",
+      "note": "Ne pas compter comme Madai positif; target_species doit rester null."
+    },
+    {
+      "curation_id": "MA09",
+      "source_id": "S001",
+      "text": "Date de pêche/publication et modèle exact du leurre de la capture finale non disponibles dans la transcription.",
+      "note": ""
+    },
+    {
+      "curation_id": "MS05",
+      "source_id": "S002",
+      "text": "Le déclencheur exact de la capture Madai n'est pas explicitement isolé: la vidéo confirme un travail depuis le fond mais pas si l'attaque a eu lieu au lift, au fall ou à la reprise.",
+      "note": ""
+    },
+    {
+      "curation_id": "MS06",
+      "source_id": "S002",
+      "text": "Le poids total réellement lancé (tête 18 g + Bone Bait) doit être vérifié avant toute recommandation active par poids.",
+      "note": ""
+    },
+    {
+      "curation_id": "SC11",
+      "source_id": "S003",
+      "text": "Le modèle transcrit comme « Koume 70 » doit être vérifié (marque, poids exact, densité) avant recommandation active.",
+      "note": ""
+    },
+    {
+      "curation_id": "SC12",
+      "source_id": "S003",
+      "text": "Le premier secteur de la vidéo est mal transcrit; la séquence reste exploitable comme Tokyo Bay inner river mais le nom exact du cours d'eau doit être vérifié.",
+      "note": ""
+    },
+    {
+      "curation_id": "SL13",
+      "source_id": "S004",
+      "text": "Le nom du shad de la première capture est mal transcrit (« Fashad/Fa Shad 70 »); modèle exact et poids à vérifier.",
+      "note": ""
+    },
+    {
+      "curation_id": "SL14",
+      "source_id": "S004",
+      "text": "Poids exacts du Galva 87S et du MiniEnt 57S à vérifier dans une source fabricant avant de les transformer en recommandations de modèle.",
+      "note": ""
+    },
+    {
+      "curation_id": "HW10",
+      "source_id": "S005",
+      "text": "Le modèle « Off Bait 30 » et son poids exact doivent être vérifiés avant statut matériel/recommandation active.",
+      "note": ""
+    },
+    {
+      "curation_id": "HW11",
+      "source_id": "S005",
+      "text": "Lieu exact, date de pêche et identité complète de la source ne sont pas fournis dans la transcription.",
+      "note": ""
+    }
+  ],
+  "research_gaps": [
+    "Retrouver URL, titre, chaîne/auteur et date de publication des cinq vidéos P0.",
+    "Vérifier les modèles/poids: Koume 70, shad Arakawa, Galva 87S, MiniEnt 57S, Off Bait 30.",
+    "Vérifier le poids total Bone Bait + tête 18 g avant recommandation de modèle/poids.",
+    "Identifier le premier cours d’eau de la source Suzuki eau froide."
+  ]
+}

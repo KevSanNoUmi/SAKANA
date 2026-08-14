@@ -1,6 +1,7 @@
-// Carnet Pêche JP — service worker V6.5.10 navigation contextuelle
+// Carnet Pêche JP — service worker V6.5.12 UX carte + cibles tactiles
 // Démarrage : noyau léger + décisions pré-calculées. Le corpus complet est chargé à la demande.
-const CACHE = 'carnet-peche-jp-v6-5-10-navigation-contextuelle-20260814';
+const CACHE_PREFIX = 'carnet-peche-jp-';
+const CACHE = 'carnet-peche-jp-v6-5-12-ux-carte-20260814';
 
 const CRITICAL = [
   './',
@@ -33,7 +34,7 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    await Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key)));
+    await Promise.all(keys.filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE).map((key) => caches.delete(key)));
     await self.clients.claim();
   })());
 });

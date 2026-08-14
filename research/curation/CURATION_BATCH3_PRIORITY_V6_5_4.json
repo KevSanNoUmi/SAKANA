@@ -1,0 +1,1409 @@
+{
+  "format": "carnet_peche_jp_curation",
+  "version": "1.1",
+  "base_release": "V6.5.4 Mobile Readability",
+  "scope": "Batch 3 detailed curation — 21-transcript audit priority subset; no project import",
+  "policy": {
+    "out_of_trip_season_can_keep_behavioral_value": true,
+    "expert_experience_never_creates_positive_event": true,
+    "unknown_exact_date_disables_window_vote": true,
+    "same_capture_mentions_share_event_key": true,
+    "lost_or_bite_events_never_count_positive_recurrence": true,
+    "aomono_methods_may_inform_hamachi_only_when_seriola_lineage_explicit": true,
+    "non_seriola_aomono_catches_do_not_vote_hamachi": true,
+    "unknown_or_unverified_model_specs_not_actionable": true,
+    "over_50g_source_facts_preserved_but_not_recommended": true,
+    "tide_prediction_is_not_measured_current": true,
+    "same_creator_videos_not_independent_replication": true
+  },
+  "sources": [
+    {
+      "key": "B3_SUZUKI_MIYAGI_19",
+      "file": "Export-Subtitles-AppForLanguage (19).txt",
+      "target_species": [
+        "suzuki"
+      ],
+      "source_group": "field_report_miyagi_suzuki",
+      "value": "A+++",
+      "notes": "Deux captures Suzuki certaines; plusieurs touches/décrochés séparés. Date exacte inconnue; ne pas faire voter une fenêtre calendrier."
+    },
+    {
+      "key": "B3_HIRAME_TIMING_25",
+      "file": "Export-Subtitles-AppForLanguage (25).txt",
+      "target_species": [
+        "hirame"
+      ],
+      "source_group": "marunaka_hirame_expert",
+      "value": "A+++_COMPRENDRE",
+      "notes": "Expertise agrégée. Zéro événement positif. Exclusion absolue de la récurrence et du scoring horaire/marée."
+    },
+    {
+      "key": "B3_HIRAME_FIELD_5",
+      "file": "Export-Subtitles-AppForLanguage (5).txt",
+      "target_species": [
+        "hirame"
+      ],
+      "source_group": "same_hirame_surf_creator",
+      "value": "A+++",
+      "notes": "Deux captures Hirame distinctes. Lieu exact et date exacte non résolus."
+    },
+    {
+      "key": "B3_HIRAME_FIELD_6",
+      "file": "Export-Subtitles-AppForLanguage (6).txt",
+      "target_species": [
+        "hirame"
+      ],
+      "source_group": "same_hirame_surf_creator",
+      "value": "A++",
+      "notes": "Une capture Hirame certaine; début juillet explicitement annoncé, mais année/lieu exact non résolus."
+    },
+    {
+      "key": "B3_AOMONO_LSJ_9",
+      "file": "Export-Subtitles-AppForLanguage (9).txt",
+      "target_species": [
+        "hamachi"
+      ],
+      "source_group": "light_shore_jigging_tutorial",
+      "value": "A-_TECHNIQUE",
+      "notes": "Méthodes 青物 incluant explicitement Wakashi/Inada/Warasa/Buri. Aucun événement Hamachi positif; capture réelle observée = Kanpachi, donc hors Hamachi."
+    },
+    {
+      "key": "B3_HIRAME_SINKING_PENCIL_3",
+      "file": "Export-Subtitles-AppForLanguage (3).txt",
+      "target_species": [
+        "hirame"
+      ],
+      "source_group": "same_hirame_surf_creator",
+      "value": "A-_TECHNIQUE",
+      "notes": "Vidéo pédagogique/compilation. Anecdotes de captures antérieures non converties en nouveaux événements."
+    },
+    {
+      "key": "B3_SUZUKI_AIR_OGLE_16",
+      "file": "Export-Subtitles-AppForLanguage (16).txt",
+      "target_species": [
+        "suzuki"
+      ],
+      "source_group": "seabass_lure_labo",
+      "value": "A-_TECHNIQUE",
+      "notes": "Méthode produit/opinion d'usage. Pas de nouvelle capture Suzuki directement documentée."
+    },
+    {
+      "key": "B3_SUZUKI_AFTER_CATCH_22",
+      "file": "Export-Subtitles-AppForLanguage (22).txt",
+      "target_species": [
+        "suzuki"
+      ],
+      "source_group": "seabass_lure_labo",
+      "value": "A_COMPRENDRE",
+      "notes": "Discussion explicitement spéculative. Toutes les sorties restent des inférences, sans vote Evidence/présence."
+    }
+  ],
+  "claims": [
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_01",
+      "status": "STAGE_FACT",
+      "kind": "session_context",
+      "timestamp": "00:00:00-00:01:42",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Session de deux jours à Miyagi; environ 3 m d'eau sur le premier secteur, bait visible, pêche d'abord autour de la couche basse.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Date exacte inconnue; contexte local exploitable sans vote calendrier."
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_02",
+      "status": "STAGE_FACT",
+      "kind": "current_weight_adaptation",
+      "timestamp": "00:03:16-00:04:19",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Avec un courant rapide, le pêcheur choisit une vibration suffisamment lourde pour conserver le contact du fond et travaille près du substrat par déplacements latéraux/lift-and-fall.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_03",
+      "status": "STAGE_EVENT",
+      "kind": "lost_fish",
+      "timestamp": "00:04:38-00:05:05",
+      "event_key": "SM19_EVT_LOST_1",
+      "outcome": "lost",
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Première attaque de Suzuki probable sur la zone basse; le poisson se décroche immédiatement après la touche.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": true,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Le locuteur identifie le poisson comme Suzuki avec réserve orale; conserver outcome=lost, jamais récurrence positive."
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_04",
+      "status": "STAGE_FACT",
+      "kind": "bottom_clearance_adaptation",
+      "timestamp": "00:05:19-00:05:38",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Le fond étant très encombré, le pêcheur augmente la cadence du lift-and-fall afin de rester juste au-dessus du substrat au lieu de le labourer.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_05",
+      "status": "STAGE_EVENT",
+      "kind": "lost_fish",
+      "timestamp": "00:05:51-00:06:13",
+      "event_key": "SM19_EVT_LOST_2",
+      "outcome": "lost",
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Deuxième poisson touché sur la cassure/slope; il se décroche. Le pêcheur relie les réactions au bord de la rupture de pente.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": true,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Décrochage séparé, non positif."
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_06",
+      "status": "STAGE_EVENT",
+      "kind": "bite",
+      "timestamp": "00:09:15-00:09:47",
+      "event_key": "SM19_EVT_BITE_1",
+      "outcome": "bite",
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Au matin du deuxième jour, après alternance fond → mi-eau → retour au fond, une touche courte est détectée dans la partie basse.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": true,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Touche sans capture; ne vote pas positif."
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_07",
+      "status": "STAGE_EVENT",
+      "kind": "lost_fish",
+      "timestamp": "00:10:01-00:10:54",
+      "event_key": "SM19_EVT_LOST_3",
+      "outcome": "lost",
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Un poisson est piqué très près du fond sur Uprising 70 Heavy Weight puis se décroche à proximité des tétrapodes.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": true,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Modèle/poids exact du Heavy Weight à vérifier avant recommandation active."
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_08",
+      "status": "STAGE_EVENT",
+      "kind": "capture",
+      "timestamp": "00:11:51-00:12:30",
+      "event_key": "SM19_EVT_CATCH_1",
+      "outcome": "positive",
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Première capture Suzuki confirmée de la sortie : Uprising 70 Heavy Weight posé au fond, 2 à 3 lifts, puis attaque au moment du fall.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": true,
+        "positive_recurrence": true,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Événement positif unique. Date exacte inconnue => pas de vote de fenêtre calendrier."
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_09",
+      "status": "STAGE_FACT",
+      "kind": "trigger_grammar",
+      "timestamp": "00:12:14-00:12:59",
+      "event_key": "SM19_EVT_CATCH_1",
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Grammaire de la première capture : geste = 2–3 lifts; comportement leurre = redescente près du fond portée par la descendante; déclencheur = attaque pendant le fall.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_10",
+      "status": "STAGE_EVENT",
+      "kind": "capture",
+      "timestamp": "00:13:42-00:15:27",
+      "event_key": "SM19_EVT_CATCH_2",
+      "outcome": "positive",
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Deuxième capture Suzuki confirmée : lorsque le courant ralentit, le pêcheur allège vers une Uprising annoncée à 14 g, touche le fond puis récupère lentement en laissant le leurre dériver juste au-dessus.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": true,
+        "positive_recurrence": true,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "14 g est explicitement annoncé, mais identité fabricant exacte à vérifier; pas de vote calendrier."
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_11",
+      "status": "STAGE_FACT",
+      "kind": "adaptive_rule",
+      "timestamp": "00:14:35-00:15:41",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Dans cette session, courant fort → poids/contrôle du fond + lift/fall; courant qui mollit → leurre plus léger + récupération lente pour augmenter le temps dans la couche basse.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Règle d'adaptation directement reconstruite à partir des deux phases de la session."
+    },
+    {
+      "source": "B3_SUZUKI_MIYAGI_19",
+      "curation_id": "SM19_12",
+      "status": "UNRESOLVED",
+      "kind": "lure_metadata",
+      "timestamp": "00:01:08-00:15:41",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "interpretation",
+      "fact_or_claim_fr": "Les désignations Uprising 70 Heavy Weight et Uprising 14 g doivent être normalisées contre la source fabricant avant recommandation exacte.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_01",
+      "status": "STAGE_INFERENCE",
+      "kind": "light_relative_timing",
+      "timestamp": "00:02:54-00:04:29",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "Selon l'expérience de l'auteur, le timing du Hirame suit davantage la luminosité relative au lever/coucher que l'heure civile fixe; un créneau peut donc se décaler entre été et hiver avec le lever du soleil.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Comprendre uniquement. Jamais convertir en événement ni en bonus horaire."
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_02",
+      "status": "STAGE_INFERENCE",
+      "kind": "dawn_priority",
+      "timestamp": "00:04:33-00:06:28",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "L'auteur considère l'aube comme son créneau le plus régulièrement productif, avec un pic souvent lorsque la lumière permet déjà de travailler sans lampe tout en restant faible.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Supprimer toute formulation quantitative '2–3 fois plus de chances' du produit; ne jamais afficher comme probabilité."
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_03",
+      "status": "STAGE_INFERENCE",
+      "kind": "mid_morning_behavior",
+      "timestamp": "00:06:35-00:07:17",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "Après une aube clairement active, l'auteur observe souvent une baisse d'activité en matinée pleine; il décrit ce créneau comme plus adapté à une prospection patiente qu'à une fenêtre brève.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_04",
+      "status": "STAGE_INFERENCE",
+      "kind": "afternoon_behavior",
+      "timestamp": "00:07:21-00:08:25",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "L'auteur rapporte qu'un petit regain peut parfois apparaître en début/milieu d'après-midi, mais de manière moins nette et moins reproductible que l'aube.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_05",
+      "status": "STAGE_INFERENCE",
+      "kind": "dusk_behavior",
+      "timestamp": "00:08:25-00:09:37",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "Le crépuscule est décrit comme plus irrégulier que l'aube; en période froide, l'auteur insiste pour pêcher jusqu'à l'obscurité complète car certaines prises arrivent très tard dans la transition lumineuse.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_06",
+      "status": "STAGE_INFERENCE",
+      "kind": "night_behavior",
+      "timestamp": "00:09:43-00:10:41",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "De nuit, l'auteur décrit une activité moins liée à une fenêtre nette et recommande une présentation moins agressive; il rapporte aussi une proportion plus élevée de gros Hirame en saison froide.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Ne pas transformer la mention de tailles 60–80 cm ou de décembre-avril en statistique de probabilité."
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_07",
+      "status": "STAGE_FACT",
+      "kind": "tide_vs_bottom_current",
+      "timestamp": "00:11:17-00:12:07",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "La surface et le fond peuvent montrer des courants différents; pour le Hirame, l'auteur recommande d'évaluer prioritairement le courant ressenti par le leurre près du substrat.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Très utile comme rappel UX : la courbe de marée n'est pas une mesure de courant réel."
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_08",
+      "status": "STAGE_INFERENCE",
+      "kind": "bottom_current_control",
+      "timestamp": "00:12:07-00:12:38",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "L'auteur juge favorable une résistance perceptible avec légère dérive du leurre; si le courant de fond est trop fort, le problème principal devient la perte de contrôle, la remontée excessive ou la dégradation de l'action.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_09",
+      "status": "STAGE_INFERENCE",
+      "kind": "outgoing_current_use",
+      "timestamp": "00:12:46-00:13:34",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "Sur un surf peu profond, l'auteur préfère souvent exploiter un courant qui s'éloigne du pêcheur afin de faire travailler le leurre avec peu d'action et de ralentir la présentation.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_10",
+      "status": "STAGE_FACT",
+      "kind": "angle_adaptation",
+      "timestamp": "00:13:39-00:13:51",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "Quand courant/profondeur rendent le contrôle difficile, l'auteur ajuste progressivement l'angle de lancer jusqu'à retrouver une présentation maîtrisable.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_11",
+      "status": "UNRESOLVED",
+      "kind": "tide_window_claims",
+      "timestamp": "00:13:55-00:16:26",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "Les préférences annoncées pour pleine mer, montante, marée moyenne et cycles lunaires restent des expériences locales/agrégées et ne doivent pas entrer dans le moteur de scoring sans réplication indépendante.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Conserver éventuellement en note Comprendre, pas dans Evidence de fenêtre."
+    },
+    {
+      "source": "B3_HIRAME_TIMING_25",
+      "curation_id": "HT25_12",
+      "status": "SKIP_DUPLICATE",
+      "kind": "generic_dawn_claim",
+      "timestamp": "00:04:33-00:06:28",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "L'idée générale que l'aube est une période favorable au Hirame est déjà fortement couverte dans V6.5.4.",
+      "duplicate_of_v654_ids": [
+        244,
+        252
+      ],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Ne pas ajouter une nouvelle observation générique; garder seulement la nuance 'lumière relative' HT25_01."
+    },
+    {
+      "source": "B3_HIRAME_FIELD_5",
+      "curation_id": "HF5_01",
+      "status": "STAGE_FACT",
+      "kind": "bird_signal",
+      "timestamp": "00:00:40-00:00:57",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Des oiseaux actifs sont visibles hors de portée; le pêcheur choisit malgré tout de travailler le secteur situé en face de cette activité.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_FIELD_5",
+      "curation_id": "HF5_02",
+      "status": "STAGE_EVENT",
+      "kind": "capture",
+      "timestamp": "00:01:22-00:01:47",
+      "event_key": "HF5_EVT_CATCH_1",
+      "outcome": "positive",
+      "target_species": "hirame",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Première capture Hirame confirmée de la session, sous vent latéral et courant annoncé légèrement rapide.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": true,
+        "positive_recurrence": true,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Le leurre exact n'est pas explicitement nommé dans la séquence; ne pas l'inférer."
+    },
+    {
+      "source": "B3_HIRAME_FIELD_5",
+      "curation_id": "HF5_03",
+      "status": "STAGE_FACT",
+      "kind": "lure_control",
+      "timestamp": "00:01:47-00:02:19",
+      "event_key": "HF5_EVT_CATCH_1",
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Malgré le vent latéral et le courant, le pêcheur dit sentir que le leurre nage correctement; il utilise cette sensation de contrôle comme critère pour juger la présentation exploitable.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_FIELD_5",
+      "curation_id": "HF5_04",
+      "status": "STAGE_ECOSYSTEM",
+      "kind": "bait_presence",
+      "timestamp": "00:04:05-00:04:17",
+      "event_key": "HF5_EVT_BAIT_1",
+      "outcome": "ecosystem",
+      "target_species": null,
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Un anchois japonais (katakuchi-iwashi) est physiquement récupéré/observé sur le secteur, confirmant la présence de petit bait autour de l'activité d'oiseaux.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Signal écosystème, pas événement Hirame positif."
+    },
+    {
+      "source": "B3_HIRAME_FIELD_5",
+      "curation_id": "HF5_05",
+      "status": "STAGE_EVENT",
+      "kind": "capture",
+      "timestamp": "00:05:26-00:07:36",
+      "event_key": "HF5_EVT_CATCH_2",
+      "outcome": "positive",
+      "target_species": "hirame",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Deuxième capture Hirame distincte; poisson annoncé à 67 cm.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": true,
+        "positive_recurrence": true,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Événement distinct du premier; leurre et moment exact de l'attaque non explicités dans le texte."
+    },
+    {
+      "source": "B3_HIRAME_FIELD_5",
+      "curation_id": "HF5_06",
+      "status": "STAGE_INFERENCE",
+      "kind": "field_selection",
+      "timestamp": "00:07:42-00:08:39",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "author_interpretation",
+      "fact_or_claim_fr": "Résumé opérationnel de l'auteur : oiseaux même lointains → prospecter le secteur; rechercher une structure offshore; choisir le leurre qui conserve réellement son action dans les conditions présentes.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_FIELD_5",
+      "curation_id": "HF5_07",
+      "status": "UNRESOLVED",
+      "kind": "source_metadata",
+      "timestamp": null,
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "interpretation",
+      "fact_or_claim_fr": "Lieu exact, année/date de pêche et modèles de leurres des deux captures doivent être identifiés avant tout usage local/saisonnier.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_FIELD_6",
+      "curation_id": "HF6_01",
+      "status": "STAGE_FACT",
+      "kind": "session_context",
+      "timestamp": "00:00:04-00:01:04",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Session annoncée début juillet sur un surf peu profond avec une bosse/haut-fond offshore accessible; prospection prévue de sa pente descendante jusqu'à la cassure proche du bord.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_FIELD_6",
+      "curation_id": "HF6_02",
+      "status": "STAGE_EVENT",
+      "kind": "capture",
+      "timestamp": "00:04:43-00:05:35",
+      "event_key": "HF6_EVT_CATCH_1",
+      "outcome": "positive",
+      "target_species": "hirame",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Capture Hirame confirmée près du bord; l'attaque intervient sur la pente descendante de la bosse/structure située juste devant le pêcheur.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": true,
+        "positive_recurrence": true,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Le contexte précédent mentionne Howl Fish, mais poids/version non donnés; ne pas créer une recommandation exacte."
+    },
+    {
+      "source": "B3_HIRAME_FIELD_6",
+      "curation_id": "HF6_03",
+      "status": "STAGE_FACT",
+      "kind": "nearshore_structure",
+      "timestamp": "00:03:40-00:05:35",
+      "event_key": "HF6_EVT_CATCH_1",
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "Après avoir constaté des réactions près du bord, le pêcheur concentre la prospection sur la structure proche plutôt que sur le seul large; la capture Hirame valide cette micro-position pendant la session.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_FIELD_6",
+      "curation_id": "HF6_04",
+      "status": "SKIP_DUPLICATE",
+      "kind": "generic_nearshore_advice",
+      "timestamp": "00:10:07-00:10:25",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "author_interpretation",
+      "fact_or_claim_fr": "Le conseil général de ne pas négliger les structures proches du bord est déjà documenté dans V6.5.4.",
+      "duplicate_of_v654_ids": [
+        245,
+        323
+      ],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Conserver la capture HF6_02 comme réplication directe, mais ne pas ajouter une règle générique redondante."
+    },
+    {
+      "source": "B3_HIRAME_FIELD_6",
+      "curation_id": "HF6_05",
+      "status": "UNRESOLVED",
+      "kind": "lure_metadata",
+      "timestamp": "00:03:40-00:05:35",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "interpretation",
+      "fact_or_claim_fr": "Howl Fish est nommé avant la capture, mais la version/poids exacts ne sont pas explicités; modèle non actionnable tant que non vérifié.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_FIELD_6",
+      "curation_id": "HF6_06",
+      "status": "UNRESOLVED",
+      "kind": "source_metadata",
+      "timestamp": null,
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "interpretation",
+      "fact_or_claim_fr": "Le lieu exact et l'année ne sont pas établis de façon fiable par la transcription.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_01",
+      "status": "STAGE_FACT",
+      "kind": "seriola_scope",
+      "timestamp": "00:14:38-00:14:56",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hamachi",
+      "directness": "reported_context",
+      "fact_or_claim_fr": "La vidéo cite explicitement la lignée Wakashi → Inada → Warasa → Buri parmi les cibles du light shore jigging, ce qui autorise l'usage technique pour Hamachi/Seriola quinqueradiata.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "N'autorise aucune preuve de présence: aucune capture Seriola n'est confirmée dans la session."
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_02",
+      "status": "STAGE_FACT",
+      "kind": "range_bracketing",
+      "timestamp": "00:01:07-00:01:59",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hamachi",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "Méthode de recherche de couche : mesurer d'abord le countdown jusqu'au fond, puis prospecter progressivement plusieurs niveaux (exemple 8 → 5 → 3 → 1) et rester dans la couche qui produit.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_03",
+      "status": "STAGE_FACT",
+      "kind": "animation_variation",
+      "timestamp": "00:04:28-00:05:28",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hamachi",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "La cadence n'est pas fixe : nombre de jerks, vitesse et pauses sont modifiés selon les réactions du jour; une récupération rapide avec arrêt est aussi proposée pour des poissons actifs.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_04",
+      "status": "STAGE_INFERENCE",
+      "kind": "tide_line_search",
+      "timestamp": "00:06:30-00:07:10",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hamachi",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "En absence de chasse visible, l'auteur recommande de rechercher une ligne de courant/tide line susceptible de concentrer bait et prédateurs, plutôt que de rester uniquement sur une zone uniforme.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_05",
+      "status": "STAGE_INFERENCE",
+      "kind": "depth_for_aomono",
+      "timestamp": "00:07:36-00:08:14",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hamachi",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "Pour les poissons bleus, l'auteur privilégie visuellement les secteurs plus profonds, souvent là où les vagues cassent moins; cette règle est distincte de sa lecture des flatfish.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_06",
+      "status": "STAGE_FACT",
+      "kind": "jig_role_selection",
+      "timestamp": "00:08:42-00:09:35",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hamachi",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "Le choix d'un jig dépend du rôle recherché : vitesse de chute, silhouette et flash; l'auteur distingue notamment une présentation lente au fall d'une silhouette plus compacte adaptée à petit bait.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_07",
+      "status": "STAGE_FACT",
+      "kind": "wind_range_adaptation",
+      "timestamp": "00:22:14-00:23:11",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hamachi",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "Sous vent, l'auteur réduit la bannière en gardant la canne plus basse et adapte le poids/couche; un jig trop léger est davantage déplacé par la ligne et peut remonter hors de la couche visée.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_08",
+      "status": "STAGE_INFERENCE",
+      "kind": "boil_edge",
+      "timestamp": "00:26:48-00:27:05",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hamachi",
+      "directness": "expert_experience",
+      "fact_or_claim_fr": "Lors d'une chasse, l'auteur conseille de viser la trajectoire de fuite et les bords/alentours du boil plutôt que de traverser systématiquement son centre.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_09",
+      "status": "SKIP_DUPLICATE",
+      "kind": "positive_event",
+      "timestamp": "00:23:19-00:23:43",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hamachi",
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "La capture observée après changement à 20 g n'est pas une Seriola confirmée et ne doit pas être convertie en événement Hamachi.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "La transcription indique un autre poisson; target Hamachi interdit."
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_10",
+      "status": "SKIP_DUPLICATE",
+      "kind": "kanpachi_capture",
+      "timestamp": "00:27:17-00:27:54",
+      "event_key": null,
+      "outcome": null,
+      "target_species": null,
+      "directness": "direct_observation",
+      "fact_or_claim_fr": "La capture finale est explicitement un petit Kanpachi; elle reste hors taxonomie cible et ne vote jamais Hamachi.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_AOMONO_LSJ_9",
+      "curation_id": "AJ9_11",
+      "status": "UNRESOLVED",
+      "kind": "weight_policy",
+      "timestamp": "00:12:53-00:14:21",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hamachi",
+      "directness": "reported_context",
+      "fact_or_claim_fr": "La vidéo cite des plages allant jusqu'à 60–100 g selon les formes de shore jigging; ces poids sont des faits de contexte mais sont hors politique active du projet au-delà de 50 g.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ">50 g : conserver éventuellement en biologie/méthode source, jamais recommander."
+    },
+    {
+      "source": "B3_HIRAME_SINKING_PENCIL_3",
+      "curation_id": "HP3_01",
+      "status": "STAGE_FACT",
+      "kind": "sinking_pencil_role",
+      "timestamp": "00:00:09-00:00:35",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "Le sinking pencil est présenté comme compromis entre distance supérieure au minnow et présentation plus lente qu'un metal jig.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_SINKING_PENCIL_3",
+      "curation_id": "HP3_02",
+      "status": "STAGE_FACT",
+      "kind": "slow_mid_bottom_role",
+      "timestamp": "00:01:35-00:02:02",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "Un sinking pencil à nage perceptible est utilisé pour travailler lentement les zones shallow et la couche médiane-basse, avec contrôle tactile de la nage et de la profondeur.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Le modèle W95S exact reste non actionnable sans vérification poids/version."
+    },
+    {
+      "source": "B3_HIRAME_SINKING_PENCIL_3",
+      "curation_id": "HP3_03",
+      "status": "SKIP_DUPLICATE",
+      "kind": "retrieve_speed_control",
+      "timestamp": "00:02:45-00:03:11",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "Ralentir si le leurre remonte trop et accélérer s'il gratte le fond recoupe déjà la règle V6.5.4 d'adapter la vitesse au courant pour conserver une présentation cohérente.",
+      "duplicate_of_v654_ids": [
+        357
+      ],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_SINKING_PENCIL_3",
+      "curation_id": "HP3_04",
+      "status": "STAGE_FACT",
+      "kind": "drift_with_slack",
+      "timestamp": "00:03:34-00:03:49",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "En drift, le leurre est porté par le courant tandis que le pêcheur exploite la bannière; un sinking pencil suffisamment dense peut rester contrôlable tout en dérivant.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_SINKING_PENCIL_3",
+      "curation_id": "HP3_05",
+      "status": "UNRESOLVED",
+      "kind": "archival_capture",
+      "timestamp": "00:04:15-00:04:34",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "reported_experience",
+      "fact_or_claim_fr": "La capture Hirame racontée en night surf et les Suzuki annoncés en drift sont des expériences antérieures/archives; ne pas créer de nouveaux événements sans retrouver les sorties originales.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_HIRAME_SINKING_PENCIL_3",
+      "curation_id": "HP3_06",
+      "status": "UNRESOLVED",
+      "kind": "model_specs",
+      "timestamp": null,
+      "event_key": null,
+      "outcome": null,
+      "target_species": "hirame",
+      "directness": "interpretation",
+      "fact_or_claim_fr": "W95S, Cut Vibo 130BR et Flat Flatter 95SXH doivent être normalisés (nom, poids, densité) avant recommandation exacte.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_SUZUKI_AIR_OGLE_16",
+      "curation_id": "AO16_01",
+      "status": "STAGE_FACT",
+      "kind": "lure_behavior",
+      "timestamp": "00:04:22-00:04:59",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "manufacturer_commentary",
+      "fact_or_claim_fr": "Air Ogre 85 SLM est décrit comme descendant rapidement jusqu'au fond, y compris dans du courant, puis nageant en slalom en récupération; le mouvement se resserre quand la vitesse augmente.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Source discussion secondaire; vérifier specs fabricant avant modèle actionnable."
+    },
+    {
+      "source": "B3_SUZUKI_AIR_OGLE_16",
+      "curation_id": "AO16_02",
+      "status": "STAGE_INFERENCE",
+      "kind": "bottom_crustacean_pattern",
+      "timestamp": "00:05:03-00:06:27",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "expert_opinion",
+      "fact_or_claim_fr": "Lorsque les Suzuki semblent tournés vers des proies de fond/crustacés, les auteurs proposent l'Air Ogre en lift-and-fall comme variation moins rectiligne qu'une vibration classique.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_SUZUKI_AIR_OGLE_16",
+      "curation_id": "AO16_03",
+      "status": "STAGE_INFERENCE",
+      "kind": "cold_bottom_pattern",
+      "timestamp": "00:06:46-00:07:13",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "expert_opinion",
+      "fact_or_claim_fr": "En eau froide, les auteurs décrivent des poissons et du bait pouvant se concentrer dans des creux/structures de fond et recommandent alors des présentations basses.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Même groupe source Seabass Lure Labo; ne pas compter comme réplication indépendante."
+    },
+    {
+      "source": "B3_SUZUKI_AIR_OGLE_16",
+      "curation_id": "AO16_04",
+      "status": "STAGE_FACT",
+      "kind": "bottom_drift_role",
+      "timestamp": "00:11:54-00:12:03",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "expert_method",
+      "fact_or_claim_fr": "Le leurre est aussi présenté comme option pour dériver près du fond dans de grands espaces grâce à sa portée et à sa capacité à rester bas.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_SUZUKI_AIR_OGLE_16",
+      "curation_id": "AO16_05",
+      "status": "UNRESOLVED",
+      "kind": "model_specs",
+      "timestamp": null,
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "interpretation",
+      "fact_or_claim_fr": "Poids, densité et disponibilité exacte de l'Air Ogre 85 SLM doivent être vérifiés sur source fabricant avant toute recommandation de modèle.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_SUZUKI_AFTER_CATCH_22",
+      "curation_id": "AC22_01",
+      "status": "STAGE_INFERENCE",
+      "kind": "landing_disturbance",
+      "timestamp": "00:02:39-00:03:10",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "explicit_speculation",
+      "fact_or_claim_fr": "Hypothèse : lumière de landing, agitation du pêcheur et combat peuvent perturber temporairement un pin et expliquer un silence après la première capture.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Discussion spéculative; aucune causalité démontrée."
+    },
+    {
+      "source": "B3_SUZUKI_AFTER_CATCH_22",
+      "curation_id": "AC22_02",
+      "status": "STAGE_INFERENCE",
+      "kind": "fight_path_disturbance",
+      "timestamp": "00:03:03-00:03:14",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "explicit_speculation",
+      "fact_or_claim_fr": "Hypothèse : le trajet du poisson pendant le combat peut 'balayer' une ligne de pêche et modifier momentanément le comportement des poissons restants.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_SUZUKI_AFTER_CATCH_22",
+      "curation_id": "AC22_03",
+      "status": "STAGE_INFERENCE",
+      "kind": "rest_the_spot",
+      "timestamp": "00:08:13-00:08:31",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "reported_experience",
+      "fact_or_claim_fr": "Les auteurs rapportent avoir déjà repris des poissons après avoir laissé reposer un secteur puis y être revenus, tout en reconnaissant que le poisson a aussi pu être remplacé.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_SUZUKI_AFTER_CATCH_22",
+      "curation_id": "AC22_04",
+      "status": "STAGE_INFERENCE",
+      "kind": "change_after_capture",
+      "timestamp": "00:10:13-00:10:36",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "expert_opinion",
+      "fact_or_claim_fr": "Après une première capture, répéter exactement le même pin, angle et présentation peut être moins pertinent; les auteurs suggèrent de modifier légèrement le passage plutôt que de reproduire mécaniquement le lancer.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": ""
+    },
+    {
+      "source": "B3_SUZUKI_AFTER_CATCH_22",
+      "curation_id": "AC22_05",
+      "status": "UNRESOLVED",
+      "kind": "unsupported_percentage",
+      "timestamp": "00:01:36-00:02:02",
+      "event_key": null,
+      "outcome": null,
+      "target_species": "suzuki",
+      "directness": "explicit_speculation",
+      "fact_or_claim_fr": "L'affirmation selon laquelle seule une fraction d'environ 10 % des Suzuki présents mordrait un leurre n'est pas sourcée de manière suffisante dans la vidéo.",
+      "duplicate_of_v654_ids": [],
+      "eligibility": {
+        "presence_evidence": false,
+        "positive_recurrence": false,
+        "window_scoring": false,
+        "exact_model_active_recommendation": false
+      },
+      "notes": "Ne jamais importer le chiffre 10 % comme donnée scientifique ou probabilité."
+    }
+  ],
+  "summary": {
+    "total_items": 64,
+    "by_status": {
+      "STAGE_FACT": 21,
+      "STAGE_EVENT": 9,
+      "UNRESOLVED": 10,
+      "STAGE_INFERENCE": 18,
+      "SKIP_DUPLICATE": 5,
+      "STAGE_ECOSYSTEM": 1
+    },
+    "positive_events": 5,
+    "nonpositive_bite_or_lost_events": 4,
+    "positive_by_species": {
+      "suzuki": 2,
+      "hirame": 3
+    },
+    "base_project_modified": false
+  }
+}

@@ -1,23 +1,22 @@
-# Carnet Pêche JP — V6.5.9 Navigation & lecture
+# Carnet Pêche JP — V6.5.12 UX carte
 
 PWA mobile-first de préparation et de décision pour un voyage de pêche du bord au Japon.
 Le dépôt contient l'application GitHub Pages, la base SQLite source de vérité, les données
 exportées et le pipeline Python d'enrichissement.
 
-## V6.5.9 — Navigation & lecture
+## V6.5.12 — UX carte et contrôles mobiles
 
-Release UX sans changement de données ni de moteur. Les pads destination utilisent désormais une lecture progressive **aperçu → développement** pour la lecture du secteur, le matériel, les preuves et la justification détaillée du créneau. Les fiches espèces remplacent les dots par une barre sticky explicite `Terrain · Leurres · Couleurs · Animations · Comprendre`, toujours accessible pendant le scroll et adaptée aux petits écrans.
+Release UX sans modification des observations, des fenêtres, des marées ou des règles matériel. La vue **Carte** est désormais une vraie vue géographique hors-ligne : silhouette du Japon embarquée, trajet projeté depuis les coordonnées des ports JMA, étapes numérotées et boutons tactiles de 44 px minimum. Fukuoka et Itoshima, géographiquement très proches, sont séparés visuellement pour rester sélectionnables sans falsifier la trajectoire.
 
-## V6.5.8 — UX focus mobile
+Les principaux contrôles mobiles ont été agrandis : Quick Peek, fermeture des sheets, onglets espèce, filtres, boutons marée, QCM, journal terrain et rail latéral. Les bottom-sheets rendent maintenant le focus au contrôle d'origine et une erreur de stockage local ne vide plus silencieusement le formulaire de session.
 
-La courbe de marée met désormais en avant l'espèce prioritaire du jour. Un premier tap sur une bande sélectionne l'espèce et affiche une mini-carte locale ; un second tap ouvre le plan détaillé. Les autres espèces restent visibles mais sont légèrement atténuées. Les tailles d'échantillon sont écrites en langage humain (`6 événements`, `4 cas avec marée renseignée`) et un résumé de confiance documentaire est disponible sans charger les 501 observations. Les scores et fenêtres sont strictement inchangés.
-
+**Politique sources fabricants :** les fabricants ont été sélectionnés volontairement pour leur niveau de confiance sur le matériel, l'usage des leurres et les animations. Ces contenus restent des **aides à la décision pondérées**, pas des vérités ni des probabilités de capture à 100 %. Cette passe ne dégrade donc pas automatiquement leur poids documentaire.
 
 ## État de la release
 
 - **501 observations validées** sur **11 espèces**, après curation vidéo, dédoublonnage et séparation taxonomique.
 - **264 éléments d'intelligence locale** rattachés aux étapes du voyage.
-- **5 destinations de voyage** sur les dates de référence, affichées via **6 pads** (Fukuoka est scindé en Hakata urbain + Shikanoshima/Itoshima). Shizuoka et Kashima restent en base comme contextes de recherche mais ne sont plus affichés comme pads de voyage.
+- **8 étapes de trajet visibles** dans la chronologie et la carte : Shizuoka, Fukuoka urbain, Shikanoshima/Itoshima, Kobe/Akashi, Ise-Shima, Numazu/Izu, Tokyo et Kashima.
 - **27 journées/références de marées astronomiques JMA** embarquées dans `tides_2026.json`.
 - Typologie de leurres conservée comme base de connaissance, avec statut matériel explicite : compatible, >50 g vérifié, ou poids à vérifier.
 - `research/` contient le **prompt maître de staging**, le lot 2 déjà intégré et le **batch 3 de 21 transcriptions** archivé dans deux sous-dossiers anti-collision, avec curation et import approuvé.
@@ -365,15 +364,13 @@ Le contenu du dossier peut être envoyé directement à la racine du dépôt :
 
 ```bash
 git add .
-git commit -m "Carnet Peche JP V6.5.6 performance architecture"
+git commit -m "Carnet Peche JP V6.5.12 UX carte"
 git push
 ```
 
-Aucune étape de build n'est nécessaire. Le service worker V6.5.6 utilise un nouveau cache afin
-de forcer la prise en compte des correctifs d’intégrité et de performance après déploiement.
+Aucune étape de build n'est nécessaire. Le service worker V6.5.12 utilise un cache versionné et ne supprime que les caches portant le préfixe `carnet-peche-jp-`.
 
-`.gitignore` est optionnel pour le fonctionnement du site : si le sélecteur de fichiers du
-navigateur le masque, il peut être ignoré ou créé directement dans GitHub.
+`.gitignore` est fourni pour éviter les fichiers système et caches Python. Les dossiers de recherche et la base SQLite sont des sources de travail : ne les publier sur un hébergement public que si ce choix est volontaire.
 
 ## `synthesis.json`
 
