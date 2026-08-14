@@ -1,0 +1,26 @@
+{
+  "release": "V6.5.10",
+  "name": "Navigation contextuelle",
+  "date": "2026-08-14",
+  "observations": 501,
+  "species": 11,
+  "inferences": 35,
+  "decision_cache_version": 3,
+  "ux": [
+    "contextual_species_previous_next_navigation",
+    "documentary_reading_mode",
+    "sticky_context_summary_species_and_destination",
+    "expand_collapse_all_destination_blocks",
+    "data_driven_relational_navigation"
+  ],
+  "startup": {
+    "core_bytes": 40589,
+    "decision_cache_bytes": 118366,
+    "tides_bytes": 16232,
+    "blocking_json_bytes": 175187
+  },
+  "pwa_cache": "carnet-peche-jp-v6-5-10-navigation-contextuelle-20260814",
+  "data_payload_unchanged_from": "V6.5.9",
+  "github_build_required": false,
+  "data_export_requires_node": true
+}

@@ -1,0 +1,24 @@
+{
+  "release": "V6.5.9",
+  "name": "Navigation & lecture",
+  "date": "2026-08-12",
+  "observations": 501,
+  "species": 11,
+  "inferences": 35,
+  "decision_cache_version": 3,
+  "ux": [
+    "progressive_disclosure_destination",
+    "sticky_text_species_tabs",
+    "dynamic_sticky_header_offset"
+  ],
+  "startup": {
+    "core_bytes": 40589,
+    "decision_cache_bytes": 118366,
+    "tides_bytes": 16232,
+    "blocking_json_bytes": 175187
+  },
+  "pwa_cache": "carnet-peche-jp-v6-5-9-navigation-lecture-20260812",
+  "data_payload_unchanged_from": "V6.5.8",
+  "github_build_required": false,
+  "data_export_requires_node": true
+}

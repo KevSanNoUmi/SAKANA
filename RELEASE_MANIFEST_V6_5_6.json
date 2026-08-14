@@ -1,0 +1,25 @@
+{
+  "release": "V6.5.6",
+  "name": "Performance architecture",
+  "date": "2026-08-12",
+  "observations": 501,
+  "inferences": 35,
+  "local_intel": 264,
+  "startup": {
+    "core_bytes": 40590,
+    "decision_cache_bytes": 111965,
+    "tides_bytes": 16232,
+    "blocking_json_bytes": 168787,
+    "previous_blocking_json_bytes": 887880,
+    "reduction_percent": 81.0
+  },
+  "lazy_files": [
+    "data.json",
+    "synthesis.json",
+    "lure_typology.json"
+  ],
+  "pwa_cache": "carnet-peche-jp-v6-5-6-performance-architecture-20260812",
+  "reference_window": "Ise-Shima / Hamachi / 2026-11-26 = 75, 06:30–08:00, avg 70",
+  "github_build_required": false,
+  "data_export_requires_node": true
+}

@@ -1,0 +1,588 @@
+{
+  "updated": "2026-08-12",
+  "based_on": "501 observations validées · 11 espèces · 264 éléments d’intelligence locale · 35 interprétations dérivées hors preuves · enrichissements vidéo P0 + batch 3 curatés",
+  "species": {
+    "Hirame": "**Concept central : poisson de discontinuité de fond, qui mange à la pause.**\n\n**Leurres** — hiérarchie nette : 1) sinking pencil lourd (Overdrive 65S/80S/95S/120S, Zeonu Evo 95S) : chute lente planante, roulis en descente, downsizing 95→80→65 en cas de refus. 2) Souple sur tête plombée (Rodem, Freak Worm, Bone Bait) : zones peu profondes, poissons proches du bord ou peu actifs (finesse 5-15 g fin nov.). 3) Metal jig 32 g : prospection initiale, vent, distance — plomb = vent/distance, zinc = lent près du fond. 4) Minnow : contrôle rapide des actifs proches du bord.\n\n**Tailles** — bimodal : 8-10 cm = cœur de gamme (95 mm polyvalent), 6-8 cm = downsizing, 12-16 cm = pattern konoshiro uniquement. Rien hors 6-16.\n\n**Positionnement** — rupture de fond (ブレイク/カケ上がり) : pente descendante derrière la cassure. Courant de retour (離岸流) : chenal affouillé, repérable à la zone sans mousse entre les vagues. Fosse proche du bord : peut tenir dans 1 m à 10-20 m du bord si le fourrage est là — ramener jusqu'aux pieds. Règle : pas de fourrage = changer de secteur (run-and-gun). Déclencheur : le démarrage du courant met en activité des poissons déjà présents.\n\n**Lumière** — après dédoublonnage par événement, le plein jour est autant ou davantage documenté que l’aube dans le petit échantillon horaire. L’aube reste un créneau logique/localement utile, mais la fiche doit surtout lire fond, bait et discontinuité plutôt que forcer une heure. ⚠️ Données marée limitées.\n\n**Animation** — stop-and-go (3 tours / pause ×3 / retour au fond), 2 sources concordantes. Attaques à la pause ou en descente. Chute horizontale = déclencheur spécifique.\n\n**Micro-position wando** — le nouveau lot n’ajoute pas une nouvelle règle générale « rip + cassure » déjà documentée; il précise où lancer : quelques mètres à côté de la bosse sableuse, à l’extrémité du sandbar et à sa rencontre avec le courant de retour. Deux captures distinctes sont conservées comme événements; les explications répétées du même poisson ne créent pas de voix supplémentaire.\n\n**Batch 3 — contrôle réel du poste** — trois nouvelles captures terrain renforcent la valeur des structures proches et des changements de relief accessibles : deux poissons sur un surf avec oiseaux/bait, dont un annoncé 67 cm, et un poisson sur la pente descendante d’une structure proche. Une source d’expertise distincte ajoute une règle de lecture essentielle : **la marée prédite n’est pas le courant de fond**. Tester ce que ressent réellement le leurre près du substrat, puis changer angle/vitesse/poids si la présentation devient incontrôlable. Les conclusions horaires de cette source restent hors récurrence et hors scoring.",
+    "Suzuki": "**Concept central : poisson de structure + lumière en baie/estuaire, qui mange à la dérive.**\n\n**Leurres ≤50 g** — wake/sub-surface, shallow minnow et sinking pencil léger pour les 0–50 premiers cm; souple/vibration en repli lorsque les couches hautes échouent. La taille suit d’abord le fourrage. Les big baits lourds hors setup ne participent pas aux recommandations.\n\n**Positionnement** — structure urbaine dominante : ponts, piles, murs, clair-obscur (明暗), veines de courant (ヨレ), contre-courants, bordures de bancs et chenaux. Cette fiche concerne le marusuzuki / *Lateolabrax japonicus* : le sarashi rocheux du Hirasuzuki est désormais séparé.\n\n**Timing** — la nuit et la descendante reviennent souvent dans les rapports positifs, notamment sur バチ抜け et évacuation du fourrage. Ces fréquences sont des récurrences documentaires, pas des taux de capture.\n\n**Animation** — dérive/dead drift prioritaire : lancer amont, accompagner le courant, récupération minimale, ligne contrôlée. La récupération rapide de réaction reste une exception documentée. Prospecter surface → fond pour préserver le poste.\n\n**Couleur** — eau claire/calme : naturel ou ghost; eau chargée/lumière diffuse : plus opaque/pearl ou accent visible. Match the hatch en taille, silhouette, couche et nage avant la nuance exacte.\n\n**Adaptation de couche** — nouvelles vidéos curatées : le bait visible en surface ne signifie pas que le Suzuki est haut. Dans l’Arakawa, les poissons restent d’abord collés au fond dans ~1 m d’eau, puis un boil ponctuel justifie un passage immédiat juste sous la surface qui produit. En eau froide, la couche est recherchée par countdown (3 → 5 → 8) et réajustée quand le niveau baisse. Autour des piles de Sumida, plusieurs poissons distincts sont pris sur **tension fall au ras de la structure**; s’éloigner de la bordure coupe les touches.\n\n**Batch 3 — courant × couche** — à Miyagi, deux captures distinctes documentent une adaptation en deux états : courant fort → assez de contrôle pour tenir le fond + lift-and-fall, avec une prise après 2–3 lifts puis attaque au fall ; courant qui mollit → allègement vers 14 g + récupération lente dérivée juste au-dessus du fond. Plusieurs touches/décrochages sont conservés comme événements réels mais ne comptent pas comme captures positives.",
+    "Hamachi": "**Concept central : poisson de passage — on intercepte sur les accélérations de courant.**\n\n**Leurres compatibles voyage** — 1) surface/subsurface jusqu’à 50 g : diving pencil/stickbait (Rapido F130 30 g, F160 50 g), popper compact et sinking minnow/pencil dense. 2) Metal/blade jig compact **20–50 g** : lancer devant les chasses, linéaire rapide si les poissons sont hauts; partir du fond et remonter si la couche est inconnue. Les recommandations sources >50 g sont volontairement écartées du moteur.\n\n**Taille / bait** — le downsizing F160→F130 est documenté par sources indépendantes lorsque le fourrage est petit. La priorité n’est pas la taille maximale du leurre mais le couple silhouette du bait × distance/couche accessible avec la SP82MH.\n\n**Positionnement** — pointes de cap exposées au courant, entrées de baies, hauts-fonds/îlots créant une accélération, limites entre deux courants, oiseaux actifs. Une longue phase quasi étale sans prise est documentée, tandis que plusieurs faits relient les touches/passage à une remise en mouvement ou une veine active. Le redémarrage du courant est donc un signal utile, pas une loi absolue.\n\n**Lumière** — aube dominante; surface au madzume puis sub-surface/couche intermédiaire quand le soleil monte.\n\n**Animation** — short jerk > long jerk quand ça ne répond pas; au casting jig, distinguer linéaire rapide, one-pitch et fall. Une touche au fall impose de reproduire la chute, pas seulement le modèle de leurre.\n\n**Combo voyage** — **MH / PE1.5** par défaut. 31–45 g = cœur de domaine; 46–50 g = haute charge utilisateur; >50 g exclu.\n\n**Batch 3 — recherche de couche sans nouvelle preuve de présence** — une source de light shore jigging cite explicitement Wakashi/Inada/Warasa/Buri et apporte une méthode transférable : mesurer le countdown jusqu’au fond, puis explorer 8 → 5 → 3 → 1 et rester dans la couche qui produit. Cadence, pauses et poids se modulent avec vent/courant. **Aucune nouvelle capture Seriola n’est ajoutée** : la méthode enrichit Comprendre/plan B sans renforcer la présence ou une fenêtre.",
+    "Aori-Ika": "**Concept central : tout se joue à la descente.** ⚠️ Mono-source (YAMASHITA) — à recouper.\n\n**Leurre** — egi exclusivement. Q LIVE (darts amples) pour les actifs ; Egi-OH K (descente stable) pour les sollicités/peu actifs ; shallow (6 s/m) pour <2 m ; deep (2,2 s/m) pour 10-15 m. Automne : monter en 3-3,5号.\n\n**La descente** — la prise a lieu pendant le fall. Free fall ligne détendue = naturel, vertical, multiplie les cycles dans la zone. Tension fall = lent, détectable, déclenche les mous. Vent/mer agitée → free fall obligatoire.\n\n**Couleur (grille lumière × eau la plus propre de la base)** — trouble → dos orange/rose vif ; claire → bleu/brun naturel ; nuit → sous-couche rouge ou 夜光 ; aube → rose puis orange puis or ; keimura (UV) → plein jour même couvert. Fond de baie trouble → rouge/phospho + jerks amples (compenser le visuel par les vibrations).\n\n**Positionnement** — angles de digues où le courant bute ; ruptures de fond à prospecter PARALLÈLEMENT à la pente ; fentes rocheuses (スリット) peu sollicitées ; cordages/fondations en port ; veines ヨレ quand le courant principal est trop fort. Après forte pluie → fuir les estuaires, viser l'entrée de baie (salinité).\n\n⚠️ Trous : zéro marée, moments quasi vides.",
+    "Kurodai": "**Concept central : la méfiance domine tout, en très peu profond.**\n\n**Leurre** — topwater quasi-exclusif dans la base : pencil 5/7/9 cm selon terrain (7 cm = pivot ; 5 petites zones/vue ; 9+ distance/trouble/agité). Rough Trick 70F référence, 90F conditions.\n\n**Positionnement** — <1 m idéal, 1,5 m limite. Vasières, plages en pente douce, rivières peu profondes, blocs (ゴロタ), bancs d'huîtres. Point unique : mémoriser le NIVEAU de marée exact qui rend chaque poste pêchable — pas la marée en général.\n\n**Méfiance** — réagit à la ligne elle-même et aux ombres (ne jamais faire passer la ligne au-dessus du poisson) ; cadence lente > rapide ; poursuite sans attaque → ralentir/stopper OU accélérer franchement (les deux documentés) ; soleil haut → collé aux murs, concentrer la présentation en bordure.\n\n⚠️ Trou : sources couvrant surtout été/début d'automne (topwater juin-sept, oct-nov Osaka). La fenêtre Shikanoshima (17 nov) est en marge de saison topwater — il manque du kurodai de fin d'automne hors surface (bottom game).",
+    "Tachiuo": "**Concept central : la couche — compter, reproduire, ne plus changer.** ⚠️ Mono-source, plus petit corpus.\n\n**Leurre** — tenya : PE 1号, bas de ligne 5-8号 (dents), 3 tenya pré-appâtés AVANT le crépuscule (fenêtre courte), appât monté parfaitement droit (un montage de travers rend les poissons méfiants).\n\n**La couche** — compter la descente, reproduire exactement le compte qui a produit une touche. Le tachiuo regarde vers le HAUT : présenter sous sa couche = inefficace. Profond tant qu'il y a de la lumière → remonte vers la surface avec l'obscurité. Mobilité verticale sur une même session documentée (compte 8 en pleine eau → juste sous la surface).\n\n**Moment** — crépuscule = LA fenêtre, courte. Regain possible en pleine nuit au redémarrage du courant ou à l'arrivée d'un banc.\n\n**Animation** — lift-and-fall, quasi toutes les touches au fall. Raté → remettre immédiatement en descente (seconde attaque fréquente).\n\n⚠️ Trous : zéro leurre dur, zéro marée taggée. Pour Kobe/Akashi (22-23 nov), base exploitable mais mince.",
+    "Hirasuzuki": "**Concept central : sarashi + structure immergée + trajectoire.**\n\n**Positionnement** — façade exposée, rochers immergés sous une écume (サラシ) structurée et courants de retour (離岸流). La donnée Maria propose ~3 m comme repère de secteur; ce n’est pas une règle universelle.\n\n**Timing** — l’aube revient dans les rapports positifs et deux captures locales récentes de Shima soutiennent ce créneau. Un début de descendante après pleine mer est documenté, mais le corpus marée reste très mince : lire le mouvement réel sur place plutôt que transformer la marée en certitude.\n\n**Leurres ≤50 g** — shallow minnow autour de 100 mm localement documenté; Flapen Wing documenté pour vent/houle et distance sous réserve du modèle/poids compatible. Tout modèle >50 g ou au poids non vérifié reste hors recommandation.\n\n**Animation** — priorité à la trajectoire dans la veine utile : linéaire contrôlé, dérive et jerks/twitch ponctuels selon le leurre. En journée, précision près des rochers et signal plus discret.\n\n**Couleur** — trop peu de matière pour un consensus : naturel/flash possède un signal local, mais doit rester un point de départ, pas une règle.\n\n⚠️ **Concentration des preuves** : le socle technique est très majoritairement Maria/YAMARIA; les captures locales Anglers confirment surtout présence + aube + sarashi, pas l’ensemble de la méthode.",
+    "Madai": "**Concept central : bait → courant → cassure → couche.**\n\nLa base shore reste petite mais n’est plus vide : deux sources vidéo curatées apportent des captures directes de Madai du bord, l’une à Amakusa et l’autre sur surf de Shizuoka. Elles décrivent une recherche d’abord guidée par le **bait**, puis par le courant actif, une eau profonde accessible et une cassure/pente proche.\n\n**Leurres / couche** — commencer avec une présentation compacte dans la couche haute si le bait est inconnu puis descendre par countdown. Une source décrit un sinking pencil autour de 95 mm; l’autre capture un Madai sur Bone Bait + tête 18 g, mais le **poids total lancé reste non vérifié**, donc le modèle précis ne devient pas une recommandation active.\n\n**Animation** — stop-and-go et changement de couche pour provoquer un poisson suiveur; sur souple, séquence fond → récupération → petite remontée → retombée → reprise. Le moment exact de la touche du Madai Shizuoka n’est pas assez isolé pour attribuer la capture au lift, au fall ou à la reprise.\n\n**Saison / marée** — un pêcheur expérimenté décrit le début d’hiver vers le printemps comme période shore favorable et cite les changements de mouvement de marée comme déclencheurs possibles. Ces éléments restent des **interprétations d’expérience**, pas des fenêtres apprises.\n\n**Combo voyage** — MH / PE1.5 par défaut; conserver la règle absolue ≤50 g et bloquer tout modèle précis au poids total inconnu.",
+    "Saba": "**Signal encore très mince.** Deux observations seulement : présence nocturne à Kobe fin novembre et une petite Saba capturée sur un surf de Shizuoka en juin pendant une session Madai. La seconde est utile comme signal de bait/écosystème, pas comme preuve saisonnière pour le voyage. Ne pas construire de fenêtre ou recette Saba à partir de ce corpus."
+  },
+  "transversals": "**1. Le mouvement d’eau revient souvent comme déclencheur, mais ce n’est pas une loi universelle.** Hirame, Hamachi, Suzuki et Hirasuzuki ont des faits où courant/veine/démarrage d’écoulement structurent l’activité. La simple courbe PM/BM n’est pas un courant réel, et Aori/Kurodai/Tachiuo n’ont pas assez de tags marée pour recevoir un bonus automatique.\n\n**2. Fourrage + structure donnent le poste.** Quand du bait est explicitement visible, sa présence et sa trajectoire doivent peser plus que le nom du spot. Cassure, limite de courant, clair-obscur, rocher immergé ou angle de digue servent surtout à comprendre où le prédateur peut intercepter ce fourrage.\n\n**3. Pause / chute est un déclencheur récurrent mais pas universel.** Hirame, Aori et Tachiuo possèdent des preuves fortes autour du fall/pause; Hamachi a aussi des touches sur chute selon les contextes. Suzuki/Marusuzuki est surtout documenté en dérive continue; Hirasuzuki privilégie la trajectoire dans le sarashi.\n\n**4. Le downsizing est une réponse documentée au refus sur plusieurs espèces.** Hirame 95→80→65, Hamachi F160→F130 et Suzuki Solaria 100→85 apparaissent dans le corpus. Cela ne remplace pas la lecture de couche, bait et trajectoire.\n\n**5. La lumière déplace souvent la couche ou la précision nécessaire.** Hamachi : surface au madzume puis sub-surface; Hirame : fond plus important en plein jour; Kurodai : proximité des structures au soleil haut; Tachiuo : couche liée à la baisse de lumière. Hirasuzuki : l’aube ressort, tandis que la journée demande davantage de précision autour des rochers.",
+  "behavior": {
+    "Hirame": [
+      {
+        "titre": "Où il se poste",
+        "txt": "Poisson d'embuscade benthique qui se cale sur les **discontinuités** : rupture de fond (ブレイク/駆け上がり) et sa pente descendante, courant de retour (離岸流) qui creuse un chenal, fosse ou creux proche du bord, transition haut-fond → eau profonde. Sur un surf plat et homogène, il se concentre sur la moindre variation de relief ou de courant. Peut se tenir très près du bord (1 m d'eau à 10-20 m) si le fourrage y est. Dans un wando, le lot curaté précise la micro-position : **bord de bosse / extrémité de sandbar / rencontre avec le courant de retour** peuvent être plus utiles que le centre uniforme du wando. Trois nouvelles captures terrain rappellent aussi de finir chaque lancer jusqu’aux structures proches : la micro-position utile peut être la pente descendante juste devant le pêcheur."
+      },
+      {
+        "titre": "Ce qui le met en activité",
+        "txt": "Le **fourrage et la lecture du fond** structurent la recherche : cassure, chenal, fosse et présence de bait. Des observations relient le démarrage du courant à une mise en activité, mais le Hirame peut aussi prendre en courant faible. Après dédoublonnage des événements horaires, le jour est bien représenté : ne pas transformer l’aube en obligation. Le batch 3 renforce la priorité au **courant réellement ressenti près du fond** plutôt qu’à la seule phase PM/BM affichée."
+      },
+      {
+        "titre": "Comment il mange",
+        "txt": "Il gobe **à la pause et à la descente**, pas sur le déplacement. Le stop-and-go est la clé, la chute horizontale déclenche. Touches souvent courtes. Réagit aussi aux mouvements verticaux et à la chute d'un leurre plombé."
+      },
+      {
+        "titre": "Quand il refuse",
+        "txt": "Première réponse = **downsizing** (95→80→65), poussé si toujours rien. Présentation ralentie à l'extrême quand courant et activité sont faibles — il peut mordre même sans courant. Chute de température rapide = poursuite réduite, ralentir encore."
+      }
+    ],
+    "Suzuki": [
+      {
+        "titre": "Où il se poste",
+        "txt": "Poisson de **structure + lumière en baie/estuaire**. Ponts, piles, murs et surtout ruptures clair-obscur (明暗), où il s’embusque côté sombre. Il se cale aussi sur les **limites hydrodynamiques** : veine de courant (ヨレ), contre-courant, bord de banc de sable et chenal qui se resserre. Le sarashi rocheux est traité séparément dans Hirasuzuki."
+      },
+      {
+        "titre": "Ce qui le met en activité",
+        "txt": "La **nuit** et la **descendante** reviennent fortement dans les rapports positifs de la base, notamment autour du バチ抜け et des chenaux qui évacuent le fourrage. Ce sont des récurrences de prises/rapports positifs, pas un taux de succès. Le courant réellement observé sur le spot reste à lire séparément de la simple courbe de niveau."
+      },
+      {
+        "titre": "Comment il mange",
+        "txt": "Il peut manger **ce qui dérive**, mais la nouvelle curation montre aussi des poissons très calés : bait visible en surface alors que les Suzuki restent au fond, puis changement immédiat de couche lorsqu’un boil apparaît. En structure, plusieurs prises distinctes viennent d’un **tension fall au ras d’une pile**. Prospecter la couche réellement occupée, pas celle supposée d’après le bait. À Miyagi, une capture supplémentaire est déclenchée après **2–3 lifts puis fall** près du fond; lorsque le courant ralentit, une seconde vient sur récupération lente dérivée basse avec une vibration plus légère."
+      },
+      {
+        "titre": "Sélectivité",
+        "txt": "La sélection porte d’abord sur **silhouette + couche + trajectoire**. En eau froide, bracketer la profondeur par countdown; si le niveau baisse, raccourcir le compte. Si les touches cessent quand le leurre quitte la bordure de structure, corriger d’abord la trajectoire avant la couleur. Si le courant change, ajuster d’abord **contrôle du fond + poids + vitesse** avant de changer de famille de leurre."
+      }
+    ],
+    "Hamachi": [
+      {
+        "titre": "Où il se poste",
+        "txt": "Poisson de **passage** qu'on intercepte, pas qu'on attend : pointes de cap exposées au courant, entrées de baies (rabattage), hauts-fonds/îlots créant une accélération, limites entre deux courants. Sur surf profond il occupe toute la couche, du fond à la surface selon l'activité. Les **oiseaux** localisent les bancs."
+      },
+      {
+        "titre": "Ce qui le met en activité",
+        "txt": "Le **mouvement d’eau et le passage du bait** reviennent comme déclencheurs. Une longue phase quasi étale sans touche est documentée; plusieurs autres faits associent activité et veine/redémarrage. L’**aube est le moment le plus récurrent** dans les événements positifs disponibles, sans constituer un taux de réussite."
+      },
+      {
+        "titre": "Comment il mange",
+        "txt": "Il poursuit avant d'attaquer, souvent sur la **redescente / la pause** après une phase rapide. En topwater, technique d'induction (誘い出し) sur les gros buri. Un ou deux départs puissants initiaux — prévoir le montage en conséquence."
+      },
+      {
+        "titre": "Quand il refuse",
+        "txt": "**Downsizing = signal fort** (F160→F130 documenté par plusieurs sources dès que les sardines sont petites). Passer du long jerk au **short jerk** quand ça ne répond pas. Jerks amples et lents en faible visibilité ; ajuster la taille du leurre à celle du fourrage observé. Si la couche est inconnue, prendre un repère de fond puis **bracketer le countdown** (ex. 8 → 5 → 3 → 1) plutôt que rester fixé sur le fond. Cette règle vient d’une source 青物/Seriola de méthode et ne constitue pas une nouvelle capture Hamachi."
+      }
+    ],
+    "Aori-Ika": [
+      {
+        "titre": "Où il se poste",
+        "txt": "Se tient sur les **structures et les cassures de courant** : angles de digues où le courant bute, ruptures de fond (à prospecter parallèlement à la pente), fentes rocheuses (スリット) peu sollicitées, cordages et fondations en port, veines ヨ레 quand le courant principal est trop fort. En automne, souvent **suspendu** plutôt que collé au fond. Après forte pluie, fuit les estuaires vers l'entrée de baie (salinité)."
+      },
+      {
+        "titre": "Comment il attaque",
+        "txt": "**Tout se joue à la descente** — la prise a lieu pendant le fall, pas sur le jerk. Free fall ligne détendue = chute naturelle et verticale qui multiplie les cycles ; tension fall = plus lent et détectable, déclenche les individus mous. Vent/mer agitée impose le free fall (limite les parasites de bannière)."
+      },
+      {
+        "titre": "Selon l'activité",
+        "txt": "Actifs → egi à darts amples (Q LIVE) ; sollicités ou peu actifs → descente stable (Egi-OH K) et animation douce. Suit sans saisir → passer en shallow à descente lente pour allonger le temps d'attaque. Sur très petits individus, downsizing (2,5→1,8号). Groupe visible : lancer au-delà et ramener pour isoler les actifs sans disperser le banc."
+      }
+    ],
+    "Kurodai": [
+      {
+        "titre": "Où il se poste",
+        "txt": "Le poisson du **très peu profond** : moins d'1 m idéal, 1,5 m en limite haute. Vasières, plages en pente douce, rivières peu profondes, blocs (ゴロタ), bancs d'huîtres. Point unique : mémoriser le **niveau de marée exact** qui rend chaque poste pêchable, pas la marée en général."
+      },
+      {
+        "titre": "La méfiance avant tout",
+        "txt": "Réagit à la **ligne elle-même et aux ombres** — ne jamais faire passer la ligne au-dessus du poisson, ajuster l'angle. Cadence lente > rapide. Soleil haut = reste collé aux murs, concentrer la présentation en bordure. Poursuite sans attaque → soit ralentir/stopper net, soit au contraire accélérer franchement (les deux marchent selon le jour)."
+      },
+      {
+        "titre": "Saison",
+        "txt": "Fenêtre topwater surtout été → début d'automne (tôt le matin le plus facile). **Ta fenêtre de mi-novembre est en marge** : il te manque du kurodai de fin d'automne hors surface (bottom game) pour cette période."
+      }
+    ],
+    "Tachiuo": [
+      {
+        "titre": "La couche, tout est là",
+        "txt": "Trouver la couche en **comptant la descente**, puis reproduire exactement le compte qui a produit une touche et ne plus en changer. Le tachiuo regarde vers le **haut** : présenter sous sa couche est inefficace. Profond tant qu'il y a de la lumière, remonte vers la surface avec l'obscurité — la couche productive bouge dans la session."
+      },
+      {
+        "titre": "Quand et comment",
+        "txt": "La **faible lumière** est le socle : crépuscule et nuit sont tous deux documentés, avec un petit corpus où la nuit ressort légèrement après dédoublonnage par événement. Les touches au **fall** sont beaucoup mieux établies que l’heure exacte : compter la couche, reproduire le compte et remettre immédiatement en descente après un raté."
+      }
+    ],
+    "Hirasuzuki": [
+      {
+        "titre": "Où il se poste",
+        "txt": "Façade exposée, **sarashi structuré**, rochers immergés et courant de retour (離岸流). L’écume dense peut révéler une structure sous-jacente où le poisson se cale et où le bait est repoussé."
+      },
+      {
+        "titre": "Ce qui le met en activité",
+        "txt": "L’**aube** revient dans les rapports positifs, avec deux captures locales de Shima autour de ce créneau. La période octobre–décembre est décrite comme pré-reproduction favorable. Une descendante après pleine mer est documentée, mais la donnée marée est trop mince pour en faire une règle."
+      },
+      {
+        "titre": "Comment il mange",
+        "txt": "Le cœur de la méthode est la **trajectoire** : faire traverser la veine utile au leurre au contact de la structure sans perdre le contrôle. Les petites proies entraînées par un courant de retour peuvent être interceptées sur cette ligne."
+      },
+      {
+        "titre": "Quand il devient difficile",
+        "txt": "En journée il est décrit comme plus méfiant et plus serré sur les rochers. Priorité à l’angle, au passage précis et à un signal plus discret avant de multiplier les animations ou les changements de couleur."
+      }
+    ],
+    "Madai": [
+      {
+        "titre": "Où il se poste",
+        "txt": "Les nouvelles sources shore convergent sur **bait + courant + profondeur/cassure accessible**. À Amakusa, le pêcheur se déplace beaucoup pour trouver le bait et une veine active; sur surf de Shizuoka, le travail reste proche du fond."
+      },
+      {
+        "titre": "Ce qui le met en activité",
+        "txt": "Le courant principal et les changements de mouvement sont décrits comme des signaux utiles, mais la relation marée → activité reste une **interprétation de pêcheur** encore peu répliquée. Ne pas en faire une fenêtre probabiliste."
+      },
+      {
+        "titre": "Comment il mange",
+        "txt": "La mécanique documentée est surtout une gestion de couche et de rupture de cadence : countdown, stop-and-go, fond → petite remontée → retombée → reprise. La capture Shizuoka ne permet pas d’isoler précisément le frame de l’attaque."
+      },
+      {
+        "titre": "Quand il refuse",
+        "txt": "Pas de bait ou pas de signal : **bouger** plutôt que figer une recette. Si la couche est inconnue, commencer haut puis descendre progressivement; changer une seule variable à la fois."
+      }
+    ]
+  },
+  "mechanics": [
+    {
+      "famille": "Sinking pencil",
+      "especes": "Hirame, Suzuki, Hamachi",
+      "principe": "Leurre de **distance et de couche basse** qui se pilote par la vitesse de récupération, pas par la canne. Il travaille en roulis (balancement de queue) sur une récupération linéaire lente ; c'est la lenteur qui le rend prenant.",
+      "corr": [
+        "**Hirame** : lancer loin, descendre au fond, puis récupération **très lente** juste au-dessus — le roulis de queue fait le travail. Alterner avec des chutes horizontales et, en dernier recours, des one-pitch pour réveiller un poisson calé.",
+        "**Suzuki** : on le fait **dériver** dans le courant en gardant juste l'accroche dans l'eau, récupération minimale — présentation, pas prospection.",
+        "**Hamachi** : logique inverse, **remontée rythmée depuis le fond** (part du fond, remonte) quand les poissons sont bas ; garder la chute sous surveillance.",
+        "**Hirame — contrôle** : en drift ou courant latéral, la valeur du leurre dépend d’abord de sa capacité à rester lisible dans la couche. Si la bannière fait remonter/gratter le leurre, corriger angle et vitesse avant d’interpréter la marée."
+      ]
+    },
+    {
+      "famille": "Souple / tête plombée",
+      "especes": "Hirame, Suzuki",
+      "principe": "Le leurre de la **précision lente près du fond**. Deux gestes selon l'humeur du poisson : récupération lente rasante (poisson à convaincre) ou stop-and-go / lift-and-fall de faible amplitude (poisson à déclencher).",
+      "corr": [
+        "**Hirame** : stop-and-go dominant, ou remontées/descentes en laissant retomber. Présentation finesse, lente et précise — c'est un poisson d'embuscade qui mange à la pause.",
+        "**Suzuki** : lift-and-fall de **faible** amplitude en rasant le fond quand il est bas ; récupération rapide avec arrêt sec au-dessus d'une cassure quand il est posté dessous."
+      ]
+    },
+    {
+      "famille": "Diving pencil",
+      "especes": "Hamachi",
+      "principe": "Leurre de **surface/sub-surface animé à la canne**, spécifiquement calé sur le hamachi. Le dosage de l'énergie du jerk est LA variable — c'est là que se joue la réaction.",
+      "corr": [
+        "Règle centrale : **short jerk contrôlé** par défaut ; passer du long jerk au short jerk dès que les poissons ne réagissent pas. Courtes tirées à plongée volontairement faible.",
+        "Sur poisson méfiant : maintenir le leurre presque sur place avec de petites animations discrètes (imiter un konoshiro affaibli).",
+        "Sur poisson actif : plongées franches ou récupération rapide (ジャカ巻き) entrecoupée de pauses. Éviter d'emprisonner des bulles (short action naturelle)."
+      ]
+    },
+    {
+      "famille": "Metal jig / blade jig",
+      "especes": "Hamachi surtout, Hirame, Kurodai",
+      "principe": "Leurre de **prospection verticale rapide**. Le geste dépend de l'étage où sont les poissons : linéaire rapide haut, one-pitch / fond→mi-eau bas. La **chute est un temps de prise** à ne jamais négliger.",
+      "corr": [
+        "**Hamachi actif haut** : compte à rebours court (≈5 s) puis fast pitch dans la couche supérieure. Blade jig en récupération linéaire rapide avec **arrêts** ponctuels — la touche vient souvent à l'arrêt.",
+        "**Hamachi bas / sans signe** : prendre le fond puis remonter en one-pitch en explorant les couches ; 20-30 tours rapides puis 2-3 tours lents pour créer une pause alimentaire.",
+        "**Sur la chute** : après un long lancer, surveiller la descente du jig ; ferrer sur toute anomalie de tension (attaque au fall).",
+        "**Kurodai / poissons de fond** : montage hybride jig + softbait en lift-and-fall, reprise de contact du fond après chaque mouvement, touche à la retombée ou au touchdown.",
+        "**Hamachi / Seriola — couche inconnue** : mesurer d’abord le temps de descente jusqu’au fond, puis remonter par paliers de countdown (ex. 8 → 5 → 3 → 1). Quand une couche répond, la répéter au lieu de marteler systématiquement le fond."
+      ]
+    },
+    {
+      "famille": "Vibration",
+      "especes": "Suzuki",
+      "principe": "Leurre de **réaction et de distance** pour le suzuki : atteint la cassure extérieure et provoque quand la récupération régulière ne donne rien. Vitesse rapide dominante, action serrée.",
+      "corr": [
+        "Récupération **rapide** avec arrêt marqué au-dessus d'une cassure — le suzuki posté dessous réagit à la rupture.",
+        "Quand le courant s'arrête et que l'activité tombe : abandonner le linéaire pour **jerking / lift-and-fall** afin de forcer la réaction.",
+        "Eau froide / poisson loin : lancer au-delà de la cassure, **laisser descendre** puis récupérer rapidement (c'est la séquence qui sort les gros en mars).",
+        "**Suzuki — courant variable** : courant fort = conserver assez de contrôle pour tenir la couche basse et travailler en lift-and-fall; courant qui mollit = alléger et ralentir pour augmenter le temps juste au-dessus du fond. Une capture du batch 3 est explicitement déclenchée pendant le fall après 2–3 lifts."
+      ]
+    },
+    {
+      "famille": "Minnow / jerkbait",
+      "especes": "Hirame, Suzuki, Hamachi",
+      "principe": "Leurre de **couche haute à intermédiaire**, piloté à la vitesse. La règle transversale : **adapter la vitesse au courant** pour garder une présentation cohérente, plutôt qu'une vitesse fixe.",
+      "corr": [
+        "**Hirame** : récupération lente à très lente, un tour de manivelle toutes les 2-3 s (slow drive) pour rester longtemps au-dessus du poisson posé ; laisser tomber le leurre par moments.",
+        "**Suzuki** : présentation lente accompagnant la **dérive** du courant, dead slow dans une ligne de courant ; en rivière, digital retrieve (demi-tours) pour faire dévier le leurre puis arrêt.",
+        "**Hamachi en chasse** : lancer directement dans le boil et maintenir le leurre dans la trajectoire du banc — pas de finesse, de la présence."
+      ]
+    },
+    {
+      "famille": "Egi",
+      "especes": "Aori-Ika",
+      "principe": "Tout se pilote par le **dosage jerk / descente**. La prise a lieu à la chute ; le jerk ne sert qu'à repositionner. Moduler l'énergie selon l'activité.",
+      "corr": [
+        "**Actif** : enchaîner rapidement jerks et pauses, dart ample (repositionne vite, couvre).",
+        "**Peu actif / méfiant** : **réduire la force et le nombre de jerks, allonger la descente de ~50 %** ; animation douce à dart limité, privilégier une descente stable. C'est le levier n°1 sur calamar difficile."
+      ]
+    },
+    {
+      "famille": "Popper vs stickbait (surface)",
+      "especes": "Hamachi, Kurodai, Suzuki",
+      "principe": "Deux gestes de surface **opposés** à ne pas confondre : le **popper** frappe et éclabousse (appel sonore), le **stickbait/pencil** glisse en dog-walk (fuite visuelle). Le choix dépend de l'espèce et de l'agressivité recherchée.",
+      "corr": [
+        "**Hamachi — induction (誘い出し)** : animation de surface soutenue destinée à **faire monter** le buri de la profondeur ; geste ample et engageant, pour poisson actif ou curieux.",
+        "**Kurodai — dog walk discret** : zigzag régulier ~2 twitchs/seconde en relâchant la tension après chaque coup, petits pops avec bulles ; sur poisson qui suit sans mordre, soit ralentir/stopper net, soit au contraire **accélérer franchement** le dog walk. Récupération linéaire sans à-coups possible sur les plus méfiants.",
+        "**Règle pop discret vs puissant** : le pop puissant appelle de loin en eau agitée / poisson actif ; le pop discret (juste des bulles) sur eau calme / poisson sous pression. Le stickbait coulant, lui, se joue sur la vitesse de glisse : rapide et nerveux sur poisson en chasse, lent et ample sur poisson à convaincre."
+      ]
+    }
+  ],
+  "v4_note": "Historique: la V4 a porté la base opérationnelle à 493 observations et séparé les briefs destination de la couche éditoriale historique.",
+  "technique_v5": {
+    "version": "V5 technique",
+    "principle": "Séparer ce que fait le pêcheur (moulinet / canne / gestion de bannière), ce que fait le leurre (nage / chute / désaxage) et l'effet recherché (tenir une couche / provoquer / créer une fenêtre de touche).",
+    "animation_grammar": [
+      {
+        "name": "Linéaire",
+        "control": "Moulinet",
+        "gesture": "Récupération continue; canne neutre ou basse, sans impulsion volontaire.",
+        "lure": "La nage vient de la conception du leurre: roll, wobble, tail swing, vibration, slalom… selon vitesse/courant.",
+        "purpose": "Tenir une couche, couvrir de l'eau, laisser le leurre travailler.",
+        "not": "Ce n'est ni un jerk, ni un lift-and-fall. Une pause transforme la séquence en stop-and-go."
+      },
+      {
+        "name": "Stop-and-go",
+        "control": "Moulinet + arrêt",
+        "gesture": "Séquence de tours de manivelle puis arrêt franc ou relâché; canne surtout gestionnaire de ligne.",
+        "lure": "Nage → arrêt → suspension, remontée ou chute selon flottabilité.",
+        "purpose": "Créer une rupture de cadence et une fenêtre de prise à la pause/retombée.",
+        "not": "Si on décolle volontairement le leurre à la canne depuis le fond, on passe vers lift-and-fall."
+      },
+      {
+        "name": "Lift-and-fall",
+        "control": "Canne + récupération de bannière",
+        "gesture": "Lift volontaire à la canne pour décoller/remonter, puis accompagnement de la descente; moulinet récupère surtout le mou.",
+        "lure": "Montée provoquée puis chute contrôlée ou semi-libre; contact fond souvent référent.",
+        "purpose": "Pêcher verticalement une cassure/couche basse et déclencher sur la retombée.",
+        "not": "Un simple linéaire interrompu n'est pas un lift-and-fall."
+      },
+      {
+        "name": "Jerk / twitch",
+        "control": "Canne",
+        "gesture": "Impulsions sèches (twitch court, jerk plus ample); moulinet reprend la bannière sans créer l'action principale.",
+        "lure": "Dart, slide, embardée, flash latéral; pause possible après désaxage.",
+        "purpose": "Réaction, changement brutal de direction, imitation d'une proie désorganisée.",
+        "not": "Le mot roll/wobble décrit le leurre, pas le geste du pêcheur."
+      },
+      {
+        "name": "Dérive / dead drift",
+        "control": "Courant + bannière",
+        "gesture": "Lancer amont/3-4 amont, accompagner; moulinet ne fait que maintenir le bon contact.",
+        "lure": "Le courant déplace le leurre; nage intrinsèque minimale à modérée.",
+        "purpose": "Présenter à la vitesse de la veine d'eau, surtout Suzuki.",
+        "not": "Une récupération lente n'est une dérive que si le courant fait réellement progresser la présentation."
+      },
+      {
+        "name": "Fall / chute",
+        "control": "Gravité + tension de ligne",
+        "gesture": "Laisser descendre; bannière détendue = chute plus libre, tension = trajectoire plus contrôlée/arquée.",
+        "lure": "Planing, shimmy, roll, posture stable ou plongeante selon leurre.",
+        "purpose": "Traverser une couche et exploiter la retombée comme fenêtre de touche.",
+        "not": "Le jerk précédent sert souvent seulement à repositionner; la prise peut se faire exclusivement au fall."
+      },
+      {
+        "name": "One-pitch / jigging",
+        "control": "Canne + moulinet synchronisés",
+        "gesture": "Une impulsion par tour/portion de tour, cadence régulière ou variable depuis le fond vers la couche cible.",
+        "lure": "Montée en écarts/flash puis micro-chutes entre impulsions.",
+        "purpose": "Chercher des pélagiques dans la colonne d'eau et identifier leur couche.",
+        "not": "À distinguer d'un linéaire rapide de casting jig, où le moulinet crée presque tout le déplacement."
+      },
+      {
+        "name": "Surface: dog-walk / pop / dive",
+        "control": "Canne + récupération de bannière",
+        "gesture": "Dog-walk = petits twitchs rythmés; pop = tirée qui frappe l'eau; diving pencil = traction qui le fait plonger puis relâchement.",
+        "lure": "Zigzag, éclaboussure/bulles, ou plongée-remontée.",
+        "purpose": "Appel, réaction ou induction depuis la profondeur.",
+        "not": "Trois mécaniques différentes malgré une même couche de surface."
+      }
+    ],
+    "color_logic": {
+      "rule": "Choisir d'abord le niveau de visibilité utile, puis la teinte. Les quatre axes sont clarté de l'eau, lumière, activité/pression et fourrage.",
+      "axes": [
+        {
+          "axis": "Clarté",
+          "low": "Eau claire + calme → translucide/ghost, naturel, flash fin.",
+          "high": "Eau teintée/trouble → opaque, silhouette, contraste, flash ou mat selon lumière."
+        },
+        {
+          "axis": "Lumière",
+          "low": "Aube/crépuscule/ciel bas → silhouette plus nette; fluo/UV en accent utile pendant la transition.",
+          "high": "Soleil fort → transparence/naturel; métallique si besoin de flash mais à doser sur poissons méfiants."
+        },
+        {
+          "axis": "Activité",
+          "low": "Poisson suiveur/méfiant → réduire signal: naturel, ghost, taille/flash contenus.",
+          "high": "Chasse/agressivité → accepter high-appeal: rose, chartreuse/jaune, orange, miroir/flash."
+        },
+        {
+          "axis": "Fourrage",
+          "low": "Bait non identifié → commencer polyvalent naturel + une option contraste.",
+          "high": "Bait clairement identifié → match the hatch en silhouette/taille d'abord, teinte ensuite."
+        }
+      ],
+      "matrix": [
+        {
+          "condition": "Claire + soleil + calme",
+          "start": "Ghost / transparent / iwashi naturel",
+          "switch": "Un peu plus de flash si poissons actifs; plus opaque si ciel se couvre."
+        },
+        {
+          "condition": "Claire + couvert / ombres",
+          "start": "Translucide avec dos opaque, pearl ou naturel contrasté",
+          "switch": "Fluo discret/UV à l'aube-crépuscule; revenir ghost si pression forte."
+        },
+        {
+          "condition": "Verte / chargée mais lumineuse",
+          "start": "Silver/gold + dos chartreuse ou rose; pearl",
+          "switch": "Rose fluo pour casser le vert, chart/jaune pour maximum de lecture; naturel flash si chasse sur bait."
+        },
+        {
+          "condition": "Trouble + ciel bas",
+          "start": "Opaque blanc/pearl, chartreuse/jaune, orange/rose high-appeal",
+          "switch": "Mat sombre/noir si le poisson doit surtout lire une silhouette plutôt qu'un flash."
+        },
+        {
+          "condition": "Aube / crépuscule",
+          "start": "Rose ou jaune/chart fluo, UV, pearl/opaque",
+          "switch": "À mesure que la lumière monte: glisser vers naturel/transparent; à mesure qu'elle tombe: silhouette/opaque."
+        },
+        {
+          "condition": "Nuit / lumière artificielle",
+          "start": "Silhouette sombre ou pearl/white selon contraste; glow/UV si la source lumineuse le rend cohérent",
+          "switch": "Sous éclairage fort et eau claire, tester transparent/naturel avant de surcharger en glow."
+        }
+      ],
+      "bracketing": "Ne pas chercher une couleur magique: partir d'un choix logique puis faire un pas vers plus discret et un pas vers plus visible. Si un suivi sans attaque apparaît, modifier une seule variable à la fois.",
+      "pink_vs_yellow": "Rose fluo et jaune/chartreuse sont deux solutions de visibilité, pas des lois. Le rose est souvent utile comme accent très distinctif dans des eaux verdâtres/bleutées et aux transitions de lumière; le jaune/chartreuse donne une silhouette très lisible en eau chargée ou lumière diffuse. Si le bait est clairement identifié et les poissons nourrissent vraiment, le naturel/flash peut repasser devant les deux.",
+      "finish_logic": [
+        {
+          "finish": "Ghost / transparent",
+          "mechanic": "Réduit la silhouette et le signal visuel; laisse passer la lumière.",
+          "best": "Eau claire, calme, poissons sollicités; match-the-hatch discret.",
+          "watch": "Peut manquer de lecture en eau chargée ou lumière très faible."
+        },
+        {
+          "finish": "Pearl / opaque",
+          "mechanic": "Silhouette pleine et réflexion diffuse, lisible sans gros flash miroir.",
+          "best": "Ciel couvert, eau teintée, faible lumière; blanc/pearl comme base polyvalente.",
+          "watch": "Peut être trop présent en eau cristalline très calme."
+        },
+        {
+          "finish": "Metal / foil / flash",
+          "mechanic": "Éclats spéculaires dépendants de la lumière et de l'angle; imite les flancs d'un bait.",
+          "best": "Bait argenté, soleil, eau légèrement chargée, poissons actifs.",
+          "watch": "Sous forte pression en eau plate et claire, réduire le flash peut être meilleur."
+        },
+        {
+          "finish": "Fluo / UV-reactif",
+          "mechanic": "Augmente la visibilité lorsque des courtes longueurs d'onde restent disponibles; ce n'est pas du glow.",
+          "best": "Transitions aube/crépuscule, ciel diffus, eau verdâtre/teintée; souvent en accent plutôt qu'en corps total.",
+          "watch": "Dans l'obscurité sans source UV/lumière, l'effet fluorescent n'est pas une lampe autonome."
+        },
+        {
+          "finish": "Glow / phosphorescent",
+          "mechanic": "Emmagasine puis réémet de la lumière après charge; signal autonome pendant un temps limité.",
+          "best": "Nuit, profondeur, eging/tenya et situations où un repère lumineux est documenté.",
+          "watch": "Plus de signal n'est pas toujours mieux : ventre/point glow peut être plus fin qu'un corps entièrement lumineux."
+        },
+        {
+          "finish": "Mat sombre / noir",
+          "mechanic": "Travaille surtout la silhouette et le contraste, pas le flash.",
+          "best": "Contre-jour, ciel bas, eau sale ou surface claire vue par dessous.",
+          "watch": "À alterner avec opaque clair : la meilleure silhouette dépend du fond lumineux derrière le leurre."
+        }
+      ],
+      "water_tint_logic": {
+        "verte": "Rose/magenta = contraste de teinte très distinctif; chartreuse/jaune = forte lisibilité/luminance. Tester lequel donne le bon niveau de signal plutôt que décréter un gagnant.",
+        "trouble_brunâtre": "Chartreuse/jaune/orange, pearl/white et silhouette sombre sont des points de départ logiques; le flash dépend de la lumière disponible.",
+        "claire_bleutée": "Naturel/ghost d'abord si poissons méfiants; rose/orange/flash deviennent des options de réaction si l'activité monte.",
+        "bait_identifié": "Match the hatch = silhouette, taille, cadence et couche avant la nuance exacte de couleur."
+      }
+    },
+    "species": {
+      "Hirame": {
+        "lure_roles": [
+          {
+            "role": "Chercher loin + tenir bas",
+            "families": "Heavy sinking pencil 80–120 mm",
+            "essence": "Linéaire lent au-dessus du fond; la vitesse pilote profondeur et amplitude. Stop ou chute si contact/refus."
+          },
+          {
+            "role": "Insister précisément",
+            "families": "Souple / tête plombée",
+            "essence": "Linéaire rasant ou petit lift-and-fall; pauses près des cassures."
+          },
+          {
+            "role": "Vent / distance / prospection",
+            "families": "Metal / blade jig",
+            "essence": "Linéaire ou one-pitch selon couche; retombée surveillée."
+          }
+        ],
+        "animation": "Priorité à la tenue près du fond. Linéaire ≠ lift-and-fall: le premier laisse nager le leurre, le second crée volontairement une montée puis une retombée. Le stop-and-go ajoute une fenêtre de pause sans forcément utiliser la canne.",
+        "color": "Départ naturel/flash (iwashi, silver) si bait; rose/chart/or quand visibilité ou réaction doivent monter. En plein soleil/eau claire, réduire vers naturel/ghost; en faible lumière, opaque/fluo ou glow belly peut prendre le relais.",
+        "loadout": "Combo voyage : MH / PE1.5 par défaut. M / PE0.8 devient pertinente sur 8–30 g, mer plus calme, faible profondeur ou présentation plus fine."
+      },
+      "Suzuki": {
+        "lure_roles": [
+          {
+            "role": "Couche haute / structure",
+            "families": "Wake, shallow minnow, sinking pencil sub-surface ≤50 g",
+            "essence": "Dérive/dead slow à la vitesse du courant; la canne ne doit pas sur-animer par défaut."
+          },
+          {
+            "role": "Réaction / cassure",
+            "families": "Vibration, sinking minnow ≤30 g en M ou ≤50 g en MH",
+            "essence": "Linéaire plus rapide, arrêt ou jerk ponctuel si poisson calé."
+          },
+          {
+            "role": "Bait spécifique",
+            "families": "Pencil/minnow compatibles setup",
+            "essence": "Adapter taille et silhouette au bait réellement présent; aucun big bait >50 g n’entre dans le moteur voyage."
+          }
+        ],
+        "animation": "La dérive est une mécanique de courant, pas juste 'mouliner lentement'. Jerk/twitch = canne; linéaire = moulinet; roll/slalom = réponse du leurre à ces commandes.",
+        "color": "Claire/calme: ghost/translucide. Ciel bas/eau chargée: opaque/pearl/white. Aube-crépuscule: UV/fluo en accent. Bait identifié: match the hatch en taille/silhouette avant la nuance exacte.",
+        "loadout": "Combo voyage : M / PE0.8 par défaut pour contrôle, dérive et stop/restart en baie/estuaire. Basculer MH si le poids/conditions l’exigent. Le Hirasuzuki est une fiche séparée."
+      },
+      "Hamachi": {
+        "lure_roles": [
+          {
+            "role": "Faire monter / chasse",
+            "families": "Diving pencil, stickbait, popper",
+            "essence": "Tractions, short jerks ou travail de surface selon leurre; viser devant la trajectoire du banc."
+          },
+          {
+            "role": "Chercher les couches",
+            "families": "Metal / blade jig",
+            "essence": "Linéaire rapide si poissons hauts; one-pitch fond→mi-eau si invisibles; fall surveillé."
+          },
+          {
+            "role": "Surface éteinte",
+            "families": "Sinking pencil / sub-surface",
+            "essence": "Rester sous le film, contrôler vitesse et profondeur; ne pas confondre jerk et simple linéaire."
+          }
+        ],
+        "animation": "Le signal clé est la couche. Surface visible = geste de canne/topwater; poisson bas = séquence fond→haut; casting jig haut = linéaire rapide possible. Une touche au fall impose de reproduire la chute, pas seulement le leurre.",
+        "color": "Bait argenté: silver/iwashi naturel en base. Blue-pink, rose métallique, chart/pearl = montée de signal si activité/visibilité l'exigent. En chasse focalisée, taille et silhouette du bait priment sur la fantaisie.",
+        "loadout": "Combo voyage : MH / PE1.5. Prioriser 20–45 g; 46–50 g seulement en haute charge assumée. Tout >50 g est hors moteur."
+      },
+      "Aori-Ika": {
+        "lure_roles": [
+          {
+            "role": "Tout le système",
+            "families": "Egi",
+            "essence": "Le jerk repositionne; la descente pêche. Choisir vitesse/stabilité de chute selon profondeur, vent et activité."
+          }
+        ],
+        "animation": "Séparer jerk et fall. Actif: 2–3 jerks nets puis chute. Méfiant: moins de jerks, moins forts, chute plus longue/stable. Free fall et tension fall changent trajectoire et lecture de touche.",
+        "color": "Claire/jour: naturel bleu/brun, keimura/UV si lumière disponible. Trouble/faible lumière: orange/rose/lime, red base, glow/phospho. Le fluo sert de visibilité; sur calamar suiveur, revenir plus naturel est un vrai changement de signal.",
+        "loadout": "Combo voyage : M / PE0.8 compatible, sans prétendre remplacer une canne eging spécialisée. La priorité reste contrôle de chute et lecture de bannière."
+      },
+      "Kurodai": {
+        "lure_roles": [
+          {
+            "role": "Très peu profond",
+            "families": "Pencil / popper / wake",
+            "essence": "Dog-walk ou pop discret; contrôler bruit, silhouette et angle de ligne."
+          }
+        ],
+        "animation": "Dog-walk = twitchs de canne + récupération du mou; un linéaire sans secousse est une autre proposition. Sur suivi: ralentir/stopper OU rupture franche de vitesse, en testant une seule variable.",
+        "color": "Eau claire/pression: transparent/holographique. Faible lumière ou eau sale: opaque, noir/blanc, chart/rose/orange. Le dos visible aide aussi le pêcheur à contrôler le leurre en surface.",
+        "loadout": "Combo voyage : M / PE0.8. La plage 8–30 g couvre le topwater/minnow utile; priorité à la précision, au contrôle de bannière et à la discrétion."
+      },
+      "Tachiuo": {
+        "lure_roles": [
+          {
+            "role": "Trouver la couche",
+            "families": "Tenya / jig / sinking minnow",
+            "essence": "Compter la descente, reproduire exactement la couche; lift-and-fall si fond/intermédiaire, linéaire si banc haut et mobile."
+          }
+        ],
+        "animation": "La variable n°1 est la profondeur reproduite. Lift-and-fall = montée de canne + retombée; un minnow en linéaire haut est une mécanique différente même si les deux prennent le même poisson.",
+        "color": "Base à consolider. En faible lumière, pearl/chart/glow peut servir de signal; dès que bait/éclairage est lisible, tester une option naturelle ou argentée en parallèle.",
+        "loadout": "Combo voyage : M jusqu’à 30 g; MH au-delà ou si la présentation/courant exige plus de tenue. >50 g exclu."
+      },
+      "Madai": {
+        "lure_roles": [
+          "sinking pencil compact / countdown pour chercher la couche",
+          "souple sur tête plombée pour le fond (poids total à vérifier par montage)"
+        ],
+        "animation": "Chercher la couche par countdown; stop-and-go si poisson suiveur. Sur souple : fond → récupération → petite remontée → retombée → reprise. Ne pas inventer le déclencheur exact lorsque la vidéo ne l’isole pas.",
+        "color": "Pas assez de données curatées pour une règle couleur Madai.",
+        "loadout": "Combo voyage : MH / PE1.5. Modèle précis au poids total inconnu bloqué; 46–50 g seulement en haute charge, >50 g exclu."
+      },
+      "Saba": {
+        "lure_roles": [],
+        "animation": "Base encore insuffisante : une présence locale fin novembre et une petite Saba de juin comme signal écosystème. Pas de mécanique généralisable.",
+        "color": "Données insuffisantes.",
+        "loadout": "Combo voyage : M / PE0.8 en priorité."
+      },
+      "Aji": {
+        "lure_roles": [],
+        "animation": "Base encore insuffisante; micro-jig/softbait doivent être enrichis par sources locales avant synthèse.",
+        "color": "Données insuffisantes.",
+        "loadout": "Combo voyage : M seulement en opportuniste; beaucoup d’approches ajing sont sous 8 g et donc hors plage optimale."
+      },
+      "Mebaru": {
+        "lure_roles": [],
+        "animation": "Base encore insuffisante; distinguer futur linéaire light-game, drift et micro-jig au lieu de les fusionner.",
+        "color": "Données insuffisantes.",
+        "loadout": "Combo voyage : M seulement en opportuniste; le light-game classique est souvent sous 8 g et donc hors plage optimale."
+      },
+      "Hirasuzuki": {
+        "lure_roles": [
+          {
+            "role": "Sarashi / structure",
+            "families": "Shallow minnow ~90–120 mm ≤50 g",
+            "essence": "Faire passer proprement dans la veine utile autour d’un rocher immergé; le passage prime sur la sur-animation."
+          },
+          {
+            "role": "Vent / distance",
+            "families": "Sinking pencil / wing bait compatible ≤50 g",
+            "essence": "Conserver contrôle et portée quand la façade est exposée; modèle précis uniquement si poids vérifié."
+          }
+        ],
+        "animation": "Linéaire contrôlé ou dérive dans le sarashi; jerk/twitch ponctuel pour corriger/faire décaler. Le geste sert la trajectoire et non l’inverse.",
+        "color": "Donnée couleur faible. Naturel/flash possède un signal local; si eau claire/poisson méfiant, réduire le signal avant de chercher une couleur “magique”.",
+        "loadout": "Combo voyage : MH / PE1.5 par défaut pour sarashi, rochers et réserve. Aucun leurre >50 g; 46–50 g = haute charge utilisateur."
+      }
+    },
+    "sources": [
+      {
+        "label": "DAIWA Overdrive officiel",
+        "url": "https://www.daiwa.com/jp/product/hi65fyu",
+        "use": "Relation vitesse de récupération ↔ wide tail swing / irregular roll et usage slow vs fast."
+      },
+      {
+        "label": "Megabass KAGELOU 124F officiel",
+        "url": "https://www.megabass.co.jp/site/products/kagelou124/",
+        "use": "Action variable avec la vitesse: natural roll puis roll + slide."
+      },
+      {
+        "label": "YAMARIA guide eging officiel",
+        "url": "https://www.yamaria.com/beginner/eging",
+        "use": "Choix couleurs selon heure et couleur d'eau; taille d'egi selon saison/taille des calamars."
+      },
+      {
+        "label": "Ultimate Fishing — choix coloris Asturie",
+        "url": "https://www.ultimate-fishing.net/choisir-son-coloris-dasturie-pour-la-peche-du-bar/",
+        "use": "Translucide/opaque selon clarté, fluo/UV aux transitions, match the hatch."
+      },
+      {
+        "label": "Ultimate Fishing — finitions Megabass",
+        "url": "https://www.ultimate-fishing.net/code-couleur-megabass-chapitre-3-les-conditions-dutilisation-des-differentes-finitions-megabass/",
+        "use": "Lecture transparent / métallique / mat selon lumière, turbidité et agressivité."
+      },
+      {
+        "label": "Ultimate Fishing — jerkbait fin d'année",
+        "url": "https://www.ultimate-fishing.net/3-leurres-pour-pecher-en-fin-dannee/",
+        "use": "Distinction action de canne jerk/twitch, moulinet qui récupère la bannière, rôle des pauses."
+      }
+    ]
+  },
+  "v5_note": "V5: les onglets techniques utilisent technique_v5, construit pour séparer geste du pêcheur, comportement du leurre et effet recherché; la logique couleur est structurée par clarté, lumière, activité et fourrage. Les pads destination utilisent des résumés courts et une navigation marée limitée aux jours réels du séjour.",
+  "v6_note": "V6 Travel Loadout : moteur contraint aux deux combos de voyage. Les recommandations de leurres >50 g sont exclues ; 46–50 g = SP82MH haute charge utilisateur.",
+  "gear_policy": "Deux combos voyage : M = SP82M Quattro + Twin Power XD 4000HG + PE0.8; MH = SP82MH Quattro + Twin Power FE C5000XG + PE1.5. ≤30 g M/MH selon mécanique; 31–45 g MH; 46–50 g MH haute charge utilisateur; >50 g exclu des recommandations. Modèle nommé au poids inconnu = non proposé tant que non vérifié.",
+  "v6_5_note": "V6.5.5 : batch 3 curaté intégré. 30 observations directes/méthodes + 18 interprétations séparées; 5 captures positives certaines (Suzuki 2, Hirame 3), 4 événements Suzuki touche/décrochage conservés sans récurrence positive. Les méthodes 青物 n’ajoutent aucune présence Hamachi. observationPolarity lit désormais metadata.outcome pour empêcher lost/bite de voter positif."
+}

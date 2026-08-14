@@ -1,0 +1,31 @@
+{
+  "name": "Carnet Pêche JP",
+  "short_name": "Pêche JP",
+  "description": "Pêche Japon — fenêtres idéales, plans de créneau, loadout voyage et moteur de preuve",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0F1720",
+  "theme_color": "#0F1720",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

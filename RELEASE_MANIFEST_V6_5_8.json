@@ -1,0 +1,28 @@
+{
+  "release": "V6.5.8",
+  "name": "UX focus mobile",
+  "date": "2026-08-12",
+  "observations": 501,
+  "inferences": 35,
+  "local_intel": 264,
+  "visible_pads": 7,
+  "decision_series": 93,
+  "decision_cache_version": 3,
+  "confidence_summaries": 28,
+  "ux": [
+    "tap_species_band_select_then_open",
+    "single_priority_species",
+    "human_sample_labels",
+    "plain_language_confidence"
+  ],
+  "startup": {
+    "core_bytes": 40589,
+    "decision_cache_bytes": 118366,
+    "tides_bytes": 16232,
+    "blocking_json_bytes": 175187
+  },
+  "pwa_cache": "carnet-peche-jp-v6-5-8-ux-focus-20260812",
+  "reference_window": "Ise-Shima / Hamachi / 2026-11-26 = 75, 06:30–08:00, avg 70",
+  "github_build_required": false,
+  "data_export_requires_node": true
+}
