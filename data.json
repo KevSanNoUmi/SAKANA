@@ -1,6 +1,6 @@
 {
   "schema_version": "6.5",
-  "updated": "2026-08-13",
+  "updated": "2026-08-15",
   "gear_policy": {
     "max_lure_weight_g": 50.0,
     "rule": "Poids total lancé >50 g exclu; modèle précis au poids inconnu non recommandé; 46–50 g = MH haute charge utilisateur."
@@ -12817,6 +12817,2078 @@
       "recommendation": {
         "lure": "sinking vibration / lipless dense générique",
         "animation": "dérive contrôlée près du fond",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 555,
+      "species_id": 1,
+      "species": "Hirame",
+      "text": "Le pêcheur explique que, sur un minnow, la base est une récupération linéaire continue et qu'il intercale parfois un arrêt pour laisser un modèle coulant redescendre ou un flottant remonter et produire un changement de présentation.",
+      "confidence": 1.0,
+      "source": "ランガンソルト",
+      "source_type": "video",
+      "tags": {
+        "leurre": "minnow",
+        "spot_type": "surf"
+      },
+      "claim_id": "5bb8c3fa930b7434",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "",
+        "spot_type": "surf",
+        "maree": "",
+        "leurre": "minnow",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "stop-and-go : récupération linéaire au moulinet, puis arrêt ponctuel avant de reprendre",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 556,
+      "species_id": 1,
+      "species": "Hirame",
+      "text": "Un petit hirame a pris alors que le leurre travaillait volontairement près du fond : le pêcheur le faisait toucher le fond puis le décollait. Le poisson a chargé pendant cette séquence de travail vertical.",
+      "confidence": 0.7,
+      "source": "ホッティ",
+      "source_type": "video",
+      "tags": {
+        "moment_jour": "jour",
+        "profondeur": "fond, environ 3 à 4 m dans la zone accessible",
+        "spot_type": "surf"
+      },
+      "claim_id": "c5294234ad4488b5",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "jour",
+        "spot_type": "surf",
+        "maree": "",
+        "leurre": "",
+        "comportement": "",
+        "profondeur": "fond, environ 3 à 4 m dans la zone accessible",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "pendant le travail près du fond"
+      },
+      "recommendation": {
+        "animation": "lift-and-fall : faire toucher le fond, décoller le leurre avec la canne, puis le laisser redescendre",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 557,
+      "species_id": 1,
+      "species": "Hirame",
+      "text": "Le pêcheur explique qu'avec le Flipper 40 g il laisse descendre le leurre puis pratique un lift-and-fall pour présenter la chute vers le fond, la retombée servant à faire appel.",
+      "confidence": 1.0,
+      "source": "ホッティ",
+      "source_type": "video",
+      "tags": {
+        "comportement": "baitfish poussés vers la plage",
+        "leurre": "leurre métallique 40 g",
+        "moment_jour": "crépuscule",
+        "profondeur": "fond",
+        "spot_type": "surf"
+      },
+      "claim_id": "75b717a20669f042",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "crépuscule",
+        "spot_type": "surf",
+        "maree": "",
+        "leurre": "leurre métallique 40 g",
+        "comportement": "baitfish poussés vers la plage",
+        "profondeur": "fond",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "baitfish visibles vers 100 m",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "lure": "Flipper 40 g",
+        "animation": "lift-and-fall : décoller le leurre du fond puis le laisser retomber en contrôlant la chute",
+        "cast_weight_g": 40.0,
+        "gear_status": "VERIFIED_OK"
+      }
+    },
+    {
+      "id": 558,
+      "species_id": 1,
+      "species": "Hirame",
+      "text": "Un hirame a été pris après un lancer très long vers les bancs de petits poissons situés au large. Le pêcheur estime la touche à environ 90-100 m, à l'endroit où se trouvait le bait.",
+      "confidence": 0.85,
+      "source": "ホッティ",
+      "source_type": "video",
+      "tags": {
+        "comportement": "baitfish concentrés au large",
+        "moment_jour": "crépuscule",
+        "spot_type": "surf"
+      },
+      "claim_id": "2df4a17e3811b030",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "crépuscule",
+        "spot_type": "surf",
+        "maree": "",
+        "leurre": "",
+        "comportement": "baitfish concentrés au large",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "environ 90-100 m",
+        "moment_touche": "au large"
+      }
+    },
+    {
+      "id": 559,
+      "species_id": 1,
+      "species": "Hirame",
+      "text": "Un hirame de 65 cm a pris derrière un haut-fond, sur le break du large, alors que le sinking pencil était récupéré très lentement près du fond. La touche s'est d'abord traduite par une lourdeur soudaine avant le départ du poisson.",
+      "confidence": 0.7,
+      "source": "ランガンソルト",
+      "source_type": "video",
+      "tags": {
+        "leurre": "sinking pencil",
+        "moment_jour": "aube",
+        "profondeur": "près du fond, break derrière le haut-fond",
+        "spot_type": "surf"
+      },
+      "claim_id": "addb765213b8814c",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "aube",
+        "spot_type": "surf",
+        "maree": "",
+        "leurre": "sinking pencil",
+        "comportement": "",
+        "profondeur": "près du fond, break derrière le haut-fond",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "break au large",
+        "moment_touche": "pendant la récupération lente",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "バシュート (Bashoot), coloris Pink Joker"
+        }
+      }
+    },
+    {
+      "id": 560,
+      "species_id": 1,
+      "species": "Hirame",
+      "text": "Le pêcheur explique le pattern qui a produit la touche sur le break : lancer le sinking pencil derrière le haut-fond, le laisser atteindre le fond, mouliner lentement cinq tours, arrêter et le laisser redescendre au fond, puis recommencer.",
+      "confidence": 0.7,
+      "source": "ランガンソルト",
+      "source_type": "video",
+      "tags": {
+        "leurre": "sinking pencil",
+        "moment_jour": "aube",
+        "profondeur": "fond et pente du break",
+        "spot_type": "surf"
+      },
+      "claim_id": "a0a260c118eb2efd",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "aube",
+        "spot_type": "surf",
+        "maree": "",
+        "leurre": "sinking pencil",
+        "comportement": "",
+        "profondeur": "fond et pente du break",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "derrière un haut-fond situé au large",
+        "moment_touche": "à l'approche du break"
+      },
+      "recommendation": {
+        "animation": "stop-and-go : cinq tours de manivelle très lents, arrêt, chute jusqu'au fond, puis reprise",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 561,
+      "species_id": 1,
+      "species": "Hirame",
+      "text": "Après un premier contact sur le sinking pencil, le pêcheur a conservé le même modèle mais changé de coloris pour Pink Joker, estimant que le premier coloris pouvait avoir été identifié après la touche manquée. Le même secteur du break a ensuite donné le hirame de 65 cm.",
+      "confidence": 0.7,
+      "source": "ランガンソルト",
+      "source_type": "video",
+      "tags": {
+        "leurre": "sinking pencil",
+        "moment_jour": "aube",
+        "profondeur": "break",
+        "spot_type": "surf"
+      },
+      "claim_id": "0bdaa34bedc7964d",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "aube",
+        "spot_type": "surf",
+        "maree": "",
+        "leurre": "sinking pencil",
+        "comportement": "",
+        "profondeur": "break",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "au large",
+        "moment_touche": "",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "バシュート (Bashoot)"
+        }
+      }
+    },
+    {
+      "id": 562,
+      "species_id": 1,
+      "species": "Hirame",
+      "text": "Au moment où le jour commençait à se lever, un hirame a pris le Switch Hitter DH 128S Laser Impact. Après un lancer complet, le leurre avait été laissé jusqu'au fond puis récupéré lentement ; il touchait les poissons-fourrage avant qu'une attaque franche ne monte d'en dessous en quittant leur zone.",
+      "confidence": 1.0,
+      "source": "中上達也",
+      "source_type": "video",
+      "tags": {
+        "comportement": "baitfish présents",
+        "leurre": "sinking pencil",
+        "moment_jour": "aube",
+        "profondeur": "fond",
+        "spot_type": "surf"
+      },
+      "claim_id": "c6d559f53037199a",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "aube",
+        "spot_type": "surf",
+        "maree": "marée basse, début de montante",
+        "leurre": "sinking pencil",
+        "comportement": "baitfish présents",
+        "profondeur": "fond",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "lancer complet",
+        "moment_touche": "en quittant la zone de baitfish",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "Switch Hitter DH 128S Laser Impact"
+        }
+      }
+    },
+    {
+      "id": 563,
+      "species_id": 9,
+      "species": "Aji",
+      "text": "Après des présentations faites d'actions et d'arrêts sans résultat, Fujiwara a changé pour une pêche plus horizontale près du fond en tirant le montage par la récupération. Cette récupération a produit la première touche d'aji.",
+      "confidence": 0.7,
+      "source": "ランガンソルト",
+      "source_type": "video",
+      "tags": {
+        "comportement": "activité difficile",
+        "leurre": "jighead + worm",
+        "moment_jour": "jour",
+        "profondeur": "près du fond",
+        "saison": "fin été-début automne",
+        "spot_type": "port, digue"
+      },
+      "claim_id": "fc525f2aed0f661b",
+      "metadata": {
+        "saison": "fin été-début automne",
+        "moment_jour": "jour",
+        "spot_type": "port, digue",
+        "maree": "",
+        "leurre": "jighead + worm",
+        "comportement": "activité difficile",
+        "profondeur": "près du fond",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "pendant la récupération horizontale"
+      },
+      "recommendation": {
+        "animation": "récupération linéaire au moulinet, horizontalement et près du fond",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 564,
+      "species_id": 9,
+      "species": "Aji",
+      "text": "Des aji visibles près de la digue refusaient une récupération linéaire. En faisant au contraire onduler finement le worm de haut en bas dans le banc, les poissons ont continué à suivre jusqu'à ce qu'un aji se retourne et mange.",
+      "confidence": 0.7,
+      "source": "ランガンソルト",
+      "source_type": "video",
+      "tags": {
+        "comportement": "poissons méfiants, refus sur récupération linéaire",
+        "leurre": "jighead + worm",
+        "moment_jour": "jour",
+        "profondeur": "surface près du bord",
+        "saison": "fin été-début automne",
+        "spot_type": "port, digue"
+      },
+      "claim_id": "d3e1398429a915fc",
+      "metadata": {
+        "saison": "fin été-début automne",
+        "moment_jour": "jour",
+        "spot_type": "port, digue",
+        "maree": "",
+        "leurre": "jighead + worm",
+        "comportement": "poissons méfiants, refus sur récupération linéaire",
+        "profondeur": "surface près du bord",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "à pied de digue",
+        "moment_touche": "après plusieurs suivis"
+      },
+      "recommendation": {
+        "animation": "jerk/twitch : très petits coups de scion pour faire flotter et onduler finement le worm verticalement, sans récupération linéaire continue",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 565,
+      "species_id": 9,
+      "species": "Aji",
+      "text": "Sous un fort vent arrière, les aji ont changé de profondeur ; après avoir descendu la présentation de cinq secondes supplémentaires, une touche est arrivée. Le pêcheur recherchait systématiquement la couche productive en modifiant le compte de descente.",
+      "confidence": 0.85,
+      "source": "アジングへ行こう",
+      "source_type": "video",
+      "tags": {
+        "leurre": "jighead + worm",
+        "moment_jour": "jour",
+        "profondeur": "couche descendue de 5 comptes supplémentaires",
+        "saison": "été",
+        "spot_type": "digue"
+      },
+      "claim_id": "1554b1c2dff9fa8a",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "digue",
+        "maree": "",
+        "leurre": "jighead + worm",
+        "comportement": "",
+        "profondeur": "couche descendue de 5 comptes supplémentaires",
+        "clarte_eau": "",
+        "vent": "fort vent arrière",
+        "distance": "",
+        "moment_touche": "après le changement de profondeur"
+      },
+      "recommendation": {
+        "animation": "chute : modifier le temps de descente pour atteindre la couche où se trouvent les poissons, puis maintenir cette profondeur",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 566,
+      "species_id": 9,
+      "species": "Aji",
+      "text": "Un aji a pris un jighead léger laissé dériver dans la couche superficielle. Le pêcheur précise que le montage était simplement porté en surface par le courant.",
+      "confidence": 0.7,
+      "source": "アジングへ行こう",
+      "source_type": "video",
+      "tags": {
+        "leurre": "jighead léger + worm",
+        "moment_jour": "jour",
+        "profondeur": "surface",
+        "saison": "été",
+        "spot_type": "digue"
+      },
+      "claim_id": "ed82ff247eb1ae70",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "digue",
+        "maree": "",
+        "leurre": "jighead léger + worm",
+        "comportement": "",
+        "profondeur": "surface",
+        "clarte_eau": "",
+        "vent": "vent fort",
+        "distance": "",
+        "moment_touche": "pendant la dérive"
+      },
+      "recommendation": {
+        "animation": "dérive : laisser le jighead léger dériver dans la couche de surface avec récupération minimale",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 567,
+      "species_id": 9,
+      "species": "Aji",
+      "text": "Le pêcheur explique que lorsqu'il ressent un changement de poids du courant, il maintient le montage dans cette veine plutôt que de continuer à le déplacer ; les aji entrent dans cette zone et prennent le leurre.",
+      "confidence": 0.85,
+      "source": "アジングへ行こう",
+      "source_type": "video",
+      "tags": {
+        "leurre": "jighead + worm",
+        "moment_jour": "jour",
+        "saison": "été",
+        "spot_type": "digue"
+      },
+      "claim_id": "ab9c890d534d8565",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "digue",
+        "maree": "",
+        "leurre": "jighead + worm",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "vent fort",
+        "distance": "",
+        "moment_touche": "dans le changement de courant"
+      },
+      "recommendation": {
+        "animation": "dérive : maintenir le montage dans la veine de courant productive avec un minimum de récupération",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 568,
+      "species_id": 9,
+      "species": "Aji",
+      "text": "Quand les touches sont devenues difficiles, les petits worms ont donné davantage de réactions que les modèles volumineux. Le pêcheur interprète cette réponse comme celle de poissons peu disposés à prendre une grosse bouchée.",
+      "confidence": 0.7,
+      "source": "アジングへ行こう",
+      "source_type": "video",
+      "tags": {
+        "comportement": "poissons peu actifs",
+        "leurre": "petit worm sur jighead",
+        "moment_jour": "jour",
+        "saison": "été",
+        "spot_type": "digue"
+      },
+      "claim_id": "88cf65f88e4a4212",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "digue",
+        "maree": "",
+        "leurre": "petit worm sur jighead",
+        "comportement": "poissons peu actifs",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "vent fort",
+        "distance": "",
+        "moment_touche": ""
+      }
+    },
+    {
+      "id": 569,
+      "species_id": 9,
+      "species": "Aji",
+      "text": "Dans une phase d'activité très forte, les aji mangeaient le montage avant même qu'il atteigne le fond. Les contacts augmentaient nettement à partir d'une certaine profondeur, montrant que le banc était concentré dans la partie basse de la colonne d'eau.",
+      "confidence": 0.85,
+      "source": "ランガンソルト",
+      "source_type": "video",
+      "tags": {
+        "comportement": "chasse active, très nombreuses touches",
+        "leurre": "jighead + worm",
+        "moment_jour": "jour",
+        "profondeur": "partie basse de la colonne d'eau",
+        "spot_type": "côte insulaire"
+      },
+      "claim_id": "f199874fa2d44228",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "jour",
+        "spot_type": "côte insulaire",
+        "maree": "",
+        "leurre": "jighead + worm",
+        "comportement": "chasse active, très nombreuses touches",
+        "profondeur": "partie basse de la colonne d'eau",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "pendant la chute avant le fond"
+      },
+      "recommendation": {
+        "animation": "chute : laisser descendre le jighead et surveiller la ligne, les prises survenant avant le contact avec le fond",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 570,
+      "species_id": 9,
+      "species": "Aji",
+      "text": "Le pêcheur explique que le line-mending est déterminant : une ligne correctement contrôlée rend les touches plus lisibles, permet aux animations de fonctionner et maintient plus précisément le leurre dans une même couche.",
+      "confidence": 0.7,
+      "source": "ランガンソルト",
+      "source_type": "video",
+      "tags": {
+        "leurre": "jighead + worm",
+        "moment_jour": "nuit",
+        "profondeur": "couche ciblée",
+        "spot_type": "côte insulaire"
+      },
+      "claim_id": "2deede3dd6801f08",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "nuit",
+        "spot_type": "côte insulaire",
+        "maree": "",
+        "leurre": "jighead + worm",
+        "comportement": "",
+        "profondeur": "couche ciblée",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      }
+    },
+    {
+      "id": 571,
+      "species_id": 10,
+      "species": "Mebaru",
+      "text": "Un gros mebaru a attaqué alors qu'un float rig était récupéré rapidement presque en surface au-dessus d'une zone rocheuse très peu profonde. La touche a été franche pendant cette récupération horizontale.",
+      "confidence": 0.7,
+      "source": "メバル",
+      "source_type": "video",
+      "tags": {
+        "comportement": "poisson actif sur petits poissons",
+        "leurre": "float rig avec jighead",
+        "moment_jour": "nuit",
+        "profondeur": "surface, au-dessus des rochers",
+        "saison": "hiver",
+        "spot_type": "côte rocheuse peu profonde"
+      },
+      "claim_id": "36f0efb9c46479b5",
+      "metadata": {
+        "saison": "hiver",
+        "moment_jour": "nuit",
+        "spot_type": "côte rocheuse peu profonde",
+        "maree": "proche de la pleine mer",
+        "leurre": "float rig avec jighead",
+        "comportement": "poisson actif sur petits poissons",
+        "profondeur": "surface, au-dessus des rochers",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "touche finalement assez près du pêcheur après un lancer lointain",
+        "moment_touche": "pendant la récupération"
+      },
+      "recommendation": {
+        "animation": "récupération linéaire rapide au moulinet, à vitesse constante et presque en surface",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 572,
+      "species_id": 10,
+      "species": "Mebaru",
+      "text": "Le pêcheur explique qu'avec son float rig il cherche une vitesse et une profondeur constantes pour imiter un petit poisson en fuite ; il garde ici le montage à environ 1 m sous la surface et corrige ponctuellement par un arrêt suivi d'une légère descente.",
+      "confidence": 0.7,
+      "source": "メバル",
+      "source_type": "video",
+      "tags": {
+        "leurre": "float rig",
+        "moment_jour": "nuit",
+        "profondeur": "environ 1 m sous la surface",
+        "saison": "hiver",
+        "spot_type": "côte rocheuse"
+      },
+      "claim_id": "828fe0c522d45b50",
+      "metadata": {
+        "saison": "hiver",
+        "moment_jour": "nuit",
+        "spot_type": "côte rocheuse",
+        "maree": "",
+        "leurre": "float rig",
+        "comportement": "",
+        "profondeur": "environ 1 m sous la surface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "récupération linéaire rapide et constante ; arrêt ponctuel seulement pour laisser légèrement redescendre et retrouver la couche",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 573,
+      "species_id": 10,
+      "species": "Mebaru",
+      "text": "Le pêcheur explique qu'en hiver un mebaru peu actif ne prend généralement pas une récupération aussi rapide ; cette vitesse élevée n'est adaptée qu'aux individus dont l'activité est suffisamment forte.",
+      "confidence": 0.7,
+      "source": "メバル",
+      "source_type": "video",
+      "tags": {
+        "comportement": "faible activité hivernale",
+        "saison": "hiver"
+      },
+      "claim_id": "5a735351a407f2d9",
+      "metadata": {
+        "saison": "hiver",
+        "moment_jour": "",
+        "spot_type": "",
+        "maree": "",
+        "leurre": "",
+        "comportement": "faible activité hivernale",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      }
+    },
+    {
+      "id": 574,
+      "species_id": 10,
+      "species": "Mebaru",
+      "text": "Un mebaru a pris le Razamin près des pierres situées juste devant le pêcheur. Le poisson se tenait collé à cette bordure rocheuse plutôt qu'au large.",
+      "confidence": 0.7,
+      "source": "ラッドソルト",
+      "source_type": "video",
+      "tags": {
+        "leurre": "petit plug",
+        "maree": "montante",
+        "moment_jour": "nuit",
+        "saison": "printemps",
+        "spot_type": "bordure rocheuse"
+      },
+      "claim_id": "d3261316160680ee",
+      "metadata": {
+        "saison": "printemps",
+        "moment_jour": "nuit",
+        "spot_type": "bordure rocheuse",
+        "maree": "montante",
+        "leurre": "petit plug",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "près du bord",
+        "moment_touche": "au passage près des pierres",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "Razamin 90"
+        }
+      }
+    },
+    {
+      "id": 575,
+      "species_id": 2,
+      "species": "Suzuki",
+      "text": "Le pêcheur explique que dans un courant très rapide il évite de mouliner activement : il laisse principalement le leurre dériver et ne lui donne que des mouvements occasionnels. Il considère les poissons de ce type de courant comme naturellement très actifs.",
+      "confidence": 0.7,
+      "source": "シーバスジャーニー",
+      "source_type": "video",
+      "tags": {
+        "comportement": "poissons actifs dans le courant rapide",
+        "moment_jour": "jour",
+        "spot_type": "rivière à fort courant"
+      },
+      "claim_id": "7f9b975850825344",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "jour",
+        "spot_type": "rivière à fort courant",
+        "maree": "",
+        "leurre": "",
+        "comportement": "poissons actifs dans le courant rapide",
+        "profondeur": "",
+        "clarte_eau": "très claire",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "dérive : accompagner le courant avec récupération minimale, en ajoutant seulement quelques jerk/twitch occasionnels",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 576,
+      "species_id": 2,
+      "species": "Suzuki",
+      "text": "Le pêcheur explique qu'avec un topwater dans un courant rapide il privilégie un déplacement latéral de type dog-walk, la vitesse du courant déterminant la manière dont il anime le leurre.",
+      "confidence": 0.85,
+      "source": "シーバスジャーニー",
+      "source_type": "video",
+      "tags": {
+        "leurre": "stickbait de surface",
+        "moment_jour": "jour",
+        "profondeur": "surface",
+        "spot_type": "rivière à fort courant"
+      },
+      "claim_id": "3b021ab5c8ab71ba",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "jour",
+        "spot_type": "rivière à fort courant",
+        "maree": "",
+        "leurre": "stickbait de surface",
+        "comportement": "",
+        "profondeur": "surface",
+        "clarte_eau": "très claire",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "surface/topwater — stickbait : dog-walk latéral lorsque le courant est rapide",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 577,
+      "species_id": 2,
+      "species": "Suzuki",
+      "text": "Le pêcheur explique que son topwater peut rester simplement porté par le courant pendant un moment et qu'une attaque peut survenir pendant cette phase sans animation active.",
+      "confidence": 0.85,
+      "source": "シーバスジャーニー",
+      "source_type": "video",
+      "tags": {
+        "leurre": "topwater",
+        "moment_jour": "jour",
+        "profondeur": "surface",
+        "spot_type": "rivière à fort courant"
+      },
+      "claim_id": "5507acd1ba4b627b",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "jour",
+        "spot_type": "rivière à fort courant",
+        "maree": "",
+        "leurre": "topwater",
+        "comportement": "",
+        "profondeur": "surface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "pendant la dérive sans animation"
+      },
+      "recommendation": {
+        "animation": "dérive en surface : laisser le leurre être emporté sans moulinage actif",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 578,
+      "species_id": 2,
+      "species": "Suzuki",
+      "text": "Sur un metal vibration Bit-V 26, une récupération linéaire touchait le fond. Le pêcheur a donc animé la canne vers le haut pour maintenir le leurre au-dessus du fond ; un suzuki a pris loin dans le courant.",
+      "confidence": 0.7,
+      "source": "シーバスジャーニー",
+      "source_type": "video",
+      "tags": {
+        "leurre": "metal vibration 26 g",
+        "moment_jour": "jour",
+        "profondeur": "au-dessus du fond",
+        "saison": "début été",
+        "spot_type": "rivière"
+      },
+      "claim_id": "df411e0a9a13b86e",
+      "metadata": {
+        "saison": "début été",
+        "moment_jour": "jour",
+        "spot_type": "rivière",
+        "maree": "",
+        "leurre": "metal vibration 26 g",
+        "comportement": "",
+        "profondeur": "au-dessus du fond",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "très loin",
+        "moment_touche": "pendant les coups de canne",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "Bit-V 26"
+        }
+      }
+    },
+    {
+      "id": 579,
+      "species_id": 2,
+      "species": "Suzuki",
+      "text": "Après avoir testé différents rythmes, le pêcheur a accéléré les jerks d'un minnow et a obtenu une touche dès le premier lancer avec ce nouveau rythme. La morsure était très légère.",
+      "confidence": 0.7,
+      "source": "シーバスジャーニー",
+      "source_type": "video",
+      "tags": {
+        "leurre": "minnow",
+        "moment_jour": "jour",
+        "saison": "début été",
+        "spot_type": "rivière"
+      },
+      "claim_id": "60226bd7ace8313f",
+      "metadata": {
+        "saison": "début été",
+        "moment_jour": "jour",
+        "spot_type": "rivière",
+        "maree": "",
+        "leurre": "minnow",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "pendant les jerks rapides"
+      },
+      "recommendation": {
+        "animation": "jerk : coups de scion plus rapides que lors des essais précédents",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 580,
+      "species_id": 2,
+      "species": "Suzuki",
+      "text": "Dans un port de nuit, un Vertice 98F lancé sur la zone claire/sombre a produit une touche dès le premier lancer. Plusieurs passages supplémentaires sur le même secteur ont ensuite donné d'autres touches, mais celles-ci étaient courtes et les poissons piqués superficiellement.",
+      "confidence": 0.7,
+      "source": "デイズ ソルト セカンド",
+      "source_type": "video",
+      "tags": {
+        "comportement": "short bites",
+        "leurre": "minnow flottant 98 mm",
+        "moment_jour": "nuit",
+        "saison": "début été",
+        "spot_type": "port"
+      },
+      "claim_id": "4d0a5b9f6207db49",
+      "metadata": {
+        "saison": "début été",
+        "moment_jour": "nuit",
+        "spot_type": "port",
+        "maree": "",
+        "leurre": "minnow flottant 98 mm",
+        "comportement": "short bites",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "sur la zone de transition lumière/ombre",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "Vertice 98F"
+        }
+      }
+    },
+    {
+      "id": 581,
+      "species_id": 2,
+      "species": "Suzuki",
+      "text": "Un suzuki de 77 cm a frappé le SNECON 90S immédiatement après l'impact du leurre sur l'eau, dans une veine alimentée par une chute de courant. Le pêcheur recherchait précisément un leurre qui commence à travailler dès la mise en tension de la ligne.",
+      "confidence": 0.85,
+      "source": "ラッドソルト",
+      "source_type": "video",
+      "tags": {
+        "leurre": "sinking pencil",
+        "moment_jour": "jour",
+        "spot_type": "rivière"
+      },
+      "claim_id": "662f2b91068dce6a",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "jour",
+        "spot_type": "rivière",
+        "maree": "",
+        "leurre": "sinking pencil",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "immédiatement après l'impact sur l'eau",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "SNECON 90S"
+        }
+      }
+    },
+    {
+      "id": 582,
+      "species_id": 2,
+      "species": "Suzuki",
+      "text": "Le pêcheur explique que le SNECON 90S reçoit le courant de côté et décrit naturellement un déplacement en S, ce qui imite un baitfish entraîné ou déséquilibré par le flux.",
+      "confidence": 0.7,
+      "source": "ラッドソルト",
+      "source_type": "video",
+      "tags": {
+        "leurre": "sinking pencil",
+        "spot_type": "rivière"
+      },
+      "claim_id": "5a9f053546a7a204",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "",
+        "spot_type": "rivière",
+        "maree": "",
+        "leurre": "sinking pencil",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "SNECON 90S"
+        }
+      }
+    },
+    {
+      "id": 583,
+      "species_id": 2,
+      "species": "Suzuki",
+      "text": "Le pêcheur explique qu'avec le Razamin 90, notamment dans un pattern de bachi, il faut faire passer le leurre extrêmement lentement : une récupération trop rapide fait cesser les prises. Une touche est arrivée juste après cette présentation lente.",
+      "confidence": 0.7,
+      "source": "ラッドソルト",
+      "source_type": "video",
+      "tags": {
+        "comportement": "poissons prenant difficilement une présentation rapide",
+        "leurre": "petit plug",
+        "moment_jour": "crépuscule",
+        "profondeur": "juste sous la surface",
+        "saison": "printemps",
+        "spot_type": "rivière/estuaire"
+      },
+      "claim_id": "647d307119799431",
+      "metadata": {
+        "saison": "printemps",
+        "moment_jour": "crépuscule",
+        "spot_type": "rivière/estuaire",
+        "maree": "",
+        "leurre": "petit plug",
+        "comportement": "poissons prenant difficilement une présentation rapide",
+        "profondeur": "juste sous la surface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "pendant la récupération très lente",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "Razamin 90"
+        }
+      }
+    },
+    {
+      "id": 584,
+      "species_id": 2,
+      "species": "Suzuki",
+      "text": "Avant la nuit, les baitfish restaient dispersés et le pêcheur estimait que les suzuki n'étaient pas encore en activité. Lorsque l'obscurité s'est installée et que le courant a nettement accéléré, une attaque de surface a finalement eu lieu.",
+      "confidence": 1.0,
+      "source": "ラッドソルト",
+      "source_type": "video",
+      "tags": {
+        "comportement": "activité déclenchée avec accélération du courant et obscurité",
+        "leurre": "leurre de surface",
+        "moment_jour": "nuit",
+        "profondeur": "surface",
+        "spot_type": "rivière urbaine"
+      },
+      "claim_id": "1697e54ee7e779db",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "nuit",
+        "spot_type": "rivière urbaine",
+        "maree": "",
+        "leurre": "leurre de surface",
+        "comportement": "activité déclenchée avec accélération du courant et obscurité",
+        "profondeur": "surface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "après accélération du courant"
+      }
+    },
+    {
+      "id": 585,
+      "species_id": 11,
+      "species": "Hirasuzuki",
+      "text": "Dans une rivière fortement troublée par la pluie, plusieurs leurres n'avaient rien produit. Le passage à un Monster Slider 135 plus volumineux et plus visible a déclenché un hirasuzuki dès le premier lancer avec ce leurre.",
+      "confidence": 0.7,
+      "source": "デイズ ソルト セカンド",
+      "source_type": "video",
+      "tags": {
+        "comportement": "aucune réaction sur les leurres précédents",
+        "leurre": "pencil bait 135 mm",
+        "moment_jour": "jour",
+        "saison": "début été",
+        "spot_type": "rivière"
+      },
+      "claim_id": "4abb1d70c126cd99",
+      "metadata": {
+        "saison": "début été",
+        "moment_jour": "jour",
+        "spot_type": "rivière",
+        "maree": "",
+        "leurre": "pencil bait 135 mm",
+        "comportement": "aucune réaction sur les leurres précédents",
+        "profondeur": "",
+        "clarte_eau": "fortement turbide, eau couleur terre",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "premier lancer après changement de leurre",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "Monster Slider 135"
+        }
+      }
+    },
+    {
+      "id": 586,
+      "species_id": 11,
+      "species": "Hirasuzuki",
+      "text": "Le pêcheur explique que, dans cette eau très boueuse, l'augmentation de la taille et du pouvoir d'appel du leurre a été déterminante : le poisson est sorti dès le passage à un modèle plus démonstratif.",
+      "confidence": 0.7,
+      "source": "デイズ ソルト セカンド",
+      "source_type": "video",
+      "tags": {
+        "leurre": "pencil bait 135 mm",
+        "moment_jour": "jour",
+        "saison": "début été",
+        "spot_type": "rivière"
+      },
+      "claim_id": "441406e635b8e14c",
+      "metadata": {
+        "saison": "début été",
+        "moment_jour": "jour",
+        "spot_type": "rivière",
+        "maree": "",
+        "leurre": "pencil bait 135 mm",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "très turbide",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "Monster Slider 135"
+        }
+      }
+    },
+    {
+      "id": 587,
+      "species_id": 5,
+      "species": "Kurodai",
+      "text": "Un kurodai a pris un Bream Pencil en surface alors que de petites sardines étaient présentes. Le pêcheur décrit cette phase comme une situation où le kurodai est orienté vers la prédation de poissons et privilégie alors les pencils.",
+      "confidence": 0.85,
+      "source": "ソルトクロス",
+      "source_type": "video",
+      "tags": {
+        "comportement": "activité piscivore",
+        "leurre": "stickbait de surface",
+        "moment_jour": "jour",
+        "profondeur": "surface",
+        "saison": "été",
+        "spot_type": "côte peu profonde"
+      },
+      "claim_id": "3147f7b8d1968bdb",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "côte peu profonde",
+        "maree": "",
+        "leurre": "stickbait de surface",
+        "comportement": "activité piscivore",
+        "profondeur": "surface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "en surface",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "Bream Pencil"
+        }
+      }
+    },
+    {
+      "id": 588,
+      "species_id": 5,
+      "species": "Kurodai",
+      "text": "Le pêcheur explique que lorsque les kurodai chassent des poissons il choisit un pencil ou un pencil-popper et joue sur la vitesse ; lorsque leur activité chute et qu'ils restent suspendus près de la surface, il passe à un popper travaillé lentement.",
+      "confidence": 0.7,
+      "source": "ソルトクロス",
+      "source_type": "video",
+      "tags": {
+        "comportement": "chasse active versus baisse d'activité",
+        "leurre": "pencil, pencil-popper ou popper",
+        "profondeur": "surface",
+        "saison": "été"
+      },
+      "claim_id": "db44e1d6040751ab",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "",
+        "spot_type": "",
+        "maree": "",
+        "leurre": "pencil, pencil-popper ou popper",
+        "comportement": "chasse active versus baisse d'activité",
+        "profondeur": "surface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "surface/topwater — stickbait : animation plus rapide en phase piscivore ; popper : pops lents et espacés lorsque l'activité baisse",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 589,
+      "species_id": 5,
+      "species": "Kurodai",
+      "text": "Le pêcheur explique qu'en plein milieu de journée, lorsque l'eau est chaude et que l'activité des kurodai baisse, il centre sa pêche sur le popper et ralentit fortement. À l'aube ou au crépuscule, avec des sardines présentes, il privilégie au contraire le pencil.",
+      "confidence": 0.7,
+      "source": "ソルトクロス",
+      "source_type": "video",
+      "tags": {
+        "comportement": "activité plus faible au soleil haut",
+        "leurre": "popper ou pencil",
+        "profondeur": "surface",
+        "saison": "été"
+      },
+      "claim_id": "5c954ac2c75a3929",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "",
+        "spot_type": "",
+        "maree": "",
+        "leurre": "popper ou pencil",
+        "comportement": "activité plus faible au soleil haut",
+        "profondeur": "surface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "surface/topwater — popper : pops lents en journée chaude ; stickbait : pencil plus mobile à l'aube et au crépuscule",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 590,
+      "species_id": 5,
+      "species": "Kurodai",
+      "text": "Le pêcheur explique que le paramètre principal du topwater à kurodai n'est pas la taille du leurre mais sa vitesse. Lorsqu'un poisson suit, il ajuste immédiatement le rythme jusqu'à trouver la vitesse à laquelle ce poisson accepte de manger.",
+      "confidence": 0.85,
+      "source": "ソルトクロス",
+      "source_type": "video",
+      "tags": {
+        "comportement": "poisson suiveur et méfiant",
+        "leurre": "topwater",
+        "moment_jour": "jour",
+        "profondeur": "surface",
+        "saison": "été"
+      },
+      "claim_id": "98ce2177c29ff641",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "",
+        "maree": "",
+        "leurre": "topwater",
+        "comportement": "poisson suiveur et méfiant",
+        "profondeur": "surface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "surface/topwater : ajuster la vitesse pendant le suivi, en ralentissant ou accélérant selon la réaction du poisson",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 591,
+      "species_id": 5,
+      "species": "Kurodai",
+      "text": "Le pêcheur explique qu'un kurodai peut suivre le leurre jusqu'aux pieds et qu'il ne faut donc pas interrompre prématurément l'animation. Il continue à récupérer tant que le poisson reste derrière le topwater.",
+      "confidence": 0.85,
+      "source": "ソルトクロス",
+      "source_type": "video",
+      "tags": {
+        "comportement": "poisson curieux mais méfiant, suivi prolongé",
+        "leurre": "topwater",
+        "moment_jour": "jour",
+        "profondeur": "surface",
+        "saison": "été"
+      },
+      "claim_id": "a72a6eebee1750d1",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "",
+        "maree": "",
+        "leurre": "topwater",
+        "comportement": "poisson curieux mais méfiant, suivi prolongé",
+        "profondeur": "surface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "jusqu'aux pieds",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "surface/topwater : maintenir l'animation et la récupération jusqu'au bord tant qu'un poisson suit",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 592,
+      "species_id": 5,
+      "species": "Kurodai",
+      "text": "Le pêcheur explique que le vent est un handicap majeur pour le topwater à kurodai car la bannière se courbe et empêche le leurre de travailler correctement. Il recherche donc autant que possible une position permettant de pêcher avec le vent plutôt que de travers.",
+      "confidence": 0.85,
+      "source": "ソルトクロス",
+      "source_type": "video",
+      "tags": {
+        "leurre": "topwater",
+        "moment_jour": "jour",
+        "profondeur": "surface",
+        "saison": "été"
+      },
+      "claim_id": "4c6f1ec424b876fe",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "",
+        "maree": "",
+        "leurre": "topwater",
+        "comportement": "",
+        "profondeur": "surface",
+        "clarte_eau": "",
+        "vent": "vent gênant l'action par la bannière",
+        "distance": "",
+        "moment_touche": ""
+      }
+    },
+    {
+      "id": 593,
+      "species_id": 5,
+      "species": "Kurodai",
+      "text": "Un kurodai a pris le Razamin utilisé dans le même pattern très lent que pour les suzuki. Le pêcheur estime que certains des nombreux short bites non concrétisés de la veille provenaient également de kurodai.",
+      "confidence": 0.7,
+      "source": "ラッドソルト",
+      "source_type": "video",
+      "tags": {
+        "comportement": "nombreux short bites",
+        "leurre": "petit plug",
+        "moment_jour": "nuit",
+        "profondeur": "près de la surface",
+        "saison": "printemps",
+        "spot_type": "rivière/estuaire"
+      },
+      "claim_id": "199db79579f365b9",
+      "metadata": {
+        "saison": "printemps",
+        "moment_jour": "nuit",
+        "spot_type": "rivière/estuaire",
+        "maree": "seconde moitié de la montante",
+        "leurre": "petit plug",
+        "comportement": "nombreux short bites",
+        "profondeur": "près de la surface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "pendant la présentation lente",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "Razamin 90"
+        }
+      }
+    },
+    {
+      "id": 594,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Dans un courant puissant d'automne, l'egi a été laissé porter depuis la veine principale vers une zone de courant plus calme. Le pêcheur répétait deux à trois jerks puis un stay pendant la dérive ; un aori-ika d'environ 400 g a pris dans le break où le courant et le bait se concentraient.",
+      "confidence": 1.0,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "comportement": "activité élevée recherchée",
+        "leurre": "egi 3.0",
+        "moment_jour": "jour",
+        "saison": "automne",
+        "spot_type": "côte insulaire, courant de détroit"
+      },
+      "claim_id": "1810c8b31b4821bd",
+      "metadata": {
+        "saison": "automne",
+        "moment_jour": "jour",
+        "spot_type": "côte insulaire, courant de détroit",
+        "maree": "avant l'étale",
+        "leurre": "egi 3.0",
+        "comportement": "activité élevée recherchée",
+        "profondeur": "",
+        "clarte_eau": "légèrement blanchâtre/turbide",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "dans une zone où le courant se calme et s'accumule",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "エギ王 LIVE サーチ 3号 (Egi-OH LIVE Search 3.0)"
+        }
+      }
+    },
+    {
+      "id": 595,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Le pêcheur explique que dans l'eau légèrement blanchâtre d'automne il commence avec une couleur forte et visible, ici orange, afin de repérer lui-même l'egi et les calmars qui le suivent.",
+      "confidence": 1.0,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "leurre": "egi 3.0",
+        "moment_jour": "jour",
+        "saison": "automne",
+        "spot_type": "côte insulaire"
+      },
+      "claim_id": "ca731e546509a53f",
+      "metadata": {
+        "saison": "automne",
+        "moment_jour": "jour",
+        "spot_type": "côte insulaire",
+        "maree": "",
+        "leurre": "egi 3.0",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "légèrement blanchâtre/turbide",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "エギ王 LIVE サーチ 3号 (Egi-OH LIVE Search 3.0)"
+        }
+      }
+    },
+    {
+      "id": 596,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Le pêcheur explique qu'après l'absence de réaction sur un egi 3.0 standard, il ne réduit pas immédiatement à 2.5 : il garde d'abord le volume et la distance d'un 3.0 mais passe à une version shallow qui descend plus lentement.",
+      "confidence": 1.0,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "comportement": "calmars suiveurs mais hésitants",
+        "leurre": "egi 3.0 shallow",
+        "moment_jour": "jour",
+        "saison": "automne",
+        "spot_type": "côte insulaire"
+      },
+      "claim_id": "559e9e1363661b38",
+      "metadata": {
+        "saison": "automne",
+        "moment_jour": "jour",
+        "spot_type": "côte insulaire",
+        "maree": "",
+        "leurre": "egi 3.0 shallow",
+        "comportement": "calmars suiveurs mais hésitants",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "distance conservée malgré le ralentissement de la chute",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "chute : ralentir la vitesse de descente avec un egi shallow tout en gardant le même trajet",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 597,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Après qu'un petit groupe d'aori-ika a suivi sans prendre le 3.0 shallow jusqu'au bord, le pêcheur a employé son dernier recours, un egi 2.5. Un petit calmar a alors pris cette présentation réduite.",
+      "confidence": 1.0,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "comportement": "suivi jusqu'au bord sans prise sur le leurre précédent",
+        "leurre": "egi 2.5",
+        "moment_jour": "jour",
+        "saison": "automne",
+        "spot_type": "anse côtière"
+      },
+      "claim_id": "9c5d9bf93d2f98fc",
+      "metadata": {
+        "saison": "automne",
+        "moment_jour": "jour",
+        "spot_type": "anse côtière",
+        "maree": "",
+        "leurre": "egi 2.5",
+        "comportement": "suivi jusqu'au bord sans prise sur le leurre précédent",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "près du bord",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "lure": "egi 2.5",
+        "animation": "chute : présentation plus petite après refus du 3.0 shallow",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 598,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Après des poursuites sans véritable prise sur un egi plus gros, le pêcheur est descendu en 2.5 pour améliorer l'engagement des aori-ika. Cette réduction de taille a permis de faire prendre un calmar.",
+      "confidence": 0.85,
+      "source": "デイズ ソルト セカンド",
+      "source_type": "video",
+      "tags": {
+        "comportement": "poursuites mais refus sur la taille précédente",
+        "leurre": "egi 2.5",
+        "moment_jour": "jour",
+        "saison": "fin été",
+        "spot_type": "port/côte"
+      },
+      "claim_id": "4b956f71fb78ded9",
+      "metadata": {
+        "saison": "fin été",
+        "moment_jour": "jour",
+        "spot_type": "port/côte",
+        "maree": "",
+        "leurre": "egi 2.5",
+        "comportement": "poursuites mais refus sur la taille précédente",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "lure": "egi 2.5",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 599,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Après un changement de coloris destiné à mieux voir l'egi, le pêcheur a donné trois coups secs de canne puis arrêté. Au moment exact de l'arrêt, un aori-ika est devenu sombre, a foncé depuis le côté et a saisi l'egi sans hésiter.",
+      "confidence": 0.7,
+      "source": "デイズ ソルト セカンド",
+      "source_type": "video",
+      "tags": {
+        "comportement": "attaque visuelle franche après réaction",
+        "leurre": "egi",
+        "moment_jour": "jour",
+        "saison": "fin été",
+        "spot_type": "port/côte"
+      },
+      "claim_id": "8a81d7061db391f3",
+      "metadata": {
+        "saison": "fin été",
+        "moment_jour": "jour",
+        "spot_type": "port/côte",
+        "maree": "",
+        "leurre": "egi",
+        "comportement": "attaque visuelle franche après réaction",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "à l'arrêt après trois jerks"
+      },
+      "recommendation": {
+        "animation": "jerk : trois coups secs de scion, puis arrêt ; prise au moment de l'arrêt",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 600,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Sur une autre approche à vue, l'egi a simplement été laissé descendre sans aucune animation. L'aori-ika l'a saisi pendant cette chute passive.",
+      "confidence": 0.7,
+      "source": "デイズ ソルト セカンド",
+      "source_type": "video",
+      "tags": {
+        "comportement": "calmar réactif",
+        "leurre": "egi",
+        "moment_jour": "jour",
+        "saison": "fin été",
+        "spot_type": "port/côte"
+      },
+      "claim_id": "3f141295d88de9cc",
+      "metadata": {
+        "saison": "fin été",
+        "moment_jour": "jour",
+        "spot_type": "port/côte",
+        "maree": "",
+        "leurre": "egi",
+        "comportement": "calmar réactif",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "à vue",
+        "moment_touche": "pendant la chute"
+      },
+      "recommendation": {
+        "animation": "chute : free fall, laisser l'egi descendre sans mouvement de canne",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 601,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Un aori-ika de belle taille a saisi l'egi dès la première chute, avant que le pêcheur n'ait besoin d'installer une animation complexe.",
+      "confidence": 0.85,
+      "source": "デイズ ソルト セカンド",
+      "source_type": "video",
+      "tags": {
+        "comportement": "poisson actif",
+        "leurre": "egi",
+        "moment_jour": "aube",
+        "saison": "fin été",
+        "spot_type": "port/côte"
+      },
+      "claim_id": "c847e535ab788577",
+      "metadata": {
+        "saison": "fin été",
+        "moment_jour": "aube",
+        "spot_type": "port/côte",
+        "maree": "",
+        "leurre": "egi",
+        "comportement": "poisson actif",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "première chute"
+      },
+      "recommendation": {
+        "animation": "chute : première descente après le lancer",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 602,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Le pêcheur explique qu'au-dessus des herbiers de printemps il donne seulement deux petits coups secs « pan-pan » et garde l'egi un peu haut. Il évite volontairement de reprendre le fond après chaque séquence pour ne pas accrocher les algues.",
+      "confidence": 0.7,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "leurre": "egi 3.5",
+        "moment_jour": "jour",
+        "profondeur": "au-dessus des herbiers",
+        "saison": "printemps",
+        "spot_type": "zone d'herbiers côtiers"
+      },
+      "claim_id": "e4fc988596b4bb2b",
+      "metadata": {
+        "saison": "printemps",
+        "moment_jour": "jour",
+        "spot_type": "zone d'herbiers côtiers",
+        "maree": "",
+        "leurre": "egi 3.5",
+        "comportement": "",
+        "profondeur": "au-dessus des herbiers",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "jerk : deux petits coups secs de canne, puis chute contrôlée au-dessus des herbiers sans reprendre systématiquement le fond",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 603,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Après un balayage rapide de la couche haute au short jerk sans réaction, le pêcheur a changé pour un Egi-OH K à chute plus stable et l'a laissé pénétrer plus profondément au-dessus des herbiers. Cette modification de profondeur et de chute a produit un gros aori-ika.",
+      "confidence": 0.7,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "comportement": "aucune réaction au balayage rapide de la couche haute",
+        "leurre": "egi à chute stable",
+        "moment_jour": "jour",
+        "profondeur": "plus profond, juste au-dessus des herbiers",
+        "saison": "printemps",
+        "spot_type": "zone d'herbiers côtiers"
+      },
+      "claim_id": "a1b44410cc620d44",
+      "metadata": {
+        "saison": "printemps",
+        "moment_jour": "jour",
+        "spot_type": "zone d'herbiers côtiers",
+        "maree": "",
+        "leurre": "egi à chute stable",
+        "comportement": "aucune réaction au balayage rapide de la couche haute",
+        "profondeur": "plus profond, juste au-dessus des herbiers",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "pendant la phase de chute"
+      },
+      "recommendation": {
+        "lure": "エギ王 K (Egi-OH K)",
+        "animation": "chute contrôlée et stable : après quelques jerks, laisser l'egi descendre plus profondément sans l'enfouir dans les herbiers",
+        "typology": {
+          "modele": "EGI-OH K (taille/type à préciser)",
+          "marque": "Yamashita",
+          "famille": "egi",
+          "densite": "sinking",
+          "densite_nuance": null,
+          "longueur": null,
+          "poids": null,
+          "action": "dart contrôlé + descente stable",
+          "zone": "Egi – chute contrôlée",
+          "chute": "Basic : ~3 s/m en 3.0–4.0; 2.5 ~5 s/m. Shallow/Super Shallow/Deep ont d’autres vitesses.",
+          "confiance": "Haute",
+          "remarque": "Ne pas résumer la « densité » par sinking : pour un egi, conserver surtout taille (号) et vitesse de chute.",
+          "gear_status": "UNVERIFIED_GENERIC",
+          "allowed_for_user": true,
+          "gear_note": "Famille egi conservée comme recommandation générique; choisir la taille réellement emportée, largement sous le plafond voyage de 50 g."
+        },
+        "gear_status": "VERIFIED_OK"
+      }
+    },
+    {
+      "id": 604,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Le pêcheur explique qu'en été il recherche les longues lignes de courant au large avec de longs lancers et un egi à rattle. Il utilise des jerks brefs et explosifs afin de faire volontairement sonner le rattle et d'attirer les calamars circulant avec le courant.",
+      "confidence": 0.7,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "leurre": "egi à rattle",
+        "moment_jour": "jour",
+        "saison": "été",
+        "spot_type": "côte ouverte"
+      },
+      "claim_id": "3c8ac6d2fec3e65f",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "côte ouverte",
+        "maree": "",
+        "leurre": "egi à rattle",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "long lancer vers la ligne de courant",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "jerk : coups brefs et explosifs destinés à faire sonner le rattle, puis laisser l'egi reprendre sa dérive",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 605,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "En été, un aori-ika d'environ un kilo a été pris après avoir envoyé un Egi-OH LIVE shallow 3.5 légèrement en amont du courant transversal puis nourri la bannière pour le laisser dériver jusqu'à la zone où le flux s'accumulait. Le pêcheur maintenait l'egi dans la moitié supérieure plutôt que de le laisser toucher le fond.",
+      "confidence": 0.7,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "comportement": "calmars circulant avec la ligne de courant",
+        "leurre": "egi shallow 3.5",
+        "moment_jour": "jour",
+        "profondeur": "mi-eau à couche supérieure",
+        "saison": "été",
+        "spot_type": "côte ouverte, ligne de courant"
+      },
+      "claim_id": "3c1cc1ed5e284a10",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "côte ouverte, ligne de courant",
+        "maree": "",
+        "leurre": "egi shallow 3.5",
+        "comportement": "calmars circulant avec la ligne de courant",
+        "profondeur": "mi-eau à couche supérieure",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "loin, jusqu'à l'extrémité de la dérive",
+        "moment_touche": "dans la zone d'accumulation en aval du courant",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "エギ王 LIVE シャロー 3.5号 (Egi-OH LIVE Shallow 3.5)"
+        }
+      }
+    },
+    {
+      "id": 606,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Le pêcheur explique que pour prolonger cette dérive estivale il ne tend pas fortement la ligne : une bannière trop tendue ramène l'egi vers lui et l'empêche de voyager avec le courant.",
+      "confidence": 0.85,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "leurre": "egi",
+        "moment_jour": "jour",
+        "profondeur": "mi-eau à couche supérieure",
+        "saison": "été",
+        "spot_type": "ligne de courant côtière"
+      },
+      "claim_id": "6967866d12daf8ab",
+      "metadata": {
+        "saison": "été",
+        "moment_jour": "jour",
+        "spot_type": "ligne de courant côtière",
+        "maree": "",
+        "leurre": "egi",
+        "comportement": "",
+        "profondeur": "mi-eau à couche supérieure",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "longue dérive",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "dérive : conserver suffisamment de mou contrôlé pour que le courant transporte l'egi sans le ramener vers le pêcheur",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 607,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Le pêcheur explique qu'en plein hiver, face au vent, il choisit souvent un egi 4.0 : son volume et sa résistance permettent au leurre de mieux résister à la bannière déplacée par le vent et d'atteindre une ligne de courant temporaire plus éloignée.",
+      "confidence": 0.7,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "comportement": "activité très faible",
+        "leurre": "egi 4.0",
+        "moment_jour": "jour",
+        "saison": "hiver",
+        "spot_type": "côte insulaire"
+      },
+      "claim_id": "09fe8ac04d8f234f",
+      "metadata": {
+        "saison": "hiver",
+        "moment_jour": "jour",
+        "spot_type": "côte insulaire",
+        "maree": "",
+        "leurre": "egi 4.0",
+        "comportement": "activité très faible",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "vent de face",
+        "distance": "ligne de courant éloignée",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "lure": "egi 4.0",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 608,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "En hiver, le pêcheur présentait l'egi de biais dans le courant : deux petits coups vers le haut, puis une free fall, avant de répéter la séquence tout en laissant le leurre dériver latéralement.",
+      "confidence": 0.85,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "comportement": "faible activité hivernale",
+        "leurre": "egi",
+        "moment_jour": "jour",
+        "saison": "hiver",
+        "spot_type": "côte insulaire"
+      },
+      "claim_id": "d8ec1214264412ca",
+      "metadata": {
+        "saison": "hiver",
+        "moment_jour": "jour",
+        "spot_type": "côte insulaire",
+        "maree": "",
+        "leurre": "egi",
+        "comportement": "faible activité hivernale",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "animation": "dérive avec jerk et chute : deux coups de canne vers le haut, puis free fall, répétés pendant la dérive oblique",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 609,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Le pêcheur explique qu'en hiver la stabilité de la chute est essentielle : après avoir remonté l'egi avec la canne, il le laisse descendre longuement et proprement. Un egi qui se déséquilibre pendant l'arrêt est selon lui moins facilement saisi par un calmar peu actif.",
+      "confidence": 0.85,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "comportement": "aori-ika peu actifs",
+        "leurre": "egi",
+        "moment_jour": "jour",
+        "saison": "hiver",
+        "spot_type": "côte"
+      },
+      "claim_id": "57b28f9b6cf947bd",
+      "metadata": {
+        "saison": "hiver",
+        "moment_jour": "jour",
+        "spot_type": "côte",
+        "maree": "",
+        "leurre": "egi",
+        "comportement": "aori-ika peu actifs",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "pendant la chute recherchée"
+      },
+      "recommendation": {
+        "animation": "chute contrôlée : relever l'egi puis le laisser descendre longuement et de façon stable",
+        "gear_status": "UNVERIFIED_GENERIC",
+        "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
+      }
+    },
+    {
+      "id": 610,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Le pêcheur explique qu'en période de pluie et d'eau troublée il privilégie des couleurs claires ou fortement visibles plutôt que des présentations discrètes. Il cite le Neon Bright, conçu pour conserver un signal visuel dans une eau où l'effet UV classique devient moins efficace.",
+      "confidence": 0.7,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "leurre": "egi 3.5 principalement",
+        "saison": "saison des pluies",
+        "spot_type": "côte"
+      },
+      "claim_id": "f956aec74283f5c4",
+      "metadata": {
+        "saison": "saison des pluies",
+        "moment_jour": "",
+        "spot_type": "côte",
+        "maree": "",
+        "leurre": "egi 3.5 principalement",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "eau troublée par la pluie",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "",
+        "gear_filter": {
+          "excluded_recommendation": true,
+          "reason": "model_weight_unknown",
+          "status": "UNKNOWN_WEIGHT_MODEL",
+          "cast_weight_g": null,
+          "lure": "エギ王 LIVE ネオンブライト (Egi-OH LIVE Neon Bright)"
+        }
+      }
+    },
+    {
+      "id": 611,
+      "species_id": 4,
+      "species": "Aori-Ika",
+      "text": "Un aori-ika a réagi à l'Egi-OH LIVE Neon Bright Neo Bura Blue dans des conditions de faible luminosité et d'eau marquée par la pluie. Le pêcheur recherchait volontairement une forte visibilité pour faire repérer l'egi à distance.",
+      "confidence": 0.85,
+      "source": "ソウルジャーカー",
+      "source_type": "video",
+      "tags": {
+        "leurre": "egi",
+        "moment_jour": "jour",
+        "saison": "saison des pluies",
+        "spot_type": "côte"
+      },
+      "claim_id": "f6cd7045f45e9695",
+      "metadata": {
+        "saison": "saison des pluies",
+        "moment_jour": "jour",
+        "spot_type": "côte",
+        "maree": "",
+        "leurre": "egi",
+        "comportement": "",
+        "profondeur": "",
+        "clarte_eau": "turbide",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      },
+      "recommendation": {
+        "lure": "エギ王 LIVE ネオンブライト",
+        "color": "Neo Bura Blue (ネオブラブルー) → bleu Neon Bright, émission UV renforcée",
+        "typology": {
+          "modele": "EGI-OH Q LIVE / EGI-OH LIVE (ancien/current)",
+          "marque": "Yamashita",
+          "famille": "egi",
+          "densite": "sinking",
+          "densite_nuance": null,
+          "longueur": null,
+          "poids": null,
+          "action": "sharp dart / action vive",
+          "zone": "Egi – chute contrôlée",
+          "chute": "Current EGI-OH LIVE : 2.0 ~5,5 s/m; 2.5 ~5,5 s/m; 3.0 ~3,5 s/m; 3.5 ~3,0 s/m",
+          "confiance": "Moyenne",
+          "remarque": "Q LIVE est un ancien nom/génération; la fiche actuelle EGI-OH LIVE permet de cadrer la typologie mais les specs exactes de ton exemplaire doivent être lues sur sa taille.",
+          "gear_status": "UNVERIFIED_GENERIC",
+          "allowed_for_user": true,
+          "gear_note": "Famille egi conservée comme recommandation générique; choisir la taille réellement emportée, largement sous le plafond voyage de 50 g."
+        },
+        "gear_status": "VERIFIED_OK"
+      }
+    },
+    {
+      "id": 612,
+      "species_id": 3,
+      "species": "Hamachi",
+      "text": "Le pêcheur explique que les inada, jeunes serioles, connaissent selon son expérience leur meilleur regain d'activité au début du crépuscule et qu'une lumière déjà trop basse lui paraît moins favorable.",
+      "confidence": 0.85,
+      "source": "ソルトクロス",
+      "source_type": "video",
+      "tags": {
+        "comportement": "hausse d'activité au début du crépuscule",
+        "moment_jour": "crépuscule",
+        "spot_type": "surf"
+      },
+      "claim_id": "5d42d60da4112675",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "crépuscule",
+        "spot_type": "surf",
+        "maree": "",
+        "leurre": "",
+        "comportement": "hausse d'activité au début du crépuscule",
+        "profondeur": "",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": ""
+      }
+    },
+    {
+      "id": 613,
+      "species_id": 3,
+      "species": "Hamachi",
+      "text": "Le pêcheur explique que lorsqu'une masse de sardines est extrêmement dense, il emploie un minnow en jerk pour faire éclater le banc latéralement. Le bref arrêt après le jerk représente alors un baitfish isolé, afin que le prédateur sélectionne le leurre plutôt qu'une sardine parmi des milliers.",
+      "confidence": 0.85,
+      "source": "ソルトクロス",
+      "source_type": "video",
+      "tags": {
+        "comportement": "baitfish extrêmement abondants",
+        "leurre": "minnow 140s",
+        "moment_jour": "crépuscule",
+        "profondeur": "surface à subsurface",
+        "spot_type": "surf"
+      },
+      "claim_id": "252c3abb82ece771",
+      "metadata": {
+        "saison": "",
+        "moment_jour": "crépuscule",
+        "spot_type": "surf",
+        "maree": "",
+        "leurre": "minnow 140S",
+        "comportement": "baitfish extrêmement abondants",
+        "profondeur": "surface à subsurface",
+        "clarte_eau": "",
+        "vent": "",
+        "distance": "",
+        "moment_touche": "recherché pendant le bref stay après le jerk"
+      },
+      "recommendation": {
+        "animation": "jerk : grands écarts latéraux au coup de scion, suivis d'un bref stay pour imiter un baitfish isolé",
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
