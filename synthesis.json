@@ -158,6 +158,14 @@
    {
     "titre": "La ligne (déterminant)",
     "txt": "Le **line-mending** est présenté comme décisif : une ligne bien contrôlée rend les touches lisibles, laisse les animations fonctionner et maintient le leurre dans **une même couche**. C'est un pré-requis technique, pas un détail."
+   },
+   {
+    "titre": "Montages & poids",
+    "txt": "Jighead **très léger, calibré à la profondeur** : 0,5 g de nuit sous des bancs proches de la surface, 1 à 1,5 g en action verticale, jusqu'à 2 g pour atteindre un port profond (≈70-85 s de descente). Downsizing du worm quand ça se durcit."
+   },
+   {
+    "titre": "Le makiage (geste-clé)",
+    "txt": "Le **makiage** = récupération ascendante lente et continue du bas vers le haut, très productif : laisser descendre sous le banc puis remonter le montage à travers la couche. Souvent précédé d'une **tension fall** (chute en tension) : surveiller les *taps* discrets pendant la chute, l'aji saisit fréquemment avant même le début du makiage."
    }
   ],
   "Mebaru": [
@@ -242,7 +250,10 @@
    "corr": [
     "**Actif** : enchaîner rapidement jerks et pauses, dart ample (repositionne vite, couvre).",
     "**Peu actif / méfiant** : **réduire la force et le nombre de jerks, allonger la descente de ~50 %** ; animation douce à dart limité, privilégier une descente stable. C'est le levier n°1 sur calamar difficile.",
-    "**Courant / hiver** : présenter l'egi **de biais dans le courant** et privilégier la **stabilité de la chute** (l'aori hivernal réagit à une descente régulière, pas erratique). En eau troublée par la pluie, la couleur/contraste prend de l'importance."
+    "**Courant / hiver** : présenter l'egi **de biais dans le courant** et privilégier la **stabilité de la chute** (l'aori hivernal réagit à une descente régulière, pas erratique). En eau troublée par la pluie, la couleur/contraste prend de l'importance.",
+    "**Types de jerks (vocabulaire)** : le *hangetsu jerk* est une grande levée puissante depuis le talon de canne (individus actifs, gros calamars) ; le *sound jerk* joue sur le rebond fin du blank pour de petits mouvements ; le *switch jerk* produit volontairement un son sec. Sur petits individus, **éviter le hangetsu jerk trop puissant** — préférer de courts jerks doux.",
+    "**Courant fort / détroit** : ne pas systématiquement reprendre le fond — descendre 3 à 4 s, donner quelques jerks, laisser redescendre 3-4 s, ou laisser l'egi **stationner et dériver dans le contre-courant**. Le *compte de descente* sert à cartographier les différences de profondeur d'un poste inconnu.",
+    "**Vent / houle** : un egi 4.0 shallow au printemps ou un egi lourd par vent de face hivernal maintient une **descente franche et stable** ; en mer agitée, privilégier un modèle à chute stable pour que l'egi ne soit pas balloté. Draw4 : *hovering slide* (plané sous tension) vs *bungee fall* (chute plus verticale)."
    ]
   },
   {
