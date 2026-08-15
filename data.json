@@ -158,6 +158,11 @@
       "recommendation": {
         "lure": "metal jig avec hameçons avant et arrière",
         "animation": "récupération linéaire exploitant le roulis du jig",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -298,6 +303,11 @@
       "recommendation": {
         "lure": "metal jig",
         "animation": "faire suivre le jig depuis le fond vers la couche intermédiaire puis créer une phase d'attaque",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -347,6 +357,12 @@
       "recommendation": {
         "lure": "diving pencil 20 cm",
         "animation": "lancer longue distance puis animation active du diving pencil",
+        "typology": {
+          "famille": "diving pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 20.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -367,6 +383,12 @@
       "recommendation": {
         "lure": "diving pencil 20 cm avec Hyper Wire n°7 et triples STX-68 3/0",
         "animation": "conserver une animation franche tout en privilégiant la distance de lancer",
+        "typology": {
+          "famille": "diving pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 20.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -458,6 +480,12 @@
       "recommendation": {
         "lure": "pencil flottant 110 mm ou minnow flottant fin 100 mm",
         "animation": "présentation lente accompagnant la dérive du courant",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 11.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -1077,6 +1105,12 @@
       "recommendation": {
         "lure": "Rodem R4 Shad 18 g",
         "animation": "stop-and-go",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 18
+        },
         "cast_weight_g": 18.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -1098,6 +1132,12 @@
         "lure": "Rodem R4 Shad 18 g",
         "color": "rouge-or",
         "animation": "stop-and-go",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 18
+        },
         "cast_weight_g": 18.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -1166,6 +1206,12 @@
         "lure": "Rodem R4 Shad 18 g",
         "color": "green gold red belly",
         "animation": "alterner remontées et descentes en laissant le leurre retomber",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 18
+        },
         "cast_weight_g": 18.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -2474,6 +2520,11 @@
       "recommendation": {
         "lure": "egi shallow à descente lente",
         "animation": "réduire la force ou le nombre de jerks et allonger le temps de descente d'environ 50 %",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -2877,6 +2928,13 @@
       "claim_id": "f89663f05fc6c84f",
       "recommendation": {
         "lure": "egi 3 à 3,5",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.5,
+          "longueur": 10.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -3077,6 +3135,12 @@
         "lure": "jighead de 5 à 15 g avec Freak Worm",
         "animation": "présentation lente et précise",
         "leader": "fluorocarbone 12 lb",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 15
+        },
         "cast_weight_g": 15.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -3124,6 +3188,12 @@
       "claim_id": "a0004b4ba153e8ee",
       "recommendation": {
         "lure": "Howl 27 g avec shad rose",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 27
+        },
         "cast_weight_g": 27.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -3145,6 +3215,12 @@
       "claim_id": "ec51eb7b8e5d5531",
       "recommendation": {
         "lure": "pencil bait de surface, environ 7 à 9 cm",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 9.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -3180,6 +3256,11 @@
       "recommendation": {
         "lure": "pencil bait de surface",
         "animation": "dog walk régulier, environ deux twitchs par seconde avec relâchement de la tension après chaque twitch",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -3246,6 +3327,11 @@
       "recommendation": {
         "lure": "plug",
         "animation": "insister lentement sur les veines de courant et les zones de chasse",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -3587,6 +3673,12 @@
       "recommendation": {
         "lure": "leurre souple sur jighead de 5 à 15 g",
         "animation": "présentation finesse",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 15
+        },
         "cast_weight_g": 15.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -3611,13 +3703,9 @@
         "leader": "fluorocarbone 12 lb",
         "typology": {
           "famille": "souple / tête plombée",
-          "densite": "heavy sinking",
-          "densite_nuance": "Sinking / lesté",
-          "longueur": null,
-          "poids": null,
-          "modele": "Freak Worm + Finesse Head 5–15g",
-          "marque": "Jackson",
-          "confiance": "Haute"
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 15
         },
         "cast_weight_g": 15.0,
         "gear_status": "VERIFIED_OK"
@@ -3901,6 +3989,11 @@
       "recommendation": {
         "lure": "blade jig",
         "animation": "prendre contact avec le fond, 20 à 30 tours rapides, puis 2 à 3 tours plus lents pour créer une pause alimentaire",
+        "typology": {
+          "famille": "blade / spin tail",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4081,6 +4174,12 @@
       "claim_id": "47a8aba169bd2655",
       "recommendation": {
         "lure": "pencil bait d'environ 7 cm",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 7.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4101,6 +4200,12 @@
       "claim_id": "9c59bb006d8721a7",
       "recommendation": {
         "lure": "pencil bait 5 cm en petite zone, 7 cm en standard, 9 cm ou plus pour distance, eau trouble ou conditions agitées",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 5.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4122,6 +4227,11 @@
       "recommendation": {
         "lure": "pencil bait",
         "animation": "dog walk régulier d'environ deux twitchs par seconde en relâchant la tension après chaque twitch",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4225,6 +4335,11 @@
       "recommendation": {
         "lure": "pencil bait",
         "animation": "en cas de poursuite sans attaque, ralentir ou stopper brièvement ; alternativement accélérer franchement le dog walk",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4331,6 +4446,11 @@
       "recommendation": {
         "lure": "popper ou jerk pencil",
         "animation": "誘い出し en surface",
+        "typology": {
+          "famille": "popper",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4568,6 +4688,11 @@
       "claim_id": "c8aca19bde5e97a9",
       "recommendation": {
         "lure": "egi 3 à 3,5号",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4671,6 +4796,11 @@
       "claim_id": "5884bc8d185c2daa",
       "recommendation": {
         "lure": "egi shallow avec une vitesse de descente d'environ 6 secondes par mètre",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4693,6 +4823,13 @@
       "claim_id": "08cffc2b0b0f6aa0",
       "recommendation": {
         "lure": "egi deep avec une vitesse de descente d'environ 2,2 secondes par mètre",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 2.2,
+          "longueur": null
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4713,6 +4850,11 @@
       "claim_id": "b7200da392de3b01",
       "recommendation": {
         "lure": "egi dimensionné sur la taille du poisson-fourrage observé",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4865,6 +5007,11 @@
       "claim_id": "ca38385914cd8361",
       "recommendation": {
         "lure": "tenya — prévoir tailles/poids S, M et L",
+        "typology": {
+          "famille": "tenya",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -4908,6 +5055,11 @@
       "claim_id": "95ee75184bb61f09",
       "recommendation": {
         "lure": "environ trois tenya pré-appâtés avant le crépuscule",
+        "typology": {
+          "famille": "tenya",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -5255,6 +5407,11 @@
       "claim_id": "15a65f2df9b5bf0f",
       "recommendation": {
         "lure": "minnow",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -5329,6 +5486,12 @@
       "recommendation": {
         "lure": "metal jig d'environ 32 g",
         "animation": "prise de contact du fond puis stop-and-go",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 32
+        },
         "cast_weight_g": 32.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -5349,6 +5512,12 @@
       "claim_id": "56875e2200aacd54",
       "recommendation": {
         "lure": "shad souple: 14 g en faible profondeur, 21 g comme base, 27 g plus profond ou plus loin",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 14
+        },
         "cast_weight_g": 14.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -5371,6 +5540,11 @@
       "recommendation": {
         "lure": "minnow",
         "animation": "récupération régulière à vitesse modérée",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -5467,6 +5641,11 @@
       "claim_id": "4b2c2c7945a630e1",
       "recommendation": {
         "lure": "metal jig dense en plomb",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -5489,6 +5668,11 @@
       "recommendation": {
         "lure": "metal jig en zinc",
         "animation": "récupération lente près du fond",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -5510,6 +5694,11 @@
       "claim_id": "d7937200dc224b00",
       "recommendation": {
         "lure": "leurre souple",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -5565,6 +5754,12 @@
       "claim_id": "e9a0b71df1822f10",
       "recommendation": {
         "lure": "sinking pencil 120-140 mm, ou minnow près du bord",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 14.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -5589,6 +5784,11 @@
       "recommendation": {
         "lure": "minnow",
         "animation": "récupération lente jusqu'au bord",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -5635,6 +5835,11 @@
         "lure": "curly souple",
         "color": "rose",
         "animation": "récupération linéaire",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -5774,6 +5979,12 @@
       "recommendation": {
         "lure": "minnow flottant d'environ 9 cm",
         "animation": "dérive contrôlée dans le courant latéral",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 9.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -6054,6 +6265,12 @@
       "recommendation": {
         "lure": "vibration d'environ 26 g",
         "animation": "lift-and-fall de faible amplitude près du fond",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 26
+        },
         "cast_weight_g": 26.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -6833,6 +7050,11 @@
       "claim_id": "215eeba96a1ccff1",
       "recommendation": {
         "lure": "egi slow ou super slow, type SS",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -6903,6 +7125,13 @@
       "claim_id": "69cc133271fc5638",
       "recommendation": {
         "lure": "egi 2,5 à 3号",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 2.5,
+          "longueur": 7.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -6922,6 +7151,13 @@
       "claim_id": "1e29b8784e8d3ccd",
       "recommendation": {
         "lure": "egis 2,5 et 3号 en versions normale, slow et super slow",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 2.5,
+          "longueur": 7.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7058,6 +7294,11 @@
       "claim_id": "c386caf3f3904cb4",
       "recommendation": {
         "lure": "egi d'environ 1,8号 pour les très petits individus",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7139,6 +7380,13 @@
       "claim_id": "3b9ab86bf67d818f",
       "recommendation": {
         "lure": "egi 2,5 à 3号",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 2.5,
+          "longueur": 7.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7161,6 +7409,11 @@
       "recommendation": {
         "lure": "minnow flottant",
         "animation": "récupération très lente en maintenant le leurre près du fond",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7202,6 +7455,12 @@
         "lure": "metal jig 40 g",
         "color": "bleu-rose imitation sardine",
         "animation": "long lancer puis laisser descendre le jig; surveiller particulièrement la chute",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 40
+        },
         "cast_weight_g": 40.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -7247,6 +7506,11 @@
       "recommendation": {
         "lure": "gros minnow flottant",
         "animation": "récupération lente juste au-dessus du relief",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7267,6 +7531,11 @@
       "claim_id": "a4e5e0580ee40ad9",
       "recommendation": {
         "lure": "minnow flottant en faible profondeur, minnow sinking lorsque l'eau est plus profonde",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7289,6 +7558,11 @@
       "recommendation": {
         "lure": "minnow capable de nager à très faible vitesse",
         "animation": "environ un tour de manivelle toutes les 2 à 3 secondes, ou plus lentement si nécessaire",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7311,6 +7585,11 @@
       "recommendation": {
         "lure": "minnow nageant à très faible vitesse",
         "animation": "ralentir jusqu'à la vitesse minimale permettant encore au leurre de nager",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7332,6 +7611,11 @@
       "recommendation": {
         "lure": "minnow",
         "animation": "récupération très lente en utilisant le courant pour maintenir l'action du leurre",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7352,6 +7636,11 @@
       "claim_id": "ebd8c10b9519e9dd",
       "recommendation": {
         "lure": "minnow sinking dans les vagues; minnow flottant sur faible profondeur ou au-dessus des roches",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7392,6 +7681,11 @@
       "recommendation": {
         "lure": "minnow",
         "animation": "récupération lente sur la transition de profondeur",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7432,6 +7726,11 @@
       "recommendation": {
         "lure": "sinking pencil lourd",
         "animation": "prendre le fond, récupérer lentement juste au-dessus puis essayer des one-pitch jerks et des chutes",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7471,6 +7770,11 @@
       "claim_id": "0cfe56dd531ef332",
       "recommendation": {
         "lure": "metal jigs, leurres métalliques à palette ou sinking pencils",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7494,6 +7798,12 @@
       "recommendation": {
         "lure": "sinking pencil de 125 mm",
         "animation": "laisser atteindre la couche basse puis récupérer",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 12.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7517,6 +7827,11 @@
       "recommendation": {
         "lure": "sinking pencil",
         "animation": "prendre le fond puis récupérer, et répéter",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -7607,6 +7922,12 @@
       "recommendation": {
         "lure": "blade jig de 30 g",
         "animation": "récupération linéaire rapide avec arrêts ponctuels; surveiller particulièrement la pause",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 30
+        },
         "cast_weight_g": 30.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -7630,6 +7951,12 @@
       "recommendation": {
         "lure": "blade jig de 30 g",
         "animation": "prendre contact avec le fond puis effectuer une récupération linéaire",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 30
+        },
         "cast_weight_g": 30.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -7673,6 +8000,12 @@
       "recommendation": {
         "lure": "metal jig de 30 à 40 g",
         "animation": "prendre le fond puis remonter en one-pitch jerk en explorant plusieurs couches",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 40
+        },
         "cast_weight_g": 40.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -7696,6 +8029,12 @@
       "recommendation": {
         "lure": "metal jig de 40 g",
         "animation": "one-pitch jerk suivi d'une chute contrôlée; ferrer lorsque la ligne se détend anormalement",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 40
+        },
         "cast_weight_g": 40.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -7719,6 +8058,12 @@
       "recommendation": {
         "lure": "jigging sabiki avec metal jig de 30 g",
         "animation": "adapter la couche: descente jusqu'au fond en l'absence d'activité, ou récupération dans la couche supérieure pendant une chasse",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 30
+        },
         "cast_weight_g": 30.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -7807,6 +8152,12 @@
       "recommendation": {
         "lure": "Flipper 32 g",
         "animation": "long lancer au-delà du haut-fond puis récupération en contrôlant la couche",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 32
+        },
         "cast_weight_g": 32.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -7829,6 +8180,12 @@
       "recommendation": {
         "lure": "Flipper 40 g",
         "animation": "long lancer puis prospection de la cassure extérieure",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 40
+        },
         "cast_weight_g": 40.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -7894,6 +8251,13 @@
       "claim_id": "14a2d5c44659471e",
       "recommendation": {
         "lure": "minnow de 127 à 135 mm près du bord; leurre dense de 32 à 40 g au large",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 13.5,
+          "poids": 40
+        },
         "cast_weight_g": 40.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -7987,6 +8351,11 @@
       "recommendation": {
         "lure": "vibration ou leurre supportant les jerks",
         "animation": "jerking, lift and fall ou animation plus irrégulière",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -8070,6 +8439,11 @@
       "claim_id": "c8c65e9f10d75fbb",
       "recommendation": {
         "lure": "vibration ou leurre dense permettant de rechercher la couche basse",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -8092,6 +8466,11 @@
       "recommendation": {
         "lure": "petite vibration à action serrée ou blade lure",
         "animation": "récupération linéaire en adaptant la vitesse à l'activité des poissons",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -8293,6 +8672,12 @@
       "recommendation": {
         "lure": "metal jig de 40 g",
         "animation": "descente au fond puis fast pitch du fond vers la mi-eau",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 40
+        },
         "cast_weight_g": 40.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -8315,6 +8700,12 @@
       "recommendation": {
         "lure": "metal jig de 40 g",
         "animation": "compte à rebours d'environ cinq secondes puis fast pitch dans la couche supérieure",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 40
+        },
         "cast_weight_g": 40.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -8337,6 +8728,12 @@
         "lure": "metal jig compact de 30 g",
         "color": "argenté imitation petit poisson-fourrage",
         "animation": "animation rapide dans la couche où le baitfish est visible",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 30
+        },
         "cast_weight_g": 30.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -8378,6 +8775,12 @@
       "recommendation": {
         "lure": "metal jig de 40 g avec bras et softbait",
         "animation": "lift and fall en reprenant contact avec le fond après chaque mouvement",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 40
+        },
         "cast_weight_g": 40.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -8400,6 +8803,11 @@
       "recommendation": {
         "lure": "jig hybride avec softbait",
         "animation": "soulever le montage, le laisser redescendre sous contrôle et ferrer sur tout contact ou anomalie à l'arrivée au fond",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -8421,6 +8829,11 @@
       "recommendation": {
         "lure": "metal jig capable de papillonner à la chute",
         "animation": "alterner free fall et tension fall en contrôlant la ligne avec les doigts",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -8441,6 +8854,11 @@
       "recommendation": {
         "lure": "metal jig polyvalent ou montage hybride jig-softbait",
         "animation": "alterner recherche du fond et animation rapide dans la couche supérieure selon les signes biologiques",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -8594,6 +9012,12 @@
         "lure": "DAIWA Samurai Jig 20 g ou metal jig compact de même rôle",
         "color": "silver / FLASH",
         "animation": "lancer en avance sur la trajectoire du banc plutôt que derrière les chasses",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 20
+        },
         "cast_weight_g": 20.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -8694,6 +9118,12 @@
         "lure": "minnow shallow autour de 100 mm",
         "color": "Nami-no-Hana / naturel-flash",
         "animation": "faire travailler le minnow dans le sarashi; vitesse exacte non donnée",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 10.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -8724,6 +9154,13 @@
       },
       "recommendation": {
         "lure": "minnow sinking 110-130 mm et leurres denses 21-32 g selon la liste de l'émission",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 13.0,
+          "poids": 32
+        },
         "cast_weight_g": 32.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -8754,6 +9191,13 @@
       },
       "recommendation": {
         "lure": "1 minnow sinking 110-130 mm + 1 dense long-range 30-32 g + 1 blade/hybrid 20-30 g",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 13.0,
+          "poids": 32
+        },
         "cast_weight_g": 32.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -8842,6 +9286,11 @@
       },
       "recommendation": {
         "lure": "egi de taille automnale adaptée; modèle exact non exposé dans la source retrouvée",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -9119,6 +9568,11 @@
       "recommendation": {
         "lure": "egi coloris ムラムラチェリー",
         "color": "Mura Mura Cherry / fort contraste rosé",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -9154,6 +9608,11 @@
         "lure": "egi adapté à la profondeur locale",
         "color": "daytime pink / HIGH APPEAL",
         "animation": "laisser travailler la chute; considérer la première descente comme une fenêtre de touche",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -9222,6 +9681,13 @@
       "recommendation": {
         "lure": "egi 3.0-3.5; 3.5 devient réellement justifié par la taille des calamars de mi-novembre",
         "color": "Monster Red / dark-red low-light role",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.0,
+          "longueur": 9.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -9285,6 +9751,12 @@
       "recommendation": {
         "lure": "vibration compacte ~18 g",
         "animation": "prospecter la couche où les prédateurs restent après la baisse d'activité des Sagoshi/Tachiuo",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 18
+        },
         "cast_weight_g": 18.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -9547,6 +10019,11 @@
       "recommendation": {
         "lure": "blade jig / metal jig compact",
         "animation": "récupération active, varier rapidement les couches",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -9685,6 +10162,13 @@
       "recommendation": {
         "lure": "egi 3.0-3.5",
         "color": "Mura Mura Cherry / fort contraste rose-violet",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.0,
+          "longueur": 9.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -9819,6 +10303,12 @@
       "recommendation": {
         "lure": "dense sinking pencil ~95 mm",
         "color": "glow-silver / baitfish",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 9.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -9853,6 +10343,12 @@
       "recommendation": {
         "lure": "sinking minnow ~135 mm",
         "color": "chartreuse back / pearl",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 13.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -9881,6 +10377,13 @@
       "recommendation": {
         "lure": "egi 3.0 + 3.5",
         "animation": "bottom stay / controlled drift / layer search",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.0,
+          "longueur": 9.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -9908,6 +10411,13 @@
       "recommendation": {
         "lure": "egi 3.0-3.5",
         "color": "1 naturel/dark, 1 red-tape low-light, 1 high-appeal/green or pink",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.0,
+          "longueur": 9.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -10053,6 +10563,12 @@
       },
       "recommendation": {
         "lure": "sinking pencil / jig minnow longue distance autour de 40-45 g",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 45
+        },
         "cast_weight_g": 45.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -10183,6 +10699,12 @@
       "recommendation": {
         "lure": "sinking pencil générique ~95 mm",
         "animation": "commencer haut puis ajouter du countdown; stop-and-go ponctuel si poisson suiveur",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 9.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -10462,6 +10984,11 @@
       "recommendation": {
         "lure": "souple sur tête plombée",
         "animation": "contact fond → récupération → petite remontée → arrêt/retombée → reprise; cadence irrégulière",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -10674,6 +11201,11 @@
       "recommendation": {
         "lure": "vibration compacte",
         "animation": "travailler lentement dans la couche basse",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -10837,6 +11369,11 @@
       "recommendation": {
         "lure": "shad compact lent près du fond",
         "animation": "rouler lentement le leurre au fond",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -10921,6 +11458,11 @@
       "recommendation": {
         "lure": "sinking pencil / minnow sub-surface",
         "animation": "dérive juste sous la surface dans la veine où le poisson a boilé",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -10967,6 +11509,11 @@
       "recommendation": {
         "lure": "vibration compacte",
         "animation": "petite traction puis tension fall au ras de la structure",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -11054,6 +11601,11 @@
       "recommendation": {
         "lure": "vibration compacte",
         "animation": "tension fall au ras de la structure",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -11099,6 +11651,11 @@
       "recommendation": {
         "lure": "vibration compacte",
         "animation": "tirer légèrement puis laisser retomber au ras de la structure",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -11144,6 +11701,11 @@
       "recommendation": {
         "lure": "vibration compacte",
         "animation": "tension fall au ras de la structure",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -11189,6 +11751,11 @@
       "recommendation": {
         "lure": "vibration compacte",
         "animation": "fall contrôlé près de la structure",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -11470,6 +12037,11 @@
       "recommendation": {
         "lure": "vibration générique adaptée au courant",
         "animation": "tenir le fond puis lift-and-fall contrôlé",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -11758,6 +12330,11 @@
       "recommendation": {
         "lure": "vibration générique adaptée au courant",
         "animation": "contact fond → 2–3 lifts → fall contrôlé",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -11862,6 +12439,12 @@
       "recommendation": {
         "lure": "vibration générique 14 g",
         "animation": "contact fond puis récupération lente en laissant dériver juste au-dessus",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 14
+        },
         "cast_weight_g": 14.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -12406,6 +12989,11 @@
       "recommendation": {
         "lure": "metal jig générique",
         "animation": "mesurer le fond puis prospecter plusieurs countdowns jusqu’à trouver la couche",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -12460,6 +13048,11 @@
       "recommendation": {
         "lure": "metal jig générique",
         "animation": "faire varier cadence de jerks, vitesse et pauses selon les réactions",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -12513,6 +13106,11 @@
       },
       "recommendation": {
         "lure": "metal jig générique",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -12567,6 +13165,11 @@
       "recommendation": {
         "lure": "metal jig générique",
         "animation": "sous vent, canne plus basse et contrôle de bannière; ajuster poids et couche",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -12615,6 +13218,11 @@
       },
       "recommendation": {
         "lure": "sinking pencil générique",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -12666,6 +13274,11 @@
       "recommendation": {
         "lure": "sinking pencil générique",
         "animation": "récupération lente en shallow ou couche médiane-basse",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -12715,6 +13328,11 @@
       "recommendation": {
         "lure": "sinking pencil générique",
         "animation": "drift avec bannière contrôlée sans perdre la couche",
+        "typology": {
+          "famille": "sinking pencil",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -12766,6 +13384,11 @@
       "recommendation": {
         "lure": "sinking vibration / lipless dense générique",
         "animation": "descendre au fond puis récupération en slalom; accélérer resserre le mouvement",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -12817,6 +13440,11 @@
       "recommendation": {
         "lure": "sinking vibration / lipless dense générique",
         "animation": "dérive contrôlée près du fond",
+        "typology": {
+          "famille": "vibration",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -12918,6 +13546,12 @@
       "recommendation": {
         "lure": "Flipper 40 g",
         "animation": "lift-and-fall : décoller le leurre du fond puis le laisser retomber en contrôlant la chute",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 40
+        },
         "cast_weight_g": 40.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -14300,6 +14934,13 @@
       "recommendation": {
         "lure": "egi 2.5",
         "animation": "chute : présentation plus petite après refus du 3.0 shallow",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 2.5,
+          "longueur": 7.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -14335,6 +14976,13 @@
       },
       "recommendation": {
         "lure": "egi 2.5",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 2.5,
+          "longueur": 7.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -14670,6 +15318,13 @@
       },
       "recommendation": {
         "lure": "egi 4.0",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 4.0,
+          "longueur": 12.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -15172,6 +15827,12 @@
       "recommendation": {
         "lure": "jighead 1 g",
         "animation": "jerk/twitch : micro-animation verticale au scion",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 1
+        },
         "cast_weight_g": 1.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -15204,6 +15865,11 @@
       },
       "recommendation": {
         "lure": "worm 1,2 pouce",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique"
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -15576,6 +16242,13 @@
       },
       "recommendation": {
         "lure": "egi 2.5",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 2.5,
+          "longueur": 7.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -15667,6 +16340,13 @@
       },
       "recommendation": {
         "lure": "egi 3.5 à rattle",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.5,
+          "longueur": 10.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -16501,6 +17181,12 @@
       "recommendation": {
         "lure": "free rig 7 g + Avan Shrimp",
         "animation": "jerk/twitch : petits shakings continus pendant une récupération très lente au fond",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 7
+        },
         "cast_weight_g": 7.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -16535,6 +17221,12 @@
       },
       "recommendation": {
         "lure": "jighead 1 g + Pin Beam",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 1
+        },
         "cast_weight_g": 1.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -16569,7 +17261,13 @@
       "recommendation": {
         "lure": "jighead 1,5 g + Pin Beam",
         "animation": "chute : laisser redescendre le jighead après les contacts",
-        "cast_weight_g": 1.5,
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 5
+        },
+        "cast_weight_g": 5.0,
         "gear_status": "VERIFIED_OK"
       }
     },
@@ -16636,7 +17334,13 @@
       },
       "recommendation": {
         "lure": "Carolina rig 9,5 g + jighead 1 g",
-        "cast_weight_g": 9.5,
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 5
+        },
+        "cast_weight_g": 5.0,
         "gear_status": "VERIFIED_OK"
       }
     },
@@ -16671,6 +17375,12 @@
       "recommendation": {
         "lure": "jighead 1 g + Pin Beam",
         "animation": "jerk/twitch puis récupération ascendante",
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 1
+        },
         "cast_weight_g": 1.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -16707,7 +17417,13 @@
       "recommendation": {
         "lure": "jighead 0,5 g",
         "animation": "récupération linéaire : makiage lent du bas vers le haut",
-        "cast_weight_g": 0.5,
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 5
+        },
+        "cast_weight_g": 5.0,
         "gear_status": "VERIFIED_OK"
       }
     },
@@ -16742,7 +17458,13 @@
       "recommendation": {
         "lure": "jighead 0,5 g",
         "animation": "chute",
-        "cast_weight_g": 0.5,
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 5
+        },
+        "cast_weight_g": 5.0,
         "gear_status": "VERIFIED_OK"
       }
     },
@@ -17064,6 +17786,12 @@
       "recommendation": {
         "lure": "Flipper 40 g",
         "animation": "lift-and-fall : décoller du fond puis contrôler la chute",
+        "typology": {
+          "famille": "metal / jig lesté",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 40
+        },
         "cast_weight_g": 40.0,
         "gear_status": "VERIFIED_OK"
       }
@@ -17365,6 +18093,13 @@
       "recommendation": {
         "lure": "egi 4.0 shallow",
         "animation": "dérive / chute lente",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 4.0,
+          "longueur": 12.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -17399,6 +18134,13 @@
       },
       "recommendation": {
         "lure": "egi 4.0 shallow",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 4.0,
+          "longueur": 12.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -17598,7 +18340,13 @@
       },
       "recommendation": {
         "lure": "jighead 1,3 g à petit hameçon + Puff Nake rouge/blanc",
-        "cast_weight_g": 1.3,
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 3
+        },
+        "cast_weight_g": 3.0,
         "gear_status": "VERIFIED_OK"
       }
     },
@@ -17732,6 +18480,13 @@
       "recommendation": {
         "lure": "Egi-OH LIVE 3.5 shallow",
         "animation": "dérive : relever, donner de la ligne, longue chute/dérive",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.5,
+          "longueur": 10.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -17765,6 +18520,13 @@
       "recommendation": {
         "lure": "egi 3.0 comme base ; 2.5/3.5 selon baitfish ; shallow en faible activité",
         "animation": "chute : ralentir la descente en faible activité",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.0,
+          "longueur": 9.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -18257,6 +19019,12 @@
       "recommendation": {
         "lure": "minnow sinking 14 cm",
         "animation": "jerk/twitch : rythme de jerks plus rapide que lors des essais précédents",
+        "typology": {
+          "famille": "minnow / jerkbait",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "longueur": 14.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -18438,6 +19206,13 @@
       "recommendation": {
         "lure": "egi à rattle 3,5 modifié pour ralentir la descente",
         "animation": "chute : descente lente, sans vitesse de chute exacte précisée",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.5,
+          "longueur": 10.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -18688,7 +19463,13 @@
       "recommendation": {
         "lure": "jighead 1,5 g + worm droit 1,8 à 2 pouces",
         "animation": "chute : laisser d’abord descendre le montage puis prendre doucement contact avec la ligne",
-        "cast_weight_g": 1.5,
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 5
+        },
+        "cast_weight_g": 5.0,
         "gear_status": "VERIFIED_OK"
       }
     },
@@ -18755,7 +19536,13 @@
       },
       "recommendation": {
         "lure": "jighead 2,5 g + worm volumineux",
-        "cast_weight_g": 2.5,
+        "typology": {
+          "famille": "souple / tête plombée",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "poids": 5
+        },
+        "cast_weight_g": 5.0,
         "gear_status": "VERIFIED_OK"
       }
     },
@@ -18791,6 +19578,13 @@
       "recommendation": {
         "lure": "egi 3.5 super-shallow",
         "animation": "chute : descente très lente, éventuellement encore freinée en relevant la canne",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.5,
+          "longueur": 10.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -19011,6 +19805,13 @@
       "recommendation": {
         "lure": "egi 3.5 normal",
         "color": "orange à sous-couche rouge",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.5,
+          "longueur": 10.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -19489,6 +20290,13 @@
       "recommendation": {
         "lure": "egi 4.0",
         "animation": "chute : laisser le poids de l’egi 4.0 maintenir une descente franche malgré le vent",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 4.0,
+          "longueur": 12.5
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }
@@ -19747,6 +20555,13 @@
       "recommendation": {
         "lure": "egi 3.0 shallow",
         "animation": "chute : ralentir la vitesse de descente sans réduire immédiatement la taille de l’egi",
+        "typology": {
+          "famille": "egi",
+          "confiance": "Générique",
+          "source_typo": "famille_generique",
+          "taille_egi": 3.0,
+          "longueur": 9.0
+        },
         "gear_status": "UNVERIFIED_GENERIC",
         "gear_note": "Famille/technique conservée; choisir une déclinaison réellement ≤50 g."
       }

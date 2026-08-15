@@ -1043,6 +1043,62 @@ def _load_typology():
     with open(LURE_TYPO_PATH,encoding="utf-8") as f: return json.load(f)
 
 
+# Familles génériques : reconnues quand aucun MODÈLE précis ne matche.
+# Alignées sur les familles déjà présentes dans la typologie centrale.
+# Ordre important : motifs les plus spécifiques d'abord.
+_GENERIC_FAMILIES = [
+    ("egi",                 ["egi", "eging", "エギ"]),
+    ("souple / tête plombée",["jighead", "jig head", "tête plombée", "worm", "grub", "shad", "free rig", "float rig", "power", "pin beam", "softbait", "soft bait", "leurre souple", "maki maki", "curly", "curl", "ワーム"]),
+    ("metal / jig lesté",   ["metal jig", "jig lesté", "shore jig", "metal jg", "jig 30", "jig 40", "jig 80", "jig de", "flipper", "jigaro", "fortent", "forten"]),
+    ("blade / spin tail",   ["blade jig", "blade bait", "spin tail", "spintail", "palette", "spin beam", "spinbeam", "rodem"]),
+    ("vibration",           ["vibration", "vibe", "vib compacte", "metal vibe", "metal vibration"]),
+    ("tenya",               ["tenya", "テンヤ"]),
+    ("popper",              ["popper", "ポッパー"]),
+    ("stickbait (WTD)",     ["stickbait", "stick bait", "wtd", "walk the dog", "dog walk", "glasslide"]),
+    ("diving pencil",       ["diving pencil", "diver pencil"]),
+    ("sinking pencil",      ["sinking pencil", "sink pencil", "heavy sinking pencil", "pencil bait", "sinking pencil"]),
+    ("wake / sub-surface",  ["wake", "wake bait", "wake minnow", "sub-surface", "subsurface", "sub surface"]),
+    ("glide / big bait",    ["big bait", "bigbait", "glide bait", "glidebait", "swimbait", "bone bait"]),
+    ("minnow / jerkbait",   ["minnow", "jerkbait", "jerk bait", "sea sparrow", "wandering", "shad", "plug"]),
+    ("diving pencil",       ["pencil"]),  # "pencil" seul, en dernier recours
+    ("topwater",            ["topwater", "top water", "surface"]),
+    ("blade / spin tail",   ["blade"]),
+]
+
+def _generic_family_typology(lure):
+    """Repli : reconnaît la FAMILLE d'un leurre générique nommé en clair
+    (ex. 'egi 3.5', 'metal jig de 40 g', 'sinking pencil 130 mm') quand aucun
+    modèle central précis ne matche. Extrait longueur (mm/cm) et poids (g) du nom.
+    N'invente jamais marque/modèle : renvoie une typologie 'famille seule'."""
+    if not lure: return None
+    q = str(lure).lower()
+    fam = None
+    for family, needles in _GENERIC_FAMILIES:
+        if any(nd in q for nd in needles):
+            fam = family; break
+    if not fam: return None
+    tp = {"famille": fam, "confiance": "Générique", "source_typo": "famille_generique"}
+    # longueur : "130 mm" / "13 cm" / "egi 3.5" (taille égi en pouces-code → cm approx)
+    m_mm = re.search(r"(\d{2,3})\s*mm", q)
+    m_cm = re.search(r"(\d{1,2}(?:[.,]\d)?)\s*cm", q)
+    if m_mm:
+        tp["longueur"] = round(int(m_mm.group(1))/10, 1)
+    elif m_cm:
+        tp["longueur"] = float(m_cm.group(1).replace(",", "."))
+    elif fam == "egi":
+        m_egi = re.search(r"\b([234][.,]\d)\b", q)  # 2.5 / 3.0 / 3.5 / 4.0
+        if m_egi:
+            # taille égi (号) → longueur approx en cm : 2.5→7.5, 3.0→9, 3.5→10.5, 4.0→12.5
+            code = float(m_egi.group(1).replace(",", "."))
+            tp["taille_egi"] = code
+            tp["longueur"] = {2.5:7.5, 3.0:9.0, 3.5:10.5, 4.0:12.5}.get(code)
+    # poids : "40 g" / "28g"
+    m_g = re.search(r"(\d{1,3})\s*g\b", q)
+    if m_g:
+        tp["poids"] = int(m_g.group(1))
+    return tp
+
+
 def _match_typology(lure, typo):
     """Associe un modèle nommé à la typologie centrale sans sur-matcher les noms génériques.
 
@@ -1051,7 +1107,9 @@ def _match_typology(lure, typo):
     gagner contre un modèle central explicitement reconnu.
     """
     q=_normalize_lure_name(lure)
-    if len(q)<4: return None
+    if len(q)<4:
+        # Trop court pour un matching de modèle, mais peut être une famille générique (ex. "egi").
+        return _generic_family_typology(lure)
     best=None; best_score=-1; weak=[]
     q_has_digit=bool(re.search(r"\d", q))
     q_tokens=q.split()
@@ -1080,7 +1138,10 @@ def _match_typology(lure, typo):
     if best is not None:
         return best
     uniq={id(v):v for v in weak}
-    return next(iter(uniq.values())) if len(uniq)==1 else None
+    if len(uniq)==1:
+        return next(iter(uniq.values()))
+    # Repli famille générique (egi, minnow, metal jig...) quand aucun modèle précis ne matche.
+    return _generic_family_typology(lure)
 
 
 def _stored_typology_plausible(lure, tp):
