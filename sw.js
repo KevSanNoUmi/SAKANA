@@ -1,7 +1,7 @@
 // Carnet Pêche JP — service worker V6.5.12 UX carte + cibles tactiles
 // Démarrage : noyau léger + décisions pré-calculées. Le corpus complet est chargé à la demande.
 const CACHE_PREFIX = 'carnet-peche-jp-';
-const CACHE = 'carnet-peche-jp-v6-5-19-lot147-20260815';
+const CACHE = 'carnet-peche-jp-v6-5-20-synth-20260815';
 
 const CRITICAL = [
   './',

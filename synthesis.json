@@ -30,6 +30,10 @@
    {
     "titre": "Quand il refuse",
     "txt": "Première réponse = **downsizing** (95→80→65), poussé si toujours rien. Présentation ralentie à l'extrême quand courant et activité sont faibles — il peut mordre même sans courant. Chute de température rapide = poursuite réduite, ralentir encore."
+   },
+   {
+    "titre": "Le rythme près du fond",
+    "txt": "Sur metal jig/blade en surf, le schéma récurrent = **prendre le fond, quelques tours de manivelle lents près du fond, arrêt, laisser rechuter jusqu'au fond, reprendre** (stop-and-go bas). La touche vient à la rechute. Le lift-and-fall (décoller le jig puis chute contrôlée) donne aussi, touche détectée au relevé. En eau très peu profonde (1-2 m), récupération linéaire lente sans animation de canne."
    }
   ],
   "Suzuki": [
@@ -48,6 +52,10 @@
    {
     "titre": "Sélectivité",
     "txt": "La sélection porte d’abord sur **silhouette + couche + trajectoire**. En eau froide, bracketer la profondeur par countdown; si le niveau baisse, raccourcir le compte. Si les touches cessent quand le leurre quitte la bordure de structure, corriger d’abord la trajectoire avant la couleur. Si le courant change, ajuster d’abord **contrôle du fond + poids + vitesse** avant de changer de famille de leurre."
+   },
+   {
+    "titre": "Aspiration faible : ralentir à l'extrême",
+    "txt": "Quand les suzuki **aspirent faiblement** le leurre sans le prendre franchement, ralentir fortement la présentation juste sous la surface, jusqu'à quasi-immobile. En dérive, **dès l'impact, tendre la ligne** pour mettre le leurre en mouvement immédiatement (les touches viennent souvent au démarrage ou à l'impact). En eau troublée par la pluie, ajuster."
    }
   ],
   "Hamachi": [
@@ -94,6 +102,10 @@
    {
     "titre": "Saison",
     "txt": "Fenêtre topwater surtout été → début d'automne (tôt le matin le plus facile). **Ta fenêtre de mi-novembre est en marge** : il te manque du kurodai de fin d'automne hors surface (bottom game) pour cette période."
+   },
+   {
+    "titre": "Cadence selon l'activité",
+    "txt": "**Activité forte** (déclenchée par les anchois/sardines) → pencil en dog-walk soutenu, maintenir l'animation jusqu'au bord, éviter l'arrêt complet si le poisson suit. **Faible activité** → animation lente au popper. Dans le vent et les vagues, un stickbait type Glasslide 95F provoque les poursuites. Le mouvement réel de l'eau prime sur le choix précis du leurre."
    }
   ],
   "Tachiuo": [
