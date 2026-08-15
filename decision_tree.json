@@ -1,0 +1,67 @@
+{
+  "updated": "2026-08-15",
+  "based_on": "Transversales + behavior synthesis.json V6.5.12. Chaque levier est sourcé sur un principe documenté. Ordre de base Taille→Couche→Vitesse→Couleur, réordonné par espèce selon les données.",
+  "note": "leviers = étapes proposées une par une quand ça ne mord pas. 'if' = condition de remontée en priorité selon le moment. 'action' = quoi changer et dans quel sens. 'why' = justification sourcée.",
+  "global_rules": [
+    {"if": "maree=étale", "message": "Le vrai problème n'est probablement pas ton leurre : à l'étale l'activité tombe. Avant de tout changer, attends le redémarrage du courant (montante ou descendante).", "why": "Transversale 1 : le mouvement d'eau est le déclencheur récurrent chez Hirame/Hamachi/Suzuki/Hirasuzuki. Le courant qui démarre remet des poissons présents en activité."},
+    {"if": "couleur_eau=trouble", "boost": "couleur", "why": "En eau trouble la visibilité devient le facteur limitant : le contraste/l'appel de la couleur remonte dans l'ordre des leviers."}
+  ],
+  "species": {
+    "Hirame": {
+      "levers": [
+        {"key": "taille", "action": "Downsize franchement : 95 → 80 → 65. Descends d'un cran, puis d'un autre si toujours rien.", "why": "Première réponse au refus documentée (95→80→65). Transversale 4."},
+        {"key": "couche", "action": "Passe sous la surface, cherche le fond. En plein jour, insiste encore plus près du fond.", "why": "Il mange à la pause près du fond ; en plein jour le fond devient déterminant. Transversale 5."},
+        {"key": "vitesse", "action": "Ralentis à l'extrême : quasi sur place, laisse le leurre travailler à la pause. Il peut mordre même sans courant.", "why": "Présentation ralentie à l'extrême quand courant et activité faibles ; touche à la pause/chute."},
+        {"key": "couleur", "action": "Alterne franchement voyant ↔ naturel (imitation fourrage). Ne tourne pas dans les demi-teintes.", "why": "Réglage fin, en dernier : contraste ou naturel selon lumière et eau."}
+      ]
+    },
+    "Hamachi": {
+      "levers": [
+        {"key": "taille", "action": "Downsize sur la taille du fourrage : F160 → F130 dès que les sardines sont petites.", "why": "Signal fort, documenté par plusieurs sources (F160→F130). Transversale 4."},
+        {"key": "vitesse", "action": "Passe du long jerk au SHORT jerk. Coups plus courts, plus serrés.", "why": "Passer au short jerk quand ça ne répond pas est explicitement documenté."},
+        {"key": "couche", "action": "Suis la lumière : surface au madzume, puis sub-surface quand le jour monte.", "why": "La lumière déplace la couche : surface au crépuscule/aube, sub-surface en journée. Transversale 5."},
+        {"key": "couleur", "action": "Jerks amples et lents + couleur plus visible en faible visibilité.", "why": "Ajustement de visibilité, en dernier."}
+      ]
+    },
+    "Aori-Ika": {
+      "levers": [
+        {"key": "descente", "action": "RALENTIS la descente : passe en shallow / super slow, allonge le temps de chute (~+50%).", "why": "Levier n°1 sur calamar qui suit sans saisir : allonger le temps d'attaque pendant le fall. La prise se fait à la chute."},
+        {"key": "vitesse", "action": "Adoucis l'animation : moins de jerks, plus doux (Egi-OH K stable) si peu actif ; darts amples (Q LIVE) seulement si actif.", "why": "Actifs → darts amples ; sollicités/peu actifs → descente stable + animation douce."},
+        {"key": "taille", "action": "Downsize l'egi sur petits individus : 2,5 → 1,8.", "why": "Downsizing documenté sur très petits calamars (2,5→1,8)."},
+        {"key": "couleur", "action": "Joue la grille couleur × lumière (naturel clair / keimura / glow selon l'heure et l'eau).", "why": "La couleur compte plus chez l'aori que sur les poissons ; grille lumière×eau."}
+      ]
+    },
+    "Suzuki": {
+      "levers": [
+        {"key": "couche", "action": "Bracketer la couche par countdown : compte la descente et fais varier. Si le niveau d'eau baisse, raccourcis le compte. Il peut être calé au fond même avec du bait en surface.", "why": "La sélection porte d'abord sur couche + trajectoire ; changement immédiat de couche quand un boil apparaît. Transversale 3/5."},
+        {"key": "taille", "action": "Réduis la silhouette : Solaria 100 → 85. Silhouette avant couleur.", "why": "Downsizing documenté (Solaria 100→85) ; sélection sur silhouette."},
+        {"key": "vitesse", "action": "Accompagne la dérive, récupération minimale ligne semi-tendue. Si les touches cessent quand le leurre quitte la bordure du courant, reste dans la veine.", "why": "Il mange ce qui dérive ; la trajectoire dans le courant est déterminante."},
+        {"key": "couleur", "action": "Transparents en eau claire/calme, plus de contraste si ridée ou trouble.", "why": "Réglage fin, en dernier."}
+      ]
+    },
+    "Kurodai": {
+      "levers": [
+        {"key": "approche", "action": "Ne fais JAMAIS passer la ligne au-dessus du poisson : change ton angle. Soleil haut = colle aux murs/bordures.", "why": "Réagit à la ligne elle-même et aux ombres ; méfiance avant tout. C'est l'approche, pas la config, qui débloque."},
+        {"key": "vitesse", "action": "Sur poisson qui suit sans mordre : soit ralentis/stoppe net, soit au contraire accélère franchement le dog-walk. Teste les deux.", "why": "Les deux réponses opposées marchent selon le jour ; cadence lente > rapide par défaut."},
+        {"key": "taille", "action": "Réduis la taille du topwater si les suivis restent sans engagement.", "why": "Downsizing en réponse au refus, après l'approche et la cadence."},
+        {"key": "couleur", "action": "Ajuste le contraste selon la luminosité et le fond.", "why": "Réglage fin, en dernier."}
+      ]
+    },
+    "Tachiuo": {
+      "levers": [
+        {"key": "couche", "action": "TROUVE la couche : compte la descente, teste des comptes différents. Dès qu'une touche vient, reproduis EXACTEMENT ce compte et n'en change plus. Il regarde vers le haut : ne présente jamais sous lui.", "why": "La couche est tout. Présenter sous sa couche est inefficace ; la couche remonte avec la baisse de lumière."},
+        {"key": "vitesse", "action": "Touches au fall : ralentis les phases de chute, laisse le leurre descendre dans SA couche.", "why": "Touches liées au fall dans la couche trouvée."},
+        {"key": "taille", "action": "Ajuste la taille si les touches manquées se répètent.", "why": "Réponse secondaire au refus."},
+        {"key": "couleur", "action": "Glow / contraste au crépuscule et de nuit.", "why": "Réglage fin selon lumière."}
+      ]
+    }
+  },
+  "lever_labels": {
+    "taille": "Taille du leurre",
+    "couche": "Couche d'eau",
+    "vitesse": "Vitesse / animation",
+    "descente": "Vitesse de descente",
+    "approche": "Approche & angle",
+    "couleur": "Couleur"
+  }
+}

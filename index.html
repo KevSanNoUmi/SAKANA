@@ -700,12 +700,48 @@
     .species-rail-dot{width:30px;height:30px;}
   }
 
+  /* ===== Arbre de décision ===== */
+  .tree-launch{all:unset; cursor:pointer; display:block; width:100%; box-sizing:border-box; margin-top:10px; text-align:center;
+    background:var(--flag); color:#fff; font-weight:600; font-size:14px; padding:12px 14px; border-radius:12px;}
+  .tree-launch:active{opacity:0.85;}
+  .tree-overlay{position:fixed; inset:0; z-index:200; background:rgba(8,12,18,0.86); backdrop-filter:blur(3px);
+    display:flex; align-items:flex-end; justify-content:center; padding:14px; animation:treeIn 0.18s ease;}
+  @keyframes treeIn{from{opacity:0} to{opacity:1}}
+  .tree-card{background:var(--surface); border:1px solid var(--border); border-radius:20px 20px 16px 16px; width:100%; max-width:520px;
+    padding:20px 18px calc(18px + env(safe-area-inset-bottom)); position:relative; box-shadow:0 -8px 40px rgba(0,0,0,0.5); animation:treeUp 0.22s ease;}
+  @keyframes treeUp{from{transform:translateY(24px)} to{transform:translateY(0)}}
+  .tree-close{all:unset; cursor:pointer; position:absolute; top:12px; right:14px; font-size:26px; line-height:1; color:var(--text-muted);}
+  .tree-cond{font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.05em; text-transform:uppercase; color:var(--text-muted); margin-bottom:12px; padding-right:30px;}
+  .tree-global{display:flex; gap:10px; align-items:flex-start; background:rgba(232,163,61,0.1); border:1px solid var(--accent-dim); border-radius:12px; padding:12px; margin-bottom:14px;}
+  .tree-global-icon{font-size:20px; line-height:1.2;}
+  .tree-global-msg{font-size:14px; font-weight:600; color:var(--accent); line-height:1.45;}
+  .tree-thin{background:rgba(196,105,79,0.12); border:1px solid var(--flag); border-radius:10px; padding:9px 11px; font-size:12px; color:var(--flag); margin-bottom:12px; line-height:1.4;}
+  .tree-step{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--text-muted); margin-bottom:4px;}
+  .tree-lever-name{font-family:'Fraunces', serif; font-weight:600; font-size:15px; color:var(--accent); margin-bottom:8px;}
+  .tree-boost{font-family:'IBM Plex Mono', monospace; font-size:10px; color:var(--flag); background:rgba(196,105,79,0.15); padding:1px 6px; border-radius:999px; vertical-align:middle;}
+  .tree-action{font-size:17px; line-height:1.5; color:var(--text); margin-bottom:10px; font-weight:500;}
+  .tree-why{font-size:12.5px; line-height:1.5; color:var(--text-muted); font-style:italic; margin-bottom:16px; padding-left:10px; border-left:2px solid var(--border);}
+  .tree-actions{display:flex; gap:10px;}
+  .tree-btn{all:unset; cursor:pointer; flex:1; text-align:center; padding:15px 12px; border-radius:14px; font-weight:600; font-size:15px;}
+  .tree-btn.ghost{background:var(--surface-2); color:var(--text);}
+  .tree-btn.ok{background:var(--ok); color:#0F1720;}
+  .tree-btn.ghost:active,.tree-btn.ok:active{opacity:0.82;}
+  .tree-tried{margin-top:14px; display:flex; flex-wrap:wrap; gap:5px; align-items:center; font-size:11px; color:var(--text-muted);}
+  .tree-tried-chip{font-family:'IBM Plex Mono', monospace; font-size:10px; padding:2px 8px; border-radius:999px; background:var(--surface-2); border:1px solid var(--border); color:var(--text-muted); text-decoration:line-through;}
+  .tree-end,.tree-solved-note{font-size:14px; line-height:1.55; color:var(--text); margin:12px 0 16px;}
+  .tree-badge{display:inline-block; font-family:'IBM Plex Mono', monospace; font-size:10px; text-transform:uppercase; letter-spacing:0.06em; padding:3px 10px; border-radius:999px; background:var(--surface-2); color:var(--text-muted); margin-bottom:6px;}
+  .tree-badge.is-ok{background:rgba(95,168,122,0.18); color:var(--ok);}
+  .tree-solved-title{font-family:'Fraunces', serif; font-weight:600; font-size:20px; color:var(--ok); margin:6px 0 8px;}
+  .tree-solved-lever{font-size:14px; color:var(--text); margin-bottom:4px;}
+  .tree-solved-lever strong{color:var(--accent);}
+  body.tree-open{overflow:hidden;}
 </style>
 </head>
 <body>
 
 <header id="headerZone"></header>
 <main id="mainZone"></main>
+<div id="treeZone"></div>
 <nav id="speciesRail" class="species-rail" aria-label="Progression fiche espèce"></nav>
 <button id="quickFab" class="quick-fab" onclick="openQuickAccess()" aria-label="Accès rapide">+</button>
 <button id="readingExit" class="reading-exit" onclick="toggleReadingMode()">Quitter Lecture</button>
@@ -1379,6 +1415,8 @@ let FULL_DATA_PROMISE = null;
 let LOAD_WARNINGS = [];
 let openSynthHome = false;
 let currentSpeciesId = null;
+let DTREE = {species:{},global_rules:[],lever_labels:{}};
+let treeState = null;   // {speciesName, levers:[...], idx, tried:[], done:false}
 let speciesTab = 0;   // 0 comportement / 1 leurres / 2 couleur / 3 animation
 let qcmState = null;
 let openStopId = null;
@@ -1653,6 +1691,7 @@ async function loadData(){
     fetchJSONRequired('decision_cache.json'),
   ]);
   DATA=core; TIDES=tides; SYNTH=core.synth_home||{species:{},transversals:null};
+  DTREE = await fetchJSONOptional('decision_tree.json', {species:{},global_rules:[],lever_labels:{}});
   resetPerfCaches(); hydrateDecisionCache(decisions); await route();
 }
 
@@ -2560,7 +2599,7 @@ function panelSynthese(sp, obs){
   const animTxt=ts.animation?shortTech(ts.animation):eat?shortTech(eat.txt):'Animation à adapter à la couche et au courant.';
   const colorTxt=ts.color?shortTech(ts.color,150):'Commencer naturel puis ajuster le niveau de visibilité.';
   const planBTxt=ux.fail|| (refuse?shortTech(refuse.txt,185):'Pas de signal : change d’abord la couche ou le rôle du leurre. Suivi/refus : réduis le signal et ne change qu’une variable.');
-  return `<div class="section" style="margin-top:0"><p class="section-title">Plan de jeu</p><div class="ux-section-lead">Le minimum utile avant le premier lancer.</div><div class="field-grid"><div class="field-card"><div class="field-label">Où</div><div class="field-value">${escHTML(whereTxt)}</div></div><div class="field-card"><div class="field-label">Quand</div><div class="field-value">${escHTML(whenTxt)}</div></div><div class="field-card"><div class="field-label">Combo</div><div class="field-value"><strong>${escHTML(p.code||'—')} · PE${escHTML(pe)}</strong><br>${escHTML(p.note||'')}</div></div><div class="field-card"><div class="field-label">Leurre / rôle</div><div class="field-value">${escHTML(lureTxt)}</div></div><div class="field-card wide"><div class="field-label">Comment</div><div class="field-value">${escHTML(animTxt)}</div></div><div class="field-card wide"><div class="field-label">Couleur de départ</div><div class="field-value">${escHTML(colorTxt)}</div></div></div><div class="field-planb"><div class="field-label">Si ça ne donne rien</div><div class="field-value">${escHTML(planBTxt)}</div></div>${speciesEvidenceStripHTML(sp)}<div class="field-cta"><div class="txt">Tu as les conditions du moment ? Le QCM transforme ce plan en config plus précise.</div><button onclick="startQCM()">Trouver ma config →</button></div><div id="qcmZone" style="margin-top:10px"></div></div><div class="section"><p class="section-title">Logger la session</p><div id="logZone">${logFormHTML(sp)}</div></div>`;
+  return `<div class="section" style="margin-top:0"><p class="section-title">Plan de jeu</p><div class="ux-section-lead">Le minimum utile avant le premier lancer.</div><div class="field-grid"><div class="field-card"><div class="field-label">Où</div><div class="field-value">${escHTML(whereTxt)}</div></div><div class="field-card"><div class="field-label">Quand</div><div class="field-value">${escHTML(whenTxt)}</div></div><div class="field-card"><div class="field-label">Combo</div><div class="field-value"><strong>${escHTML(p.code||'—')} · PE${escHTML(pe)}</strong><br>${escHTML(p.note||'')}</div></div><div class="field-card"><div class="field-label">Leurre / rôle</div><div class="field-value">${escHTML(lureTxt)}</div></div><div class="field-card wide"><div class="field-label">Comment</div><div class="field-value">${escHTML(animTxt)}</div></div><div class="field-card wide"><div class="field-label">Couleur de départ</div><div class="field-value">${escHTML(colorTxt)}</div></div></div><div class="field-planb"><div class="field-label">Si ça ne donne rien</div><div class="field-value">${escHTML(planBTxt)}</div>${DTREE.species[sp.name_fr]?`<button class="tree-launch" onclick="startTree('${escAttr(sp.name_fr)}')">Ça ne mord pas ? — Qu'est-ce que je change ?</button>`:''}</div>${speciesEvidenceStripHTML(sp)}<div class="field-cta"><div class="txt">Tu as les conditions du moment ? Le QCM transforme ce plan en config plus précise.</div><button onclick="startQCM()">Trouver ma config →</button></div><div id="qcmZone" style="margin-top:10px"></div></div><div class="section"><p class="section-title">Logger la session</p><div id="logZone">${logFormHTML(sp)}</div></div>`;
 }
 function factCard(o){
   const tags = Object.entries(o.tags||{}).map(([d,v])=>`<span class="tag">${escHTML(DIM_LABELS[d]||d)}: ${escHTML(Array.isArray(v)?v.join(' · '):v)}</span>`).join('');
@@ -2734,6 +2773,137 @@ function consensusCard(pair){
 }
 
 /* ============ QCM ============ */
+/* ===================== ARBRE DE DÉCISION — "ça ne mord pas, quoi changer ?" =====================
+   Déroule les leviers un par un, dans un ordre adapté aux conditions du moment.
+   Sans saisie de config : part de l'espèce + marée + moment actifs. Mémoire de session (leviers épuisés). */
+
+function activeConditions(){
+  // récupère marée + moment depuis le QCM en cours si dispo, sinon depuis le port/heure actifs
+  const c = {maree:null, moment_jour:null, couleur_eau:null};
+  if(qcmState && qcmState.answers){
+    c.maree = qcmState.answers.maree || null;
+    c.moment_jour = qcmState.answers.moment_jour || null;
+    c.couleur_eau = qcmState.answers.couleur_eau || null;
+  }
+  if(!c.maree){ const ap=getActivePort(); if(ap && typeof tideState==='function'){ try{ c.maree = tideState(ap, new Date()); }catch(e){} } }
+  return c;
+}
+
+function buildTreeLevers(speciesName){
+  const sp = DTREE.species[speciesName];
+  if(!sp || !sp.levers) return {levers:[], globalMsg:null, note:null};
+  const cond = activeConditions();
+  let levers = sp.levers.map(l=>Object.assign({}, l));
+  let globalMsg = null;
+
+  // Règles globales : étale => message d'attente ; eau trouble => couleur remonte
+  (DTREE.global_rules||[]).forEach(r=>{
+    if(r.if==='maree=étale' && cond.maree==='étale') globalMsg = {message:r.message, why:r.why};
+    if(r.if==='couleur_eau=trouble' && cond.couleur_eau==='trouble' && r.boost){
+      const i = levers.findIndex(l=>l.key===r.boost);
+      if(i>0){ const [m]=levers.splice(i,1); levers.unshift(m); m._boosted=r.why; }
+    }
+  });
+
+  return {levers, globalMsg, note: sp.note||null};
+}
+
+function dataThinFor(speciesName){
+  // honnêteté : espèces à corpus très mince
+  const counts = (DATA.observation_counts)||{};
+  const sp = DATA.species.find(s=>s.name_fr===speciesName);
+  if(!sp) return false;
+  const n = counts[String(sp.id)] || (DATA.observations? DATA.observations.filter(o=>o.species===speciesName).length : 0);
+  return n < 6;
+}
+
+function startTree(speciesName){
+  const {levers, globalMsg, note} = buildTreeLevers(speciesName);
+  treeState = {speciesName, levers, idx:0, tried:[], done:false, globalMsg, note, solved:false, solvedLever:null};
+  renderTree();
+}
+
+function treeNext(){
+  if(!treeState) return;
+  const cur = treeState.levers[treeState.idx];
+  if(cur) treeState.tried.push(cur.key);
+  treeState.idx++;
+  renderTree();
+}
+function treeSolved(){
+  if(!treeState) return;
+  treeState.solved = true;
+  treeState.solvedLever = treeState.levers[treeState.idx] || null;
+  renderTree();
+}
+function closeTree(){ treeState=null; const z=document.getElementById('treeZone'); if(z) z.innerHTML=''; document.body.classList.remove('tree-open'); }
+
+function renderTree(){
+  const zone = document.getElementById('treeZone');
+  if(!zone || !treeState){ if(zone) zone.innerHTML=''; return; }
+  document.body.classList.add('tree-open');
+  const sp = treeState.speciesName;
+
+  // Cas résolu
+  if(treeState.solved){
+    const lv = treeState.solvedLever;
+    zone.innerHTML = `<div class="tree-overlay"><div class="tree-card is-solved">
+      <div class="tree-badge is-ok">Ça a marché</div>
+      <div class="tree-solved-title">Prise sur ${sp} 🎣</div>
+      ${lv?`<div class="tree-solved-lever">Levier gagnant : <strong>${DTREE.lever_labels[lv.key]||lv.key}</strong></div>`:''}
+      <p class="tree-solved-note">Logger cette prise (config gagnante, spot, conditions) fera d'elle une source terrain — on branchera ça bientôt.</p>
+      <div class="tree-actions">
+        <button class="tree-btn ghost" onclick="closeTree()">Fermer</button>
+        <button class="tree-btn" onclick="(treeState.solved=false,renderTree())">Continuer la pêche</button>
+      </div>
+    </div></div>`;
+    return;
+  }
+
+  // Message global prioritaire (ex. étale) — affiché en tête la première fois
+  const globalBlock = (treeState.globalMsg && treeState.idx===0)
+    ? `<div class="tree-global"><div class="tree-global-icon">⏸</div><div><div class="tree-global-msg">${treeState.globalMsg.message}</div><div class="tree-why">${treeState.globalMsg.why}</div></div></div>`
+    : '';
+
+  // Fin de l'arbre
+  if(treeState.idx >= treeState.levers.length){
+    zone.innerHTML = `<div class="tree-overlay"><div class="tree-card">
+      <div class="tree-badge">Tous les leviers essayés</div>
+      ${globalBlock}
+      <p class="tree-end">Tu as parcouru tous les leviers documentés pour le ${sp}. Si rien n'a donné, c'est souvent que le poisson n'est pas là ou pas en activité : change de spot, ou attends la prochaine fenêtre (mouvement d'eau + faible lumière).</p>
+      <div class="tree-actions">
+        <button class="tree-btn ghost" onclick="closeTree()">Fermer</button>
+        <button class="tree-btn" onclick="(treeState.idx=0,treeState.tried=[],renderTree())">↺ Reprendre du début</button>
+      </div>
+    </div></div>`;
+    return;
+  }
+
+  const lv = treeState.levers[treeState.idx];
+  const cond = activeConditions();
+  const condLine = [sp, cond.maree&&('marée '+cond.maree), cond.moment_jour].filter(Boolean).join(' · ');
+  const thin = dataThinFor(sp);
+  const stepNum = treeState.idx+1, total = treeState.levers.length;
+  const triedChips = treeState.tried.length
+    ? `<div class="tree-tried">Déjà essayé : ${treeState.tried.map(k=>`<span class="tree-tried-chip">${DTREE.lever_labels[k]||k}</span>`).join('')}</div>` : '';
+
+  zone.innerHTML = `<div class="tree-overlay"><div class="tree-card">
+    <button class="tree-close" onclick="closeTree()" aria-label="Fermer">×</button>
+    <div class="tree-cond">${condLine}</div>
+    ${globalBlock}
+    ${thin?`<div class="tree-thin">⚠ Peu de données terrain sur cette espèce — ces leviers sont des repères généraux, à confirmer sur place.</div>`:''}
+    <div class="tree-step">Levier ${stepNum}/${total}</div>
+    <div class="tree-lever-name">${DTREE.lever_labels[lv.key]||lv.key}${lv._boosted?' <span class="tree-boost">↑ eau trouble</span>':''}</div>
+    <div class="tree-action">${lv.action}</div>
+    <div class="tree-why">${lv._boosted||lv.why}</div>
+    <div class="tree-actions">
+      <button class="tree-btn ghost" onclick="treeNext()">Fait, toujours rien →</button>
+      <button class="tree-btn ok" onclick="treeSolved()">Ça a marché !</button>
+    </div>
+    ${triedChips}
+  </div></div>`;
+}
+
 function startQCM(){ qcmState = {step:0, answers:{}}; renderQCM(); }
 
 function renderQCM(){

@@ -1,7 +1,7 @@
 // Carnet Pêche JP — service worker V6.5.12 UX carte + cibles tactiles
 // Démarrage : noyau léger + décisions pré-calculées. Le corpus complet est chargé à la demande.
 const CACHE_PREFIX = 'carnet-peche-jp-';
-const CACHE = 'carnet-peche-jp-v6-5-12-ux-carte-20260814';
+const CACHE = 'carnet-peche-jp-v6-5-13-arbre-20260815';
 
 const CRITICAL = [
   './',
@@ -16,6 +16,7 @@ const OPTIONAL = [
   './data.json',
   './synthesis.json',
   './lure_typology.json',
+  './decision_tree.json',
   './manifest.webmanifest',
   './apple-touch-icon.png',
   './icon-192.png',
@@ -42,7 +43,7 @@ self.addEventListener('activate', (event) => {
 function isSameOriginData(pathname) {
   return [
     'app_core.json','decision_cache.json','tides_2026.json',
-    'data.json','synthesis.json','lure_typology.json'
+    'data.json','synthesis.json','lure_typology.json','decision_tree.json'
   ].some((name) => pathname.endsWith('/' + name) || pathname.endsWith(name));
 }
 
