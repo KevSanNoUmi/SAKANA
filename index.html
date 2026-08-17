@@ -36,9 +36,9 @@
     /* Remplissage des blocs en verre. Sous .55 le contenu du dessous transparaît trop et
        le texte devient illisible ; au-dessus de .70 le panneau redevient opaque et l'effet
        ne sert plus à rien. */
-    --glass-panel:rgba(23,34,51,.58);
-    --glass-panel-soft:rgba(30,44,64,.52);
-    --glass-edge:inset 0 1px 0 rgba(255,255,255,.10);
+    --glass-panel:rgba(23,34,51,.46);
+    --glass-panel-soft:rgba(30,44,64,.42);
+    --glass-edge:inset 0 1px 0 rgba(255,255,255,.16), inset 0 -1px 0 rgba(0,0,0,.22);
     --glass-lift:0 8px 32px rgba(0,0,0,.42), 0 2px 8px rgba(0,0,0,.24);
     --safe-top:env(safe-area-inset-top,0px); --safe-bottom:env(safe-area-inset-bottom,0px);
     --ease-out:cubic-bezier(0.23, 1, 0.32, 1); --ease-in-out:cubic-bezier(0.77, 0, 0.175, 1); --ease-drawer:cubic-bezier(0.32, 0.72, 0, 1);
@@ -108,14 +108,21 @@
   .pad-grid{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:12px;}
   .pad{background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:12px; cursor:pointer;
     box-shadow:0 2px 0 rgba(0,0,0,.20), 0 4px 10px rgba(0,0,0,.22); transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out), opacity .15s, border-color .15s;}
-  .pad:not(.open):active{transform:translateY(2px); box-shadow:0 1px 0 rgba(0,0,0,.20), 0 2px 5px rgba(0,0,0,.20);}
+    /* Enfoncement plus profond : 4px et une ombre qui se rapproche vraiment de la surface.
+     A 2px sur un panneau de verre, le geste ne se lisait plus. */
+  .pad:not(.open):active{transform:translateY(4px) scale(.985); box-shadow:var(--glass-edge), 0 1px 3px rgba(0,0,0,.42);}
   .pad.open{box-shadow:none;}
   .pad.open{border-color:var(--accent); background:var(--surface-2);}
   .pad .pad-title{font-family:'Fraunces', serif; font-weight:600; font-size:0.875rem; line-height:1.25;}
   .pad .pad-sub{font-family:'IBM Plex Mono', monospace; font-size:0.6875rem; color:var(--text-muted); margin-top:5px;}
   .pad.active-port .pad-sub::before{content:"◉ "; color:var(--ok);}
 
-  .pad-detail{grid-column:1 / -1; background:var(--surface-2); border:1px solid var(--accent); border-radius:12px; padding:12px 12px; margin-top:-2px; font-size:0.8125rem;}
+  /* overflow:clip et non hidden : clip decoupe selon le border-radius SANS creer de
+     conteneur de defilement, donc le position:sticky de la barre contextuelle continue
+     de fonctionner contre la page. Verifie : comportement sticky identique avant/apres.
+     Sans ca, les enfants pleine largeur (marges negatives) sortaient leurs angles droits
+     par-dessus le coin arrondi vert. */
+  .pad-detail{grid-column:1 / -1; background:var(--surface-2); border:1px solid var(--accent); border-radius:12px; padding:12px 12px; margin-top:-2px; font-size:0.8125rem; overflow:clip;}
   .pad-detail .k{font-family:'IBM Plex Mono', monospace; font-size:0.6875rem; text-transform:uppercase; color:var(--text-muted); margin:8px 0 5px;}
   .pad-detail .k:first-child{margin-top:0;}
   .pad-detail .chips{display:flex; flex-wrap:wrap; gap:8px;}
@@ -255,7 +262,10 @@
   }
 
   @media(max-width:390px){
-    .species-tabs-wrap{padding-left:14px;padding-right:14px;margin-left:-18px;margin-right:-18px;}
+    /* 18px et non 14 : le bandeau est plein cadre (marges negatives), son padding doit
+       redonner exactement le retrait de main, sinon la ligne qui porte le bouton Focus
+       se decale de 4px et rompt l'alignement avec les cartes. */
+    .species-tabs-wrap{padding-left:18px;padding-right:18px;margin-left:-18px;margin-right:-18px;}
     .species-tab{padding:8px 12px;font-size:0.6875rem;}
   }
 
@@ -366,7 +376,7 @@
   .tide-focus-card .meta{font-size:0.6875rem;color:var(--text-muted);margin-top:2px;line-height:1.4;}
   .tide-focus-card .score{font-family:'Fraunces',serif;font-size:1.5rem;line-height:1;color:var(--accent);text-align:right;}
   .tide-focus-card .hint{grid-column:1/-1;font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;color:var(--text-muted);border-top:1px solid var(--border);padding-top:6px;}
-  .fish-window-head{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:7px;}
+  .fish-window-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;margin-bottom:8px;}
   .fish-window-name{font-family:'Fraunces',serif;font-size:0.875rem;color:var(--text);}
   .fish-window-base{display:flex;gap:4px;flex-wrap:wrap;margin-top:3px;}
   .fish-window-sample{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;color:var(--text-muted);margin-top:4px;}
@@ -382,7 +392,12 @@
   .window-method{font-size:0.6875rem;line-height:1.45;color:var(--text-muted);margin:7px 0 3px;}
   .window-method strong{color:var(--text);}
   .window-score-high{color:var(--ok)!important}.window-score-mid{color:var(--accent)!important}.window-score-low{color:var(--text-muted)!important}
-  .window-top{appearance:none;width:100%;text-align:left;color:inherit;font:inherit;cursor:pointer;transition:border-color .15s,background .15s;}
+  /* Bloc « meilleure fenetre » centre comme demande : le libelle, l'espece, l'horaire
+     et l'indice s'empilent sur un axe unique au lieu d'etre pousses aux deux bords. */
+  .window-top{appearance:none;width:100%;text-align:center;color:inherit;font:inherit;cursor:pointer;transition:border-color .15s,background .15s;
+    display:flex;flex-direction:column;align-items:center;gap:4px;}
+  .window-top .rank{text-align:center;}
+  .window-top .fish-window-peak,.window-top .pct{text-align:center;}
   .window-top:active,.window-top.selected{background:var(--surface-2);border-color:currentColor;}
   .window-top .tap{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;color:var(--text-muted);margin-top:5px;}
   .window-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;}
@@ -390,7 +405,10 @@
   .window-plan-btn.primary{border-color:var(--accent);color:var(--accent);background:transparent;}
   .window-plan-btn.selected{border-color:var(--ok);color:var(--ok);}
   .window-plan{margin:12px 0 8px;background:var(--surface-2);border:1px solid var(--border);border-radius:16px;padding:12px 12px;scroll-margin-top:90px;}
-  .window-plan-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+  .window-plan-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding-bottom:12px;border-bottom:1px solid var(--border);position:relative;}
+  .window-plan-head>div:first-child{display:flex;flex-direction:column;align-items:center;gap:2px;}
+  .window-plan-score{display:flex;flex-direction:column;align-items:center;}
+  .window-plan-head .window-close{position:absolute;top:0;right:0;}
   .window-plan-kicker{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;text-transform:uppercase;letter-spacing:.08em;color:var(--text-muted);}
   .window-plan-title{font-family:'Fraunces',serif;font-size:1.1875rem;line-height:1.15;color:var(--text);margin-top:3px;}
   .window-plan-time{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;color:var(--accent);margin-top:3px;}
@@ -450,9 +468,12 @@
   .loadout-head .home-section-title{flex:0 0 auto;}
   .loadout-rule{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;color:var(--flag);text-align:right;flex:1 1 auto;}
   .loadout-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  .loadout-card{background:linear-gradient(180deg,var(--surface),rgba(23,34,51,.72));border:1px solid var(--border);border-radius:16px;padding:12px;cursor:pointer;}
+  /* V6.5.23 — la carte combo ne porte plus que son code. Carre, centre, cote a cote ;
+     tout le detail reste accessible au clic. */
+  .loadout-card{appearance:none;width:100%;aspect-ratio:1;display:grid;place-items:center;text-align:center;
+    border:1px solid var(--border);border-radius:16px;padding:12px;cursor:pointer;color:inherit;font:inherit;}
   .loadout-card.open{border-color:var(--accent);background:var(--surface-2);}
-  .loadout-code{font-family:'Fraunces',serif;font-weight:700;font-size:1.375rem;color:var(--accent);line-height:1;}
+  .loadout-code{font-family:'Fraunces',serif;font-weight:500;font-size:1.5rem;color:var(--accent);line-height:1.1;letter-spacing:-0.015em;}
   .loadout-role{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;letter-spacing:.06em;color:var(--text-muted);margin:4px 0 9px;}
   .loadout-rod{font-size:0.75rem;font-weight:600;line-height:1.35;}
   .loadout-reel{font-size:0.6875rem;color:var(--text-muted);line-height:1.4;margin-top:3px;}
@@ -539,7 +560,7 @@
   .behav-block{background:var(--surface);border:1px solid var(--border);border-left:2px solid var(--accent);border-radius:0 12px 12px 0;}
   .behav-title{color:var(--text);}
   .synth-box{background:var(--surface);border:1px solid var(--border);border-left:2px solid var(--accent);border-radius:0 12px 12px 0;}
-  @media(max-width:390px){.loadout-grid{grid-template-columns:1fr}.gear-detail-grid{grid-template-columns:1fr}.field-grid{grid-template-columns:1fr}.field-card.wide{grid-column:auto}.signal-grid,.pink-chart{grid-template-columns:1fr}.ux-hero-top{align-items:flex-start}.ux-combo-meta{display:none}}
+  @media(max-width:390px){.gear-detail-grid{grid-template-columns:1fr}.field-grid{grid-template-columns:1fr}.field-card.wide{grid-column:auto}.signal-grid,.pink-chart{grid-template-columns:1fr}.ux-hero-top{align-items:flex-start}.ux-combo-meta{display:none}}
 
   .consensus-pair{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:12px; margin-bottom:10px;}
   .consensus-pair.is-consensus{border-color:var(--ok);}
@@ -806,7 +827,7 @@
   .tree-launch{all:unset; cursor:pointer; display:block; width:100%; box-sizing:border-box; margin-top:10px; text-align:center;
     background:var(--flag); color:#fff; font-weight:600; font-size:0.875rem; padding:12px 12px; border-radius:12px;
     box-shadow:0 3px 0 rgba(0,0,0,.28), 0 5px 12px rgba(0,0,0,.30); transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out);}
-  .tree-launch:active{transform:translateY(2px); box-shadow:0 1px 0 rgba(0,0,0,.28), 0 2px 6px rgba(0,0,0,.26);}
+  .tree-launch:active{transform:translateY(4px) scale(.985); box-shadow:0 1px 2px rgba(0,0,0,.44);}
   .tree-overlay{position:fixed; inset:0; z-index:200; background:rgba(8,12,18,0.86); backdrop-filter:blur(14px) saturate(140%);
     display:flex; align-items:flex-end; justify-content:center; padding:12px;
     opacity:0; transition:opacity .18s var(--ease-out);}
@@ -831,7 +852,7 @@
     box-shadow:0 3px 0 rgba(0,0,0,.26), 0 5px 12px rgba(0,0,0,.28); transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out);}
   .tree-btn.ghost{background:var(--surface-2); color:var(--text);}
   .tree-btn.ok{background:var(--ok); color:#0F1720;}
-  .tree-btn.ghost:active,.tree-btn.ok:active{transform:translateY(2px); box-shadow:0 1px 0 rgba(0,0,0,.26), 0 2px 6px rgba(0,0,0,.24);}
+  .tree-btn.ghost:active,.tree-btn.ok:active{transform:translateY(4px) scale(.985); box-shadow:0 1px 2px rgba(0,0,0,.42);}
   .tree-tried{margin-top:14px; display:flex; flex-wrap:wrap; gap:4px; align-items:center; font-size:0.6875rem; color:var(--text-muted);}
   .tree-tried-chip{font-family:'IBM Plex Mono', monospace; font-size:0.6875rem; padding:2px 8px; border-radius:999px; background:var(--surface-2); border:1px solid var(--border); color:var(--text-muted); text-decoration:line-through;}
   .tree-end,.tree-solved-note{font-size:0.875rem; line-height:1.55; color:var(--text); margin:12px 0 16px;}
@@ -887,9 +908,20 @@
      ligne (399px pour 347 utiles). Le skill demande que la mise en page grandisse ou passe
      à la ligne, jamais qu'elle tronque : on enroule sur deux rangées plutôt que de cacher
      « Comprendre » derrière un défilement horizontal qu'on ne remarque pas. */
-  .species-tabs{flex-wrap:wrap;row-gap:8px;}
+  /* V6.5.23 — textes explicatifs d'accompagnement. Ils s'adressent a quelqu'un qui
+     decouvre le domaine ; l'utilisateur le connait. Masques et non supprimes : le
+     contenu reste dans le code, retirer cette ligne les fait revenir tels quels. */
+  .ux-section-lead,.hint,.trip-map-note,.field-cta .txt{display:none;}
+
+  /* V6.5.23 — repartition imposee : trois onglets puis deux. En laissant le retour a
+     la ligne libre, la coupure dependait de la largeur des libelles. Un tiers de la
+     largeur par onglet fixe la premiere ligne a trois ; la seconde en recoit deux,
+     centrees par justify-content. */
+  .species-tabs{flex-wrap:wrap;row-gap:8px;justify-content:center;}
+  .species-tabs .species-tab{flex:0 0 calc((100% - 16px) / 3);}
   @media(max-width:390px){
     .species-tabs{gap:4px;row-gap:8px;}
+    .species-tabs .species-tab{flex:0 0 calc((100% - 8px) / 3);}
     .species-tab{padding:8px 8px;}
   }
 
@@ -933,9 +965,9 @@
      dessous de 130% de saturation le flou délave les couleurs vers le gris. */
   .pad,.species-card,.pad-detail,.trip-map-wrap,.loadout-card{
     background:var(--glass-panel);
-    backdrop-filter:blur(20px) saturate(160%);
-    -webkit-backdrop-filter:blur(20px) saturate(160%);
-    box-shadow:var(--glass-edge), 0 4px 20px rgba(0,0,0,.26);
+    backdrop-filter:blur(28px) saturate(185%) brightness(108%);
+    -webkit-backdrop-filter:blur(28px) saturate(185%) brightness(108%);
+    box-shadow:var(--glass-edge), 0 10px 30px rgba(0,0,0,.38), 0 2px 6px rgba(0,0,0,.22);
   }
   .pad.open{background:var(--glass-panel-soft);}
 
@@ -943,8 +975,14 @@
      lisibilité et doublerait le coût de composition pour rien : elles reçoivent un voile. */
   .pad-detail .dest-context-sticky,.pad-detail .tide-focus-card{
     backdrop-filter:none; -webkit-backdrop-filter:none;
-    background:rgba(30,44,64,.82);
   }
+  /* Cette barre est sticky : elle passe PAR-DESSUS le graphique en defilant. A 82%
+     d'opacite, le titre et la bande d'especes transparaissaient au travers et
+     salissaient les coins. Elle doit etre franchement opaque. */
+  /* Rayon interieur = 12px du panneau moins son bord de 1px. Sert de repli la ou
+     overflow:clip n'existe pas ; inoffensif ailleurs. */
+  .pad-detail .dest-context-sticky{background:#1B2942; box-shadow:0 6px 16px rgba(0,0,0,.34); border-radius:11px 11px 0 0;}
+  .pad-detail .tide-focus-card{background:rgba(255,255,255,.06);}
 
   /* Contenus imbriqués : pas de second niveau de verre, juste un voile qui les décolle
      du panneau qui les porte. */
@@ -968,8 +1006,45 @@
      haut (le nom), ni en bas (le japonais). Un decalage horizontal desaxerait le texte.
      La seule mise en page qui ne puisse pas entrer en collision est de reserver au
      bouton sa propre bande en haut de la carte. */
-  .species-card{padding-top:56px;}
-  .species-card .peek-btn{top:8px; right:8px;}
+  /* La bande reservee par padding-top sautait en densite compacte, ou
+     body.density-compact .species-card{padding:12px} est plus specifique. On sort donc
+     le bouton du positionnement absolu : place dans le flux, il ne peut plus recouvrir
+     le texte, quelle que soit la densite. */
+  .species-card{display:flex; flex-direction:column;
+    transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out), opacity .15s, border-color .15s;}
+  .species-card:active{transform:translateY(4px) scale(.985); box-shadow:var(--glass-edge), 0 1px 3px rgba(0,0,0,.42);}
+  .quick-fab:active{transform:translateY(3px) scale(.94);}
+  /* Ordre visuel : nom romaji en haut, japonais dessous, pastille repoussee dans le
+     coin inferieur droit par margin-top:auto. Le bouton reste dans le flux — il occupe
+     donc sa propre place et ne peut pas recouvrir le texte, quelle que soit la densite.
+     Le DOM le place en premier ; `order` le renvoie en dernier sans toucher au markup. */
+  .species-card .name{order:0; margin-top:0;}
+  .species-card .jp{order:1; margin-bottom:0;}
+  .species-card .peek-btn{order:2; align-self:flex-end; margin:12px 0 0; position:static;}
+
+  /* Pastille en verre — commune aux cartes espece ET aux fiches destination.
+     Pas de backdrop-filter : la carte en est deja une, et empiler deux flous fait
+     echantillonner a l'interieur du flou du dessous — l'image se delave et le cout de
+     composition double. L'effet vient donc du modele : degrade de bille, arete
+     speculaire en haut, ombre interne en bas, halo exterieur. */
+  .peek-btn{
+    background:linear-gradient(160deg, rgba(255,255,255,.20) 0%, rgba(255,255,255,.06) 42%, rgba(0,0,0,.22) 100%);
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.42),
+               inset 0 -2px 4px rgba(0,0,0,.30),
+               0 4px 12px rgba(0,0,0,.34),
+               0 0 0 1px rgba(var(--accent-rgb),.16);
+    color:var(--accent);
+    text-shadow:0 1px 2px rgba(0,0,0,.5);
+    transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out);
+  }
+  .peek-btn:active{
+    transform:translateY(2px) scale(.94);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.28),
+               inset 0 -1px 3px rgba(0,0,0,.34),
+               0 1px 4px rgba(0,0,0,.4),
+               0 0 0 1px rgba(var(--accent-rgb),.28);
+  }
 
   /* Chaque carte prend la hauteur de son contenu. Étirer une carte courte sur la hauteur
      de sa voisine crée des blocs vides qui ne veulent rien dire. */
@@ -2465,9 +2540,8 @@ function renderHome(){
   const ap = getActivePort();
   const focusTxt=focusSpeciesName?` · Focus : ${focusSpeciesName}`:'';
   document.getElementById('headerZone').innerHTML = `
-    <p class="eyebrow">Base de connaissance</p>
     <h1>Carnet Pêche JP</h1>
-    <p class="sub">${ap && PORTS[ap] ? 'Port actif : '+PORTS[ap].label+' — '+(tideState(ap,new Date()) ? 'marée '+tideState(ap,new Date()) : 'table officielle hors période embarquée') : 'Marées · loadout · leurres ≤50 g · terrain'}${escHTML(focusTxt)}</p>
+    
   `;
   syncStickyHeaderOffset();
 
@@ -2499,7 +2573,7 @@ function renderHome(){
       ${focusSpeciesName?`<div class="focus-banner"><div class="copy">Focus actif · <strong>${escHTML(focusSpeciesName)}</strong><br>Les étapes pertinentes sont mises en avant.</div><button onclick="clearSpeciesFocus()">Retirer</button></div>`:''}
       ${tripStops.length ? tripContent : `<div class="empty">Aucune étape.</div>`}
     </div>
-    <div class="home-section"><div class="loadout-head"><p class="home-section-title" style="margin:0">Ma valise — 2 combos</p><div class="loadout-rule">PLAFOND PROJET · 50 G MAX</div></div>${DATA.combos.length ? `<div class="loadout-grid">${combosGrid}</div>` : `<div class="empty">Aucun combo.</div>`}</div>
+    <div class="home-section"><p class="home-section-title">Combos</p>${DATA.combos.length ? `<div class="loadout-grid">${combosGrid}</div>` : `<div class="empty">Aucun combo.</div>`}</div>
     <div class="home-section"><p class="home-section-title">Espèces documentées</p>${speciesGrid ? `<div class="species-grid">${speciesGrid}</div>` : `<div class="empty">Aucune espèce documentée pour l'instant.</div>`}</div>
     ${SYNTH.transversals ? `<div class="home-section"><p class="home-section-title">Grandes lignes</p><div class="pad-grid"><div class="pad ${openSynthHome?'open':''}" style="grid-column:1 / -1;" onclick="openSynthHome=!openSynthHome;renderHome()"><div class="pad-title">Les 5 transversales — toutes espèces</div><div class="pad-sub">${SYNTH.based_on||''}</div></div>${openSynthHome ? `<div class="pad-detail" onclick="event.stopPropagation()"><div class="synth-box" style="border:none;padding:0;background:transparent;">${mdLite(SYNTH.transversals)}</div></div>` : ''}</div></div>` : ''}
     ${nSessions ? `<div class="home-section"><p class="home-section-title">Terrain</p><div class="log-count">${nSessions} session(s) loggée(s) sur ce téléphone</div><button class="log-export" onclick="exportSessions()">⇩ Exporter le log (à passer dans pipeline.py import-log)</button></div>` : ''}
@@ -2680,9 +2754,8 @@ function toggleStop(id){
 
 
 function comboHomeCard(c){
-  const x=c.setup||{}, code=x.code||c.name, rod=x.rod||{}, reel=x.reel||{}, line=x.line||{};
-  const max = code==='MH' ? `${rod.lure_min_g||12}–${rod.lure_max_nominal_g||45} g · 46–50 haute charge` : `${rod.lure_min_g||8}–${rod.lure_max_nominal_g||30} g`;
-  return `<div class="loadout-card ${openComboName===c.name?'open':''}" onclick="toggleCombo('${escAttr(c.name)}')"><div class="loadout-code">${escHTML(code)}</div><div class="loadout-role">${escHTML(x.role||c.description||'')}</div><div class="loadout-rod">${escHTML(rod.model||c.name)}</div><div class="loadout-reel">${escHTML(reel.model||'')} · PE${escHTML(line.size||'—')}</div><div class="loadout-spec"><span class="gear-pill primary">${escHTML(max)}</span></div></div>${openComboName===c.name?comboDetail(c):''}`;
+  const x=c.setup||{}, code=x.code||c.name;
+  return `<button type="button" class="loadout-card ${openComboName===c.name?'open':''}" onclick="toggleCombo('${escAttr(c.name)}')"><span class="loadout-code">Combo ${escHTML(code)}</span></button>${openComboName===c.name?comboDetail(c):''}`;
 }
 
 function comboDetail(c){
