@@ -47,7 +47,7 @@
        ne sert plus à rien. */
     --glass-panel:rgba(23,34,51,.46);
     --glass-panel-soft:rgba(30,44,64,.42);
-    --glass-edge:inset 0 1px 0 rgba(255,255,255,.16), inset 0 -1px 0 rgba(0,0,0,.22);
+    --glass-edge:inset 0 1px 0 rgba(255,255,255,.24), inset 0 -1px 0 rgba(0,0,0,.30), 0 4px 14px rgba(0,0,0,.28);
     --glass-lift:0 8px 32px rgba(0,0,0,.42), 0 2px 8px rgba(0,0,0,.24);
     --safe-top:env(safe-area-inset-top,0px); --safe-bottom:env(safe-area-inset-bottom,0px);
     --ease-out:cubic-bezier(0.23, 1, 0.32, 1); --ease-in-out:cubic-bezier(0.77, 0, 0.175, 1); --ease-drawer:cubic-bezier(0.32, 0.72, 0, 1);
@@ -87,8 +87,8 @@
      bande opaque. Le trait de 1px est remplacé par un dégradé d'arête : le skill proscrit
      les séparateurs durs sous une chrome flottante. */
   header{position:sticky; top:0; z-index:10; padding:calc(16px + var(--safe-top)) 16px 12px;
-    background:var(--glass-tint); backdrop-filter:blur(20px) saturate(180%);
-    -webkit-backdrop-filter:blur(20px) saturate(180%); box-shadow:var(--glass-edge);}
+    background:var(--glass-tint); backdrop-filter:blur(20px) saturate(200%);
+    -webkit-backdrop-filter:blur(20px) saturate(200%); box-shadow:var(--glass-edge);}
   header::after{content:''; position:absolute; left:0; right:0; bottom:-16px; height:16px;
     background:linear-gradient(180deg, rgba(15,23,32,.55), transparent); pointer-events:none;}
   .eyebrow{font-family:'IBM Plex Mono', monospace; font-size:0.6875rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--label); opacity:.72; margin:0 0 6px;}
@@ -172,7 +172,7 @@
     box-shadow:0 2px 0 rgba(0,0,0,.20), 0 4px 10px rgba(0,0,0,.22); transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out), opacity .15s, border-color .15s;}
     /* Enfoncement plus profond : 4px et une ombre qui se rapproche vraiment de la surface.
      A 2px sur un panneau de verre, le geste ne se lisait plus. */
-  .pad:not(.open):active{transform:translateY(4px) scale(.985); box-shadow:var(--glass-edge), 0 1px 3px rgba(0,0,0,.42);}
+  .pad:not(.open):active{transform:translateY(5px) scale(.98); box-shadow:inset 0 2px 5px rgba(0,0,0,.34), inset 0 1px 0 rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.5);}
   .pad.open{box-shadow:none;}
   .pad.open{border-color:var(--accent); background:var(--surface-2);}
   .pad .pad-title{font-family:'PP Mori', system-ui, sans-serif; font-weight:600; font-size:0.875rem; line-height:1.25;}
@@ -981,7 +981,7 @@
     border:1px solid rgba(255,255,255,.26); color:#F2F5F8; font-weight:600; font-size:0.875rem; padding:12px 12px; border-radius:12px;
     box-shadow:inset 0 1px 0 rgba(255,255,255,.46), inset 0 -2px 6px rgba(0,0,0,.24),
                0 6px 18px rgba(0,0,0,.34); transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out);}
-  .tree-launch:active{transform:translateY(4px) scale(.985); box-shadow:inset 0 1px 0 rgba(255,255,255,.3), 0 1px 4px rgba(0,0,0,.44);}
+  .tree-launch:active{transform:translateY(5px) scale(.98); box-shadow:inset 0 2px 6px rgba(0,0,0,.4), 0 1px 2px rgba(0,0,0,.5);}
   .tree-overlay{position:fixed; inset:0; z-index:200; background:rgba(8,12,18,0.86); backdrop-filter:blur(14px) saturate(140%);
     display:flex; align-items:flex-end; justify-content:center; padding:12px;
     opacity:0; transition:opacity .18s var(--ease-out);}
@@ -1006,7 +1006,7 @@
     box-shadow:0 3px 0 rgba(0,0,0,.26), 0 5px 12px rgba(0,0,0,.28); transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out);}
   .tree-btn.ghost{background:var(--surface-2); color:var(--text);}
   .tree-btn.ok{background:var(--ok); color:#0F1720;}
-  .tree-btn.ghost:active,.tree-btn.ok:active{transform:translateY(4px) scale(.985); box-shadow:0 1px 2px rgba(0,0,0,.42);}
+  .tree-btn.ghost:active,.tree-btn.ok:active{transform:translateY(5px) scale(.98); box-shadow:inset 0 2px 6px rgba(0,0,0,.38), 0 1px 2px rgba(0,0,0,.5);}
   .tree-tried{margin-top:14px; display:flex; flex-wrap:wrap; gap:4px; align-items:center; font-size:0.6875rem; color:var(--text-muted);}
   .tree-tried-chip{font-family:'IBM Plex Mono', monospace; font-size:0.6875rem; padding:2px 8px; border-radius:999px; background:var(--surface-2); border:1px solid var(--border); color:var(--text-muted); text-decoration:line-through;}
   .tree-end,.tree-solved-note{font-size:0.875rem; line-height:1.55; color:var(--text); margin:12px 0 16px;}
@@ -1130,8 +1130,8 @@
      dessous de 130% de saturation le flou délave les couleurs vers le gris. */
   .pad,.species-card,.pad-detail,.trip-map-wrap,.loadout-card{
     background:var(--glass-panel);
-    backdrop-filter:blur(28px) saturate(185%) brightness(108%);
-    -webkit-backdrop-filter:blur(28px) saturate(185%) brightness(108%);
+    backdrop-filter:blur(28px) saturate(200%) brightness(108%);
+    -webkit-backdrop-filter:blur(28px) saturate(200%) brightness(108%);
     box-shadow:var(--glass-edge), 0 10px 30px rgba(0,0,0,.38), 0 2px 6px rgba(0,0,0,.22);
   }
   .pad.open{background:var(--glass-panel-soft);}
@@ -1177,7 +1177,7 @@
      le texte, quelle que soit la densite. */
   .species-card{display:flex; flex-direction:column;
     transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out), opacity .15s, border-color .15s;}
-  .species-card:active{transform:translateY(4px) scale(.985); box-shadow:var(--glass-edge), 0 1px 3px rgba(0,0,0,.42);}
+  .species-card:active{transform:translateY(5px) scale(.98); box-shadow:inset 0 2px 5px rgba(0,0,0,.34), inset 0 1px 0 rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.5);}
   .quick-fab:active{transform:translateY(3px) scale(.94);}
   /* Ordre visuel : nom romaji en haut, japonais dessous, pastille repoussee dans le
      coin inferieur droit par margin-top:auto. Le bouton reste dans le flux — il occupe
