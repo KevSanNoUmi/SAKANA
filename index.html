@@ -88,7 +88,48 @@
      texte le tracking se resserre, et l'emphase passe par la graisse, pas par la taille. */
   header h1{font-size:2rem; font-weight:500; letter-spacing:-0.02em; line-height:1.08; margin:0 0 4px;}
   header .sub{color:var(--text-muted); font-size:0.8125rem; margin:0;}
-  .back-row{display:flex; align-items:center; gap:12px;}
+  /* V6.5.23 — en-tete de fiche espece : le nom domine, l'identite (japonais + latin)
+     passe dessous en secondaire, et le bouton Focus s'ancre en haut a droite. */
+  .back-row{display:flex; align-items:flex-start; gap:12px;}
+  .sp-ident{flex:1 1 auto; min-width:0;}
+  .sp-ident h1{font-size:1.75rem; font-weight:500; letter-spacing:-0.02em; line-height:1.1; margin:0;}
+  /* Un binome latin se compose en italique, pas en capitales : en capitales espacees il
+     debordait sur deux lignes et se lisait comme un libelle, pas comme un nom. */
+  .sp-ident .eyebrow{margin:4px 0 0; opacity:.66; letter-spacing:.02em; text-transform:none;
+    font-style:italic; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  /* Meme modele de verre que les pastilles : degrade directionnel, arete speculaire,
+     ombre interne, halo. Pas de backdrop-filter, la barre en porte deja un. */
+  /* Les deux actions contextuelles de la fiche sont groupees en haut a droite.
+     « Lecture » n'apparait que sur l'onglet Comprendre — setSpeciesTab bascule son
+     attribut hidden par id, la logique existante fonctionne inchangee. */
+  /* V6.5.23 — « Lecture » et « Focus » sont un seul et meme composant : meme verre, meme
+     geometrie, meme encre au repos. Seul l'etat actif les colore, et il est identique pour
+     les deux — Focus quand l'espece est suivie, Lecture quand le mode lecture est engage.
+     Un bouton unique decrit deux fois etait la cause de leur divergence. */
+  .sp-actions{flex:0 0 auto; display:flex; align-items:center; gap:8px; margin-top:2px;}
+  .sp-actions>button{
+    flex:0 0 auto; align-self:flex-start; appearance:none; cursor:pointer;
+    border-radius:999px; padding:8px 12px; white-space:nowrap;
+    font-family:'IBM Plex Mono',monospace; font-size:0.6875rem; line-height:1;
+    color:#F2F5F8;
+    background:linear-gradient(160deg, rgba(255,255,255,.20) 0%, rgba(255,255,255,.06) 42%, rgba(0,0,0,.22) 100%);
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.42), inset 0 -2px 4px rgba(0,0,0,.30),
+               0 4px 12px rgba(0,0,0,.34), 0 0 0 1px rgba(var(--accent-rgb),.16);
+    transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out),
+               background .18s var(--ease-out), color .18s var(--ease-out);}
+
+  /* Etat actif commun : le verre se teinte d'accent et l'encre s'inverse. */
+  .sp-actions>button.on,
+  body.reading-mode .sp-actions .reading-start{
+    color:#0F1720;
+    background:linear-gradient(160deg, rgba(255,255,255,.34) 0%, rgba(var(--accent-rgb),.92) 100%);
+    border-color:rgba(255,255,255,.34);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.55), inset 0 -2px 4px rgba(0,0,0,.22),
+               0 4px 14px rgba(0,0,0,.36), 0 0 0 1px rgba(var(--accent-rgb),.5);}
+
+  .sp-actions>button:active{transform:translateY(2px) scale(.96);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 1px 4px rgba(0,0,0,.4);}
   .back-btn{all:unset; cursor:pointer; color:var(--accent); font-size:1.25rem; line-height:1; padding:4px 6px 4px 0;}
 
   main{padding:16px 18px calc(40px + var(--safe-bottom));}
@@ -222,7 +263,11 @@
 
 
   /* V6.5.10 — navigation contextuelle, lecture et relations */
-  .species-context-line{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:7px;min-height:28px;}
+  /* Ne porte plus que le bouton « Lecture », visible sur le seul onglet Comprendre :
+     sans lui la ligne doit se refermer, pas laisser 28px de vide. */
+  .species-context-line{display:flex;align-items:center;justify-content:flex-end;gap:12px;min-height:0;}
+  .species-context-line:has(.reading-start[hidden]){display:none;}
+  .species-context-line:not(:has([hidden])){margin-bottom:8px;}
   .species-context-copy{min-width:0;font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;color:var(--text-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .species-context-copy strong{color:var(--text);font-weight:600;}
   .reading-start,.collapse-all-btn{appearance:none;border:1px solid var(--border);background:var(--surface);color:var(--accent);border-radius:999px;padding:8px 8px;font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;cursor:pointer;white-space:nowrap;}
@@ -470,10 +515,12 @@
   .loadout-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
   /* V6.5.23 — la carte combo ne porte plus que son code. Carre, centre, cote a cote ;
      tout le detail reste accessible au clic. */
-  .loadout-card{appearance:none;width:100%;aspect-ratio:1;display:grid;place-items:center;text-align:center;
+  /* Hauteur ramenee de 164 a 64px : un carre plein format pour deux mots occupait un
+     ecran entier pour rien. 64px = la hauteur d'une ligne de liste confortable. */
+  .loadout-card{appearance:none;width:100%;min-height:64px;display:grid;place-items:center;text-align:center;
     border:1px solid var(--border);border-radius:16px;padding:12px;cursor:pointer;color:inherit;font:inherit;}
   .loadout-card.open{border-color:var(--accent);background:var(--surface-2);}
-  .loadout-code{font-family:'Fraunces',serif;font-weight:500;font-size:1.5rem;color:var(--accent);line-height:1.1;letter-spacing:-0.015em;}
+  .loadout-code{font-family:'Fraunces',serif;font-weight:500;font-size:1.25rem;color:var(--accent);line-height:1.1;letter-spacing:-0.015em;}
   .loadout-role{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;letter-spacing:.06em;color:var(--text-muted);margin:4px 0 9px;}
   .loadout-rod{font-size:0.75rem;font-weight:600;line-height:1.35;}
   .loadout-reel{font-size:0.6875rem;color:var(--text-muted);line-height:1.4;margin-top:3px;}
@@ -824,10 +871,14 @@
   }
 
   /* ===== Arbre de décision ===== */
-  .tree-launch{all:unset; cursor:pointer; display:block; width:100%; box-sizing:border-box; margin-top:10px; text-align:center;
-    background:var(--flag); color:#fff; font-weight:600; font-size:0.875rem; padding:12px 12px; border-radius:12px;
-    box-shadow:0 3px 0 rgba(0,0,0,.28), 0 5px 12px rgba(0,0,0,.30); transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out);}
-  .tree-launch:active{transform:translateY(4px) scale(.985); box-shadow:0 1px 2px rgba(0,0,0,.44);}
+  /* V6.5.23 — verre blanc, plus de rose. L'action reste primaire par sa largeur pleine
+     et son relief, pas par une couleur qui jurait avec la palette turquoise. */
+  .tree-launch{all:unset; cursor:pointer; display:block; width:100%; box-sizing:border-box; margin-top:12px; text-align:center;
+    background:linear-gradient(160deg, rgba(255,255,255,.26) 0%, rgba(255,255,255,.10) 45%, rgba(255,255,255,.04) 100%);
+    border:1px solid rgba(255,255,255,.26); color:#F2F5F8; font-weight:600; font-size:0.875rem; padding:12px 12px; border-radius:12px;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.46), inset 0 -2px 6px rgba(0,0,0,.24),
+               0 6px 18px rgba(0,0,0,.34); transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out);}
+  .tree-launch:active{transform:translateY(4px) scale(.985); box-shadow:inset 0 1px 0 rgba(255,255,255,.3), 0 1px 4px rgba(0,0,0,.44);}
   .tree-overlay{position:fixed; inset:0; z-index:200; background:rgba(8,12,18,0.86); backdrop-filter:blur(14px) saturate(140%);
     display:flex; align-items:flex-end; justify-content:center; padding:12px;
     opacity:0; transition:opacity .18s var(--ease-out);}
@@ -911,7 +962,16 @@
   /* V6.5.23 — textes explicatifs d'accompagnement. Ils s'adressent a quelqu'un qui
      decouvre le domaine ; l'utilisateur le connait. Masques et non supprimes : le
      contenu reste dans le code, retirer cette ligne les fait revenir tels quels. */
-  .ux-section-lead,.hint,.trip-map-note,.field-cta .txt{display:none;}
+  .ux-section-lead,.hint,.trip-map-note,.field-cta .txt,.ux-pattern-sub{display:none;}
+
+  /* V6.5.23 — bloc de tete de fiche espece. Il faisait 156px encadres pour dire ce que
+     les onglets disent ensuite : on retire la prose, on degonfle le cadre et on garde
+     les seules donnees actionnables — motif, combo, chips de situation. */
+  .species-loadout{background:transparent !important; border:0 !important; box-shadow:none !important;
+    backdrop-filter:none !important; -webkit-backdrop-filter:none !important; padding:0 !important;
+    margin-bottom:12px;}
+  .species-loadout .ux-pattern{font-size:1.125rem; line-height:1.25;}
+  .species-loadout .ux-hero-rule{border-top:1px solid var(--border); padding-top:10px; margin-top:10px;}
 
   /* V6.5.23 — repartition imposee : trois onglets puis deux. En laissant le retour a
      la ligne libre, la coupure dependait de la largeur des libelles. Un tiers de la
@@ -3036,7 +3096,7 @@ function speciesPanelHTML(sp,obs,i){
 }
 function speciesStickyNavHTML(sp){
   const ctx=speciesContextStop(), focused=focusSpeciesName===sp.name_fr;
-  return `<div class="species-tabs-wrap" id="speciesNav"><div class="species-context-line"><div class="species-context-copy"><strong>${escHTML(sp.name_fr)}</strong> · <span id="speciesContextSection">${SPECIES_TABS[speciesTab]}</span>${ctx?` · ${escHTML(ctx.city)}`:''}</div><div class="species-context-actions"><button class="focus-toggle ${focused?'on':''}" onclick="toggleSpeciesFocus('${escAttr(sp.name_fr)}')">${focused?'Focus ✓':'Focus'}</button><button id="readingStart" class="reading-start" ${speciesTab===4?'':'hidden'} onclick="toggleReadingMode()">Lecture</button></div></div><div class="species-tabs" role="tablist" aria-label="Navigation fiche espèce">${SPECIES_TABS.map((t,i)=>`<button class="species-tab ${i===speciesTab?'active':''}" role="tab" aria-selected="${i===speciesTab?'true':'false'}" onclick="setSpeciesTab(${i})">${t}</button>`).join('')}</div></div>`;
+  return `<div class="species-tabs-wrap" id="speciesNav"><div class="species-tabs" role="tablist" aria-label="Navigation fiche espèce">${SPECIES_TABS.map((t,i)=>`<button class="species-tab ${i===speciesTab?'active':''}" role="tab" aria-selected="${i===speciesTab?'true':'false'}" onclick="setSpeciesTab(${i})">${t}</button>`).join('')}</div></div>`;
 }
 function applyReadingMode(){ document.body.classList.toggle('reading-mode',readingMode); }
 function toggleReadingMode(){
@@ -3051,7 +3111,8 @@ function renderSpeciesPage(){
   document.getElementById('headerZone').innerHTML = `
     <div class="back-row">
       <button class="back-btn" onclick="location.hash=''">←</button>
-      <div><p class="eyebrow">${sp.name_jp} · ${sp.name_latin||''}</p><h1 style="font-size:1.3125rem;">${sp.name_fr}</h1></div>
+      <div class="sp-ident"><h1>${sp.name_fr}</h1><p class="eyebrow">${sp.name_jp} · ${sp.name_latin||''}</p></div>
+      <div class="sp-actions"><button id="readingStart" class="reading-start" ${speciesTab===4?'':'hidden'} onclick="toggleReadingMode()">Lecture</button><button class="focus-toggle sp-focus ${focusSpeciesName===sp.name_fr?'on':''}" onclick="toggleSpeciesFocus('${escAttr(sp.name_fr)}')">${focusSpeciesName===sp.name_fr?'Focus ✓':'Focus'}</button></div>
     </div>`;
   syncStickyHeaderOffset(); applyReadingMode();
 
