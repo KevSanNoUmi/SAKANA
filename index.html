@@ -550,7 +550,11 @@
   .ux-pattern{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:650;line-height:1.15;color:var(--text);letter-spacing:-.01em;}
   .ux-pattern-sub{font-size:0.75rem;color:var(--text-muted);line-height:1.45;margin-top:5px;max-width:34rem;}
   .ux-combo{display:flex;align-items:center;gap:8px;flex-shrink:0;}
-  .ux-combo-code{font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:12px;padding:4px 8px;line-height:1;}
+  .ux-combo-code{appearance:none;cursor:pointer;font-family:'Fraunces',serif;font-size:1.25rem;font-weight:700;
+    color:var(--accent);background:rgba(var(--accent-rgb),.08);border:1px solid var(--accent);border-radius:12px;
+    min-height:44px;padding:4px 12px;line-height:1;
+    transition:transform .12s var(--ease-out), background .15s var(--ease-out);}
+  .ux-combo-code:active{transform:translateY(2px) scale(.96);background:rgba(var(--accent-rgb),.18);}
   .ux-combo-meta{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;line-height:1.35;color:var(--text-muted);text-align:right;}
   .ux-hero-rule{display:flex;flex-wrap:wrap;gap:4px;margin-top:11px;padding-top:10px;border-top:1px solid var(--border);}
   .ux-chip{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;border:1px solid var(--border);border-radius:999px;padding:2px 8px;background:var(--surface-2);color:var(--text-muted);}
@@ -962,7 +966,9 @@
   /* V6.5.23 — textes explicatifs d'accompagnement. Ils s'adressent a quelqu'un qui
      decouvre le domaine ; l'utilisateur le connait. Masques et non supprimes : le
      contenu reste dans le code, retirer cette ligne les fait revenir tels quels. */
-  .ux-section-lead,.hint,.trip-map-note,.field-cta .txt,.ux-pattern-sub{display:none;}
+  /* .ux-combo-meta : le PE et la plage de grammage flottaient a cote du badge M/MH.
+     La meme information est portee par la carte « Combo » du plan de jeu, en clair. */
+  .ux-section-lead,.hint,.trip-map-note,.field-cta .txt,.ux-pattern-sub,.ux-combo-meta{display:none;}
 
   /* V6.5.23 — bloc de tete de fiche espece. Il faisait 156px encadres pour dire ce que
      les onglets disent ensuite : on retire la prose, on degonfle le cadre et on garde
@@ -2183,7 +2189,7 @@ function speciesLoadoutHTML(sp){
   if(!g) return '';
   const setup=g.setup||{}, rod=setup.rod||{}, line=setup.line||{};
   const range=p.code==='MH'?`${rod.lure_min_g||12}–45 g · 46–50 haute charge`:`${rod.lure_min_g||8}–${rod.lure_max_nominal_g||30} g`;
-  return `<div class="species-loadout"><div class="ux-hero-top"><div><div class="ux-pattern">${escHTML(ux.pattern)}</div><div class="ux-pattern-sub">${escHTML(ux.sub)}</div></div><div class="ux-combo"><div class="ux-combo-code">${escHTML(p.code)}</div><div class="ux-combo-meta">PE${escHTML(line.size||'—')}<br>${escHTML(range)}</div></div></div><div class="ux-hero-rule">${(ux.tags||[]).map((x,i)=>`<span class="ux-chip ${i===0?'hot':''}">${escHTML(x)}</span>`).join('')}${sec?`<span class="ux-chip">${escHTML(p.secondary)} possible selon situation</span>`:''}</div></div>`;
+  return `<div class="species-loadout"><div class="ux-hero-top"><div><div class="ux-pattern">${escHTML(ux.pattern)}</div><div class="ux-pattern-sub">${escHTML(ux.sub)}</div></div><div class="ux-combo"><button type="button" class="ux-combo-code" onclick="openComboByCode('${escAttr(p.code)}')" aria-label="Voir le combo ${escAttr(p.code)}" title="Voir le combo ${escAttr(p.code)}">${escHTML(p.code)}</button><div class="ux-combo-meta">PE${escHTML(line.size||'—')}<br>${escHTML(range)}</div></div></div><div class="ux-hero-rule">${(ux.tags||[]).map((x,i)=>`<span class="ux-chip ${i===0?'hot':''}">${escHTML(x)}</span>`).join('')}${sec?`<span class="ux-chip">${escHTML(p.secondary)} possible selon situation</span>`:''}</div></div>`;
 }
 function destinationGearHTML(s){
   const groups={M:[],MH:[]};
@@ -2827,6 +2833,26 @@ function comboDetail(c){
 }
 
 function toggleCombo(name){ openComboName = (openComboName===name) ? null : name; renderHome(); }
+/* V6.5.23 — le badge M/MH d'une fiche espece renvoie a la fiche combo correspondante.
+   Les combos sont identifies par setup.code ; on retombe sur le prefixe du nom si le
+   code manque. Le retour a l'accueil passe par le hash, donc par le routeur : on attend
+   qu'il ait rendu avant de derouler jusqu'a la carte, sinon elle n'existe pas encore. */
+function openComboByCode(code){
+  const liste = DATA.combos || [];
+  const combo = liste.find(c => ((c.setup||{}).code) === code)
+             || liste.find(c => String(c.name||'').split('·')[0].trim() === code);
+  if(!combo) return;
+  openComboName = combo.name;
+  const deroule = () => requestAnimationFrame(()=>{
+    const carte = document.querySelector('.loadout-card.open');
+    if(carte) carte.scrollIntoView({behavior:scrollBehavior(), block:'center'});
+  });
+  if(location.hash){ 
+    const attendre = () => { window.removeEventListener('hashchange', attendre); setTimeout(deroule, 60); };
+    window.addEventListener('hashchange', attendre);
+    location.hash = '';
+  } else { renderHome(); deroule(); }
+}
 
 /* ============ PAGE ESPÈCE ============ */
 function speciesObservations(id){ if(PERF.speciesObs.has(id))return PERF.speciesObs.get(id); const out=DATA.observations.filter(o=>o.species_id===id); PERF.speciesObs.set(id,out); return out; }
