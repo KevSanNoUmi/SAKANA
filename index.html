@@ -277,7 +277,7 @@
   body.reading-mode .species-loadout,body.reading-mode .species-tabs-wrap,body.reading-mode .species-context-nav,body.reading-mode .relation-block{display:none!important;}
   body.reading-mode #tabPanel{max-width:760px;margin:0 auto;padding-bottom:72px;}
   body.reading-mode #tabPanel .section{margin-top:28px;}
-  body.reading-mode #tabPanel .behav-txt,body.reading-mode #tabPanel .synth-box,body.reading-mode #tabPanel .fact-card,body.reading-mode #tabPanel .evidence-legend{font-size:0.9375rem;line-height:1.78;}
+  body.reading-mode #tabPanel .behav-txt,body.reading-mode #tabPanel .synth-box,body.reading-mode #tabPanel .fact-card{font-size:0.9375rem;line-height:1.78;}
   body.reading-mode #tabPanel .section-title{font-size:1.3125rem;margin-bottom:12px;}
   body.reading-mode #tabPanel .ux-section-lead{font-size:0.8125rem;line-height:1.65;}
 
@@ -721,17 +721,11 @@
   .ev-dim.very{color:var(--ok)} .ev-dim.solid{color:var(--accent)} .ev-dim.signal{color:#6FB1D6} .ev-dim.hyp{color:var(--text-muted)}
   .ev-note{font-size:0.6875rem;line-height:1.45;color:var(--text-muted);margin-top:7px;}
   .ev-note strong{color:var(--text);font-weight:600;}
-  .evidence-legend{font-size:0.6875rem;line-height:1.5;color:var(--text-muted);margin-bottom:10px;}
-  .evidence-legend strong{color:var(--text);}
-  .evidence-model{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0 12px;}
-  .evidence-model .item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 12px;}
-  .evidence-model .name{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;text-transform:uppercase;letter-spacing:.07em;color:var(--accent);margin-bottom:4px;}
-  .evidence-model .txt{font-size:0.6875rem;line-height:1.45;color:var(--text-muted);}
   .reco-proofline{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:7px 0 3px;}
   .context-fit{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;color:var(--text-muted);border-left:2px solid #6FB1D6;padding-left:6px;}
   .intel-proof{display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-top:6px;}
   .raw-source{font-size:0.6875rem;color:var(--text-muted);margin-top:4px;}
-  @media(max-width:390px){.ev-dims,.evidence-model{grid-template-columns:1fr}}
+  @media(max-width:390px){.ev-dims{grid-template-columns:1fr}}
 
   /* V6.5.1 — feedback immédiat pendant les rares calculs non encore en cache */
   .perf-loading-row{display:flex;align-items:center;gap:8px;min-height:54px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;}
