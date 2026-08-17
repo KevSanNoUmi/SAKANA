@@ -238,7 +238,7 @@
   .species-card.undoc .count{color:var(--text-muted);}
 
   /* V6.5.9 — navigation espèce sticky, explicite et lisible */
-  .species-tabs-wrap{position:sticky;top:calc(var(--app-header-h,76px) - 1px);z-index:9;margin:4px -18px 18px;padding:8px 16px 8px;background:linear-gradient(180deg,var(--bg) 78%,rgba(15,23,32,.96));border-bottom:1px solid var(--border);scroll-margin-top:calc(var(--app-header-h,76px) + 8px);}
+  .species-tabs-wrap{scroll-margin-top:var(--app-header-h,76px);position:sticky;top:calc(var(--app-header-h,76px) - 1px);z-index:9;margin:4px -18px 18px;padding:8px 16px 8px;background:linear-gradient(180deg,var(--bg) 78%,rgba(15,23,32,.96));border-bottom:1px solid var(--border);scroll-margin-top:calc(var(--app-header-h,76px) + 8px);}
   .species-tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:1px 0;overscroll-behavior-x:contain;}
   .species-tabs::-webkit-scrollbar{display:none;}
   .species-tab{appearance:none;flex:0 0 auto;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);border-radius:999px;padding:8px 12px;font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;font-weight:500;text-transform:uppercase;letter-spacing:.035em;cursor:pointer;white-space:nowrap;transition:background .15s,border-color .15s,color .15s;}
@@ -3175,6 +3175,21 @@ function ensureActiveSpeciesTabVisible(smooth=true){
   const active=document.querySelector('.species-tab.active');
   if(active) active.scrollIntoView({behavior:smooth?scrollBehavior():'auto',block:'nearest',inline:'center'});
 }
+/* V6.5.23 — amener le debut du bloc juste sous le bandeau d'onglets.
+   scrollIntoView sur #speciesNav ne marche pas : le bandeau est sticky, il reste
+   colle sous l'en-tete pendant que la page continue de defiler, et on atterrissait
+   257px trop bas dans le contenu. On calcule donc le delta a partir du panneau :
+   on veut son haut exactement sous l'en-tete + le bandeau. */
+function scrollPanelToTop(){
+  const panel=document.getElementById('tabPanel'),
+        nav=document.getElementById('speciesNav'),
+        head=document.querySelector('header');
+  if(!panel||!nav||!head) return;
+  const cible=head.getBoundingClientRect().height + nav.getBoundingClientRect().height;
+  const delta=panel.getBoundingClientRect().top - cible;
+  if(Math.abs(delta)<2) return;
+  window.scrollBy({top:delta, behavior:scrollBehavior()});
+}
 function setSpeciesTab(i){
   readingMode=false; applyReadingMode();
   speciesTab = i;
@@ -3188,8 +3203,13 @@ function setSpeciesTab(i){
   const read=document.getElementById('readingStart'); if(read)read.hidden=i!==4;
   requestAnimationFrame(()=>{
     ensureActiveSpeciesTabVisible(true);
-    const nav=document.getElementById('speciesNav');
-    if(nav && nav.getBoundingClientRect().top<76) nav.scrollIntoView({behavior:scrollBehavior(),block:'start'});
+    /* V6.5.23 — on remonte TOUJOURS au debut du bloc. L'ancienne condition
+       `top < 76` ne declenchait le defilement que si le bandeau d'onglets etait
+       deja passe sous l'en-tete : des qu'on avait un peu scrolle sans l'atteindre,
+       rien ne bougeait et on restait au milieu du contenu precedent, donc a cote
+       du sujet demande. Le scroll-margin-top de #speciesNav place le bandeau juste
+       sous l'en-tete sticky, exactement comme le saut du sommaire « Comprendre ». */
+    scrollPanelToTop();
   });
 }
 
