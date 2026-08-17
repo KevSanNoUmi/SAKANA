@@ -1,7 +1,7 @@
 // Carnet Pêche JP — service worker V6.5.12 UX carte + cibles tactiles
 // Démarrage : noyau léger + décisions pré-calculées. Le corpus complet est chargé à la demande.
 const CACHE_PREFIX = 'carnet-peche-jp-';
-const CACHE = 'carnet-peche-jp-v6-5-23-relief-20260816-24';
+const CACHE = 'carnet-peche-jp-v6-5-23-ppmori-20260817';
 
 const CRITICAL = [
   './',
@@ -13,6 +13,8 @@ const CRITICAL = [
 
 // Corpus détaillé : préchargé en arrière-plan à l'installation, mais jamais bloquant pour le premier rendu.
 const OPTIONAL = [
+  './fonts/PPMori-Regular.otf',
+  './fonts/PPMori-SemiBold.otf',
   './data.json',
   './synthesis.json',
   './lure_typology.json',

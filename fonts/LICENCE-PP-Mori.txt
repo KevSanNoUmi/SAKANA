@@ -1,0 +1,13 @@
+PP Mori — PangramPangram Foundry
+Copyright (c) 2022. All rights reserved.
+
+LICENCE : USAGE PERSONNEL STRICTEMENT.
+Source : https://befonts.com/pp-mori-font-family.html
+
+Consequence pour ce depot : ces fichiers ne peuvent PAS etre redistribues.
+Le depot doit rester PRIVE. Le rendre public equivaut a redistribuer la
+police, ce que la licence usage personnel n'autorise pas.
+
+Pour un depot public, deux voies : acheter la licence chez Pangram Pangram
+(https://pangrampangram.com), ou substituer une police libre de droits
+commerciaux — Satoshi ou General Sans sur fontshare.com sont proches.
