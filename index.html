@@ -101,6 +101,18 @@
      passe dessous en secondaire, et le bouton Focus s'ancre en haut a droite. */
   .back-row{display:flex; align-items:flex-start; gap:12px;}
   .sp-ident{flex:1 1 auto; min-width:0;}
+  /* Le declencheur ne doit pas ressembler a un bouton : c'est le titre lui-meme, le chevron
+     seul porte l'affordance. Zone tactile etendue vers le bas par le padding. */
+  .sp-switch{appearance:none;border:0;background:none;padding:0 0 2px;margin:0;color:inherit;
+    font:inherit;text-align:left;cursor:pointer;display:flex;align-items:baseline;gap:8px;
+    max-width:100%;min-height:44px;transition:opacity .12s var(--ease-out);}
+  .sp-switch h1{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .sp-switch-chevron{flex:0 0 auto;font-size:1rem;line-height:1;color:var(--accent);
+    transform:translateY(-3px);transition:transform .16s var(--ease-out);}
+  .sp-switch:active{opacity:.72;}
+  .sp-switch:active .sp-switch-chevron{transform:translateY(1px);}
+  /* Case du selecteur : le japonais en tete comme sur les cartes espece, le romaji dessous,
+     le compte d'observations en pied. L'espece courante est marquee. */
   .sp-ident h1{font-size:1.75rem; font-weight:400; letter-spacing:-0.02em; line-height:1.1; margin:0;}
   /* Un binome latin se compose en italique, pas en capitales : en capitales espacees il
      debordait sur deux lignes et se lisait comme un libelle, pas comme un nom. */
@@ -630,6 +642,39 @@
   .color-matrix-row{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 12px;margin-bottom:7px;display:block;}
   .color-matrix-row .tech-k{color:var(--text);font-size:0.6875rem;margin-bottom:5px;}
   .color-matrix-row .tech-v{font-size:0.75rem;}
+
+  /* Barre de filtres de la matrice couleur — pastilles minuscules, deux lignes au plus.
+     Meme modele de verre que les onglets et les boutons Lecture / Focus. */
+  /* La gouttiere de droite est reservee au rail d'especes, qui flotte au-dessus du
+     contenu des qu'on a scrolle. Il est en pointer-events:none, donc aucun tap n'est
+     vole — mais une pastille a moitie sous une pastille de rail se lit comme bloquee.
+     Le texte courant passe dessous sans gene, un bouton non. */
+  .color-filter{display:flex;flex-wrap:wrap;gap:10px 6px;margin:0 0 10px;padding-right:34px;}
+  .cf-chip{position:relative;appearance:none;cursor:pointer;flex:0 0 auto;
+    font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;letter-spacing:.02em;line-height:1.2;
+    padding:8px 10px;border-radius:999px;color:#F2F5F8;
+    background:linear-gradient(160deg, rgba(255,255,255,.20) 0%, rgba(255,255,255,.06) 42%, rgba(0,0,0,.22) 100%);
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.42), inset 0 -2px 4px rgba(0,0,0,.30),
+               0 2px 6px rgba(0,0,0,.30), 0 0 0 1px rgba(var(--accent-rgb),.16);
+    transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out),
+               background .18s var(--ease-out), color .18s var(--ease-out);}
+  /* La cible tactile monte a 40px sans que la pastille grandisse : c'est le pseudo-element
+     qui s'etend, il ne prend pas de place dans le flux. Le gap vertical de 10px est
+     superieur au debord (2x ~4.5px), donc deux rangees ne se volent pas les taps. */
+  .cf-chip::after{content:'';position:absolute;left:0;right:0;top:50%;height:40px;transform:translateY(-50%);}
+  .cf-chip[aria-pressed="true"]{color:#0F1720;
+    background:linear-gradient(160deg, rgba(255,255,255,.34) 0%, rgba(var(--accent-rgb),.92) 100%);
+    border-color:rgba(255,255,255,.34);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.55), inset 0 -2px 4px rgba(0,0,0,.22),
+               0 2px 8px rgba(0,0,0,.32), 0 0 0 1px rgba(var(--accent-rgb),.5);}
+  .cf-chip:active{transform:translateY(1px) scale(.96);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 1px 3px rgba(0,0,0,.4);}
+  .cf-reset{padding:8px 9px;font-size:0.75rem;}
+  .cf-chip[hidden]{display:none;}
+  .color-matrix-row.cf-off{display:none;}
+  .cf-empty{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;color:var(--text-muted);padding:8px 0;}
+  .cf-empty[hidden]{display:none;}
   .pink-chart{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;}
   .pink-chart .pc{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 12px;}
   .pink-chart .pc .name{font-family:'PP Mori', system-ui, sans-serif;font-size:0.875rem;color:var(--text);margin-bottom:4px;}
@@ -878,6 +923,38 @@
   .species-card{padding-top:22px;}
   .ux-sheet-close{width:44px;height:44px;flex:0 0 44px;font-size:1.25rem;}
   .ux-action{min-height:56px;padding:12px 12px;}
+
+  /* Trois colonnes, contrairement aux autres grilles de feuille qui passent en une seule
+     sous 430px : les cases sont compactes et les onze especes tiennent en quatre rangees
+     sans defiler. minmax(0,1fr) et non 1fr, sinon un nom long empeche la colonne de se
+     reduire et fait deborder la grille. */
+  .ux-sheet-grid:has(.sp-pick){grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+
+  /* Meme modele de verre que les onglets, Lecture, Focus et les pastilles : degrade
+     directionnel, arete speculaire, ombre interne, halo. L'espece courante prend la
+     coloration d'accent avec encre inversee, exactement comme un onglet actif. */
+  .sp-pick{display:flex;flex-direction:column;gap:2px;min-height:0;padding:10px 8px;
+    text-align:center;align-items:center;color:#F2F5F8;
+    background:linear-gradient(160deg, rgba(255,255,255,.20) 0%, rgba(255,255,255,.06) 42%, rgba(0,0,0,.22) 100%);
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.42), inset 0 -2px 4px rgba(0,0,0,.30),
+               0 4px 12px rgba(0,0,0,.34), 0 0 0 1px rgba(var(--accent-rgb),.16);
+    transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out),
+               background .18s var(--ease-out), color .18s var(--ease-out);}
+  /* Meme hierarchie que les cartes d'accueil : romaji en tete, japonais dessous. */
+  .sp-pick strong{font-family:'PP Mori',system-ui,sans-serif;font-weight:600;font-size:0.8125rem;
+    color:inherit;opacity:1;letter-spacing:0;text-transform:none;margin-bottom:0;
+    max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .sp-pick-jp{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;color:inherit;opacity:.62;
+    letter-spacing:.04em;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .sp-pick-n{font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;color:inherit;opacity:.58;}
+  .sp-pick.is-current{color:#0F1720;
+    background:linear-gradient(160deg, rgba(255,255,255,.34) 0%, rgba(var(--accent-rgb),.92) 100%);
+    border-color:rgba(255,255,255,.34);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.55), inset 0 -2px 4px rgba(0,0,0,.22),
+               0 4px 14px rgba(0,0,0,.36), 0 0 0 1px rgba(var(--accent-rgb),.5);}
+  .sp-pick:active{transform:translateY(2px) scale(.96);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 1px 4px rgba(0,0,0,.4);}
   .quick-fab{width:54px;height:54px;font-size:1.75rem;}
   .species-rail{right:2px;width:40px;height:250px;}
   .species-rail-track{left:19px;top:18px;bottom:18px;}
@@ -2359,6 +2436,32 @@ function focusPickerHTML(){
   const names=[...new Set(tripPadStops().flatMap(s=>s.target_species||[]))].sort((a,b)=>a.localeCompare(b,'fr'));
   return `<div class="ux-sheet-section"><div class="ux-sheet-label">Focus espèce</div><div class="relation-pills">${names.map(n=>`<button class="relation-pill ${focusSpeciesName===n?'focus-hit':''}" onclick="toggleSpeciesFocus('${escAttr(n)}')">${focusSpeciesName===n?'✓ ':''}${escHTML(n)}</button>`).join('')}</div></div>`;
 }
+/* V6.5.23 — bascule d'espece depuis l'en-tete. On reutilise la feuille du bas plutot que
+   d'introduire un menu ancre : c'est le composant de choix deja etabli dans l'app (acces
+   rapide, focus, glossaire, densite), il est deja anime, en verre, et il gere le retour du
+   focus et la touche Echap. Sur telephone il a aussi l'avantage d'arriver sous le pouce,
+   alors qu'un menu suspendu sous le titre obligerait a viser en haut de l'ecran. */
+function openSpeciesPicker(){
+  const courant=DATA.species.find(x=>x.id===currentSpeciesId);
+  const liste=[...DATA.species].sort((a,b)=>a.name_fr.localeCompare(b.name_fr,'fr'));
+  const cases=liste.map(sp=>{
+    const n=FULL_DATA_READY?speciesObservations(sp.id).length
+                           :Number((DATA.observation_counts||{})[String(sp.id)]||0);
+    const ici=sp.id===currentSpeciesId;
+    return `<button type="button" class="ux-action sp-pick ${ici?'is-current':''}" `
+         + `${ici?'aria-current="true"':''} onclick="pickSpecies(${sp.id})">`
+         + `<strong>${escHTML(sp.name_fr)}</strong>`
+         + `<span class="sp-pick-jp">${escHTML(sp.name_jp||'')}</span>`
+         + `<span class="sp-pick-n">${n?n+' obs':'non documentée'}</span></button>`;
+  }).join('');
+  openUXSheet('Changer d\'espèce', courant?`Actuellement : ${courant.name_fr}`:'',
+              `<div class="ux-sheet-grid">${cases}</div>`);
+}
+function pickSpecies(id){
+  if(id===currentSpeciesId){ closeUXSheet(); return; }
+  closeUXSheet();
+  location.hash='species/'+id;
+}
 function openFocusPicker(){ openUXSheet('Focus espèce','Filtre le voyage autour d’une cible sans modifier les données.',focusPickerHTML()+densityControlHTML()); }
 
 function openQuickPeek(type,id){
@@ -3159,7 +3262,7 @@ function renderSpeciesPage(){
   document.getElementById('headerZone').innerHTML = `
     <div class="back-row">
       <button class="back-btn" onclick="location.hash=''">←</button>
-      <div class="sp-ident"><h1>${sp.name_fr}</h1><p class="eyebrow">${sp.name_jp} · ${sp.name_latin||''}</p></div>
+      <div class="sp-ident"><button type="button" class="sp-switch" onclick="openSpeciesPicker()" aria-haspopup="dialog" aria-label="Changer d'espèce — ${escAttr(sp.name_fr)}"><h1>${sp.name_fr}</h1><span class="sp-switch-chevron" aria-hidden="true">⌄</span></button><p class="eyebrow">${sp.name_jp} · ${sp.name_latin||''}</p></div>
       <div class="sp-actions"><button id="readingStart" class="reading-start" ${speciesTab===4?'':'hidden'} onclick="toggleReadingMode()">Lecture</button><button class="focus-toggle sp-focus ${focusSpeciesName===sp.name_fr?'on':''}" onclick="toggleSpeciesFocus('${escAttr(sp.name_fr)}')">${focusSpeciesName===sp.name_fr?'Focus ✓':'Focus'}</button></div>
     </div>`;
   syncStickyHeaderOffset(); applyReadingMode();
@@ -3260,12 +3363,94 @@ function animationEssenceHTML(sp){
   const wanted=relevantAnimationNames(sp.name_fr), primary=all.filter(a=>wanted.includes(a.name)), other=all.filter(a=>!wanted.includes(a.name));
   return `${ts&&ts.animation?`<div class="motion-priority"><div class="title">À retenir pour ${escHTML(sp.name_fr)}</div><div class="txt">${escHTML(ts.animation)}</div></div>`:''}${primary.map(motionCard).join('')}${other.length?`<details class="intel-details" style="margin-top:10px"><summary>Voir les autres mécaniques</summary><div style="margin-top:10px">${other.map(motionCard).join('')}</div></details>`:''}`;
 }
+/* ===== Filtrage de la matrice « Choix de départ » =====
+   Les conditions sont écrites en clair dans synthesis.json (« Claire + soleil + calme »,
+   « Trouble + ciel bas »…). On les classe par mots-clés au lieu de figer une table :
+   une ligne ajoutée au corpus se range toute seule, et une ligne qu'on n'arrive pas à
+   classer reste visible plutôt que de disparaître en silence.
+
+   Règle centrale : une ligne muette sur un axe n'est jamais masquée par cet axe.
+   « Aube / crépuscule » ne dit rien de la couleur d'eau — filtrer sur « Claire » ne doit
+   pas la faire disparaître, elle vaut pour les deux. Un filtre ne cache que ce qu'il
+   contredit vraiment.
+
+   La sélection survit au changement d'espèce, volontairement : le ciel et l'eau sont
+   ceux d'aujourd'hui, ils ne changent pas selon le poisson visé. */
+const COLOR_FILTER_AXES=[
+  {cle:'lum',  choix:[['jour','Jour'],['bascule','Aube/crép'],['nuit','Nuit']]},
+  {cle:'ciel', choix:[['degage','Dégagé'],['couvert','Couvert']]},
+  {cle:'eau',  choix:[['claire','Claire'],['teintee','Teintée']]},
+];
+const colorFilter={lum:new Set(), ciel:new Set(), eau:new Set()};
+
+function colorRowTags(condition){
+  const c=(condition||'').toLowerCase(), t={};
+  if(/\bclaire?\b/.test(c)) t.eau='claire';
+  else if(/vert|charg|trouble/.test(c)) t.eau='teintee';
+  if(/soleil|lumineus/.test(c)) t.ciel='degage';
+  else if(/couvert|ombre|ciel bas/.test(c)) t.ciel='couvert';
+  if(/aube|cr[ée]puscul/.test(c)) t.lum='bascule';
+  else if(/nuit/.test(c)) t.lum='nuit';
+  else if(t.eau||t.ciel) t.lum='jour';   // « soleil », « ciel bas » : du jour, implicitement
+  return t;
+}
+const colorRowKey=t=>COLOR_FILTER_AXES.map(a=>t[a.cle]?a.cle+':'+t[a.cle]:'').filter(Boolean).join('|');
+const colorFilterActif=()=>COLOR_FILTER_AXES.some(a=>colorFilter[a.cle].size);
+function colorRowRetenue(t){
+  return COLOR_FILTER_AXES.every(a=>{
+    const sel=colorFilter[a.cle];
+    return !sel.size || !t[a.cle] || sel.has(t[a.cle]);
+  });
+}
+function colorFilterBarHTML(){
+  const actif=colorFilterActif();
+  const puces=COLOR_FILTER_AXES.flatMap(a=>a.choix.map(([v,lib])=>{
+    const on=colorFilter[a.cle].has(v);
+    return `<button type="button" class="cf-chip" aria-pressed="${on}" `
+         + `onclick="toggleColorFilter('${a.cle}','${v}',this)">${escHTML(lib)}</button>`;
+  })).join('');
+  return `<div class="color-filter" role="group" aria-label="Filtrer les conditions de départ">`
+       + `${puces}<button type="button" class="cf-chip cf-reset" ${actif?'':'hidden'} `
+       + `onclick="resetColorFilter()" aria-label="Tout afficher">↺</button></div>`;
+}
+function toggleColorFilter(axe,val,btn){
+  const sel=colorFilter[axe]; if(!sel) return;
+  sel.has(val)?sel.delete(val):sel.add(val);
+  btn.setAttribute('aria-pressed', String(sel.has(val)));
+  appliqueColorFilter();
+}
+function resetColorFilter(){
+  COLOR_FILTER_AXES.forEach(a=>colorFilter[a.cle].clear());
+  document.querySelectorAll('.cf-chip[aria-pressed]').forEach(b=>b.setAttribute('aria-pressed','false'));
+  appliqueColorFilter();
+}
+/* Bascule de classe, jamais de re-rendu : le panneau reste en place et le scroll ne saute pas. */
+function appliqueColorFilter(){
+  const actif=colorFilterActif();
+  let visibles=0;
+  document.querySelectorAll('.color-matrix-row[data-cf]').forEach(row=>{
+    const t={};
+    (row.dataset.cf||'').split('|').filter(Boolean).forEach(p=>{const[k,v]=p.split(':');t[k]=v;});
+    const ok=!actif||colorRowRetenue(t);
+    row.classList.toggle('cf-off',!ok);
+    if(ok) visibles++;
+  });
+  document.querySelectorAll('.cf-reset').forEach(b=>{b.hidden=!actif;});
+  document.querySelectorAll('.cf-empty').forEach(e=>{e.hidden=visibles>0;});
+}
+
 function colorLogicHTML(sp){
   const root=techRoot(), c=root.color_logic, ts=techSpecies(sp);
   if(!c) return '';
-  const matrix=(c.matrix||[]).map(r=>`<div class="color-matrix-row"><div class="tech-k">${escHTML(r.condition)}</div><div class="tech-v"><strong>Départ :</strong> ${escHTML(r.start)}<br><span style="color:var(--text-muted)">Si ça ne colle pas :</span> ${escHTML(r.switch)}</div></div>`).join('');
+  const filtreActif=colorFilterActif();
+  let visibles=0;
+  const matrix=(c.matrix||[]).map(r=>{
+    const t=colorRowTags(r.condition), retenue=!filtreActif||colorRowRetenue(t);
+    if(retenue) visibles++;
+    return `<div class="color-matrix-row${retenue?'':' cf-off'}" data-cf="${colorRowKey(t)}"><div class="tech-k">${escHTML(r.condition)}</div><div class="tech-v"><strong>Départ :</strong> ${escHTML(r.start)}<br><span style="color:var(--text-muted)">Si ça ne colle pas :</span> ${escHTML(r.switch)}</div></div>`;
+  }).join('');
   const finishes=(c.finish_logic||[]).map(f=>`<div class="color-card"><div class="color-name">${escHTML(f.finish)}</div><div class="tech-v">${escHTML(f.mechanic)}</div><div class="tech-not"><strong>À sortir :</strong> ${escHTML(f.best)}<br><strong>Attention :</strong> ${escHTML(f.watch)}</div></div>`).join('');
-  return `${ts&&ts.color?`<div class="motion-priority"><div class="title">Point de départ ${escHTML(sp.name_fr)}</div><div class="txt">${escHTML(ts.color)}</div></div>`:''}<div class="color-rule"><div class="color-step"><div class="num">01</div><div class="txt">Lis <strong>clarté + lumière</strong></div></div><div class="color-step"><div class="num">02</div><div class="txt">Regarde <strong>activité / refus</strong></div></div><div class="color-step"><div class="num">03</div><div class="txt">Si bait identifié, <strong>match the hatch</strong></div></div></div><div class="signal-grid"><div class="signal-card"><div class="state">Suivi / refus</div><div class="do">Réduis le signal : naturel, ghost, moins de flash. Ne change qu’une variable.</div></div><div class="signal-card"><div class="state">Aucun contact</div><div class="do">Monte la lisibilité : pearl/opaque, accent fluo ou contraste, puis revalide la couche.</div></div></div><p class="section-title">Choix de départ</p>${matrix}<div class="pink-chart"><div class="pc"><div class="name">Rose / magenta</div><div class="txt">Contraste de teinte marqué, intéressant dans le vert/bleuté et aux transitions de lumière.</div></div><div class="pc"><div class="name">Jaune / chartreuse</div><div class="txt">Lisibilité brute et silhouette forte en eau chargée ou lumière diffuse.</div></div></div><div class="ux-section-lead" style="margin-top:8px">Si le bait est clairement identifié : taille → silhouette → couche → nage → teinte. Le naturel/flash peut repasser devant les deux.</div><details class="intel-details" style="margin-top:10px"><summary>Comprendre les finitions</summary><div style="margin-top:10px">${finishes}</div></details>`;
+  return `${ts&&ts.color?`<div class="motion-priority"><div class="title">Point de départ ${escHTML(sp.name_fr)}</div><div class="txt">${escHTML(ts.color)}</div></div>`:''}<div class="color-rule"><div class="color-step"><div class="num">01</div><div class="txt">Lis <strong>clarté + lumière</strong></div></div><div class="color-step"><div class="num">02</div><div class="txt">Regarde <strong>activité / refus</strong></div></div><div class="color-step"><div class="num">03</div><div class="txt">Si bait identifié, <strong>match the hatch</strong></div></div></div><div class="signal-grid"><div class="signal-card"><div class="state">Suivi / refus</div><div class="do">Réduis le signal : naturel, ghost, moins de flash. Ne change qu’une variable.</div></div><div class="signal-card"><div class="state">Aucun contact</div><div class="do">Monte la lisibilité : pearl/opaque, accent fluo ou contraste, puis revalide la couche.</div></div></div><p class="section-title">Choix de départ</p>${colorFilterBarHTML()}${matrix}<div class="cf-empty" ${visibles?'hidden':''}>Aucune ligne pour cette combinaison.</div><div class="pink-chart"><div class="pc"><div class="name">Rose / magenta</div><div class="txt">Contraste de teinte marqué, intéressant dans le vert/bleuté et aux transitions de lumière.</div></div><div class="pc"><div class="name">Jaune / chartreuse</div><div class="txt">Lisibilité brute et silhouette forte en eau chargée ou lumière diffuse.</div></div></div><div class="ux-section-lead" style="margin-top:8px">Si le bait est clairement identifié : taille → silhouette → couche → nage → teinte. Le naturel/flash peut repasser devant les deux.</div><details class="intel-details" style="margin-top:10px"><summary>Comprendre les finitions</summary><div style="margin-top:10px">${finishes}</div></details>`;
 }
 /* --- Panneau 2 : types de leurre + rôle technique --- */
 function panelLeurres(sp, obs){
