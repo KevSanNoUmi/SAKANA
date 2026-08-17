@@ -359,7 +359,27 @@
   .mech-corr li{font-size:0.8125rem; line-height:1.5; padding:6px 0 6px 14px; border-left:2px solid var(--border); margin-bottom:5px; position:relative;}
   .mech-corr li p{margin:0;}
   .mech-principe strong, .mech-corr strong{color:var(--text); font-weight:600;}
-  .behav-block{background:var(--surface); border-left:3px solid var(--accent); border-radius:0 12px 12px 0; padding:12px 12px; margin-bottom:10px;}
+  /* Sommaire de la section « Comprendre » : les sections de comportement en puces de
+     verre, menant chacune a son paragraphe. */
+  .behav-jumps{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;}
+  .behav-jump{appearance:none;cursor:pointer;max-width:100%;
+    font-family:'IBM Plex Mono',monospace;font-size:0.6875rem;line-height:1;
+    padding:10px 12px;min-height:44px;border-radius:999px;white-space:nowrap;
+    overflow:hidden;text-overflow:ellipsis;color:#F2F5F8;
+    background:linear-gradient(160deg, rgba(255,255,255,.20) 0%, rgba(255,255,255,.06) 42%, rgba(0,0,0,.22) 100%);
+    border:1px solid rgba(255,255,255,.18);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.42), inset 0 -2px 4px rgba(0,0,0,.30),
+               0 4px 12px rgba(0,0,0,.34), 0 0 0 1px rgba(var(--accent-rgb),.16);
+    transition:transform .12s var(--ease-out), box-shadow .12s var(--ease-out);}
+  .behav-jump:active{transform:translateY(2px) scale(.96);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.28), 0 1px 4px rgba(0,0,0,.4);}
+
+  /* Le paragraphe vise se signale brievement a l'arrivee, sinon on ne sait pas ou on a
+     atterri quand plusieurs blocs se ressemblent. */
+  .behav-block{background:var(--surface); border-left:3px solid var(--accent); border-radius:0 12px 12px 0; padding:12px 12px; margin-bottom:10px;
+    scroll-margin-top:calc(var(--app-header-h,76px) + 16px);
+    transition:border-left-color .3s var(--ease-out), background .3s var(--ease-out);}
+  .behav-block.is-target{border-left-color:#FFFFFF; background:rgba(var(--accent-rgb),.10);}
   .behav-title{font-family:'Fraunces', serif; font-weight:600; font-size:0.9375rem; color:var(--accent); margin-bottom:6px;}
   .behav-txt{font-size:0.8125rem; line-height:1.6;}
   .behav-txt p{margin:0;}
@@ -2832,6 +2852,16 @@ function comboDetail(c){
   return `<div class="gear-detail" onclick="event.stopPropagation()"><div class="gear-detail-grid"><div class="gear-mini"><div class="lab">Canne</div><div class="val"><strong>${escHTML(rod.model||'—')}</strong><br>${escHTML(rod.length_cm||'—')} cm · ${escHTML(rod.sections||'—')} brins · ${escHTML(rod.lure_min_g||'—')}–${escHTML(rod.lure_max_nominal_g||'—')} g officiel</div></div><div class="gear-mini"><div class="lab">Moulinet / ligne</div><div class="val"><strong>${escHTML(reel.model||'—')}</strong><br>PE ${escHTML(line.size||'—')}</div></div></div><div class="k">Espèces principales</div><div class="loadout-spec">${species||'—'}</div>${secondary?`<div class="k">Selon situation</div><div class="loadout-spec">${secondary}</div>`:''}${opp?`<div class="k">Opportuniste / limite basse</div><div class="loadout-spec">${opp}</div>`:''}<div class="essence-box" style="margin-top:10px;margin-bottom:0">${escHTML(x.decision_note||'')}</div></div>`;
 }
 
+/* V6.5.23 — sommaire de la section « Comprendre ». Les encarts qui remplaçaient ce
+   sommaire decrivaient le vocabulaire du moteur de preuve (Observation, Pattern,
+   Interpretation, Ton terrain) : une explication du systeme, pas du poisson. Les puces
+   listent desormais les sections de comportement reelles et menent au paragraphe. */
+function jumpToBehav(id){
+  const el=document.getElementById(id); if(!el) return;
+  el.scrollIntoView({behavior:scrollBehavior(), block:'start'});
+  el.classList.add('is-target');
+  setTimeout(()=>el.classList.remove('is-target'), 1400);
+}
 function toggleCombo(name){ openComboName = (openComboName===name) ? null : name; renderHome(); }
 /* V6.5.23 — le badge M/MH d'une fiche espece renvoie a la fiche combo correspondante.
    Les combos sont identifies par setup.code ; on retombe sur le prefixe du nom si le
@@ -3179,9 +3209,9 @@ function panelComportement(sp, obs){
   const sourceCount=new Set(obs.map(o=>o.source).filter(Boolean)).size;
   const activeStop=activeEvidenceStop();
   const inferences=(DATA.inferences||[]).filter(i=>i.species_id===sp.id && (!i.stop_id || !activeStop || i.stop_id===activeStop.id));
-  const synth=blocks.length?blocks.map(b=>`<div class="behav-block"><div class="behav-title">${escHTML(b.titre)}</div><div class="behav-txt">${mdLite(b.txt)}</div></div>`).join(''):`<div class="empty">Pas encore assez de matière pour une lecture comportementale robuste.</div>`;
+  const synth=blocks.length?blocks.map((b,i)=>`<div class="behav-block" id="behav-${sp.id}-${i}"><div class="behav-title">${escHTML(b.titre)}</div><div class="behav-txt">${mdLite(b.txt)}</div></div>`).join(''):`<div class="empty">Pas encore assez de matière pour une lecture comportementale robuste.</div>`;
   const full=SYNTH.species&&SYNTH.species[sp.name_fr];
-  return `<div class="section" style="margin-top:0"><p class="section-title">Comprendre le poisson</p><div class="evidence-legend"><strong>V6.5 :</strong> prises/rapports positifs = récurrence documentaire assumée. Une phrase extraite plusieurs fois du même événement ne vote qu’une fois. Les interprétations dérivées sont sorties des preuves.</div><div class="evidence-model"><div class="item"><div class="name">Observation</div><div class="txt">Un fait constaté : capture, comportement, condition ou mesure.</div></div><div class="item"><div class="name">Pattern</div><div class="txt">Une relation qui revient dans plusieurs événements positifs documentés.</div></div><div class="item"><div class="name">Interprétation</div><div class="txt">Conclusion utile dérivée des faits. Elle reste visible mais ne vote pas dans les scores.</div></div><div class="item"><div class="name">Ton terrain</div><div class="txt">Tes sessions personnelles, positives ou nulles, conservées séparément.</div></div></div><div class="understand-stat"><span>${obs.length} observations</span><span>${sourceCount} sources</span>${inferences.length?`<span>${inferences.length} interprétation${inferences.length>1?'s':''}</span>`:''}${divergences.length?`<span>${divergences.length} désaccords utiles</span>`:''}</div>${synth}</div>${full?`<div class="section"><details class="intel-details"><summary>Synthèse complète de la base</summary><div class="synth-box" style="margin-top:10px">${mdLite(full)}</div></details></div>`:''}${inferences.length?`<div class="section"><details class="intel-details"><summary>Interprétations dérivées — hors moteur de preuve (${inferences.length})</summary><div style="margin-top:10px">${inferences.map(inferenceCard).join('')}</div></details></div>`:''}${divergences.length?`<div class="section"><details class="intel-details"><summary>Quand les sources ne racontent pas la même chose (${divergences.length})</summary><div style="margin-top:10px">${divergences.slice(0,12).map(consensusCard).join('')}</div></details></div>`:''}<div class="section"><details class="intel-details"><summary>Voir les observations brutes (${obs.length})</summary><div style="margin-top:10px">${obs.slice().sort((a,b)=>(b.id||0)-(a.id||0)).map(factCard).join('')}</div></details></div>`;
+  return `<div class="section" style="margin-top:0"><p class="section-title">Comprendre le poisson</p>${blocks.length?`<div class="behav-jumps">${blocks.map((b,i)=>`<button type="button" class="behav-jump" onclick="jumpToBehav('behav-${sp.id}-${i}')" title="${escAttr(b.titre)}">${escHTML(b.titre)}</button>`).join('')}</div>`:''}<div class="understand-stat"><span>${obs.length} observations</span><span>${sourceCount} sources</span>${inferences.length?`<span>${inferences.length} interprétation${inferences.length>1?'s':''}</span>`:''}${divergences.length?`<span>${divergences.length} désaccords utiles</span>`:''}</div>${synth}</div>${full?`<div class="section"><details class="intel-details"><summary>Synthèse complète de la base</summary><div class="synth-box" style="margin-top:10px">${mdLite(full)}</div></details></div>`:''}${inferences.length?`<div class="section"><details class="intel-details"><summary>Interprétations dérivées — hors moteur de preuve (${inferences.length})</summary><div style="margin-top:10px">${inferences.map(inferenceCard).join('')}</div></details></div>`:''}${divergences.length?`<div class="section"><details class="intel-details"><summary>Quand les sources ne racontent pas la même chose (${divergences.length})</summary><div style="margin-top:10px">${divergences.slice(0,12).map(consensusCard).join('')}</div></details></div>`:''}<div class="section"><details class="intel-details"><summary>Voir les observations brutes (${obs.length})</summary><div style="margin-top:10px">${obs.slice().sort((a,b)=>(b.id||0)-(a.id||0)).map(factCard).join('')}</div></details></div>`;
 }
 /* --- Panneaux techniques V5 : rôle du leurre, geste, comportement, couleur --- */
 function techSpecies(sp){
